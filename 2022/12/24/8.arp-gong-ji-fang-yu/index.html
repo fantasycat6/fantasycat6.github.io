@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Hexo">
+    <meta name="keywords" content="Hexo">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Hexo</title>
+    <title>Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -313,12 +313,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/12.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title"></h1>
                 </div>
             </div>
         </div>
@@ -455,14 +455,14 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    73
+                    1.6k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    6 分
                 </div>
                 
 
@@ -485,19 +485,155 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h1 id="ARP攻击防御"><a href="#ARP攻击防御" class="headerlink" title="ARP攻击防御"></a>ARP攻击防御</h1><h2 id="1-ARP防御方法简介"><a href="#1-ARP防御方法简介" class="headerlink" title="1.ARP防御方法简介"></a>1.ARP防御方法简介</h2><p>ARP攻击的原理是向网关和靶机<strong>不停的发送ARP欺骗报文</strong>，我们的计算机或者网关就会<strong>实时更新ARP缓存表</strong>，从而出现安全漏洞。</p>
+<p>假如对这种欺骗报文的处理是不相信或者不接受的话，就不会出现问题了。处理这种的欺骗的行为我们没办法提前在攻击端进行操作，因为敌人躲在暗处，而我们处明处。</p>
+<p>针对这种情况我们可以从以下两方面入手：</p>
+<ol>
+<li>让我们的电脑<strong>不接收</strong>欺骗包</li>
+<li>即使接收到欺骗的包也<strong>不相信</strong></li>
+</ol>
+<p>目前网络安全行业现有的ARP防御方案，基本都是基于上面两个方法实现的。</p>
+<h2 id="2-windows防御"><a href="#2-windows防御" class="headerlink" title="2.windows防御"></a>2.windows防御</h2><h3 id="1-安装arp的防火墙"><a href="#1-安装arp的防火墙" class="headerlink" title="1.安装arp的防火墙"></a>1.安装arp的防火墙</h3><h5 id="1-安装360安全卫士-地址：https-www-360-cn"><a href="#1-安装360安全卫士-地址：https-www-360-cn" class="headerlink" title="1.安装360安全卫士 地址：https://www.360.cn/"></a>1.安装360安全卫士 地址：<a target="_blank" rel="noopener" href="https://www.360.cn/">https://www.360.cn/</a></h5><h5 id="2-选择网络安全"><a href="#2-选择网络安全" class="headerlink" title="2.选择网络安全"></a>2.选择网络安全</h5><p><img src="/.%5Cassets%5C360%E9%80%89%E6%8B%A9%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8.png" alt="360选择网络安全"></p>
+<h5 id="3-选择流量防火墙"><a href="#3-选择流量防火墙" class="headerlink" title="3.选择流量防火墙"></a>3.选择流量防火墙</h5><p><img src="/.%5Cassets%5C360%E9%80%89%E6%8B%A9%E6%B5%81%E9%87%8F%E9%98%B2%E7%81%AB%E5%A2%99.png" alt="360选择流量防火墙"></p>
+<h5 id="4-选择局域网防护开启防火墙"><a href="#4-选择局域网防护开启防火墙" class="headerlink" title="4.选择局域网防护开启防火墙"></a>4.选择局域网防护开启防火墙</h5><p><img src="/.%5Cassets%5C360%E5%BC%80%E5%90%AF%E5%B1%80%E5%9F%9F%E7%BD%91%E9%98%B2%E6%8A%A4.png" alt="360开启局域网防护"></p>
+<h5 id="5-开启ARP攻击"><a href="#5-开启ARP攻击" class="headerlink" title="5.开启ARP攻击"></a>5.开启ARP攻击</h5><pre class="line-numbers language-none"><code class="language-none">arpspoof -i eth0 -r 192.168.70.1 -t 192.168.70.130<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h5 id="6-查看防护效果"><a href="#6-查看防护效果" class="headerlink" title="6.查看防护效果"></a>6.查看防护效果</h5><p><img src="/.%5Cassets%5C360%E6%9F%A5%E7%9C%8B%E9%98%B2%E6%8A%A4%E6%95%88%E6%9E%9C.png" alt="360查看防护效果"></p>
+<h5 id="7-查询本地arp表"><a href="#7-查询本地arp表" class="headerlink" title="7.查询本地arp表"></a>7.查询本地arp表</h5><pre class="line-numbers language-none"><code class="language-none">arp -a<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h5 id="8-关闭防火墙（退出360安全卫士）"><a href="#8-关闭防火墙（退出360安全卫士）" class="headerlink" title="8.关闭防火墙（退出360安全卫士）"></a>8.关闭防火墙（退出360安全卫士）</h5><h5 id="9-查看当前arp表"><a href="#9-查看当前arp表" class="headerlink" title="9.查看当前arp表"></a>9.查看当前arp表</h5><pre class="line-numbers language-none"><code class="language-none">arp -a<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h5 id="10-停止攻击"><a href="#10-停止攻击" class="headerlink" title="10.停止攻击"></a>10.停止攻击</h5><pre class="line-numbers language-none"><code class="language-none">ctrl+c<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<h3 id="2-设置静态mac地址"><a href="#2-设置静态mac地址" class="headerlink" title="2.设置静态mac地址"></a>2.设置静态mac地址</h3><h4 id="1-临时绑定，重启后失去保护效果"><a href="#1-临时绑定，重启后失去保护效果" class="headerlink" title="1.临时绑定，重启后失去保护效果"></a>1.临时绑定，重启后失去保护效果</h4><h5 id="1-ARP表MAC地址绑定状态"><a href="#1-ARP表MAC地址绑定状态" class="headerlink" title="1.ARP表MAC地址绑定状态"></a>1.ARP表MAC地址绑定状态</h5><p>ARP表MAC地址绑定类型有动态和静态两种。</p>
+<ul>
+<li><p>动态：有时效限制，会实时更新，不安全</p>
+</li>
+<li><p>静态：长久生效，不会随时间或者通知而变化，安全。</p>
+</li>
+</ul>
+<p>我们来看一下电脑上的ARP表。</p>
+<pre class="line-numbers language-none"><code class="language-none">arp -a<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>大部分都是动态的，动态的MAC地址他有生命周期，一定时间之后就会被替换，另外别人通知我更新的时候，也会被直接替换，也就是说无论是被动获取时发现变化了，还是主动被告知时已经变动了，arp列表都会进行更新。如果是攻击方告诉了靶机，他也会相信，从而导致被攻击。我们解决的方法就是把动态的MAC地址变成静态的。那么该如何绑定呢？</p>
+<h5 id="2-绑定步骤"><a href="#2-绑定步骤" class="headerlink" title="2.绑定步骤"></a>2.绑定步骤</h5><p>1.Win10以管理员身份运行CMD命令提示符  </p>
+<p>2.查询网关的ip和mac地址</p>
+<pre class="line-numbers language-none"><code class="language-none">arp -a |findstr 192.168.70.1
+网关的IP：192.168.70.1
+网关的MAC地址：00-50-56-f3-07-7c<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>3.查询本机的网卡</p>
+<pre class="line-numbers language-none"><code class="language-none">ipconfig<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="/.%5Cassets%5C%E6%9F%A5%E7%9C%8B%E6%9C%AC%E6%9C%BA%E7%BD%91%E5%8D%A1.png" alt="查看本机网卡"></p>
+<p>4.查询本地连接的网卡ID号</p>
+<pre class="line-numbers language-none"><code class="language-none">netsh i i show in
+
+#netsh i i show in  是netsh  interface ipv4 show interfaces 的缩写<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>从图中可以找到，Idx就是网卡的ID，以 Ethernet0也就是我本机的网卡，id=6</p>
+<p><img src="/.%5Cassets%5C%E6%9F%A5%E8%AF%A2%E7%BD%91%E5%8D%A1id.png" alt="查询网卡id"></p>
+<p>5.临时绑定mac地址，重启失效</p>
+<pre class="line-numbers language-none"><code class="language-none">netsh -c i i add neighbors&nbsp; 6 192.168.70.1 e4-3a-6e-35-98-00 store=active
+
+-c Context 指定上下文
+i: interface 更改到 `netsh interface' 上下文。
+i:ipv4
+add: 在项目列表上添加一个配置项目
+neighbors: 添加邻居地址
+store=active：设置为临时绑定
+查询帮助命令：netsh -c /?<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="/.%5Cassets%5C%E4%B8%B4%E6%97%B6%E6%94%B9%E5%8F%98%E6%88%90%E9%9D%99%E6%80%81.png" alt="临时改变成静态"></p>
+<p>6.发起ARP攻击</p>
+<pre class="line-numbers language-none"><code class="language-none">arpspoof -i eth0 -r 192.168.70.1 -t 192.168.70.130<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>7.查询靶机ARP表</p>
+<pre class="line-numbers language-none"><code class="language-none">arp -a<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>8.停止ARP攻击</p>
+<pre class="line-numbers language-none"><code class="language-none">ctrl+c<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>9.重启靶机,查看arp表</p>
+<pre class="line-numbers language-none"><code class="language-none">arp -a<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>10.重新发起ARP攻击</p>
+<pre class="line-numbers language-none"><code class="language-none">arpspoof -i eth0 -r 192.168.70.1 -t 192.168.70.130<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>11.查看靶机arp</p>
+<pre class="line-numbers language-none"><code class="language-none">arp -a<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>12.停止攻击</p>
+<pre class="line-numbers language-none"><code class="language-none">ctrl+c<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="2-永久绑定，重启后不失效"><a href="#2-永久绑定，重启后不失效" class="headerlink" title="2.永久绑定，重启后不失效"></a>2.永久绑定，重启后不失效</h4><p>1.绑定命令</p>
+<pre class="line-numbers language-none"><code class="language-none">netsh -c i i add neighbors&nbsp; 6 192.168.110.1 e4-3a-6e-35-98-00 store=persistent
+
+store=persistent：永久绑定<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<p>2.查看ARP表</p>
+<pre class="line-numbers language-none"><code class="language-none">arp -a<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>3.发起ARP攻击</p>
+<pre class="line-numbers language-none"><code class="language-none">arpspoof -i eth0 -r 192.168.70.1 -t 192.168.70.130<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>4.查看arp缓存表</p>
+<pre class="line-numbers language-none"><code class="language-none">arp -a<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>5.重启电脑，查看ARP表</p>
+<pre class="line-numbers language-none"><code class="language-none">arp -a<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>6.删除静态配置</p>
+<pre class="line-numbers language-none"><code class="language-none">arp -d ip #不推荐使用，下次设置时，出现错误
+netsh -c i i delete ne 6  #推荐使用<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>7.查看靶机arp表</p>
+<pre class="line-numbers language-none"><code class="language-none">arp -a<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>8.停止攻击</p>
+<pre class="line-numbers language-none"><code class="language-none">ctrl+c<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="3-linux防御"><a href="#3-linux防御" class="headerlink" title="3.linux防御"></a>3.linux防御</h2><h4 id="1-查询arp表命令"><a href="#1-查询arp表命令" class="headerlink" title="1.查询arp表命令"></a>1.查询arp表命令</h4><pre class="line-numbers language-none"><code class="language-none">arp -a
+ip n 
+ip neigh
+ 
+192.168.110.1 dev ens33 lladdr e4:3a:6e:35:98:00 STALE #不新鲜的
+192.168.110.1 dev ens33 lladdr e4:3a:6e:35:98:00 REACHABLE #可到达的<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="2-临时添加静态地址，重启后失效"><a href="#2-临时添加静态地址，重启后失效" class="headerlink" title="2.临时添加静态地址，重启后失效"></a>2.临时添加静态地址，重启后失效</h4><pre class="line-numbers language-none"><code class="language-none">arp -s 192.168.110.1 e4:3a:6e:35:98:00<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="3-查询arp表"><a href="#3-查询arp表" class="headerlink" title="3.查询arp表"></a>3.查询arp表</h4><pre class="line-numbers language-none"><code class="language-none">ip n
+192.168.110.1 dev ens33 lladdr e4:3a:6e:35:98:00 PERMANENT #永久的<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h4 id="4-发起ARP攻击"><a href="#4-发起ARP攻击" class="headerlink" title="4.发起ARP攻击"></a>4.发起ARP攻击</h4><pre class="line-numbers language-none"><code class="language-none">ettercap -T -i eth0  -M arp:remote /192.168.110.1// /192.168.110.26// <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="5-查看靶机arp表"><a href="#5-查看靶机arp表" class="headerlink" title="5.查看靶机arp表"></a>5.查看靶机arp表</h4><pre class="line-numbers language-none"><code class="language-none">ip n <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="6-重启靶机"><a href="#6-重启靶机" class="headerlink" title="6.重启靶机"></a>6.重启靶机</h4><pre class="line-numbers language-none"><code class="language-none">reboot<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="7-查看靶机arp表"><a href="#7-查看靶机arp表" class="headerlink" title="7.查看靶机arp表"></a>7.查看靶机arp表</h4><pre class="line-numbers language-none"><code class="language-none">ip n<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="8-将其添加到-rc-local里边-开启自动执行"><a href="#8-将其添加到-rc-local里边-开启自动执行" class="headerlink" title="8.将其添加到 rc.local里边 开启自动执行"></a>8.将其添加到 rc.local里边 开启自动执行</h4><pre class="line-numbers language-none"><code class="language-none">vi  /etc/rc.local
+chmod +x /etc/rc.d/rc.local
+添加：
+arp -s 192.168.110.1 e4:3a:6e:35:98:00
+wq保存<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="9-重启centos7"><a href="#9-重启centos7" class="headerlink" title="9.重启centos7"></a>9.重启centos7</h4><pre class="line-numbers language-none"><code class="language-none">reboot<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="10-查看arp表"><a href="#10-查看arp表" class="headerlink" title="10.查看arp表"></a>10.查看arp表</h4><pre class="line-numbers language-none"><code class="language-none">ip n<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="4-路由-x2F-网关防护设置"><a href="#4-路由-x2F-网关防护设置" class="headerlink" title="4.路由/网关防护设置"></a>4.路由/网关防护设置</h2><h3 id="1-打开路由器配置网站"><a href="#1-打开路由器配置网站" class="headerlink" title="1.打开路由器配置网站"></a>1.打开路由器配置网站</h3><p>​	一般是http://网关ip</p>
+<h3 id="2-点击更多功能"><a href="#2-点击更多功能" class="headerlink" title="2.点击更多功能"></a>2.点击更多功能</h3><p><img src="/.%5Cassets%5C%E8%B7%AF%E7%94%B1%E5%99%A8-%E6%9B%B4%E5%A4%9A%E5%8A%9F%E8%83%BD.png" alt="路由器-更多功能"></p>
+<h3 id="3-选择网络设置–局域网"><a href="#3-选择网络设置–局域网" class="headerlink" title="3.选择网络设置–局域网"></a>3.选择网络设置–局域网</h3><p><img src="/.%5Cassets%5C%E8%B7%AF%E7%94%B1-%E7%BD%91%E7%BB%9C%E8%AE%BE%E7%BD%AE.png" alt="路由-网络设置"></p>
+<h3 id="4-添加静态ip地址绑定列表"><a href="#4-添加静态ip地址绑定列表" class="headerlink" title="4.添加静态ip地址绑定列表"></a>4.添加静态ip地址绑定列表</h3><p><img src="/.%5Cassets%5C%E8%B7%AF%E7%94%B1%E5%99%A8-%E6%B7%BB%E5%8A%A0%E9%9D%99%E6%80%81ip%E5%9C%B0%E5%9D%80%E7%BB%91%E5%AE%9A.png" alt="路由器-添加静态ip地址绑定"></p>
+<h3 id="5-手动添加绑定"><a href="#5-手动添加绑定" class="headerlink" title="5.手动添加绑定"></a>5.手动添加绑定</h3><p><img src="/.%5Cassets%5C%E8%B7%AF%E7%94%B1%E6%89%8B%E5%8A%A8%E9%85%8D%E7%BD%AEmac%E5%9C%B0%E5%9D%80.png" alt="路由手动配置mac地址"></p>
+<h2 id="5-WEB服务防御ARP攻击"><a href="#5-WEB服务防御ARP攻击" class="headerlink" title="5.WEB服务防御ARP攻击"></a>5.WEB服务防御ARP攻击</h2><p>web服务防御明文传输泄露用户信息的手段：使用加密协议:https</p>
+<h3 id="1-什么是HTTP"><a href="#1-什么是HTTP" class="headerlink" title="1.什么是HTTP"></a>1.什么是HTTP</h3><p>超文本传输协议，是一个基于请求与响应，无状态的，应用层的协议，常基于TCP/IP协议传输数据，互联网上应用最为广泛的一种网络协议,所有的WWW文件都必须遵守这个标准。设计HTTP的初衷是为了提供一种发布和接收HTML页面的方法。使用明文传输，容易被劫持。</p>
+<h3 id="2-什么是HTTPS"><a href="#2-什么是HTTPS" class="headerlink" title="2.什么是HTTPS"></a>2.什么是HTTPS</h3><p>《图解HTTP》这本书中曾提过HTTPS是身披SSL外壳的HTTP。HTTPS是一种通过计算机网络进行安全通信的传输协议，经由HTTP进行通信，利用SSL/TLS建立全信道，加密数据包。HTTPS使用的主要目的是提供对网站服务器的身份认证，同时保护交换数据的隐私与完整性。使用加密传输，不容易被拦截，更加安全。</p>
+<p>TLS是传输层加密协议，前身是SSL协议，由网景公司1995年发布，有时候两者不区分。</p>
+<h3 id="3-HTTPS加密通讯工作原理"><a href="#3-HTTPS加密通讯工作原理" class="headerlink" title="3.HTTPS加密通讯工作原理"></a>3.HTTPS加密通讯工作原理</h3><p><img src="/.%5Cassets%5CHTTPS%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86.png" alt="HTTPS工作原理"></p>
+<h2 id="5-课堂小结"><a href="#5-课堂小结" class="headerlink" title="5.课堂小结"></a>5.课堂小结</h2><p>请参照：ARP攻击防御.xmind</p>
 
                 
             </div>
@@ -524,7 +660,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://fantasycat6.github.io/2022/12/24/hello-world/">https://fantasycat6.github.io/2022/12/24/hello-world/</a>
+                    <a href="https://fantasycat6.github.io/2022/12/24/8.arp-gong-ji-fang-yu/">https://fantasycat6.github.io/2022/12/24/8.arp-gong-ji-fang-yu/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -729,9 +865,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2022/12/24/8.arp-gong-ji-fang-yu/">
                     <div class="card-image">
@@ -749,9 +886,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-12-24
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -760,6 +897,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -767,7 +905,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2022/12/24/hello-world/">
@@ -797,7 +935,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
