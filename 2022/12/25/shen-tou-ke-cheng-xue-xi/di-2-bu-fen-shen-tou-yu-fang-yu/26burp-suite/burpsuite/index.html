@@ -1,0 +1,1950 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Hexo">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Hexo</title>
+    <link rel="icon" type="image/png" href="/favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="/libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="/libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/matery.css">
+    <link rel="stylesheet" type="text/css" href="/css/my.css">
+
+    <script src="/libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="/" class="waves-effect waves-light">
+                    
+                    <img src="/medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Hexo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="/friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="/medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Hexo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="/" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="/friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="/libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2022-12-25
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    3.4k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    13 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="Burp-Suite基本介绍"><a href="#Burp-Suite基本介绍" class="headerlink" title="Burp Suite基本介绍"></a>Burp Suite基本介绍</h1><h2 id="Burp历史版本"><a href="#Burp历史版本" class="headerlink" title="Burp历史版本"></a>Burp历史版本</h2><p><a target="_blank" rel="noopener" href="https://portswigger.net/burp/releases">https://portswigger.net/burp/releases</a></p>
+<h2 id="主要功能"><a href="#主要功能" class="headerlink" title="主要功能"></a>主要功能</h2><ul>
+<li>目标：测试网站安全性 </li>
+<li>手段：抓HTTP包、改HTTP包；自动请求、过滤响应 </li>
+<li>场景：SQL注入、文件上传、XSS、CSRF、FUZZ、重放 攻击、密码爆破、爬取数据、漏洞扫描……</li>
+</ul>
+<h2 id="版本区别"><a href="#版本区别" class="headerlink" title="版本区别"></a>版本区别</h2><ul>
+<li>企业版 Enterprise Edition </li>
+<li>社区版 Community Edition </li>
+<li>专业版 Professional （$399/year)</li>
+</ul>
+<h2 id="运行平台"><a href="#运行平台" class="headerlink" title="运行平台"></a>运行平台</h2><ul>
+<li>Jar（推荐） </li>
+<li>Linux </li>
+<li>MacOS（ARM、Intel） </li>
+<li>Window</li>
+</ul>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><h3 id="本地文档"><a href="#本地文档" class="headerlink" title="本地文档"></a>本地文档</h3><p>问号按钮</p>
+<h3 id="在线文档"><a href="#在线文档" class="headerlink" title="在线文档"></a>在线文档</h3><p><a target="_blank" rel="noopener" href="https://portswigger.net/support">https://portswigger.net/support</a> </p>
+<p><a target="_blank" rel="noopener" href="https://portswigger.net/burp/documentation/desktop">https://portswigger.net/burp/documentation/desktop</a></p>
+<h3 id="视频学习和练习平台"><a href="#视频学习和练习平台" class="headerlink" title="视频学习和练习平台"></a>视频学习和练习平台</h3><p><a target="_blank" rel="noopener" href="https://portswigger.net/web-security">https://portswigger.net/web-security</a></p>
+<h3 id="问答社区"><a href="#问答社区" class="headerlink" title="问答社区"></a>问答社区</h3><p><a target="_blank" rel="noopener" href="https://forum.portswigger.net/">https://forum.portswigger.net/</a></p>
+<h1 id="Burp-Suite配置"><a href="#Burp-Suite配置" class="headerlink" title="Burp Suite配置"></a>Burp Suite配置</h1><h2 id="Burp-jar包"><a href="#Burp-jar包" class="headerlink" title="Burp jar包"></a>Burp jar包</h2><h3 id="Burp-jar包-1"><a href="#Burp-jar包-1" class="headerlink" title="Burp jar包"></a>Burp jar包</h3><p>推荐2021+，jar包版本 </p>
+<p><a target="_blank" rel="noopener" href="https://portswigger.net/burp/releases">https://portswigger.net/burp/releases</a></p>
+<h3 id="JRE环境"><a href="#JRE环境" class="headerlink" title="JRE环境"></a>JRE环境</h3><ol>
+<li>JDK类型：推荐解压版（zip） </li>
+<li>JDK版本：推荐JDK11 （配合Burp 2021）</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://repo.huaweicloud.com/java/jdk/">https://repo.huaweicloud.com/java/jdk/</a></p>
+<h4 id="JDK11环境变量配置"><a href="#JDK11环境变量配置" class="headerlink" title="JDK11环境变量配置"></a>JDK11环境变量配置</h4><table>
+<thead>
+<tr>
+<th>变量</th>
+<th>值</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>JAVA_HOME</td>
+<td>JDK解压的根路径，比如 D:\jdk-11.0.11</td>
+</tr>
+<tr>
+<td>PATH</td>
+<td>%JAVA_HOME%\bin</td>
+</tr>
+</tbody></table>
+<h3 id="激活和汉化包"><a href="#激活和汉化包" class="headerlink" title="激活和汉化包"></a>激活和汉化包</h3><h4 id="激活软件下载地址："><a href="#激活软件下载地址：" class="headerlink" title="激活软件下载地址："></a>激活软件下载地址：</h4><p><a target="_blank" rel="noopener" href="https://github.com/h3110w0r1d-y/BurpLoaderKeygen/releases">https://github.com/h3110w0r1d-y/BurpLoaderKeygen/releases</a> </p>
+<h4 id="汉化包地址："><a href="#汉化包地址：" class="headerlink" title="汉化包地址："></a>汉化包地址：</h4><p><a target="_blank" rel="noopener" href="https://github.com/h3110w0r1d-y/BurpLoaderKeygen/releases/download/2.0/BurpLoaderKeygenCn.jar">https://github.com/h3110w0r1d-y/BurpLoaderKeygen/releases/download/2.0/BurpLoaderKeygenCn.jar</a></p>
+<h2 id="Burp-Suite启动激活"><a href="#Burp-Suite启动激活" class="headerlink" title="Burp Suite启动激活"></a>Burp Suite启动激活</h2><h3 id="命令行方式启动"><a href="#命令行方式启动" class="headerlink" title="命令行方式启动"></a>命令行方式启动</h3><p><strong>burp_start.bat</strong>，内容： </p>
+<pre class="line-numbers language-none"><code class="language-none">@echo off 
+cmd /k "java -jar BurpLoaderKeygen.jar"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="VBS启动"><a href="#VBS启动" class="headerlink" title="VBS启动"></a>VBS启动</h3><pre class="line-numbers language-none"><code class="language-none">set ws=WScript.CreateObject("WScript.Shell") 
+ws.Run "burp_start.bat",0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h2 id="Burp-Suite配置-1"><a href="#Burp-Suite配置-1" class="headerlink" title="Burp Suite配置"></a>Burp Suite配置</h2><h3 id="汉化说明"><a href="#汉化说明" class="headerlink" title="汉化说明"></a>汉化说明</h3><p>如果执行了上面的英文破解程序，需要先<strong>反向激活</strong>，让激活失效，再<strong>删除</strong>英文破解程序产生的<strong>config.cfg</strong>文件。</p>
+<p>接着使用中文的破解程序激活。</p>
+<p><strong>burp_cn_start.bat</strong> </p>
+<pre class="line-numbers language-none"><code class="language-none">@echo off 
+cmd /k "java -jar BurpLoaderKeygenCn.jar"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><strong>VBS启动</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">set ws=WScript.CreateObject("WScript.Shell") 
+ws.Run "burp_cn_start.bat",0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h1 id="Burp-Suite模块"><a href="#Burp-Suite模块" class="headerlink" title="Burp Suite模块"></a>Burp Suite模块</h1><h2 id="Burp-Suite界面布局"><a href="#Burp-Suite界面布局" class="headerlink" title="Burp Suite界面布局"></a>Burp Suite界面布局</h2><h3 id="参考手册目录全文"><a href="#参考手册目录全文" class="headerlink" title="参考手册目录全文"></a>参考手册目录全文</h3><p><a target="_blank" rel="noopener" href="https://portswigger.net/burp/documentation/contents">https://portswigger.net/burp/documentation/contents</a></p>
+<h3 id="界面总览"><a href="#界面总览" class="headerlink" title="界面总览"></a>界面总览</h3><p><img src="/assets/image-20221219180736217.png" alt="image-20221219180736217"></p>
+<h3 id="旧版对比"><a href="#旧版对比" class="headerlink" title="旧版对比"></a>旧版对比</h3><p><img src="/assets/image-20221219180831190.png" alt="image-20221219180831190"></p>
+<h3 id="菜单栏"><a href="#菜单栏" class="headerlink" title="菜单栏"></a>菜单栏</h3><h4 id="Burp"><a href="#Burp" class="headerlink" title="Burp"></a>Burp</h4><p><img src="/assets/image-20221219181021718.png" alt="image-20221219181021718"></p>
+<ol>
+<li>搜索内容 </li>
+<li>配置库 </li>
+<li>用户选项 </li>
+<li>Infiltrator </li>
+<li>Clickbandit </li>
+<li>Collaborator clien</li>
+</ol>
+<h4 id="Project"><a href="#Project" class="headerlink" title="Project"></a>Project</h4><p><img src="/assets/image-20221219181129597.png" alt="image-20221219181129597"></p>
+<ol>
+<li>工程配置 </li>
+<li>重命名 </li>
+<li>保存备份 </li>
+<li>导入配置 </li>
+<li>导入遗留状态文件</li>
+</ol>
+<h4 id="Intruder"><a href="#Intruder" class="headerlink" title="Intruder"></a>Intruder</h4><p><img src="/assets/image-20221219181216302.png" alt="image-20221219181216302"></p>
+<ol>
+<li>发起攻击 </li>
+<li>打开工作空间 </li>
+<li>扫描预定义的插入点</li>
+<li>被动扫描 主动扫描</li>
+<li>发送到Repeater</li>
+<li>保存、加载、复制配置</li>
+<li>打开新标签时的操作</li>
+<li>自动标记payload位置</li>
+<li>配置预定义字典</li>
+<li>关闭攻击结果时的偏好</li>
+</ol>
+<h4 id="Repeater"><a href="#Repeater" class="headerlink" title="Repeater"></a>Repeater</h4><p><img src="/assets/image-20221219181443476.png" alt="image-20221219181443476"></p>
+<ol>
+<li>更新 Content-Length </li>
+<li>解压压缩的数据 </li>
+<li>跟随重定向跳转</li>
+<li>重定向的cookie处理</li>
+<li>跨域跳转</li>
+<li>HTTP1 行结尾</li>
+<li>HTTP2 连接重用</li>
+<li>剥离 HTTP2 连接头</li>
+<li>允许 HTTP2 ALPN 覆盖</li>
+</ol>
+<p><a target="_blank" rel="noopener" href="https://portswigger.net/burp/documentation/desktop/tools/repeater/options">https://portswigger.net/burp/documentation/desktop/tools/repeater/options</a></p>
+<h4 id="Window"><a href="#Window" class="headerlink" title="Window"></a>Window</h4><p><img src="/assets/image-20221219181619180.png" alt="image-20221219181619180"></p>
+<p>剥离窗口</p>
+<h4 id="Help"><a href="#Help" class="headerlink" title="Help"></a>Help</h4><p><img src="/assets/image-20221219181646974.png" alt="image-20221219181646974"></p>
+<ol>
+<li>离线文档</li>
+<li>上手用BP做渗透测试</li>
+<li>支持中心（在线）</li>
+<li>更新记录 </li>
+<li>上报bug 运行诊断 </li>
+<li>内置浏览器健康检查</li>
+<li>许可证 </li>
+<li>检查更新</li>
+<li>下载其他安装器 </li>
+<li>删除BP</li>
+</ol>
+<h2 id="模块总体概括"><a href="#模块总体概括" class="headerlink" title="模块总体概括"></a>模块总体概括</h2><h3 id="官方介绍"><a href="#官方介绍" class="headerlink" title="官方介绍"></a>官方介绍</h3><p><a target="_blank" rel="noopener" href="https://portswigger.net/burp/documentation/desktop/tools">https://portswigger.net/burp/documentation/desktop/tools</a></p>
+<h3 id="Dashbord仪表盘"><a href="#Dashbord仪表盘" class="headerlink" title="Dashbord仪表盘"></a>Dashbord仪表盘</h3><ul>
+<li>扫描 </li>
+<li>任务 Tasks </li>
+<li>事件日志 Event Log </li>
+<li>漏洞问题 Issue activity</li>
+</ul>
+<p><a target="_blank" rel="noopener" href="https://portswigger.net/burp/documentation/desktop/dashboard">https://portswigger.net/burp/documentation/desktop/dashboard</a></p>
+<h3 id="Target-目标模块"><a href="#Target-目标模块" class="headerlink" title="Target 目标模块"></a>Target 目标模块</h3><ul>
+<li>生成站点地图（sitemap） </li>
+<li>设置扫描域（target scope） </li>
+<li>生成安全分析</li>
+</ul>
+<h3 id="Proxy-代理模块"><a href="#Proxy-代理模块" class="headerlink" title="Proxy 代理模块"></a>Proxy 代理模块</h3><p>拦截浏览器的HTTP数据包（包括请求和响应）</p>
+<p><img src="/assets/image-20221219182424329.png" alt="image-20221219182424329"></p>
+<h3 id="Intruder渗透模块"><a href="#Intruder渗透模块" class="headerlink" title="Intruder渗透模块"></a>Intruder渗透模块</h3><p>对拦截到的请求（地址），设置攻击载荷 （payload），利用<strong>字典</strong>进行渗透测试 </p>
+<p>比如：目录扫描、密码暴力破解、压力测试、FUZZ等等</p>
+<h3 id="Repeater重放模块"><a href="#Repeater重放模块" class="headerlink" title="Repeater重放模块"></a>Repeater重放模块</h3><ol>
+<li>分析每一步具体的请求和响应内容 </li>
+<li>修改请求和响应内容 </li>
+<li>重发请求内容</li>
+</ol>
+<h3 id="Sequencer-序列器模块"><a href="#Sequencer-序列器模块" class="headerlink" title="Sequencer 序列器模块"></a>Sequencer 序列器模块</h3><p>用来评估Token、Session等关键字段 </p>
+<p>是否可以伪造（是否固定、是否可预测）</p>
+<p><img src="/assets/image-20221219182713921.png" alt="image-20221219182713921"></p>
+<h3 id="Decoder-解码器模块"><a href="#Decoder-解码器模块" class="headerlink" title="Decoder 解码器模块"></a>Decoder 解码器模块</h3><p>对请求数据进行编码、解码</p>
+<h3 id="Comparer比较器模块"><a href="#Comparer比较器模块" class="headerlink" title="Comparer比较器模块"></a>Comparer比较器模块</h3><p>对两次请求的结果进行对比</p>
+<h3 id="Extender-扩展模块"><a href="#Extender-扩展模块" class="headerlink" title="Extender 扩展模块"></a>Extender 扩展模块</h3><p>对插件进行管理</p>
+<h1 id="Burp-Proxy模块"><a href="#Burp-Proxy模块" class="headerlink" title="Burp Proxy模块"></a>Burp Proxy模块</h1><h2 id="网络代理"><a href="#网络代理" class="headerlink" title="网络代理"></a>网络代理</h2><p><img src="/assets/image-20221219183410409.png" alt="image-20221219183410409"></p>
+<h2 id="网络代理的作用"><a href="#网络代理的作用" class="headerlink" title="网络代理的作用"></a>网络代理的作用</h2><ul>
+<li>突破IP限制 </li>
+<li>隐藏IP </li>
+<li>加速访问</li>
+<li>……</li>
+</ul>
+<h2 id="Burp代理的作用"><a href="#Burp代理的作用" class="headerlink" title="Burp代理的作用"></a>Burp代理的作用</h2><p>拦截HTTP(S)请求，并对请求和响应进行处理和利用</p>
+<h2 id="与Fiddler、WireShark的区别"><a href="#与Fiddler、WireShark的区别" class="headerlink" title="与Fiddler、WireShark的区别"></a>与Fiddler、WireShark的区别</h2><table>
+<thead>
+<tr>
+<th>对比项</th>
+<th>Burp</th>
+<th>Fiddler</th>
+<th>WireShark</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>平台</td>
+<td>多平台</td>
+<td>Windows</td>
+<td>多平台</td>
+</tr>
+<tr>
+<td>定位</td>
+<td>渗透测试套件</td>
+<td>Web调试工具</td>
+<td>网络封包分析工具</td>
+</tr>
+<tr>
+<td>功能</td>
+<td>渗透测试</td>
+<td>调试HTTP请求</td>
+<td>分析数据</td>
+</tr>
+</tbody></table>
+<h2 id="浏览器代理设置"><a href="#浏览器代理设置" class="headerlink" title="浏览器代理设置"></a>浏览器代理设置</h2><p><img src="/assets/image-20221219183719656.png" alt="image-20221219183719656"></p>
+<ul>
+<li>Chrome扩展插件Crx：<a target="_blank" rel="noopener" href="https://crxdl.com/">https://crxdl.com</a></li>
+<li>下载Proxy SwitchySharp</li>
+</ul>
+<h2 id="Burp-Suite代理设置"><a href="#Burp-Suite代理设置" class="headerlink" title="Burp Suite代理设置"></a>Burp Suite代理设置</h2><h3 id="Intercept"><a href="#Intercept" class="headerlink" title="Intercept"></a>Intercept</h3><table>
+<thead>
+<tr>
+<th>操作</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Forward</td>
+<td>放行本次拦截的包，发送到服务器</td>
+</tr>
+<tr>
+<td>Drop</td>
+<td>丢弃本次拦截的包</td>
+</tr>
+<tr>
+<td>on/off</td>
+<td>拦截开关</td>
+</tr>
+<tr>
+<td>Action</td>
+<td>对数据的操作</td>
+</tr>
+<tr>
+<td>Open in Browser</td>
+<td>打开内置浏览器</td>
+</tr>
+</tbody></table>
+<h3 id="Options选项"><a href="#Options选项" class="headerlink" title="Options选项"></a>Options选项</h3><table>
+<thead>
+<tr>
+<th>操作</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Proxy Listeners</td>
+<td>监听器</td>
+</tr>
+<tr>
+<td>Intercept Client Requests</td>
+<td>请求拦截规则</td>
+</tr>
+<tr>
+<td>Intercept Server Response</td>
+<td>响应拦截规则</td>
+</tr>
+<tr>
+<td>Response Modification</td>
+<td>响应结果修改</td>
+</tr>
+<tr>
+<td>Match and Replace</td>
+<td>匹配和替换</td>
+</tr>
+<tr>
+<td>TLS Pass Through</td>
+<td>TLS穿透</td>
+</tr>
+<tr>
+<td>Miscellaneous</td>
+<td>杂项</td>
+</tr>
+</tbody></table>
+<h2 id="Burp-Suite拦截HTTPS"><a href="#Burp-Suite拦截HTTPS" class="headerlink" title="Burp Suite拦截HTTPS"></a>Burp Suite拦截HTTPS</h2><h3 id="网站的证书的作用"><a href="#网站的证书的作用" class="headerlink" title="网站的证书的作用"></a>网站的证书的作用</h3><ol>
+<li>操作系统安装根证书，里面有CA的公钥 </li>
+<li>CA颁发的证书，包含机构的公钥，并且用CA的公钥对机构公钥摘要加签 </li>
+<li>浏览器利用CA的公钥对摘要进行验签，确定机构公钥合法 </li>
+<li>浏览器用机构的公钥与服务器协商会话密钥 </li>
+<li>浏览器与服务器用会话密钥通信</li>
+</ol>
+<p><img src="/assets/image-20221219184300307.png" alt="image-20221219184300307"></p>
+<p><img src="/assets/image-20221219184308582.png" alt="image-20221219184308582"></p>
+<h3 id="导出证书"><a href="#导出证书" class="headerlink" title="导出证书"></a>导出证书</h3><p><img src="/assets/image-20221219184327303.png" alt="image-20221219184327303"></p>
+<h1 id="Burp-Target模块"><a href="#Burp-Target模块" class="headerlink" title="Burp Target模块"></a>Burp Target模块</h1><h2 id="Burp渗透测试流程"><a href="#Burp渗透测试流程" class="headerlink" title="Burp渗透测试流程"></a>Burp渗透测试流程</h2><p><img src="/assets/image-20221219184447840.png" alt="image-20221219184447840"></p>
+<h2 id="Target模块的作用"><a href="#Target模块的作用" class="headerlink" title="Target模块的作用"></a>Target模块的作用</h2><h3 id="与HTTP-History的区别"><a href="#与HTTP-History的区别" class="headerlink" title="与HTTP History的区别"></a>与HTTP History的区别</h3><ol>
+<li>HTTP History按<strong>时间</strong>顺序记录 </li>
+<li>Target按<strong>主机</strong>或者<strong>域名</strong>分类记录</li>
+</ol>
+<p><img src="/assets/image-20221219184545443.png" alt="image-20221219184545443"></p>
+<h3 id="Target模块的作用-1"><a href="#Target模块的作用-1" class="headerlink" title="Target模块的作用"></a>Target模块的作用</h3><ol>
+<li>把握网站的整体情况 </li>
+<li>对一次工作的域进行分析 </li>
+<li>分析网站存在的攻击面</li>
+</ol>
+<h3 id="攻击面"><a href="#攻击面" class="headerlink" title="攻击面"></a>攻击面</h3><p>对一个软件系统可以采取的攻击方法集合，一个软件 的攻击面越大安全风险就越大。 </p>
+<p>包括：字段、协议、接口、服务、硬件的攻击点。</p>
+<h2 id="Target设置作用域"><a href="#Target设置作用域" class="headerlink" title="Target设置作用域"></a>Target设置作用域</h2><h3 id="同一个域"><a href="#同一个域" class="headerlink" title="同一个域"></a>同一个域</h3><table>
+<thead>
+<tr>
+<th>域1</th>
+<th>域2</th>
+<th>同域</th>
+<th>原因</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a target="_blank" rel="noopener" href="http://www.wuya.com/">http://www.wuya.com/</a></td>
+<td><a target="_blank" rel="noopener" href="http://www.wuya.com/index.html">http://www.wuya.com/index.html</a>  <a target="_blank" rel="noopener" href="http://www.wuya.com/admin?a=1">http://www.wuya.com/admin?a=1</a></td>
+<td>YES</td>
+<td>-</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://www.wuya.com/">http://www.wuya.com/</a></td>
+<td><a target="_blank" rel="noopener" href="https://www.wuya.com/">https://www.wuya.com/</a></td>
+<td>NO</td>
+<td>协议</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://www.wuya.com/">http://www.wuya.com/</a></td>
+<td><a target="_blank" rel="noopener" href="http://www.wuya.cn/">http://www.wuya.cn/</a></td>
+<td>NO</td>
+<td>主域名</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://www.wuya.com/">http://www.wuya.com/</a></td>
+<td><a target="_blank" rel="noopener" href="http://blog.wuya.com/">http://blog.wuya.com/</a></td>
+<td>NO</td>
+<td>子域名</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="http://www.wuya.com/">http://www.wuya.com:80/</a></td>
+<td><a target="_blank" rel="noopener" href="http://www.wuya.com:7298/">http://www.wuya.com:7298/</a></td>
+<td>NO</td>
+<td>端口</td>
+</tr>
+</tbody></table>
+<ul>
+<li>协议、域名、端口必须相同 </li>
+<li>目录、文件、参数可以不同</li>
+</ul>
+<h3 id="限定域的范围"><a href="#限定域的范围" class="headerlink" title="限定域的范围"></a>限定域的范围</h3><p>例如： </p>
+<p>只拦截：<a target="_blank" rel="noopener" href="https://www.wuya.com/">https://www.wuya.com/</a> </p>
+<p>不拦截：<a target="_blank" rel="noopener" href="https://www.wuya.com/blog">https://www.wuya.com/blog</a></p>
+<h3 id="使用场景"><a href="#使用场景" class="headerlink" title="使用场景"></a>使用场景</h3><ol>
+<li>限定Sitemap和HTTP history记录哪些域的内容 </li>
+<li>限定Spider抓取哪些域的内容 </li>
+<li>限定Scanner扫描哪些域的安全漏洞</li>
+</ol>
+<h2 id="站点地图Sitemap"><a href="#站点地图Sitemap" class="headerlink" title="站点地图Sitemap"></a>站点地图Sitemap</h2><h3 id="站点地图记录类型"><a href="#站点地图记录类型" class="headerlink" title="站点地图记录类型"></a>站点地图记录类型</h3><ol>
+<li>自动（爬行） </li>
+<li>手动（浏览器访问）</li>
+</ol>
+<h2 id="对结果进行操作"><a href="#对结果进行操作" class="headerlink" title="对结果进行操作"></a>对结果进行操作</h2><h3 id="右键菜单"><a href="#右键菜单" class="headerlink" title="右键菜单"></a>右键菜单</h3><p><img src="/assets/image-20221219191216277.png" alt="image-20221219191216277"></p>
+<h3 id="Referer字段"><a href="#Referer字段" class="headerlink" title="Referer字段"></a>Referer字段</h3><p>作用：告诉服务器当前请求是从哪个页面链接过来的</p>
+<p> 应用场景： </p>
+<ol>
+<li>来源统计 </li>
+<li>防盗链</li>
+</ol>
+<h1 id="Burp-扫描功能"><a href="#Burp-扫描功能" class="headerlink" title="Burp 扫描功能"></a>Burp 扫描功能</h1><h2 id="参考资料-1"><a href="#参考资料-1" class="headerlink" title="参考资料"></a>参考资料</h2><p><a target="_blank" rel="noopener" href="https://portswigger.net/burp/documentation/scanner">https://portswigger.net/burp/documentation/scanner</a> </p>
+<p><a target="_blank" rel="noopener" href="https://portswigger.net/burp/documentation/desktop/scanning">https://portswigger.net/burp/documentation/desktop/scanning</a></p>
+<p> 模块总体介绍： </p>
+<p><a target="_blank" rel="noopener" href="https://portswigger.net/burp/vulnerability-scanner">https://portswigger.net/burp/vulnerability-scanner</a> </p>
+<p>扫描功能的使用： </p>
+<p><a target="_blank" rel="noopener" href="https://portswigger.net/burp/documentation/desktop/getting-started/running-your-first-scan">https://portswigger.net/burp/documentation/desktop/getting-started/running-your-first-scan</a> </p>
+<p>收录的漏洞 </p>
+<p><a target="_blank" rel="noopener" href="https://portswigger.net/kb/issues">https://portswigger.net/kb/issues</a></p>
+<h2 id="漏洞扫描整体介绍"><a href="#漏洞扫描整体介绍" class="headerlink" title="漏洞扫描整体介绍"></a>漏洞扫描整体介绍</h2><h3 id="漏洞扫描与工具"><a href="#漏洞扫描与工具" class="headerlink" title="漏洞扫描与工具"></a>漏洞扫描与工具</h3><p>AWVS、Appscan、Nessus、Openvas、Goby、 Xray、ZAP……</p>
+<h3 id="新版BP"><a href="#新版BP" class="headerlink" title="新版BP"></a>新版BP</h3><p><img src="/assets/image-20221219191758077.png" alt="image-20221219191758077"></p>
+<p>爬行 Crwal </p>
+<p>审计 Audit</p>
+<h3 id="核心内容"><a href="#核心内容" class="headerlink" title="核心内容"></a>核心内容</h3><table>
+<thead>
+<tr>
+<th>内容</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Scan（<strong>主动</strong>扫描）</td>
+<td>给定地址，爬取内容，检测漏洞</td>
+</tr>
+<tr>
+<td>Live task（<strong>被动</strong>扫描）</td>
+<td>对经过Proxy、Repeater、Intruder的请 求进行漏洞检测</td>
+</tr>
+<tr>
+<td>live passive <strong>crawl</strong> from proxy(all traffic)</td>
+<td>来自Proxy的被动流量抓取</td>
+</tr>
+<tr>
+<td>live <strong>audit</strong> from proxy(all traffic)</td>
+<td>流量的实时<strong>审计</strong></td>
+</tr>
+</tbody></table>
+<h3 id="扫描类型"><a href="#扫描类型" class="headerlink" title="扫描类型"></a>扫描类型</h3><ul>
+<li>Actively Scan：主动扫描 = Crawl and audit </li>
+<li>Passively Scan：被动扫描 = Live audit</li>
+</ul>
+<h3 id="主动扫描"><a href="#主动扫描" class="headerlink" title="主动扫描"></a>主动扫描</h3><ul>
+<li><p>方式：爬取所有链接，检测漏洞 </p>
+</li>
+<li><p>特点：发送大量请求 </p>
+</li>
+<li><p>使用场合：开发、测试环境 </p>
+</li>
+<li><p>针对漏洞： </p>
+<p>客户端的漏洞，如XSS 、HTTP头注入、操作重定向。</p>
+<p>服务端的漏洞，如SQL注入、命令行注入、文件遍历。</p>
+</li>
+</ul>
+<h3 id="被动扫描"><a href="#被动扫描" class="headerlink" title="被动扫描"></a>被动扫描</h3><ol>
+<li><p>方式：只检测经过BP代理服务器的地址，不爬取</p>
+</li>
+<li><p>特点：发送有限请求</p>
+</li>
+<li><p>使用场合：生产环境</p>
+</li>
+<li><p>针对漏洞：</p>
+</li>
+</ol>
+<ul>
+<li><p>提交的密码为未加密的明文。</p>
+</li>
+<li><p>不安全的cookie的属性，例如缺少HttpOnly和安全标志。</p>
+</li>
+<li><p>cookie的范围缺失。 </p>
+</li>
+<li><p>跨域脚本包含和站点引用泄露。 </p>
+</li>
+<li><p>表单值自动填充，尤其是密码。 </p>
+</li>
+<li><p>SSL保护的内容缓存。 </p>
+</li>
+<li><p>目录列表。 </p>
+</li>
+<li><p>提交密码后应答延迟。 </p>
+</li>
+<li><p>session令牌的不安全传输。 </p>
+</li>
+<li><p>敏感信息泄露，例如内部IP地址、电子邮件地址、堆枝跟踪等信息泄露。 </p>
+</li>
+<li><p>不安全的ViewState 的配置。 </p>
+</li>
+<li><p>错误或不规范的Content-Type指令。</p>
+</li>
+</ul>
+<h2 id="使用BP漏扫功能"><a href="#使用BP漏扫功能" class="headerlink" title="使用BP漏扫功能"></a>使用BP漏扫功能</h2><h3 id="主动扫描的类型"><a href="#主动扫描的类型" class="headerlink" title="主动扫描的类型"></a>主动扫描的类型</h3><p><img src="/assets/image-20221220083555554.png" alt="image-20221220083555554"></p>
+<p>Crawl 爬行（建立站点地图） </p>
+<p>Audit 审计（扫描漏洞）</p>
+<p>Scan Configuration：爬行和审计的设置</p>
+<p> Application login：账号密码</p>
+<p> Resouce pool：线程池设置</p>
+<h3 id="爬行配置"><a href="#爬行配置" class="headerlink" title="爬行配置"></a>爬行配置</h3><table>
+<thead>
+<tr>
+<th>内容</th>
+<th>翻译</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Crwal Optimization</td>
+<td>爬行的优化</td>
+<td>最大链接深度；更快还是更完整</td>
+</tr>
+<tr>
+<td>Crwal Limits</td>
+<td>爬行最大限制</td>
+<td>最大时间；最多链接；最大请求数</td>
+</tr>
+<tr>
+<td>Login Functions</td>
+<td>登录注册</td>
+<td>登录操作：自动注册；用无效的用户名主动触发登录失败</td>
+</tr>
+<tr>
+<td>Handling Application</td>
+<td>错误处理</td>
+<td>爬行过程中的错误处理，比如超 时</td>
+</tr>
+<tr>
+<td>Miscellaneous [ˌmɪsəˈleɪniəs]</td>
+<td>杂项</td>
+<td>杂项</td>
+</tr>
+</tbody></table>
+<h3 id="审计配置"><a href="#审计配置" class="headerlink" title="审计配置"></a>审计配置</h3><table>
+<thead>
+<tr>
+<th>内容</th>
+<th>翻译</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Audit Optimization</td>
+<td>审计优化</td>
+<td>扫描的速度和精确度</td>
+</tr>
+<tr>
+<td>Issues Reported</td>
+<td>问题报告</td>
+<td>报告哪些漏洞：根据扫描类型或者漏洞类型 来过滤，默认全选</td>
+</tr>
+<tr>
+<td>Handling Application Errors During Audit</td>
+<td>审计过程出错 的处理</td>
+<td>比如连接失败和传输超时默认：如果一个插 入点连续失败两次，就跳过，不再发送请求 （接口挂了） 如果连续两个插入点失败，跳过其他的插入 点（网站挂了）</td>
+</tr>
+<tr>
+<td>Insertion Point Types</td>
+<td>插入点的类型</td>
+<td>URL参数值、Body里面的参数值、Cookie值、 参数名字、HTTP请求头、Body完整内容、 URL文件名、URL目录</td>
+</tr>
+<tr>
+<td>Modifying Parameter Locations</td>
+<td>插入点位置</td>
+<td>替换，交叉检测</td>
+</tr>
+</tbody></table>
+<h3 id="审计配置-1"><a href="#审计配置-1" class="headerlink" title="审计配置"></a>审计配置</h3><table>
+<thead>
+<tr>
+<th>内容</th>
+<th>翻译</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Ignored insertion Point</td>
+<td>忽略的插入点</td>
+<td></td>
+</tr>
+<tr>
+<td>Frequentcly Occurring Insertion Points</td>
+<td>插入点相同时</td>
+<td>当大量的插入点结果没有区别的 时候，更加高效地扫描。</td>
+</tr>
+<tr>
+<td>Misc Insertion Point Options</td>
+<td>杂项</td>
+<td>一个插入点的最大请求数量</td>
+</tr>
+<tr>
+<td>Java Script Analysis</td>
+<td>JavaScript审计</td>
+<td></td>
+</tr>
+</tbody></table>
+<h3 id="主动扫描的类型-1"><a href="#主动扫描的类型-1" class="headerlink" title="主动扫描的类型"></a>主动扫描的类型</h3><p>Scan：输入URL或者URL右键 </p>
+<p>Live Task：从其他模块获取到流量 </p>
+<p>Live Task： </p>
+<p>Audit 不会爬行 </p>
+<p>passive crawl 会爬行</p>
+<h2 id="生成扫描报告"><a href="#生成扫描报告" class="headerlink" title="生成扫描报告"></a>生成扫描报告</h2><h3 id="扫描报告"><a href="#扫描报告" class="headerlink" title="扫描报告"></a>扫描报告</h3><p><img src="/assets/image-20221220084534787.png" alt="image-20221220084534787"></p>
+<p>右键导出</p>
+<p><a target="_blank" rel="noopener" href="https://portswigger.net/burp/samplereport/burpscannersamplereport">https://portswigger.net/burp/samplereport/burpscannersamplereport</a></p>
+<h1 id="Burp-Repeater"><a href="#Burp-Repeater" class="headerlink" title="Burp Repeater"></a>Burp Repeater</h1><h2 id="参考资料-2"><a href="#参考资料-2" class="headerlink" title="参考资料"></a>参考资料</h2><p><a target="_blank" rel="noopener" href="https://portswigger.net/burp/documentation/desktop/tools/repeater">https://portswigger.net/burp/documentation/desktop/tools/repeater</a></p>
+<h2 id="Repeater模块作用"><a href="#Repeater模块作用" class="headerlink" title="Repeater模块作用"></a>Repeater模块作用</h2><h3 id="用途"><a href="#用途" class="headerlink" title="用途"></a>用途</h3><ol>
+<li>发起HTTP请求，分析响应 </li>
+<li>重放请求</li>
+</ol>
+<h2 id="Repeater使用方法"><a href="#Repeater使用方法" class="headerlink" title="Repeater使用方法"></a>Repeater使用方法</h2><h3 id="内容来源"><a href="#内容来源" class="headerlink" title="内容来源"></a>内容来源</h3><ol>
+<li>从其他模块发送（Ctrl +R ） </li>
+<li>手动填入</li>
+</ol>
+<h1 id="Burp-Intrude"><a href="#Burp-Intrude" class="headerlink" title="Burp Intrude"></a>Burp Intrude</h1><h2 id="参考资料-3"><a href="#参考资料-3" class="headerlink" title="参考资料"></a>参考资料</h2><p><a target="_blank" rel="noopener" href="https://portswigger.net/burp/documentation/desktop/tools/intruder">https://portswigger.net/burp/documentation/desktop/tools/intruder</a></p>
+<h2 id="Intruder模块作用与原理"><a href="#Intruder模块作用与原理" class="headerlink" title="Intruder模块作用与原理"></a>Intruder模块作用与原理</h2><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p><a target="_blank" rel="noopener" href="http://xxx.wuya.com/bbs/index.php?name=wuyanzu&amp;motto=go">http://xxx.wuya.com/bbs/index.php?name=wuyanzu&amp;motto=go</a> </p>
+<p>对请求参数进行修改，分析响应内容，获得特征数据 </p>
+<p>本质： </p>
+<ol>
+<li>自动化发起HTTP请求 </li>
+<li>基于现成字典或者生成字典</li>
+</ol>
+<h3 id="用途-1"><a href="#用途-1" class="headerlink" title="用途"></a>用途</h3><ol>
+<li>猜测用户名、密码等 </li>
+<li>寻找参数、目录等 </li>
+<li>枚举商品ID、验证码等</li>
+<li>模糊测试（FUZZ）</li>
+<li>…….</li>
+</ol>
+<p>可替代工具： </p>
+<p>wfuzz（全部功能）、dirb（目录扫描）、hydra（暴 破）……</p>
+<h2 id="Intruder实现暴力破解"><a href="#Intruder实现暴力破解" class="headerlink" title="Intruder实现暴力破解"></a>Intruder实现暴力破解</h2><h3 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h3><ol>
+<li>从其他模块发送或者手动填写 </li>
+<li>选择攻击模式 Attack type </li>
+<li>选择攻击字段 Positions </li>
+<li>设置payload </li>
+<li>其他设置（线程池等） </li>
+<li>发起攻击 </li>
+<li>查看结果</li>
+</ol>
+<h3 id="攻击模式"><a href="#攻击模式" class="headerlink" title="攻击模式"></a>攻击模式</h3><ul>
+<li>Sniper 狙击手 </li>
+<li>Battering ram 攻城锤 </li>
+<li>Pitchfork 草叉 </li>
+<li>Cluster bomb 榴霰[xiàn]弹</li>
+</ul>
+<h3 id="payload-type"><a href="#payload-type" class="headerlink" title="payload type"></a>payload type</h3><table>
+<thead>
+<tr>
+<th>类别</th>
+<th>名称</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Simple list</td>
+<td>简单字典</td>
+<td>添加、粘贴或者从文件读取字典，或者使用预定义的字典</td>
+</tr>
+<tr>
+<td>Runtime file</td>
+<td>运行时文件</td>
+<td>运行时，Burp Intruder将读取文件的每一行作为一个 Payload</td>
+</tr>
+<tr>
+<td>Custom iterator</td>
+<td>自定义迭代器</td>
+<td>这个是占位填充的一种方式，最多8位</td>
+</tr>
+<tr>
+<td>Character substitution</td>
+<td>字符替换</td>
+<td>把字典里面相应的字符进行替换</td>
+</tr>
+<tr>
+<td>Case modification</td>
+<td>大小写修改</td>
+<td>要不要保持原样的，要不要全部大写的，要不要全小写的， 要不要驼峰命名的</td>
+</tr>
+<tr>
+<td>Recrusvive grep</td>
+<td>递归查找</td>
+<td>用来提取相应数据的比如拿到PHPSESSIONID，拿到TOKEN 等等，可以通过格式匹配抓取到对应的字段值。</td>
+</tr>
+<tr>
+<td>Illegal unicode</td>
+<td>非法Unicode 编码</td>
+<td>用于绕过正则表达式的过滤验证</td>
+</tr>
+<tr>
+<td>Character blocks</td>
+<td>字符块</td>
+<td>比如生成100A，200个+号，300个数字1等等</td>
+</tr>
+<tr>
+<td>numbers</td>
+<td>数字组合</td>
+<td></td>
+</tr>
+<tr>
+<td>dates</td>
+<td>日期组合</td>
+<td></td>
+</tr>
+<tr>
+<td>Brute forcer</td>
+<td>暴力破解</td>
+<td>暴力枚举，最后一位先固定，然后一个个改</td>
+</tr>
+<tr>
+<td>Null payloads</td>
+<td>空payload</td>
+<td>不需要设置payload</td>
+</tr>
+<tr>
+<td>Character frobber</td>
+<td>字符frobber</td>
+<td>依次修改指定字符串在每个字符位置的值，每次都是在原字 符上递增一个该字符的ASCII码。</td>
+</tr>
+<tr>
+<td>Bit flipper</td>
+<td>Bit翻转</td>
+<td>对预设的Payload原始值，按照比特位，依次进行修改</td>
+</tr>
+<tr>
+<td>Username generator</td>
+<td>用户名生成器</td>
+<td>主要用于用户名和email帐号的自动生成</td>
+</tr>
+<tr>
+<td>ECB block shuffler</td>
+<td>ECB加密块洗牌</td>
+<td>基于ECB加密模式的Payload生成器</td>
+</tr>
+<tr>
+<td>Extension-generated</td>
+<td>Burp Payload 生成插件</td>
+<td>基于Burp插件来生成Payload值，需要安装插件</td>
+</tr>
+<tr>
+<td>Copy other payload</td>
+<td>Payload复制</td>
+<td>是将其他位置的参数复制到Payload位置上（比如密码要输 入两遍）</td>
+</tr>
+</tbody></table>
+<p><a target="_blank" rel="noopener" href="https://portswigger.net/burp/documentation/desktop/tools/intruder/payloads/types">https://portswigger.net/burp/documentation/desktop/tools/intruder/payloads/types</a></p>
+<h2 id="Intruder其他攻击模式"><a href="#Intruder其他攻击模式" class="headerlink" title="Intruder其他攻击模式"></a>Intruder其他攻击模式</h2><h3 id="Battering-ram-攻城锤"><a href="#Battering-ram-攻城锤" class="headerlink" title="Battering ram 攻城锤"></a>Battering ram 攻城锤</h3><p>所有字段的值相同，来自同一个字典</p>
+<h3 id="Pitchfork-草叉"><a href="#Pitchfork-草叉" class="headerlink" title="Pitchfork 草叉"></a>Pitchfork 草叉</h3><p>从多个字典提取值，赋给多个字段，按顺序一一对应 </p>
+<p>例如： </p>
+<ul>
+<li>100个用户名 </li>
+<li>50个密码 </li>
+<li>最终请求次数：50次</li>
+</ul>
+<h3 id="Cluster-bomb-榴霰弹"><a href="#Cluster-bomb-榴霰弹" class="headerlink" title="Cluster bomb 榴霰弹"></a>Cluster bomb 榴霰弹</h3><p>所有字典全部交叉验证 </p>
+<p>例如： </p>
+<ul>
+<li>100个用户名 </li>
+<li>50个密码 </li>
+<li>最终请求次数：5000次</li>
+</ul>
+<h2 id="Intruder标记结果"><a href="#Intruder标记结果" class="headerlink" title="Intruder标记结果"></a>Intruder标记结果</h2><h3 id="Grep-Match"><a href="#Grep-Match" class="headerlink" title="Grep Match"></a>Grep Match</h3><p><img src="/assets/image-20221220091129176.png" alt="image-20221220091129176"></p>
+<h2 id="Intruder获得CSRF-Token"><a href="#Intruder获得CSRF-Token" class="headerlink" title="Intruder获得CSRF Token"></a>Intruder获得CSRF Token</h2><h3 id="Grep-Extract"><a href="#Grep-Extract" class="headerlink" title="Grep Extract"></a>Grep Extract</h3><p><img src="/assets/image-20221220091307639.png" alt="image-20221220091307639"></p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="/about" rel="external nofollow noreferrer">fantasycat6</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://fantasycat6.github.io/2022/12/25/shen-tou-ke-cheng-xue-xi/di-2-bu-fen-shen-tou-yu-fang-yu/26burp-suite/burpsuite/">https://fantasycat6.github.io/2022/12/25/shen-tou-ke-cheng-xue-xi/di-2-bu-fen-shen-tou-yu-fang-yu/26burp-suite/burpsuite/</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="/about" target="_blank">fantasycat6</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="/libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="/libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="/medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="/medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="/2022/12/25/shen-tou-ke-cheng-xue-xi/di-2-bu-fen-shen-tou-yu-fang-yu/27arp/1.arp-yuan-li/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="1.ARP原理">
+                        
+                        <span class="card-title">1.ARP原理</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-12-25
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/ARP/" class="post-category">
+                                    ARP
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/2022/12/25/shen-tou-ke-cheng-xue-xi/di-2-bu-fen-shen-tou-yu-fang-yu/25msf-cobalt-strike/30.3-msf-qing-li-shi-jian-ri-zhi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-25
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            fantasycat6
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Hexo<br />'
+            + '文章作者: fantasycat6<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="/libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="/libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="/libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="7788095093"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="/libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022</span>
+            
+            <span id="year">2022</span>
+            <a href="/about" target="_blank">fantasycat6</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">96.5k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/fantasycat6" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1745272762@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1745272762" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1745272762" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="/atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('/search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="/libs/materialize/materialize.min.js"></script>
+    <script src="/libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="/libs/aos/aos.js"></script>
+    <script src="/libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="/libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="/js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="/libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="/libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="/libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
