@@ -1,0 +1,2409 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Hexo">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Hexo</title>
+    <link rel="icon" type="image/png" href="../../../../../../../favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../css/matery.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../css/my.css">
+
+    <script src="../../../../../../../libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="../../../../../../../index.html" class="waves-effect waves-light">
+                    
+                    <img src="../../../../../../../medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Hexo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../index.html" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="../../../../../../../medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Hexo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../index.html" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('../../../../../../../medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="../../../../../../../libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-07-16
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    11k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    44 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="../../../../../../../libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="数据安全课程-v2-0"><a href="#数据安全课程-v2-0" class="headerlink" title="数据安全课程-v2.0"></a>数据安全课程-v2.0</h1><h2 id="前导章节-数据安全法及数据安全事件"><a href="#前导章节-数据安全法及数据安全事件" class="headerlink" title="前导章节 数据安全法及数据安全事件"></a>前导章节 数据安全法及数据安全事件</h2><h3 id="1-《数据安全法》"><a href="#1-《数据安全法》" class="headerlink" title="1.《数据安全法》"></a>1.《数据安全法》</h3><blockquote>
+<p><strong>中华人民共和国数据安全法</strong></p>
+<p><strong>（2021年6月10日第十三届全国人民代表大会常务委员会第二十九次会议通过）</strong></p>
+<p><strong>目录</strong></p>
+<p>第一章 总则</p>
+<p>第二章 数据安全与发展</p>
+<p>第三章 数据安全制度</p>
+<p>第四章 数据安全保护义务</p>
+<p>第五章 政务数据安全与开放</p>
+<p>第六章 法律责任</p>
+<p>第七章 附则</p>
+<p><strong>第一章 总则</strong></p>
+<p>第一条 为了规范数据处理活动，保障数据安全，促进数据开发利用，保护个人、组织的合法权益，维护国家主权、安全和发展利益，制定本法。</p>
+<p>第二条 在中华人民共和国境内开展数据处理活动及其安全监管，适用本法。</p>
+<p>在中华人民共和国境外开展数据处理活动，损害中华人民共和国国家安全、公共利益或者公民、组织合法权益的，依法追究法律责任。</p>
+<p>第三条 本法所称数据，是指任何以电子或者其他方式对信息的记录。</p>
+<p>数据处理，包括数据的收集、存储、使用、加工、传输、提供、公开等。</p>
+<p>数据安全，是指通过采取必要措施，确保数据处于有效保护和合法利用的状态，以及具备保障持续安全状态的能力。</p>
+<p>第四条 维护数据安全，应当坚持总体国家安全观，建立健全数据安全治理体系，提高数据安全保障能力。</p>
+<p>第五条 中央国家安全领导机构负责国家数据安全工作的决策和议事协调，研究制定、指导实施国家数据安全战略和有关重大方针政策，统筹协调国家数据安全的重大事项和重要工作，建立国家数据安全工作协调机制。</p>
+<p>第六条 各地区、各部门对本地区、本部门工作中收集和产生的数据及数据安全负责。</p>
+<p>工业、电信、交通、金融、自然资源、卫生健康、教育、科技等主管部门承担本行业、本领域数据安全监管职责。</p>
+<p>公安机关、国家安全机关等依照本法和有关法律、行政法规的规定，在各自职责范围内承担数据安全监管职责。</p>
+<p>国家网信部门依照本法和有关法律、行政法规的规定，负责统筹协调网络数据安全和相关监管工作。</p>
+<p>第七条 国家保护个人、组织与数据有关的权益，鼓励数据依法合理有效利用，保障数据依法有序自由流动，促进以数据为关键要素的数字经济发展。</p>
+<p>第八条 开展数据处理活动，应当遵守法律、法规，尊重社会公德和伦理，遵守商业道德和职业道德，诚实守信，履行数据安全保护义务，承担社会责任，不得危害国家安全、公共利益，不得损害个人、组织的合法权益。</p>
+<p>第九条 国家支持开展数据安全知识宣传普及，提高全社会的数据安全保护意识和水平，推动有关部门、行业组织、科研机构、企业、个人等共同参与数据安全保护工作，形成全社会共同维护数据安全和促进发展的良好环境。</p>
+<p>第十条 相关行业组织按照章程，依法制定数据安全行为规范和团体标准，加强行业自律，指导会员加强数据安全保护，提高数据安全保护水平，促进行业健康发展。</p>
+<p>第十一条 国家积极开展数据安全治理、数据开发利用等领域的国际交流与合作，参与数据安全相关国际规则和标准的制定，促进数据跨境安全、自由流动。</p>
+<p>第十二条 任何个人、组织都有权对违反本法规定的行为向有关主管部门投诉、举报。收到投诉、举报的部门应当及时依法处理。</p>
+<p>有关主管部门应当对投诉、举报人的相关信息予以保密，保护投诉、举报人的合法权益。</p>
+<p><strong>第二章 数据安全与发展</strong></p>
+<p>第十三条 国家统筹发展和安全，坚持以数据开发利用和产业发展促进数据安全，以数据安全保障数据开发利用和产业发展。</p>
+<p>第十四条 国家实施大数据战略，推进数据基础设施建设，鼓励和支持数据在各行业、各领域的创新应用。</p>
+<p>省级以上人民政府应当将数字经济发展纳入本级国民经济和社会发展规划，并根据需要制定数字经济发展规划。</p>
+<p>第十五条 国家支持开发利用数据提升公共服务的智能化水平。提供智能化公共服务，应当充分考虑老年人、残疾人的需求，避免对老年人、残疾人的日常生活造成障碍。</p>
+<p>第十六条 国家支持数据开发利用和数据安全技术研究，鼓励数据开发利用和数据安全等领域的技术推广和商业创新，培育、发展数据开发利用和数据安全产品、产业体系。</p>
+<p>第十七条 国家推进数据开发利用技术和数据安全标准体系建设。国务院标准化行政主管部门和国务院有关部门根据各自的职责，组织制定并适时修订有关数据开发利用技术、产品和数据安全相关标准。国家支持企业、社会团体和教育、科研机构等参与标准制定。</p>
+<p>第十八条 国家促进数据安全检测评估、认证等服务的发展，支持数据安全检测评估、认证等专业机构依法开展服务活动。</p>
+<p>国家支持有关部门、行业组织、企业、教育和科研机构、有关专业机构等在数据安全风险评估、防范、处置等方面开展协作。</p>
+<p>第十九条 国家建立健全数据交易管理制度，规范数据交易行为，培育数据交易市场。</p>
+<p>第二十条 国家支持教育、科研机构和企业等开展数据开发利用技术和数据安全相关教育和培训，采取多种方式培养数据开发利用技术和数据安全专业人才，促进人才交流。</p>
+<p><strong>第三章 数据安全制度</strong></p>
+<p>第二十一条 国家建立数据分类分级保护制度，根据数据在经济社会发展中的重要程度，以及一旦遭到篡改、破坏、泄露或者非法获取、非法利用，对国家安全、公共利益或者个人、组织合法权益造成的危害程度，对数据实行分类分级保护。国家数据安全工作协调机制统筹协调有关部门制定重要数据目录，加强对重要数据的保护。</p>
+<p>关系国家安全、国民经济命脉、重要民生、重大公共利益等数据属于国家核心数据，实行更加严格的管理制度。</p>
+<p>各地区、各部门应当按照数据分类分级保护制度，确定本地区、本部门以及相关行业、领域的重要数据具体目录，对列入目录的数据进行重点保护。</p>
+<p>第二十二条 国家建立集中统一、高效权威的数据安全风险评估、报告、信息共享、监测预警机制。国家数据安全工作协调机制统筹协调有关部门加强数据安全风险信息的获取、分析、研判、预警工作。</p>
+<p>第二十三条 国家建立数据安全应急处置机制。发生数据安全事件，有关主管部门应当依法启动应急预案，采取相应的应急处置措施，防止危害扩大，消除安全隐患，并及时向社会发布与公众有关的警示信息。</p>
+<p>第二十四条 国家建立数据安全审查制度，对影响或者可能影响国家安全的数据处理活动进行国家安全审查。</p>
+<p>依法作出的安全审查决定为最终决定。</p>
+<p>第二十五条 国家对与维护国家安全和利益、履行国际义务相关的属于管制物项的数据依法实施出口管制。</p>
+<p>第二十六条 任何国家或者地区在与数据和数据开发利用技术等有关的投资、贸易等方面对中华人民共和国采取歧视性的禁止、限制或者其他类似措施的，中华人民共和国可以根据实际情况对该国家或者地区对等采取措施。</p>
+<p><strong>第四章 数据安全保护义务</strong></p>
+<p>第二十七条 开展数据处理活动应当依照法律、法规的规定，建立健全全流程数据安全管理制度，组织开展数据安全教育培训，采取相应的技术措施和其他必要措施，保障数据安全。利用互联网等信息网络开展数据处理活动，应当在网络安全等级保护制度的基础上，履行上述数据安全保护义务。</p>
+<p>重要数据的处理者应当明确数据安全负责人和管理机构，落实数据安全保护责任。</p>
+<p>第二十八条 开展数据处理活动以及研究开发数据新技术，应当有利于促进经济社会发展，增进人民福祉，符合社会公德和伦理。</p>
+<p>第二十九条 开展数据处理活动应当加强风险监测，发现数据安全缺陷、漏洞等风险时，应当立即采取补救措施；发生数据安全事件时，应当立即采取处置措施，按照规定及时告知用户并向有关主管部门报告。</p>
+<p>第三十条 重要数据的处理者应当按照规定对其数据处理活动定期开展风险评估，并向有关主管部门报送风险评估报告。</p>
+<p>风险评估报告应当包括处理的重要数据的种类、数量，开展数据处理活动的情况，面临的数据安全风险及其应对措施等。</p>
+<p>第三十一条 关键信息基础设施的运营者在中华人民共和国境内运营中收集和产生的重要数据的出境安全管理，适用《中华人民共和国网络安全法》的规定；其他数据处理者在中华人民共和国境内运营中收集和产生的重要数据的出境安全管理办法，由国家网信部门会同国务院有关部门制定。</p>
+<p>第三十二条 任何组织、个人收集数据，应当采取合法、正当的方式，不得窃取或者以其他非法方式获取数据。</p>
+<p>法律、行政法规对收集、使用数据的目的、范围有规定的，应当在法律、行政法规规定的目的和范围内收集、使用数据。</p>
+<p>第三十三条 从事数据交易中介服务的机构提供服务，应当要求数据提供方说明数据来源，审核交易双方的身份，并留存审核、交易记录。</p>
+<p>第三十四条 法律、行政法规规定提供数据处理相关服务应当取得行政许可的，服务提供者应当依法取得许可。</p>
+<p>第三十五条 公安机关、国家安全机关因依法维护国家安全或者侦查犯罪的需要调取数据，应当按照国家有关规定，经过严格的批准手续，依法进行，有关组织、个人应当予以配合。</p>
+<p>第三十六条 中华人民共和国主管机关根据有关法律和中华人民共和国缔结或者参加的国际条约、协定，或者按照平等互惠原则，处理外国司法或者执法机构关于提供数据的请求。非经中华人民共和国主管机关批准，境内的组织、个人不得向外国司法或者执法机构提供存储于中华人民共和国境内的数据。</p>
+<p><strong>第五章 政务数据安全与开放</strong></p>
+<p>第三十七条 国家大力推进电子政务建设，提高政务数据的科学性、准确性、时效性，提升运用数据服务经济社会发展的能力。</p>
+<p>第三十八条 国家机关为履行法定职责的需要收集、使用数据，应当在其履行法定职责的范围内依照法律、行政法规规定的条件和程序进行；对在履行职责中知悉的个人隐私、个人信息、商业秘密、保密商务信息等数据应当依法予以保密，不得泄露或者非法向他人提供。</p>
+<p>第三十九条 国家机关应当依照法律、行政法规的规定，建立健全数据安全管理制度，落实数据安全保护责任，保障政务数据安全。</p>
+<p>第四十条 国家机关委托他人建设、维护电子政务系统，存储、加工政务数据，应当经过严格的批准程序，并应当监督受托方履行相应的数据安全保护义务。受托方应当依照法律、法规的规定和合同约定履行数据安全保护义务，不得擅自留存、使用、泄露或者向他人提供政务数据。</p>
+<p>第四十一条 国家机关应当遵循公正、公平、便民的原则，按照规定及时、准确地公开政务数据。依法不予公开的除外。</p>
+<p>第四十二条 国家制定政务数据开放目录，构建统一规范、互联互通、安全可控的政务数据开放平台，推动政务数据开放利用。</p>
+<p>第四十三条 法律、法规授权的具有管理公共事务职能的组织为履行法定职责开展数据处理活动，适用本章规定。</p>
+<p><strong>第六章 法律责任</strong></p>
+<p>第四十四条 有关主管部门在履行数据安全监管职责中，发现数据处理活动存在较大安全风险的，可以按照规定的权限和程序对有关组织、个人进行约谈，并要求有关组织、个人采取措施进行整改，消除隐患。</p>
+<p>第四十五条 开展数据处理活动的组织、个人不履行本法第二十七条、第二十九条、第三十条规定的数据安全保护义务的，由有关主管部门责令改正，给予警告，可以并处五万元以上五十万元以下罚款，对直接负责的主管人员和其他直接责任人员可以处一万元以上十万元以下罚款；拒不改正或者造成大量数据泄露等严重后果的，处五十万元以上二百万元以下罚款，并可以责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照，对直接负责的主管人员和其他直接责任人员处五万元以上二十万元以下罚款。</p>
+<p>违反国家核心数据管理制度，危害国家主权、安全和发展利益的，由有关主管部门处二百万元以上一千万元以下罚款，并根据情况责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照；构成犯罪的，依法追究刑事责任。</p>
+<p>第四十六条 违反本法第三十一条规定，向境外提供重要数据的，由有关主管部门责令改正，给予警告，可以并处十万元以上一百万元以下罚款，对直接负责的主管人员和其他直接责任人员可以处一万元以上十万元以下罚款；情节严重的，处一百万元以上一千万元以下罚款，并可以责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照，对直接负责的主管人员和其他直接责任人员处十万元以上一百万元以下罚款。</p>
+<p>第四十七条 从事数据交易中介服务的机构未履行本法第三十三条规定的义务的，由有关主管部门责令改正，没收违法所得，处违法所得一倍以上十倍以下罚款，没有违法所得或者违法所得不足十万元的，处十万元以上一百万元以下罚款，并可以责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照；对直接负责的主管人员和其他直接责任人员处一万元以上十万元以下罚款。</p>
+<p>第四十八条 违反本法第三十五条规定，拒不配合数据调取的，由有关主管部门责令改正，给予警告，并处五万元以上五十万元以下罚款，对直接负责的主管人员和其他直接责任人员处一万元以上十万元以下罚款。</p>
+<p>违反本法第三十六条规定，未经主管机关批准向外国司法或者执法机构提供数据的，由有关主管部门给予警告，可以并处十万元以上一百万元以下罚款，对直接负责的主管人员和其他直接责任人员可以处一万元以上十万元以下罚款；造成严重后果的，处一百万元以上五百万元以下罚款，并可以责令暂停相关业务、停业整顿、吊销相关业务许可证或者吊销营业执照，对直接负责的主管人员和其他直接责任人员处五万元以上五十万元以下罚款。</p>
+<p>第四十九条 国家机关不履行本法规定的数据安全保护义务的，对直接负责的主管人员和其他直接责任人员依法给予处分。</p>
+<p>第五十条 履行数据安全监管职责的国家工作人员玩忽职守、滥用职权、徇私舞弊的，依法给予处分。</p>
+<p>第五十一条 窃取或者以其他非法方式获取数据，开展数据处理活动排除、限制竞争，或者损害个人、组织合法权益的，依照有关法律、行政法规的规定处罚。</p>
+<p>第五十二条 违反本法规定，给他人造成损害的，依法承担民事责任。</p>
+<p>违反本法规定，构成违反治安管理行为的，依法给予治安管理处罚；构成犯罪的，依法追究刑事责任。</p>
+<p><strong>第七章 附则</strong></p>
+<p>第五十三条 开展涉及国家秘密的数据处理活动，适用《中华人民共和国保守国家秘密法》等法律、行政法规的规定。</p>
+<p>在统计、档案工作中开展数据处理活动，开展涉及个人信息的数据处理活动，还应当遵守有关法律、行政法规的规定。</p>
+<p>第五十四条 军事数据安全保护的办法，由中央军事委员会依据本法另行制定。</p>
+<p>第五十五条 本法自2021年9月1日起施行。</p>
+</blockquote>
+<h3 id="2-数据安全事件–DD打车事件"><a href="#2-数据安全事件–DD打车事件" class="headerlink" title="2. 数据安全事件–DD打车事件"></a>2. 数据安全事件–DD打车事件</h3><blockquote>
+<p>​	2021年6月30日，滴滴正式在美国纽交所挂牌上市。7月2日晚，国家网信办官网发布公告，网络安全审查办公室宣布对滴滴出行启动网络安全审查，一时间掀起巨大争议。</p>
+<p>​	网络安全审查办公室关于对“滴滴出行”启动网络安全审查的公告，<em>为防范国家数据安全风险，维护国家安全，保障公共利益，</em>依据《中华人民共和国国家安全法》《中华人民共和国网络安全法》，网络安全审查办公室按照《网络安全审查办法》，对滴滴出行实施网络安全审查。<em>为配合网络安全审查工作，防范风险扩大，审查期间滴滴出行停止新用户注册。</em>随后，滴滴回应称将积极配合。</p>
+</blockquote>
+<h2 id="第一章-数据与数据库"><a href="#第一章-数据与数据库" class="headerlink" title="第一章 数据与数据库"></a>第一章 数据与数据库</h2><h3 id="1-什么是数据？"><a href="#1-什么是数据？" class="headerlink" title="1.什么是数据？"></a>1.什么是数据？</h3><blockquote>
+<p>​	数据是指对客观事件进行记录并可以鉴别的符号，是对客观事物的性质、状态以及相互关系等进行记载的物理符号或这些物理符号的组合。它是可识别的、抽象的符号。</p>
+<p>​	它不仅指狭义上的数字，还可以是具有一定意义的文字、字母、数字符号的组合、图形、图像、视频、音频等，也是客观事物的属性、数量、位置及其相互关系的抽象表示。例如，“0、1、2…”、“阴、雨、下降、气温”、“学生的档案记录、货物的运输情况”等都是数据。数据经过加工后就成为信息。</p>
+<p>​	在计算机科学，数据是所有能输入计算机并被计算机程序处理的符号的介质的总称，是用于输入电子计算机进行处理，具有一定意义的数字、字母、符号和模拟量等的通称。计算机存储和处理的对象十分广泛，表示这些对象的数据也随之变得越来越复杂。</p>
+</blockquote>
+<h3 id="2-什么是数据库管理系统（DBMS）？"><a href="#2-什么是数据库管理系统（DBMS）？" class="headerlink" title="2.什么是数据库管理系统（DBMS）？"></a>2.什么是数据库管理系统（DBMS）？</h3><blockquote>
+<p>用来存储、管理、应用数据的软件。</p>
+</blockquote>
+<h3 id="4-主流数据库产品和厂商有哪些？"><a href="#4-主流数据库产品和厂商有哪些？" class="headerlink" title="4.主流数据库产品和厂商有哪些？"></a>4.主流数据库产品和厂商有哪些？</h3><h3 id="5-该从哪些方面保证数据库安全？"><a href="#5-该从哪些方面保证数据库安全？" class="headerlink" title="5.该从哪些方面保证数据库安全？"></a>5.该从哪些方面保证数据库安全？</h3><h2 id="第二章-基础环境准备"><a href="#第二章-基础环境准备" class="headerlink" title="第二章 基础环境准备"></a>第二章 基础环境准备</h2><h3 id="1-MySQL-部署"><a href="#1-MySQL-部署" class="headerlink" title="1.MySQL 部署"></a>1.MySQL 部署</h3><h4 id="1-1-确认支持列表：Supported-Platforms"><a href="#1-1-确认支持列表：Supported-Platforms" class="headerlink" title="1.1 确认支持列表：Supported Platforms"></a>1.1 确认支持列表：Supported Platforms</h4><table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+<th>8.0</th>
+<th>5.7</th>
+<th>5.6</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Operating System</td>
+<td>Architecture</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Oracle Linux / Red Hat / CentOS</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Oracle Linux 8 / Red Hat Enterprise Linux 8 / CentOS 8</td>
+<td>x86_64, ARM 64</td>
+<td>•</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Oracle Linux 7 / Red Hat Enterprise Linux 7 / CentOS 7</td>
+<td>ARM 64</td>
+<td>•</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Oracle Linux 7 / Red Hat Enterprise Linux 7 / CentOS 7</td>
+<td>x86_64</td>
+<td>•</td>
+<td>•</td>
+<td>•</td>
+</tr>
+<tr>
+<td>Oracle Linux 6 / Red Hat Enterprise Linux 6 / CentOS 6</td>
+<td>x86_32, x86_64</td>
+<td>•</td>
+<td>•</td>
+<td>•</td>
+</tr>
+<tr>
+<td>Oracle Solaris</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Solaris 11 (Update 4+)</td>
+<td>SPARC_64, x86_64</td>
+<td>•</td>
+<td>•</td>
+<td>•</td>
+</tr>
+<tr>
+<td>Solaris 10 (Update 11+)</td>
+<td>SPARC_64, x86_32, x86_64</td>
+<td></td>
+<td></td>
+<td>•</td>
+</tr>
+<tr>
+<td>Canonical</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Ubuntu 18.04 LTS</td>
+<td>x86_32, x86_64</td>
+<td>•</td>
+<td>•</td>
+<td></td>
+</tr>
+<tr>
+<td>Ubuntu 16.04 LTS</td>
+<td>x86_32, x86_64</td>
+<td>•</td>
+<td>•</td>
+<td></td>
+</tr>
+<tr>
+<td>SUSE</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SUSE Enterprise Linux 15 / OpenSUSE 15</td>
+<td>x86_64</td>
+<td>•</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>SUSE Enterprise Linux 12 (12.3+)</td>
+<td>x86_64</td>
+<td>•</td>
+<td>•</td>
+<td>•</td>
+</tr>
+<tr>
+<td>Debian</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Debian GNU/Linux 10</td>
+<td>x86_64</td>
+<td>•</td>
+<td>•</td>
+<td></td>
+</tr>
+<tr>
+<td>Debian GNU/Linux 9</td>
+<td>x86_32, x86_64</td>
+<td>•</td>
+<td>•</td>
+<td>•</td>
+</tr>
+<tr>
+<td>Debian GNU/Linux 8</td>
+<td>x86_32, x86_64</td>
+<td></td>
+<td>•</td>
+<td>•</td>
+</tr>
+<tr>
+<td>Microsoft Windows Server</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Microsoft Windows 2019 Server</td>
+<td>x86_64</td>
+<td>•</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Microsoft Windows 2016 Server</td>
+<td>x86_64</td>
+<td>•</td>
+<td>•</td>
+<td>•</td>
+</tr>
+<tr>
+<td>Microsoft Windows 2012 Server R2</td>
+<td>x86_64</td>
+<td>•</td>
+<td>•</td>
+<td>•</td>
+</tr>
+<tr>
+<td>Microsoft Windows</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Microsoft Windows 10</td>
+<td>x86_64</td>
+<td>•</td>
+<td>•</td>
+<td></td>
+</tr>
+<tr>
+<td>Apple</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>macOS 10.14</td>
+<td>x86_64</td>
+<td>•</td>
+<td>•</td>
+<td></td>
+</tr>
+<tr>
+<td>macOS 10.13</td>
+<td>x86_64</td>
+<td>•</td>
+<td>•</td>
+<td></td>
+</tr>
+<tr>
+<td>FreeBSD</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>FreeBSD 12</td>
+<td>x86_64</td>
+<td>•</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Various Linux</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>Generic Linux (tar format)</td>
+<td>x86_32, x86_64, glibc 2.12, libstdc++ 4.4</td>
+<td>•</td>
+<td>•</td>
+<td>•</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/repo/yum/">Fedora Yum Repo</a></td>
+<td>•</td>
+<td>•</td>
+<td>•</td>
+<td></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/repo/apt/">Debian/Ubuntu APT Repo</a></td>
+<td>•</td>
+<td>•</td>
+<td>•</td>
+<td></td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://dev.mysql.com/downloads/repo/suse/">SUSE Repo</a></td>
+<td>•</td>
+<td>•</td>
+<td>•</td>
+<td></td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>官网：</p>
+<p><a target="_blank" rel="noopener" href="https://www.mysql.com/support/supportedplatforms/database.html">https://www.mysql.com/support/supportedplatforms/database.html</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.mysql.com/support/eol-notice.html">https://www.mysql.com/support/eol-notice.html</a></p>
+</blockquote>
+<h3 id="1-2-确认版本"><a href="#1-2-确认版本" class="headerlink" title="1.2 确认版本"></a>1.2 确认版本</h3><blockquote>
+<p>​	准备安装MySQL时，请确定要使用哪个版本和发行格式（二进制或源码）。</p>
+<p>​	首先，决定要安装开发版本还是通用版本（GA）。开发版本具有最新功能，但不建议用于生产环境。<br>GA版本（也称为生产版本或稳定版本）是供生产使用的。</p>
+<p> MySQL 8.0中的命名方案使用的发行版名称由三个数字和一个可选的后缀组成（例如， <strong>mysql-8.0.1-dmr</strong>）。版本名称中的数字解释如下：</p>
+<ul>
+<li>第一个数字（<strong>8</strong>）是主版本号。</li>
+<li>第二个数字（<strong>0</strong>）是次要版本号。总而言之，主要和次要数字构成发行版本号。序列号描述了稳定的功能集。</li>
+<li>第三个数字（<strong>1</strong>）是发行系列中的版本号。对于每个新的错误修正版本，此值均递增。在大多数情况下，系列中的最新版本是最佳选择。<br>版本名称也可以包含一个后缀，以指示版本的稳定性。在一系列发行中，发布会通过一组后缀来指示稳定性水平如何提高。可能的后缀是：</li>
+<li><strong>dmr</strong>指示开发里程碑版本（DMR）。MySQL开发使用里程碑模型，其中每个里程碑都引入了一小部分经过全面测试的功能。从一个里程碑到下一个里程碑，基于尝试这些正常发布的社区成员提供的反馈，功能界面可能会更改，甚至功能可能会被删除。里程碑版本中的功能可能被视为具有预生产质量。</li>
+<li><strong>rc</strong>表示发布候选（RC）。通过了MySQL的所有内部测试后，发布候选版本被认为是稳定的。RC版本中可能仍会引入新功能，但是重点将转移到修复错误上，以稳定本系列中较早引入的功能。</li>
+<li>没有后缀表示具有一般可用性（GA）或正式版。GA版本稳定，已成功通过了较早的发行阶段，并且被认为是可靠的，没有严重的错误并且适合在生产系统中使用。</li>
+</ul>
+</blockquote>
+<h4 id="1-3-获取-MySQL软件"><a href="#1-3-获取-MySQL软件" class="headerlink" title="1.3 获取 MySQL软件"></a>1.3 获取 MySQL软件</h4><blockquote>
+<p><a target="_blank" rel="noopener" href="https://downloads.mysql.com/archives/community/">https://downloads.mysql.com/archives/community/</a></p>
+<p>一定要到官网下载</p>
+</blockquote>
+<h4 id="1-4-MD5验证软件包"><a href="#1-4-MD5验证软件包" class="headerlink" title="1.4 MD5验证软件包"></a>1.4 MD5验证软件包</h4><blockquote>
+<p>md5sum mysql-xxx.tar.gz<br>aaab65abbec64d5e907dcd41b8699945  mysql-xxx.tar.gz</p>
+</blockquote>
+<h4 id="1-5-企业上线准备"><a href="#1-5-企业上线准备" class="headerlink" title="1.5 企业上线准备"></a>1.5 企业上线准备</h4><h5 id="1-5-1-硬件标准化"><a href="#1-5-1-硬件标准化" class="headerlink" title="1.5.1  硬件标准化"></a>1.5.1  硬件标准化</h5><ul>
+<li><p>标准化数据库专用服务器</p>
+</li>
+<li><p>标准化服务器硬件带来的收益</p>
+</li>
+</ul>
+<h5 id="1-5-2-操作系统及配置标准化"><a href="#1-5-2-操作系统及配置标准化" class="headerlink" title="1.5.2 操作系统及配置标准化"></a>1.5.2 操作系统及配置标准化</h5><h5 id="1-5-3-标准化操作系统及硬件参数"><a href="#1-5-3-标准化操作系统及硬件参数" class="headerlink" title="1.5.3 标准化操作系统及硬件参数"></a>1.5.3 标准化操作系统及硬件参数</h5><ul>
+<li><p>关闭NUMA</p>
+</li>
+<li><p>开启CPU高性能模式</p>
+</li>
+<li><p>阵列卡RAID配置</p>
+</li>
+<li><p>关闭THP</p>
+</li>
+<li><p>网卡绑定</p>
+</li>
+<li><p>存储多路径</p>
+</li>
+<li><p>系统层面参数调整</p>
+</li>
+</ul>
+<h5 id="1-5-4-预装MySQL前硬件烤机压测"><a href="#1-5-4-预装MySQL前硬件烤机压测" class="headerlink" title="1.5.4 预装MySQL前硬件烤机压测"></a>1.5.4 预装MySQL前硬件烤机压测</h5><ul>
+<li><p>stress 进行CPU、IO、MEM烤机压测</p>
+</li>
+<li><p>FIO 进行定制化IO烤机压测</p>
+</li>
+<li><p>sysbench进行综合压测</p>
+</li>
+</ul>
+<h4 id="1-6-MySQL-8-0-x安装过程"><a href="#1-6-MySQL-8-0-x安装过程" class="headerlink" title="1.6 MySQL 8.0.x安装过程"></a>1.6 MySQL 8.0.x安装过程</h4><h5 id="1-6-1-安装准备"><a href="#1-6-1-安装准备" class="headerlink" title="1.6.1 安装准备"></a>1.6.1 安装准备</h5><pre class="line-numbers language-none"><code class="language-none">shell&gt; groupadd mysql
+shell&gt; useradd  -s /bin/false mysql
+shell&gt; cd /usr/local
+shell&gt; tar xvf /path/to/mysql-VERSION-OS.tar.xz
+shell&gt; xz -dc /path/to/mysql-VERSION-OS.tar.xz | tar x
+shell&gt; ln -s full-path-to-mysql-VERSION-OS mysql
+shell&gt; export PATH=$PATH:/usr/local/mysql/bin
+shell&gt; yum install libaio # install library  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="1-6-2-部署过程"><a href="#1-6-2-部署过程" class="headerlink" title="1.6.2 部署过程"></a>1.6.2 部署过程</h4><pre class="line-numbers language-none"><code class="language-none">shell&gt; cd mysql
+shell&gt; mkdir mysql-files
+shell&gt; chown mysql:mysql mysql-files
+shell&gt; chmod 750 mysql-files
+shell&gt;bin/mysqld --initialize --user=mysql
+  --basedir=/usr/local/mysql
+  --datadir=/data/mysql/data_3306
+shell&gt; bin/mysql_ssl_rsa_setup
+shell&gt; bin/mysqld_safe --user=mysql &amp;
+# Next command is optional
+shell&gt; cp support-files/mysql.server /etc/init.d/mysql.server<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="1-6-3-启动和关闭"><a href="#1-6-3-启动和关闭" class="headerlink" title="1.6.3 启动和关闭"></a>1.6.3 启动和关闭</h4><pre class="line-numbers language-none"><code class="language-none">shell&gt; bin/mysqld_safe --user=mysql &amp;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h3 id="2-Oracle-部署"><a href="#2-Oracle-部署" class="headerlink" title="2.Oracle 部署"></a>2.Oracle 部署</h3><pre class="line-numbers language-none"><code class="language-none">环境准备:
+
+1.关闭NetworkManager 
+
+[root@db01 ~]# systemctl stop NetworkManager
+[root@db01 ~]# systemctl disable NetworkManager
+
+
+2.修改网卡配置
+vim /etc/sysconfig/network-scripts/ifcfg-ens33
+TYPE="Ethernet"
+BOOTPROTO="static"
+DEFROUTE="yes"
+NAME="ens33"
+DEVICE="ens33"
+ONBOOT="yes"
+IPADDR=100.0.0.88
+NETMASK=255.255.255.0
+GATEWAY=100.0.0.254
+DNS1=223.5.5.5
+
+systemctl restart network
+
+
+3. 防火墙关闭
+selinux :
+[root@db01 ~]# getenforce 
+Enforcing
+[root@db01 ~]# setenforce 0
+[root@db01 ~]# vim /etc/selinux/config 
+
+
+# This file controls the state of SELinux on the system.
+# SELINUX= can take one of these three values:
+#     enforcing - SELinux security policy is enforced.
+#     permissive - SELinux prints warnings instead of enforcing.
+#     disabled - No SELinux policy is loaded.
+SELINUX=disabled
+# SELINUXTYPE= can take one of three values:
+#     targeted - Targeted processes are protected,
+#     minimum - Modification of targeted policy. Only selected processes are protected. 
+#     mls - Multi Level Security protection.
+SELINUXTYPE=targeted
+
+
+iptables :
+[root@db01 ~]# iptables -F
+[root@db01 ~]# systemctl disable firewalld
+Removed symlink /etc/systemd/system/multi-user.target.wants/firewalld.service.
+Removed symlink /etc/systemd/system/dbus-org.fedoraproject.FirewallD1.service.
+[root@db01 ~]# systemctl stop  firewalld
+
+
+4. 配置本地yum源
+[root@db01 ~]# cd /etc/yum.repos.d/
+[root@db01 yum.repos.d]# 
+[root@db01 yum.repos.d]# ll
+total 32
+-rw-r--r--. 1 root root 1664 Nov 23  2018 CentOS-Base.repo
+-rw-r--r--. 1 root root 1309 Nov 23  2018 CentOS-CR.repo
+-rw-r--r--. 1 root root  649 Nov 23  2018 CentOS-Debuginfo.repo
+-rw-r--r--. 1 root root  314 Nov 23  2018 CentOS-fasttrack.repo
+-rw-r--r--. 1 root root  630 Nov 23  2018 CentOS-Media.repo
+-rw-r--r--. 1 root root 1331 Nov 23  2018 CentOS-Sources.repo
+-rw-r--r--. 1 root root 5701 Nov 23  2018 CentOS-Vault.repo
+[root@db01 yum.repos.d]# mv * /tmp
+[root@db01 yum.repos.d]# ll
+
+[root@db01 yum.repos.d]# vim /etc/yum.repos.d/rhel-source.repo
+[rhel-source]
+name=local-iso
+baseurl=file:///mnt
+enabled=1
+gpgchek=0
+
+挂载光盘镜像
+[root@db01 yum.repos.d]# mount /dev/sr0 /mnt
+[root@db01 yum.repos.d]# yum clean all
+
+
+======================================
+1、Oracle产品介绍
+1.1 Oracle版本说明
+7:  7.3.4 
+8i: 8.1.7  
+9i: 9.2.0.8
+10g:10.2.0.4 10.2.0.5 
+11g:11.2.0.3  11.2.0.4    
+12c:12.2.0.1 
+18c:
+19c:
+
+企业现存版本:
+10g:10.2.0.4  10.2.0.5 
+11g:11.2.0.3  11.2.0.4    
+12c:12.2.0.1 
+18c:
+19c:
+
+1.2 Oracle工具网站
+oracle.com            ---&gt; 官网
+support.oracle.com    ---&gt; MOS
+https://edelivery.oracle.com/osdc/faces/Home.jspx ---&gt;历史版本及补丁
+
+
+1.3 Oracle 软件release版本选择
+10gR2   11gR2   12cR2
+
+1.4 Oracle 补丁类型
+Patch Set Release    PSR
+Patch Set Update     PSU
+Critical Patch Update CPU
+
+2012年10月，经更名为Security Patch Update (SPU)
+Interim Patch/One-Off Patc
+
+
+补丁应用方法和注意事项：
+&nbsp; &nbsp;以上的补丁除了psr直接使用runInstaller，其他的补丁类型都是使用opatch命令，在oracle 10g之前，我们需要单独下载此命令，到oracle 10g之后这个命令在 ORACLE_HOME/Opatch下，因此，最好在环境变量path中添加以下
+
+10.2.0.1   ----&gt; 升级成  10.2.0.5 
+11.2.0.1   ----&gt;         11.2.0.4 
+
+
+2. Oracle 11g安装
+
+2.0 Oracle11g软件包介绍
+
+database(RDBMS): 
+1of7
+2of7 
+
+cluser软件(grid):
+3of7 : 集群功能,独立的存储功能(ASM)
+
+2.1. 检查内存，至少1G
+grep MemTotal /proc/meminfo
+
+2.2.交换分区
+    Available RAM            Swap Space Required 
+    Between 1 GB and 2 GB    1.5 times the size of RAM 
+    Between 2 GB and 16 GB   Equal to the size of RAM 
+    More than 16 GB          16 GB 
+	
+grep "model name" /proc/cpuinfo
+grep SwapTotal /proc/meminfo
+
+free
+total       used       free     shared    buffers     cached
+Mem:       1035140     512924     522216          0      51236     335880
+-/+ buffers/cache:     125808     909332
+Swap:      1052248          0    1052248
+
+2.3. 共享内存段至少要大于MEMORY_MAX_TARGET and MEMORY_TARGET 
+df -k /dev/shm/
+Filesystem           1K-blocks      Used Available Use% Mounted on
+tmpfs                   517568         0    517568   0% /dev/shm
+
+2.4. 至少1G的 /tmp
+df -h /tmp
+
+2.5. 数据库软件和data磁盘空间要求
+    Installation Type        Requirement for Software Files (GB) 
+    Enterprise Edition        3.95 
+    Standard Edition          3.88 
+
+    Installation Type        Requirement for Data Files (GB) 
+    Enterprise Edition        1.7 
+    Standard Edition        1.5 
+
+2.6. 操作系统版本
+    Operating System Requirements
+    The following are the operating system requirements for Oracle Database 11g Release 2 (11.2) for Linux x86:
+
+    Asianux 2.0
+    Asianux 3.0
+    Oracle Enterprise Linux 4.0 Update 7 or later
+    Oracle Enterprise Linux 5.0
+    Red Hat Enterprise Linux 4.0 Update 7 or later
+    Red Hat Enterprise Linux 5.0
+    SUSE Linux Enterprise Server 10.0
+    SUSE Linux Enterprise Server 11.0
+    For Asianux 3, Oracle Enterprise Linux 5.0, and Red Hat Enterprise Linux 5.0: 2.6.18 or later
+
+2.7. 检查软件包
+
+The following or later version of packages for Asianux 3, Oracle Enterprise Linux 5.0, and Red Hat Enterprise Linux 5.0 should be installed:
+
+yum -y install binutils-*
+yum -y install compat-libstdc++-*
+yum -y install elfutils-libelf-*
+yum -y install elfutils-libelf-devel-*
+yum -y install elfutils-libelf-devel-static-*
+yum -y install gcc-*
+yum -y install gcc-c++-*
+yum -y install glibc-*
+yum -y install glibc-common-*
+yum -y install glibc-devel-*
+yum -y install glibc-headers-*
+yum -y install kernel-headers-*
+yum -y install ksh-*
+yum -y install libaio-*
+yum -y install libaio-devel-* 
+yum -y install libgcc-*
+yum -y install libgomp-*
+yum -y install libstdc++-* 
+yum -y install libstdc++-devel-*
+yum -y install make-*
+yum -y install sysstat-*
+yum -y install unixODBC-*
+yum -y install unixODBC-devel-*
+
+rpm -q --qf '%{NAME}-%{VERSION}-%{RELEASE} (%{ARCH})\n' binutils \
+compat-libstdc++ \
+elfutils-libelf-devel \
+elfutils-libelf-devel-static \
+gcc \
+gcc-c++ \
+glibc \
+glibc-common \
+glibc-devel \
+glibc-headers \
+kernel-headers \
+ksh \
+libaio \
+libaio-devel \
+libgcc \
+libgomp \
+libstdc++ \
+libstdc++-devel \
+make \
+sysstat \
+unixODBC \
+unixODBC-devel \
+libXp
+
+2.8. 创建组和用户
+/usr/sbin/groupadd oinstall
+/usr/sbin/groupadd dba
+/usr/sbin/useradd -g oinstall -G dba oracle
+
+echo oracle | passwd --stdin oracle
+
+2.9. 修改内核参数
+
+vim /etc/sysctl.conf
+
+fs.aio-max-nr = 1048576
+fs.file-max = 6815744
+kernel.shmall = 2097152
+kernel.shmmax = 536870912
+kernel.shmmni = 4096
+kernel.sem = 250 32000 100 128
+net.ipv4.ip_local_port_range = 9000 65500
+net.core.rmem_default = 262144
+net.core.rmem_max = 4194304
+net.core.wmem_default = 262144
+net.core.wmem_max = 1048586
+
+sysctl -p
+
+2.10. 修改系统限制
+vim /etc/security/limits.conf
+oracle           soft    nproc   2047
+oracle           hard    nproc   16384
+oracle           soft    nofile  1024
+oracle           hard    nofile  65536
+
+2.11. 
+vi /etc/pam.d/login
+session    required     pam_limits.so
+
+2.12. 修改profile
+if [ $USER = "oracle" ]; then
+        if [ $SHELL = "/bin/ksh" ]; then
+              ulimit -p 16384
+              ulimit -n 65536
+        else
+              ulimit -u 16384 -n 65536
+        fi
+fi
+
+2.13. 创建目录结构
+
+分区:
+fdisk /dev/sda 
+sda5  15G     ----&gt;/u01        ----&gt;本地   软件程序
+sda6  20G     ----&gt;/oradata    ----&gt;存储盘 数据存储
+
+mkfs.ext4 /dev/sda5 
+mkfs.ext4 /dev/sda6
+mkdir /u01  /oradata
+mount /dev/sda5 /u01
+mount /dev/sda6 /oradata
+[root@db08 ~]# blkid
+/dev/sda2: UUID="40852d80-1f81-469c-afe2-f3b84847467f" TYPE="ext4" 
+/dev/sda1: UUID="a484cae0-ba65-4b19-91fb-8d23bdbcd118" TYPE="ext4" 
+/dev/sda3: UUID="76380440-f2c6-4d7b-8343-044069196e2a" TYPE="swap" 
+/dev/sda5: UUID="f76191bb-a035-41a4-94c4-2b005c468eba" TYPE="ext4" 
+/dev/sda6: UUID="eb9cebaf-2ca0-4467-9476-b2d5f0cc9f0f" TYPE="ext4" 
+vim /etc/fstab
+UUID="f76191bb-a035-41a4-94c4-2b005c468eba"  /u01 ext4 defaults 0 0 
+UUID="eb9cebaf-2ca0-4467-9476-b2d5f0cc9f0f" /oradata ext4 defaults 0 0 
+
+
+#创建必须目录:
+#ORACLE_BASE:存放各类日志
+mkdir -p /u01/app/oracle
+#ORACLE_HOME:存放程序的目录
+mkdir -p /u01/app/oracle/product/11.2.0/db_1
+
+#更改权限:
+chown -R oracle:oinstall /u01/
+chmod -R 775 /u01/
+chown -R oracle:oinstall /oradata 
+
+#切换用户并更改环境变量文件
+su - oracle
+vim .bash_profile
+export ORACLE_BASE=/u01/app/oracle
+export ORACLE_HOME=/u01/app/oracle/product/11.2.0/db_1
+export ORACLE_SID=orcl
+export PATH=$ORACLE_HOME/bin:$PATH
+
+source .bash_profile
+
+
+2.14. runInstaller
+
+2.15. netca
+
+2.16. dbca
+
+2.17. 基本链接使用
+sqlplus / as sysdba
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h2 id="第三章-等保中MySQL-的安全保护"><a href="#第三章-等保中MySQL-的安全保护" class="headerlink" title="第三章 等保中MySQL 的安全保护"></a>第三章 等保中MySQL 的安全保护</h2><h3 id="1-等保中对于MySQL版本的要求"><a href="#1-等保中对于MySQL版本的要求" class="headerlink" title="1.等保中对于MySQL版本的要求"></a>1.等保中对于MySQL版本的要求</h3><pre><code>准备安装MySQL时，请确定要使用哪个版本和发行格式（二进制或源码）。
+首先，决定要安装开发版本还是通用版本（GA）。开发版本具有最新功能，但不建议用于生产环境。
+GA版本（也称为生产版本或稳定版本）是供生产使用的。一般使用GA版本（6-12月）。大约20个小版本
+</code></pre>
+<h3 id="2-等保要求的中的数据库升级要求"><a href="#2-等保要求的中的数据库升级要求" class="headerlink" title="2.等保要求的中的数据库升级要求"></a>2.等保要求的中的数据库升级要求</h3><h3 id="3-等保要求中对于用户、权限要求"><a href="#3-等保要求中对于用户、权限要求" class="headerlink" title="3.等保要求中对于用户、权限要求"></a>3.等保要求中对于用户、权限要求</h3><h4 id="3-1-用户及密码管理"><a href="#3-1-用户及密码管理" class="headerlink" title="3.1 用户及密码管理"></a>3.1 用户及密码管理</h4><h5 id="3-1-1-用户定义"><a href="#3-1-1-用户定义" class="headerlink" title="3.1.1 用户定义"></a>3.1.1 用户定义</h5><blockquote>
+<p>用户名@’白名单’   密码</p>
+<p>用户名：由字母、数字、特殊符号组成的字符串</p>
+<p>白名单：能够允许登录数据库的地址列表，可以是单个ip，网段，主机名，域名等。</p>
+<p>oldguo@’localhost’   —-&gt; 只能在本地登录，一般管理员用户使用</p>
+<p>oldguo@’10.0.0.55’   —-&gt; 只能此地址访问数据库，中间件中会使用</p>
+<p>oldguo@’10.0.0.0/255.255.255.0’ —&gt; 1-254访问数据   </p>
+<p>oldguo@’10.0.0.5%’  —-&gt; 50-59</p>
+<p>oldguo@’10.0.%’</p>
+<p>oldguo@’%’</p>
+</blockquote>
+<h5 id="3-1-2-等保中对于用户密码要求细则"><a href="#3-1-2-等保中对于用户密码要求细则" class="headerlink" title="3.1.2 等保中对于用户密码要求细则"></a>3.1.2 等保中对于用户密码要求细则</h5><pre class="line-numbers language-none"><code class="language-none">1. 用户密码需要12位以上
+2. 用户需要3种密码复杂度以上
+3. 用户需要90天密码过期设置
+4. 生产有人未经许可，索要root管理员密码需要及时上报
+5. 原则上不得将root管理员用户密码告知非管理员人员
+6. 禁用生产中无作用用户及已离职人员具备的用户
+7. 合理设置用户白名单，最小化连接主机列表<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="3-1-3-操作"><a href="#3-1-3-操作" class="headerlink" title="3.1.3 操作"></a>3.1.3 操作</h5><pre class="line-numbers language-none"><code class="language-none">mysql&gt; select user,host,authentication_string from mysql.user;
+mysql&gt; alter user root@'localhost' identified by 'Oldguo@22654481.com';
+mysql&gt; select user,host,plugin  from mysql.user\G
+mysql&gt; alter user root@'localhost' identified with mysql_native_password by 'Oldguo@22654481.com';
+mysql&gt; select user,host ,password_expired from mysql.user;
+mysql&gt; create user oldguo@'10.0.0.%' identified with mysql_native_password by '123';
+mysql&gt; alter user oldguo@'10.0.0.%' password expire interval 90 day;
+mysql&gt; select user,host,password_lifetime  from mysql.user;
+mysql&gt; alter user oldguo@'10.0.0.%' password expire never;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="3-2-等保中权限管理"><a href="#3-2-等保中权限管理" class="headerlink" title="3.2 等保中权限管理"></a>3.2 等保中权限管理</h4><h4 id="3-2-1-等保中对于权限的管理"><a href="#3-2-1-等保中对于权限的管理" class="headerlink" title="3.2.1 等保中对于权限的管理"></a>3.2.1 等保中对于权限的管理</h4><pre class="line-numbers language-none"><code class="language-none">1. 最小化权限，专用户专用，细化权限
+2. 谨慎使用ALL权限
+3. 不在使用用户，及时回收权限<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="3-2-2-操作"><a href="#3-2-2-操作" class="headerlink" title="3.2.2 操作"></a>3.2.2 操作</h4><pre class="line-numbers language-none"><code class="language-none">mysql&gt; create user user_test@'10.0.0.%' identified with mysql_native_password by '123';
+mysql&gt; show privileges;
+mysql&gt; grant select,update,delete ,insert on test.* to user_test@'10.0.0.%';
+mysql&gt; show grants for user_test@'10.0.0.%';
+mysql&gt; revoke delete on test.* from user_test@'10.0.0.%'<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="4-MySQL数据库的SQL安全审计"><a href="#4-MySQL数据库的SQL安全审计" class="headerlink" title="4.MySQL数据库的SQL安全审计"></a>4.MySQL数据库的SQL安全审计</h3><h4 id="4-1-SQL种类介绍"><a href="#4-1-SQL种类介绍" class="headerlink" title="4.1 SQL种类介绍"></a>4.1 SQL种类介绍</h4><pre class="line-numbers language-none"><code class="language-none">DDL 数据定义语言
+create 
+drop 
+alter 
+
+DCL 数据控制语言
+grant 
+revoke
+
+DML 数据操作语言
+select
+update
+delete
+insert <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="4-2-SQL书写规范"><a href="#4-2-SQL书写规范" class="headerlink" title="4.2 SQL书写规范"></a>4.2 SQL书写规范</h4><pre class="line-numbers language-none"><code class="language-none">参考阿里巴巴SQL规范。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h4 id="4-3-SQL安全审核平台–Yearning"><a href="#4-3-SQL安全审核平台–Yearning" class="headerlink" title="4.3 SQL安全审核平台–Yearning"></a>4.3 SQL安全审核平台–Yearning</h4><h4 id="4-3-0-功能介绍"><a href="#4-3-0-功能介绍" class="headerlink" title="4.3.0 功能介绍"></a>4.3.0 功能介绍</h4><blockquote>
+<ul>
+<li>SQL 查询<ul>
+<li>查询工单</li>
+<li>导出</li>
+<li>自动补全，智能提示</li>
+<li>查询语句审计</li>
+<li>查询结果脱敏</li>
+</ul>
+</li>
+<li>SQL 审核<ul>
+<li>流程化工单</li>
+<li>SQL语句语法检测</li>
+<li>根据规则检测SQL语句合规性</li>
+<li>自动生成DDL/DML回滚语句</li>
+<li>历史审核记录</li>
+</ul>
+</li>
+<li>推送<ul>
+<li>E-mail 工单推送</li>
+<li>钉钉 webhook 机器人工单推送</li>
+</ul>
+</li>
+<li>用户权限及管理<ul>
+<li>角色划分</li>
+<li>基于用户的细粒度权限</li>
+<li>注册</li>
+</ul>
+</li>
+<li>其他<ul>
+<li>todoList</li>
+<li>LDAP 登录</li>
+<li>动态审核规则配置</li>
+<li>自定义审核层级</li>
+</ul>
+</li>
+<li>AutoTask 自动执行</li>
+</ul>
+</blockquote>
+<h4 id="4-3-1-Yearning工具部署"><a href="#4-3-1-Yearning工具部署" class="headerlink" title="4.3.1 Yearning工具部署"></a>4.3.1 Yearning工具部署</h4><pre class="line-numbers language-none"><code class="language-none"># 下载地址
+https://github.com/cookieY/Yearning/releases/tag/2.3.5
+
+1. 配置文件设计
+# vim conf.toml 
+[Mysql]
+Db = "Yearning"
+Host = "10.0.0.51"
+Port = "3306"
+Password = "Test123"
+User = "root"
+
+[General]
+SecretKey = "dbcjqheupqjsuwsm"
+Hours = 4
+
+
+2. 初始化及安装
+./Yearning install
+
+3. 启动服务
+./Yearning run --push "10.0.0.60" --port "8000"
+
+4. 登录
+默认账号/密码：admin/Yearning_admin
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="4-3-1-工具使用"><a href="#4-3-1-工具使用" class="headerlink" title="4.3.1 工具使用"></a>4.3.1 工具使用</h4><pre class="line-numbers language-none"><code class="language-none">请参照视频操作流程。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<h3 id="5-数据安全保护-MySQL数据备份恢复"><a href="#5-数据安全保护-MySQL数据备份恢复" class="headerlink" title="5.数据安全保护-MySQL数据备份恢复"></a>5.数据安全保护-MySQL数据备份恢复</h3><h4 id="5-0-数据损坏场景"><a href="#5-0-数据损坏场景" class="headerlink" title="5.0 数据损坏场景"></a>5.0 数据损坏场景</h4><pre class="line-numbers language-none"><code class="language-none">物理损坏：主机硬件损坏，服务器宕机，磁盘损坏，rm,dd,坏块，坏道
+解决方案：主从、高可用架构、灾备、备份恢复
+
+逻辑损坏：drop truncate  delete update
+解决方案：备份恢复、闪回工具、binlog、延时从库。。。
+
+目标： 将数据尽可能恢复到故障之前的状态（PITR），减少数据损失<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="5-1-在数据备份中需要做哪些事情？"><a href="#5-1-在数据备份中需要做哪些事情？" class="headerlink" title="5.1 在数据备份中需要做哪些事情？"></a>5.1 在数据备份中需要做哪些事情？</h4><pre class="line-numbers language-none"><code class="language-none">设计备份策略
+    工具 ： 逻辑备份、物理备份
+    周期 ： 每天、每周、每月
+日常备份巡检
+	日志
+	备份大小
+定期恢复演练(测试库)
+	季度
+	半年	
+故障恢复
+升级迁移<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="5-2-MySQL数据库备份方式"><a href="#5-2-MySQL数据库备份方式" class="headerlink" title="5.2 MySQL数据库备份方式"></a>5.2 MySQL数据库备份方式</h4><pre class="line-numbers language-none"><code class="language-none">逻辑备份： 就是备份SQL
+mysqldump
+load data/mysqlimport
+mydumper
+
+物理备份：拷贝数据文件
+Percona Xtrabackup 8.0.12+ 
+Enterprise Backup
+8017+ Clone Plugin
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="5-3-mysqldump逻辑备份应用"><a href="#5-3-mysqldump逻辑备份应用" class="headerlink" title="5.3 mysqldump逻辑备份应用"></a>5.3 mysqldump逻辑备份应用</h4><pre class="line-numbers language-none"><code class="language-none">-A 全备参数
+-B db1 db2 db3 备份多个单库
+备份单个或多个表
+-R            备份存储过程及函数
+--triggers    备份触发器
+-E            备份事件
+
+
+--master-data=2
+
+--max-allowed-packet=#
+
+mysqldump -uroot -p -A -R -E --triggers --master-data=2  --single-transaction --set-gtid-purged=OFF --max-allowed-packet=256M &gt;/data/backup/full.sql
+
+--max-allowed-packet=# 
+The maximum packet length to send to or receive from server
+
+例子：
+mysqldump -uroot -p123 -A  -R  --triggers --master-data=2  --single-transaction|gzip &gt; /backup/full_$(date +%F).sql.gz
+mysqldump -uroot -p123 -A  -R  --triggers --master-data=2  --single-transaction|gzip &gt; /backup/full_$(date +%F-%T).sql.gz
+
+mysqldump备份的恢复方式（在生产中恢复要谨慎，恢复会删除重复的表）
+set sql_log_bin=0;
+source /backup/full.sql
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="5-4-PXB-物理备份应用"><a href="#5-4-PXB-物理备份应用" class="headerlink" title="5.4 PXB 物理备份应用"></a>5.4 PXB 物理备份应用</h4><h5 id="5-4-1-全备应用"><a href="#5-4-1-全备应用" class="headerlink" title="5.4.1 全备应用"></a>5.4.1 全备应用</h5><pre class="line-numbers language-none"><code class="language-none">Percona xtrabackup
+
+1.全量备份
+xtrabackup --defaults-file=/etc/my.cnf --backup --target-dir=/data/backup/full
+
+2.数据恢复
+2.1 准备
+xtrabackup  --prepare --target-dir=/data/backup/full
+2.2 拷回数据
+xtrabackup --copy-back --target-dir=/data/backup/full
+2.3 修改目录属性启动数据库
+  chown -R mysql.mysql /data/3306/data
+  chmod -R 755 /data/3306/data
+  
+2.4 启动数据库实例
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="5-4-2-增量备份应用"><a href="#5-4-2-增量备份应用" class="headerlink" title="5.4.2 增量备份应用"></a>5.4.2 增量备份应用</h5><pre class="line-numbers language-none"><code class="language-none">全量备份的目录为： mkdir  -p /data/backup/full
+增量备份的目录为： mkdir  -p /data/backup/inc
+1.备份操作：
+1.1.全量备份：
+xtrabackup --defaults-file=/etc/my.cnf --backup --parallel=4 --target-dir=/data/backup/full
+1.2.增量备份：
+xtrabackup --defaults-file=/etc/my.cnf --backup --parallel=4 --target-dir=/data/backup/inc  --incremental-basedir=/data/backup/full
+ 
+2.恢复操作：
+2.1 准备全备份的日志：
+xtrabackup --prepare --apply-log-only --target-dir=/data/backup/full
+2.2 准备增量备份的日志：
+xtrabackup --prepare --apply-log-only --target-dir=/data/backup/full  --incremental-dir=/data/backup/inc
+2.3 全备份准备：
+xtrabackup --prepare --target-dir=/data/backup/full
+2.4 拷回数据：
+xtrabackup   --copy-back --target-dir=/data/backup/full
+ 
+2.5 修改数据目录的权限和属性：
+chown -R mysql:mysql /data/
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="5-5-Clone-Plugin备份工具使用"><a href="#5-5-Clone-Plugin备份工具使用" class="headerlink" title="5.5 Clone Plugin备份工具使用"></a>5.5 Clone Plugin备份工具使用</h4><h5 id="5-5-1-本地克隆-8-0-17"><a href="#5-5-1-本地克隆-8-0-17" class="headerlink" title="5.5.1 本地克隆(8.0.17+)"></a>5.5.1 本地克隆(8.0.17+)</h5><pre class="line-numbers language-none"><code class="language-none"># 加载插件
+INSTALL PLUGIN clone SONAME 'mysql_clone.so';
+或
+[mysqld]
+plugin-load-add=mysql_clone.so
+clone=FORCE_PLUS_PERMANENT
+
+SELECT PLUGIN_NAME, PLUGIN_STATUS
+FROM INFORMATION_SCHEMA.PLUGINS
+WHERE PLUGIN_NAME LIKE 'clone';
+
+# 创建克隆专用用户
+CREATE USER clone_user@'%' IDENTIFIED with mysql_native_password by 'password'; 
+GRANT BACKUP_ADMIN ON *.* TO 'clone_user'; 
+
+# BACKUP_ADMIN是MySQL8.0 才有的备份锁的权限
+
+# 本地克隆
+[root@db01 3306]# mkdir -p /data/test/
+[root@db01 3306]# chown -R mysql.mysql /data/
+mysql -uclone_user -ppassword
+CLONE LOCAL DATA DIRECTORY = '/data/test/clonedir';
+
+# 观测状态
+db01 [(none)]&gt; SELECT STAGE, STATE, END_TIME FROM performance_schema.clone_progress;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="5-5-2-远程克隆"><a href="#5-5-2-远程克隆" class="headerlink" title="5.5.2 远程克隆"></a>5.5.2 远程克隆</h5><pre class="line-numbers language-none"><code class="language-none">源端           ----》 目标
+128                   129
+backup_admin          clone_plugin
+
+
+# 加载插件
+INSTALL PLUGIN clone SONAME 'mysql_clone.so';
+或
+[mysqld]
+plugin-load-add=mysql_clone.so
+clone=FORCE_PLUS_PERMANENT
+
+SELECT PLUGIN_NAME, PLUGIN_STATUS
+FROM INFORMATION_SCHEMA.PLUGINS
+WHERE PLUGIN_NAME LIKE 'clone';
+
+# 创建远程clone用户
+## 捐赠者授权(源端)
+create user test_s@'%' identified by '123';
+grant backup_admin on *.* to test_s@'%';
+
+## 接受者授权（目标端）
+create user test_t@'%' identified by '123';
+grant clone_admin on *.* to test_t@'%';
+
+# 远程clone(目标端)
+## 开始克隆
+SET GLOBAL clone_valid_donor_list='10.0.0.128:3306';
+mysql -utest_t -p123 -h10.0.0.129  -P3306
+CLONE INSTANCE FROM test_s@'10.0.0.128':3306 IDENTIFIED BY '123';
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="6-MySQL架构设计方面对于安全的保证"><a href="#6-MySQL架构设计方面对于安全的保证" class="headerlink" title="6.MySQL架构设计方面对于安全的保证"></a>6.MySQL架构设计方面对于安全的保证</h3><h4 id="6-1-数据安全在架构方面的要求-高可用容灾技术"><a href="#6-1-数据安全在架构方面的要求-高可用容灾技术" class="headerlink" title="6.1 数据安全在架构方面的要求-高可用容灾技术"></a>6.1 数据安全在架构方面的要求-高可用容灾技术</h4><table>
+<thead>
+<tr>
+<th>无故障时间</th>
+<th>故障时间</th>
+<th>典型架构</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>99.9%</td>
+<td>0.1%= 525.6  min</td>
+<td>KA+双主 ：人为干预</td>
+</tr>
+<tr>
+<td>99.99%</td>
+<td>0.01%= 52.56  min</td>
+<td>MHA 、RM、 consul+zk、ORCH、xenon   ：半自动化，都要配合5.7+GTID+增强半同步</td>
+</tr>
+<tr>
+<td>99.999%</td>
+<td>0.001%   =5.256  min</td>
+<td>PXC 、 MGR 、MIC、MGC</td>
+</tr>
+<tr>
+<td>99.9999%</td>
+<td>0.0001%  =0.5256 min</td>
+<td>自动化、云化、平台化、分布式</td>
+</tr>
+</tbody></table>
+<h4 id="6-2-企业容灾级别"><a href="#6-2-企业容灾级别" class="headerlink" title="6.2 企业容灾级别"></a>6.2 企业容灾级别</h4><table>
+<thead>
+<tr>
+<th>级别</th>
+<th>方式</th>
+<th>RPO</th>
+<th>RTO</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>L0</td>
+<td><strong>无备源中心</strong>:<br>没有灾难恢复能力，只在本地进行数据备份</td>
+<td>24小时+</td>
+<td>4小时+</td>
+</tr>
+<tr>
+<td>L1</td>
+<td><strong>本地备份+异地保存</strong>：<br>本地将关键数据备份，然后送到异地保存。<br>灾难发生后，按预定数据恢复程序恢复系统和数据。</td>
+<td>24小时+</td>
+<td>8小时+</td>
+</tr>
+<tr>
+<td>L2</td>
+<td><strong>双中心主备模式</strong>:<br>在异地建立一个热备份点，通过网络进行数据备份。<br>当出现灾难时，备份站点接替主站点的业务，维护业务连续性</td>
+<td>秒级</td>
+<td>数分钟到半小时</td>
+</tr>
+<tr>
+<td>L3</td>
+<td><strong>双中心双活</strong><br>在相隔较远的地方分别建立两个数据中心，进行相互数据备份。<br>当某个数据中心发生灾难时，另一个数据中心接替其工作任务。</td>
+<td>秒级</td>
+<td>秒级</td>
+</tr>
+<tr>
+<td>L4</td>
+<td><strong>双中心双活 + 异地热备 = 两地三中心</strong><br>在同城分别建立两个数据中心，进行相互数据备份。<br>当该城市的2个中心同时不可用（地震/大面积停电/网络等），快速切换到异地</td>
+<td>秒级</td>
+<td>分钟级</td>
+</tr>
+</tbody></table>
+<pre class="line-numbers language-none"><code class="language-none">RTO (Recovery Time Objective，复原时间目标)是企业可容许服务中断的时间长度。比如说灾难发生后半天内便需要恢复，RTO值就是十二小时；
+RPO (Recovery Point Objective，复原点目标)是指当服务恢复后，恢复得来的数据所对应时的间点。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<h4 id="6-2-MySQL-Orch高可用架构设计于应用"><a href="#6-2-MySQL-Orch高可用架构设计于应用" class="headerlink" title="6.2 MySQL Orch高可用架构设计于应用"></a>6.2 MySQL Orch高可用架构设计于应用</h4><h4 id="6-3-1-ORCH介绍"><a href="#6-3-1-ORCH介绍" class="headerlink" title="6.3.1 ORCH介绍"></a>6.3.1 ORCH介绍</h4><pre class="line-numbers language-none"><code class="language-none">Orchestrator（orch）：go编写的MySQL高可用性和复制拓扑管理工具，支持复制拓扑结构的调整，自动故障转移和手动主从切换等。后端数据库用MySQL或SQLite存储元数据，并提供Web界面展示MySQL复制的拓扑关系及状态，通过Web可更改MySQL实例的复制关系和部分配置信息，同时也提供命令行和api接口，方便运维管理。相对比MHA来看最重要的是解决了管理节点的单点问题，其通过raft协议保证本身的高可用。GitHub的一部分管理也在用该工具进行管理。
+
+① 自动发现MySQL的复制拓扑，并且在web上展示。
+② 重构复制关系，可以在web进行拖图来进行复制关系变更。
+③ 检测主异常，并可以自动或手动恢复，通过Hooks进行自定义脚本。
+④ 支持命令行和web界面管理复制。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="6-3-2-ORCH功能展示"><a href="#6-3-2-ORCH功能展示" class="headerlink" title="6.3.2 ORCH功能展示"></a>6.3.2 ORCH功能展示</h4><pre class="line-numbers language-none"><code class="language-none">参考视频功能。<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="../../../../../../../about" rel="external nofollow noreferrer">fantasycat6</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://fantasycat6.github.io">https://fantasycat6.github.io</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="../../../../../../../about" target="_blank">fantasycat6</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="../../../../../../../libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="../../../../../../../medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="../../../../../../../medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="../../50nginx-ji-chu-ying-yong-shi-zhan/nginx-ji-chu-ying-yong-shi-zhan-01-ke-cheng-da-gang-yu-an-zhuang-bu-shu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../../../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-16
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            fantasycat6
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="../../46-ying-ji-xiang-ying/07ddos-shi-zhan-yan-shi/ddos-shi-zhan-yan-lian/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../../../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            fantasycat6
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Hexo<br />'
+            + '文章作者: fantasycat6<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="../../../../../../../libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="../../../../../../../libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="7788095093"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="../../../../../../../libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022-2023</span>
+            
+            <span id="year">2022</span>
+            <a href="../../../../../../../about" target="_blank">fantasycat6</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">312.9k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/fantasycat6" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1745272762@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1745272762" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1745272762" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="../../../../../../../atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('../../../../../../../search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="../../../../../../../libs/materialize/materialize.min.js"></script>
+    <script src="../../../../../../../libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="../../../../../../../libs/aos/aos.js"></script>
+    <script src="../../../../../../../libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="../../../../../../../libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="../../../../../../../js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="../../../../../../../libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="../../../../../../../libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="../../../../../../../libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

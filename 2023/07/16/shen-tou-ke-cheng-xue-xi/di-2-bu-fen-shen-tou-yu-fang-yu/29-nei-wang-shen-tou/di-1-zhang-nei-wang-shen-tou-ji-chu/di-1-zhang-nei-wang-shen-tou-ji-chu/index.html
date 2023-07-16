@@ -1,0 +1,1437 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Hexo">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Hexo</title>
+    <link rel="icon" type="image/png" href="../../../../../../../../favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../css/matery.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../css/my.css">
+
+    <script src="../../../../../../../../libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="../../../../../../../../index.html" class="waves-effect waves-light">
+                    
+                    <img src="../../../../../../../../medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Hexo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../index.html" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="../../../../../../../../medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Hexo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../index.html" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('../../../../../../../../medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="../../../../../../../../libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-07-16
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    7.3k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    25 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="../../../../../../../../libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="内网渗透介绍"><a href="#内网渗透介绍" class="headerlink" title="内网渗透介绍"></a>内网渗透介绍</h1><h2 id="攻击流程讲解"><a href="#攻击流程讲解" class="headerlink" title="攻击流程讲解"></a>攻击流程讲解</h2><p><img src="assets/image-20221226154551665.png" alt="image-20221226154551665"></p>
+<h2 id="内网介绍"><a href="#内网介绍" class="headerlink" title="内网介绍"></a>内网介绍</h2><p>内网也指<strong>局域网</strong>，是指在某一区域内由多台计算机互连而成的计算机组，组网范围通常在数千米以内。</p>
+<p>在局域网中可以实现文件管理、应用软件共享、打印机共享、工作组内的日程安排、电子邮件和传真通信服务等。</p>
+<p>内网是封闭的，可以由办公室内的两台计算机组成，也可以由一个公司内的大量计算机组成。</p>
+<p><img src="assets/image-20221226161350556.png" alt="image-20221226161350556"></p>
+<h1 id="工作组介绍"><a href="#工作组介绍" class="headerlink" title="工作组介绍"></a>工作组介绍</h1><h2 id="1、工作组的介绍"><a href="#1、工作组的介绍" class="headerlink" title="1、工作组的介绍"></a>1、工作组的介绍</h2><p>在一个大型单位里,可能有成百上千台计算机互相连接组成局域网,它们都会列在”网络”(网上邻居) 内。如果不对这些计算机进行分组,网络的混乱程度是可想而知的 为了解决这一问题,产生了工作组(  Work Group)这个概念。将不同的计算机按功能(或部 门)分别列入不同的工作组,例如技术部的计算 机都列入”技术部”工作组、行政部的计算机都 列入”行政部”工作组。要想访问某个部门的资源,只要 在”网络”里双击该部门的工作组名 就可以看到该部门的所有计算机了。相比不分组的情况,这样的情 况有序得多(尤其对大型局域 网来说)。</p>
+<p>工作组如图</p>
+<p><img src="assets/image-20221226162136569.png" alt="image-20221226162136569"></p>
+<h2 id="2、加入工作组"><a href="#2、加入工作组" class="headerlink" title="2、加入工作组"></a>2、加入工作组</h2><p>加入工作组:加入工作组的方法很简单。右击桌面上的”计算机”图标,在弹出的快捷菜单中选择”属性” 选项,然后依次单击”更改设置”和”更改”按钮,在”计算机名”输入框中输入计算机的 名称,在”工作组”输 入框中输入想要加入的工作组的名称</p>
+<p><img src="assets/image-20221226162158923.png" alt="image-20221226162158923"></p>
+<h2 id="3、创建工作组"><a href="#3、创建工作组" class="headerlink" title="3、创建工作组"></a>3、创建工作组</h2><p>创建工作组:如果输入的工作组的名称在网络中不存在,就相当于新建了一个工作组(当然,暂时只有当 前这台计算机在该工作组内)。单击”确定”按钮, Windows会提示需要重新启动。在重新启动 之后进 入”网络”,就可以看到所加入的工作组的成员了。当然,也可以退出工作组(只要修改工作组的名称即 可)</p>
+<h2 id="4、退出工作组"><a href="#4、退出工作组" class="headerlink" title="4、退出工作组"></a>4、退出工作组</h2><p>只要将工作组名称改动即可。不过在网上别人照样可以访问你的共享资源。你也可以随便加入同一网 络上的任何其它工作组。“工作组”就像一个可以自由进入和退出的“社团”，方便同一组的计算机 互相访问。</p>
+<h2 id="5、访问工作组"><a href="#5、访问工作组" class="headerlink" title="5、访问工作组"></a>5、访问工作组</h2><p>文件–&gt;网络，就可以查看到我们工作组中的其他计算机了，当你要访问某台计算机时，点击它，然 后输入该主机的用户名和密码即可看到该主机共享的文件夹。</p>
+<h2 id="6、工作组优缺点"><a href="#6、工作组优缺点" class="headerlink" title="6、工作组优缺点"></a>6、工作组优缺点</h2><h3 id="优点"><a href="#优点" class="headerlink" title="优点"></a>优点</h3><ol>
+<li>方便管理和维护 </li>
+<li>资源分配方便和灵活</li>
+</ol>
+<h3 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h3><ol>
+<li>缺乏集中管理与控制的机制 </li>
+<li>没有集中的统一帐户管理 </li>
+<li>只适合小规模用户的使用</li>
+</ol>
+<h1 id="域介绍"><a href="#域介绍" class="headerlink" title="域介绍"></a>域介绍</h1><h2 id="域的介绍"><a href="#域的介绍" class="headerlink" title="域的介绍"></a>域的介绍</h2><p>Windows域是计算机网络的一种形式，其中所有用户帐户 ，计算机，打印机和其他安全主体都在位 于称为<strong>域控制器</strong>的一个或多个中央计算机集群上的中央数据库中注册。 身份验证在域控制器上进 行。 在域中使用计算机的每个人都会收到一个唯一的用户帐户，然后可以为该帐户分配对该域内资 源的访问权限。 </p>
+<p>域 ( Domain)是一个有安全边界的计算机集合(安全边界的意思是,在两个域中,一个域中 的用户无法 访问另一个域中的资源)可以简单地把域理解成升级版的工作组。与工作组相比,域 的安全管理控制机 制更加严格。用户要想访问域内的资源,必须以合法的身份登录域,而用户对域内的资源拥有什么样的 权限,还取决于用户在域内的身份。</p>
+<p>域控制器( Domain Controller,DC)是域中的一台类似管理服务器的计算机 </p>
+<p>域控制器中存在由这个域的账户、密码、属于这个域的计算机等信息构成的数据库。当计算 机连接 到域时,域控制器首先要鉴别这台计算机是否属于这个域,以及用户使用的登录账号是否存在、密码是 否正确。如果以上信息有一项不正确,域控制器就会拒绝这个用户通过这台计算机登录。如果用户不 能登录,就不能访问服务器中的资源。 </p>
+<p>域控制器是整个域的通信枢纽,所有的权限身份验证都在域控制器上进行,也就是说,域内 所有用来验 证身份的账号和密码散列值都保存在域控制器中</p>
+<h2 id="单域"><a href="#单域" class="headerlink" title="单域"></a>单域</h2><p>通常,在一个地理位置固定的小公司里,建立一个域就可以满足需求。在一个域内,一般要 有至少两台 域服务器,一台作为DC,另一台作为备份DC。</p>
+<p><img src="assets/image-20221226162526938.png" alt="image-20221226162526938"></p>
+<h2 id="父域和子域"><a href="#父域和子域" class="headerlink" title="父域和子域"></a>父域和子域</h2><p>出于管理及其他需求,需要在网络中划分多个域。第一个域称为父域,各分部的域称为该域的子域。例 如 大公司的各个分公司位于不同的地点,就需要使用父域及子域。如果把不同 地点的分公司放在同一 个域内,那么它们之间在信息交互(包括同步、复制等)上花费的时间就 会比较长,占用的带宽也会比较 大(在同一个域内,信息交互的条目是很多的,而且不会压缩; 在不同的域之间,信息交互的条日相对较少, 而且可以压缩)。这样处理有一个好处,就是分公司 可以通过自己的域来管理自己的资源。还有一种情 况是出于安全策略的考虑(每个域都有自己的 安全策略)例如,一个公司的财务部希望使用特定的安全 策略(包括账号密码策略等)、那么可 以将财务部作为一个子域来单独管理</p>
+<h2 id="域树"><a href="#域树" class="headerlink" title="域树"></a>域树</h2><p>域树(Tree)是多个域通过建立信任关系组成的集合。一个域管理员只能管理本域,不能访问 或者管理 其他域。如果两个域之间需要互相访问,则需要建立信任关系，信任关系是连接不同域的桥梁。域树 内的父域与子域,不但可以按照需要互相管理、还可以跨网络分配文 件和打印机等设备及资源,从而在 不同的域之间实现网络资源的共享与管理、通信及数据传输。 在一个域树中,父域可以包含多个子域。子域是相对父域来说的,指的是域名中的每一个段。 各子域之 间用点号隔开,一个”.”代表一个层次。放在域名最后的子域称为最高级子域或一级 域,它前面的子域称 为二级域</p>
+<p><img src="assets/image-20221226162746782.png" alt="image-20221226162746782"></p>
+<h2 id="域森林"><a href="#域森林" class="headerlink" title="域森林"></a>域森林</h2><p>域森林( Forest)是指多个域树通过建立信任关系组成的集合。例如,在一个公司兼并场景中 某公司使 用域树 abc. com,被兼并的公司本来有自己的域树 abc. net,域树abc.net无法挂在域树abc.com下。 所以,域树abc.com与域树 abc. net之间需要通过建立信任关系来构成域森林。通过域树之间的信任 关系,可以管理和使用整个域森林中的资源,并保留被兼并公司自身原有的特性,如图所示。</p>
+<p><img src="assets/image-20221226162819382.png" alt="image-20221226162819382"></p>
+<h2 id="域名服务器"><a href="#域名服务器" class="headerlink" title="域名服务器"></a>域名服务器</h2><p>域名服务器( Domain Name Server,DNs)是指用于实现域名( Domain Name)和与之相对的IP地址(  IP Address)转换的服务器。从对域树的介绍中可以看出,域树中的域名和DNS域名非常相似。而实际 上,因为域中的计算机是使用DNS来定位域控制器、服务器及其他计算机、网络服务的,所以域的名字 就是DNS域的名字。在内网渗透测试中,大都是通过寻找DNS服务器 来确定域控制器的位置的(DNS 服务器和域控制器通常配置在同一机器上）</p>
+<h1 id="域环境搭建"><a href="#域环境搭建" class="headerlink" title="域环境搭建"></a>域环境搭建</h1><h2 id="搭建域环境"><a href="#搭建域环境" class="headerlink" title="搭建域环境"></a>搭建域环境</h2><p>在学习内网渗透测试时,需要构建一个内网环境并搭建攻击主机,通过具体操作理解漏洞的工作原理,从 而采取相应的防范措施。一个完整的内网环境,需要各种应用程序、操作系统和网 络设备,可能比较复 杂。我们只需要搭建其中的核心部分,也就是Linux服务器和 Windows服务 器。在本节中,将详细讲 解如何在 Windows平台上搭建域环境</p>
+<h2 id="域环境介绍"><a href="#域环境介绍" class="headerlink" title="域环境介绍"></a>域环境介绍</h2><p>通常所说的内网渗透测试,很大程度上就是域渗透测试。搭建域渗透测试环境,在 Windows的活动目 录环境下进行一系列操作,掌握其操作方法和运行机制,对内网的安全维护有很大的帮 助。常见的域环 境是使用 Windows server2012R2、Windows7或者 Windows Server2003操作系 统搭建的  Windows域环境。 在下面的实验中,将创建一个域环境。配置一台 WindowsServer2012R2服务器,将其升级为域控制 器,然后将 Windows Server2008R2计算机和 Windows7、Windows Server2003计算机加入该 域。四台机器</p>
+<table>
+<thead>
+<tr>
+<th>机器名称</th>
+<th>机器IP</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>WindowsServer 2012 R2（域控）</td>
+<td>192.168.41.10</td>
+</tr>
+<tr>
+<td>WindowsServer 2008 R2（域内主机）</td>
+<td>192.168.41.20</td>
+</tr>
+<tr>
+<td>WindowsServer 2003 R2（域内主机）</td>
+<td>192.168.41.30</td>
+</tr>
+</tbody></table>
+<h2 id="搭建环境"><a href="#搭建环境" class="headerlink" title="搭建环境"></a>搭建环境</h2><h3 id="1、设置服务器"><a href="#1、设置服务器" class="headerlink" title="1、设置服务器"></a>1、设置服务器</h3><p>在虚拟机中安装 Windowsserver2012R2操作系统,设置其P地址为192.168.41.10子网掩码为 255252550,DNS指向本机IP地址。</p>
+<p><img src="assets/image-20221226163117277.png" alt="image-20221226163117277"></p>
+<h2 id="2、更改计算机名"><a href="#2、更改计算机名" class="headerlink" title="2、更改计算机名"></a>2、更改计算机名</h2><p>使用本地管理员账户登录,将计算机名改为”DC”(可以随意取名),如图所示。在将本机升级为域控制器 后,机器全名会自动变成”DC.xxx.com”。更改后,需要重启服务器</p>
+<p><img src="assets/image-20221226163148785.png" alt="image-20221226163148785"></p>
+<h2 id="3、安装域控制器和DNS服务"><a href="#3、安装域控制器和DNS服务" class="headerlink" title="3、安装域控制器和DNS服务"></a>3、安装域控制器和DNS服务</h2><p>接下来,在 Windows server2012R2服务器上安装域控制器和DNS服务。登录  WindowsServer2012R2服务器,可以看到”服务器管理器”窗口,如图所示</p>
+<p><img src="assets/image-20221226163232623.png" alt="image-20221226163232623"></p>
+<p>单击【添加角色和功能】选项,进入添加角色和功能向导界面。在【开始之前】部分, 本 保持默认设 置。单击下一步按钮,进入【安装类型】部分,选择基于角色或者基于功能的 安装选项。单击下一步按 钮,进入【服务器选择】部分。目前,在服务器池中只有当前这 台机器,保持默认设置。单击下一步按 钮,在【服务器角色】部分勾选【 Active Directory域 服务】和【DNS服务器】复选框</p>
+<p><img src="assets/image-20221226163254859.png" alt="image-20221226163254859"></p>
+<p>在”功能”界面保持默认设置,单击”下一步”按钮,进人”确认”部分。确认需要安装的组件,勾选”如果需 要,自动重新启动目标服务器”复选框,,然后单击”安装” 按钮</p>
+<h2 id="4、升级服务器"><a href="#4、升级服务器" class="headerlink" title="4、升级服务器"></a>4、升级服务器</h2><p>安装 Active Directory域服务后,需要将此服务器提升为域控制器。单击”将此服务器提升为域控制 器”选项(如果不慎单击了”关闭”按钮,可以打开”服务器管理器”界面进行操作),在界面右上角可以看到 一个中间有”!”的三角形按钮。单击该按钮,如图所示。</p>
+<p><img src="assets/image-20221226163326941.png" alt="image-20221226163326941"></p>
+<p>接着,进人” ActiveDirectory域服务配置向导”界面,在”部署配置”部分单击选中”添加新林(F)”单选按 钮,然后输入根域名”hack.com”(必须使用合DNS命名约定的根域名)</p>
+<p><img src="assets/image-20221226163342181.png" alt="image-20221226163342181"></p>
+<p>在【域控制器选项】部分,将林功能级别、域功能级别都设置为” WindowsServer2012R2”,创建域林 时,在默认情况下应选择DNS服务器,林中的第一个域控制器必须是全局目录服务器且不能是只读域控 制器(RODC)。然后,设置目录服务还原模式的密码(在开机 进入安全模式修复活动目录数据库时将使 用此密码)</p>
+<p><img src="assets/image-20221226163402592.png" alt="image-20221226163402592"></p>
+<p>在【DNS选项】部分会出现关于DNS的警告。不用理会该警告,保持默认设置。单击”下一步”按钮,进 入”其他选项”部分。在”NetBIOS域名”(不支持DNS域名的旧版本操作系统,例如Windows98、NT,需 要通过NetBIOs域名进行通信)部分保持默认设置。单击”下一步”按钮,进人”路径”部分,指定数据库、 日志、SYSVOL文件夹的位置,其他选项保持默认设置。单击”下一步”按钮,保持默认设置。单击”下一 步”按钮,最后单击”安装按钮。安装后,需要重新启动服务器，最后升级为域控</p>
+<p><img src="assets/image-20221226163420752.png" alt="image-20221226163420752"></p>
+<p>服务器重新启动后,需要使用域管理员账户( HACKE Administrator)登录。此时,在”服务器管理器”界 面中就可以看到ADDS、DNS服务了</p>
+<p><img src="assets/image-20221226163443990.png" alt="image-20221226163443990"></p>
+<h2 id="5、创建-Active-Directory用户"><a href="#5、创建-Active-Directory用户" class="headerlink" title="5、创建 Active Directory用户"></a>5、创建 Active Directory用户</h2><p>为 Windows Server2008R2/2003和Windows7用户创建域控制器账户。如图1-26所示,在” Active  Directory用户和计算机”界面中选择Users”目录并单击右键,使用弹出的快捷菜单添加用户。</p>
+<p><img src="assets/image-20221226163510512.png" alt="image-20221226163510512"></p>
+<p>创建用户</p>
+<p><img src="assets/image-20221226163526245.png" alt="image-20221226163526245"></p>
+<h2 id="将机器加入域"><a href="#将机器加入域" class="headerlink" title="将机器加入域"></a>将机器加入域</h2><p>将Windows server 2008 计算机添加到该域中。如图所示,设置IP地址为192.168.41.20,设置DNS 地 址为192.168.41.10,然后运行” ping hack.com”命令进行测试。</p>
+<p><img src="assets/image-20221226163601956.png" alt="image-20221226163601956"></p>
+<p>ping 域控</p>
+<p><img src="assets/image-20221226163617225.png" alt="image-20221226163617225"></p>
+<p>接下来,将主机添加到域中,将计算机名改为”PC-2008”域名改为”hack.com”。单击”确定”按钮,会弹出 要求输入拥有权限的域账户名和密码的对话框。在 本实验中,输人域管理员的账号和密码,如图所示。操作完成后,会出现需要重新启动计算 机的提示。</p>
+<p><img src="assets/image-20221226163644494.png" alt="image-20221226163644494"></p>
+<h1 id="活动目录"><a href="#活动目录" class="headerlink" title="活动目录"></a>活动目录</h1><h2 id="活动目录介绍"><a href="#活动目录介绍" class="headerlink" title="活动目录介绍"></a>活动目录介绍</h2><p>活动目录( Active Directory,AD)是指域环境中提供目录服务的组件</p>
+<p>目录用于存储有关网络对象(例如用户、组、计算机、共享资源、打印机和联系人等)的信息。目录服 务是指帮助用户快速、准确地从目录中找到其所需要的信息的服务。活动目录实现了 目录服务,为企 业提供了网络环境的集中式管理机制</p>
+<p>活动目录的逻辑结构包括前面讲过的组织单元(OU)、域、域树、域森林。域树内的所有域 共享一个 活动目录,这个活动目录内的数据分散存储在各个域中,且每个域只存储该域内的数 据。</p>
+<p><img src="assets/image-20221226163733192.png" alt="image-20221226163733192"></p>
+<p>活动目录主要提供以下功能</p>
+<p>账号集中管理:所有账号均存储在服务器中,以便执行命令和重置密码等。 软件集中管理:统一推送软件、安装网络打印机等。利用软件发布策略分发软件,可以让 用户自由选择需要安装的软件。 环境集中管理:统一客户端桌面、IE、TCPP协议等设置。 增强安全性:统一部署杀毒软件和病毒扫描任务、集中管理用户的计算机权限、统一制定用户密码策略等。可以监控网络,对资料进行统一管理。 更可靠,更短的宕机时间:例如,利用活动目录控制用户访问权限,利用群集、负载均衡等技术对文件服务器进行容灾设置。网络更可靠,宕机时间更短。 活动目录是微软提供的统一管理基础平台,ISA、 Exchange、SMS等都依赖这个平台</p>
+<h2 id="组织单元介绍"><a href="#组织单元介绍" class="headerlink" title="组织单元介绍"></a>组织单元介绍</h2><p>组织单元（OU）是域中包含的一类目录对象如用户、计算机和组、文件与打印机等资源，是一个容 器，可以在OU上部署组策略 </p>
+<p>组织单元是域中包含的一类目录对象如用户、计算机和组、文件与打印机等资源。是一个容器。组织 单元还具有分层结构可用来建立域的分层结构模型，进而可使用户把网络所需的域的数量减至最小</p>
+<p> 现在有以下的需求，一个公司，人员需求如下</p>
+<table>
+<thead>
+<tr>
+<th>部门</th>
+<th>人数</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>财务部门</td>
+<td>20人</td>
+</tr>
+<tr>
+<td>人事部门</td>
+<td>10</td>
+</tr>
+<tr>
+<td>IT部门</td>
+<td>100</td>
+</tr>
+<tr>
+<td>网络管理员</td>
+<td>3</td>
+</tr>
+</tbody></table>
+<h2 id="创建组织单元"><a href="#创建组织单元" class="headerlink" title="创建组织单元"></a>创建组织单元</h2><p><img src="assets/image-20221226163928842.png" alt="image-20221226163928842"></p>
+<h2 id="添加人员"><a href="#添加人员" class="headerlink" title="添加人员"></a>添加人员</h2><p>在创建的组织单元里新建用户</p>
+<img src="assets/image-20221226163953187.png" alt="image-20221226163953187" style="zoom:150%;">
+
+<p><img src="assets/image-20221226164017690.png" alt="image-20221226164017690"></p>
+<h2 id="委派控制"><a href="#委派控制" class="headerlink" title="委派控制"></a>委派控制</h2><p>因为财务部门有20个人，不能有问题就去找网络管理员，需要委派控制权限给财务部门一个代表， 让他去执行，也就是说在财务部门找一个代表，他由相应的权限去管理财务部门的计算机和用户</p>
+<p><img src="assets/image-20221226164056993.png" alt="image-20221226164056993"></p>
+<h1 id="域内权限划分"><a href="#域内权限划分" class="headerlink" title="域内权限划分"></a>域内权限划分</h1><h2 id="域内权限"><a href="#域内权限" class="headerlink" title="域内权限"></a>域内权限</h2><h2 id="组"><a href="#组" class="headerlink" title="组"></a>组</h2><p>组( Group)是用户账号的集合。通过向组分配权限,就可以不必向每个用户分别分配权限。例如,管理 员在日常工作中,不必为单个用户账号设置独特的访问权限,只需要将用户账放到相应的安全组中。管 理员通过配置安全组访问权限,就可以为所有加入安全组的用户账号配置同样的权限。使用安全组而 不是单个的用户账号,可以大大简化网络的维护和管理工作</p>
+<h2 id="域本地组"><a href="#域本地组" class="headerlink" title="域本地组"></a>域本地组</h2><p>域本地组成员来自林中任何域中的用户账户、全局组和通用组以及本域中的域本地组，在本域范围内 可用。</p>
+<h2 id="全局组"><a href="#全局组" class="headerlink" title="全局组"></a>全局组</h2><p>全局组成员来自于同一域的用户账户和全局组，在林范围内可用</p>
+<h2 id="通用组"><a href="#通用组" class="headerlink" title="通用组"></a>通用组</h2><p>通用组成员来自林中任何域中的用户账户、全局组和其他的通用组，在全林范围内可用 </p>
+<p>可以这样简单地记忆: </p>
+<p>域本地组来自全林,作用于本域; </p>
+<p>全局组来自本域,作用于全林; </p>
+<p>通用组来自林,作用于全林。 </p>
+<p>案例一： </p>
+<p>有一个打印机连接域控，设置域本地组赋予使用打印机的权限，然后设置全局组，将人员都加入到全 局组，然后将全局组加入到域本地组就可以了 </p>
+<p>案例二 </p>
+<p>有三个域hack.com(在北京)，sh.hack.com(在上海)，gz.hack.com(在广州)组成林，然后北京财 务部门，需要进行结算，但是数据在北京的一台服务器上权限比较高只有北京财务人员可以使用，同 时因为北京人数不够，需要上海和广州支援，这个时候怎么办？ </p>
+<ol>
+<li>只需要在北京的建立一个<strong>域本地组</strong>，然后赋予域本地组权限可以访问财务的数据机器 </li>
+<li>在上海和广州分别建立<strong>全局组</strong> </li>
+<li>在北京的域控上将上海和广州的全局组加入进来</li>
+</ol>
+<h2 id="A-G-DL-P策略"><a href="#A-G-DL-P策略" class="headerlink" title="A-G-DL-P策略"></a>A-G-DL-P策略</h2><p>A-G-DL-P策略是指将用户账号添加到全局组中,将全局组添加到域本地组中,然后为域本地 组分配资 源权限 </p>
+<ol>
+<li>A表示用户账号( Account) </li>
+<li>G表示全局组( Global Group) </li>
+<li>U表示通用组( Universal Group) </li>
+<li>DL表示域本地组( Domain Local Group) </li>
+<li>P表示资源权限( Permission,许可)</li>
+</ol>
+<p>按照AG-DL-P策略对用户进行组织和管理是非常容易的。在AGDL-P策略形成以后,当 需要给一个用 户添加某个权限时,只要把这个用户添加到某个本地域组中就可以了。</p>
+<h2 id="重要的域本地组"><a href="#重要的域本地组" class="headerlink" title="重要的域本地组"></a>重要的域本地组</h2><p>管理员组( Administrators)的成员可以不受限制地存取计算机/域的资源。它不仅是最具权 力的一 个组,也是在活动目录和域控制器中默认具有管理员权限的组。该组的成员可以更 改 Enterprise  Admins、 Schema admins和 Domain admins组的成员关系,是域森林中强大的 服务管理组 </p>
+<p>远程登录组( Remote Desktop Users)的成员具有远程登录权限。 </p>
+<p>打印机操作员组( Print Operators)的成员可以管理网络打印机,包括建立、管理及删除网 络打印机, 并可以在本地登录和关闭域控制器。 </p>
+<p>账号操作员组( Account Operators)的成员可以创建和管理该域中的用户和组并为其设置权 限,也 可以在本地登录域控制器,但是,不能更改属于 Administrators或 Domain admins组 的账户,也不能 修改这些组。在默认情况下,该组中没有成员。</p>
+<p>服务器操作员组( Server Operators)的成员可以管理域服务器,其权限包括建立管理删除 任意服务 器的共享目录、管理网络打印机、备份任何服务器的文件、格式化服务器硬盘 锁定服务器、变更服 务器的系统时间、关闭域控制器等。在默认情况下,该组中没有成员。</p>
+<p>备份操作员组( Backup Operators)的成员可以在域控制器中执行备份和还原操作,并可以 在本地登 录和关闭域控制器。在默认情况下,该组中没有成员 </p>
+<p>再介绍几个重要的全局组、通用组的权限。 </p>
+<p>域管理员组( Domain Admins)的成员在所有加入域的服务器(工作站)、域控制器和活动 目录中均 默认拥有完整的管理员权限。因为该组会被添加到自己所在域的 Administrators 组中,因此可以继 承 Administrators组的所有权限。同时,该组默认会被添加到每台域成员 计算机的本地  Administrators组中,这样, Domain admins组就获得了域中所有计算机的所 有权。如果希望某用户 成为域系统管理员,建议将该用户添加到 Domain admins组中,而 不要直接将该用户添加到  Administrators组中。</p>
+<p>企业系统管理员组( Enterprise Admins)是域森林根域中的一个组。该组在域森林中的每个 域内都 是 Administrators组的成员,因此对所有域控制器都有完全访问权。</p>
+<p>架构管理员组( Schema admins)是域森林根域中的一个组,可以修改活动目录和域森林的 模式。该 组是为活动目录和域控制器提供完整权限的域用户组,因此,该组成员的资格是 非常重要的。</p>
+<p>域用户组( Domain users)中是所有的域成员。在默认情况下,任何由我们建立的用户账号 都属于  Domain Users组,而任何由我们建立的计算机账号都属于 Domain Computers组。因 此,如果想让 所有的账号都获得某种资源存取权限,可以将该权限指定给域用户组,或者 让域用户组属于具有该权限 的组。域用户组默认是内置域 Users组的成员。</p>
+<h1 id="安全域划分"><a href="#安全域划分" class="headerlink" title="安全域划分"></a>安全域划分</h1><h2 id="安全域的划分"><a href="#安全域的划分" class="headerlink" title="安全域的划分"></a>安全域的划分</h2><p>划分安全域的目的是将一组<strong>安全等级相同</strong>的计算机划入同一个网段。这个网段内的计算机拥 有相同 的网络边界,并在网络边界上通过<strong>部署防火墙</strong>来实现对其他安全域的网络访问控制策略 ，从而对允许 哪些IP地址访问此域、允许此域访问哪些IP地址和网段进行设置。这些 措施,将使得网络风险最小化, 当攻击发生时,可以尽可能地将威胁隔离,从而降低对域内计算 机的影响。</p>
+<p><img src="assets/image-20221226164619604.png" alt="image-20221226164619604"></p>
+<p>在一个用路由器连接的内网中,可以将网络划分为三个区域: </p>
+<ul>
+<li><p>安全级别最高的内网; </p>
+</li>
+<li><p>安全级别中等的DMZ; </p>
+</li>
+<li><p>安全级别最低的外网</p>
+</li>
+</ul>
+<p>在配置一个拥有DMZ的网络时,通常需要定义如下访问控制策略,以实现其屏障功能。</p>
+<blockquote>
+<p>内网可以访问外网:内网用户需要自由地访问外网。在这一策略中,防火墙需要执行NAT。 </p>
+<p>内网可以访问DMZ:此策略使内网用户可以使用或者管理DMZ中的服务器 </p>
+<p>外网不能访问内网:这是防火墙的基本策略。内网中存储的是公司内部数据,显然,这些数据一般是不允许外网用户访问的(如果要访问,就要通过VPN的方式来进行) </p>
+<p>外网可以访问DMZ:因为DMZ中的服务器需要为外界提供服务,所以外网必须可以访问DMZ。同时,需要由防火墙来完成从对外地址到服务器实际地址的转换。</p>
+<p> DMZ不能访问内网:如果不执行此策略,当攻击者攻陷DMZ时,内网将无法受到保护</p>
+<p> DMZ不能访问外网:此策略也有例外。例如,在DMZ中放置了邮件服务器,就要允许访问外网,否则邮件服务器无法正常工作</p>
+</blockquote>
+<p>办公区:公司员工日常的工作区,一般会安装防病毒软件、主机入侵检测产品等。办公区一般能够访问 DMZ。如果运维人员也在办公区,那么部分主机也能访问核心数据区(很多企业还会使用堡垒机来统一 管理用户的登录行为)攻击者如果想进入内网,一艘会使用鱼叉攻击、水坑攻击,当然还有社会工程学手 段。办公区人员多而杂,变动也很频繁,在安全管理上可能存在诸多漏洞,是攻击者进人内网的重要途径 之 </p>
+<p>核心区:存储企业最重要的数据、文档等信息资产,通过日志记录、安全审计等安全措施进行严密的保 护,往往只有很少的主机能够访问。从外部是绝难直接访问核心区的。一般来说,能够直接访问核心区 的只有运维人员或者IT部门的主管,所以,攻击者会重点关注这些用户的信息(攻击者在内网中进行横向 移动攻击时,会优先查找这些主机)</p>
+<h1 id="域中计算机分类"><a href="#域中计算机分类" class="headerlink" title="域中计算机分类"></a>域中计算机分类</h1><h2 id="域中计算机的分类"><a href="#域中计算机的分类" class="headerlink" title="域中计算机的分类"></a>域中计算机的分类</h2><p>域中计算机的分类在域结构的网络中,计算机的身份是不平等的,有域控制器、成员服务器、客户机、 独立服务 器四种类型。 </p>
+<h2 id="1、域控制器"><a href="#1、域控制器" class="headerlink" title="1、域控制器"></a>1、域控制器</h2><p>域控制器用于管理所有的网络访问,包括登录服务器、访问共享目录和资源。域控制器中存 储了域内所有的账户和策略信息,包括安全策略、用户身份验证信息和账户信息。 </p>
+<p>在网络中,可以有多台计算机被配置为域控制器,以分拒用广的登录、访问等操作。多个域控制器可以一起工作,自动备份用户账尸和活动目录数据。这样,即使部分域控制器痪,网络访问也不会受到影响,提高了网络的安全性和稳定性 </p>
+<h2 id="2、成员服务器"><a href="#2、成员服务器" class="headerlink" title="2、成员服务器"></a>2、成员服务器</h2><p>成员服务器是指安装了服务器操作系统并加入了域、但没有安装活动目录的计算机,其主要任务是提供网络资源。成员服务器的类型通常有文件服务器、应用服务器、数据库服务器、web服务器、邮件服务器、防火墙、远程访问服务器、打印服务器等 </p>
+<h2 id="3、客户机"><a href="#3、客户机" class="headerlink" title="3、客户机"></a>3、客户机</h2><p>域中的计算机可以是安装了其他操作系统的计算机,用户利用这些计算机和域中的账户就可以登录域。这些计算机被称为域中的客户机。域用户账号通过域的安全验证后,即可访间网络中的各种资源。 </p>
+<h2 id="4、独立服务器"><a href="#4、独立服务器" class="headerlink" title="4、独立服务器"></a>4、独立服务器</h2><p>独立服务器和域没有关系。如果服务器既不加入域,也不安装活动目录,就称其为独立服务器。独立服务器可以创建工作组、与网络屮的其他计算机共享资源,但不能使用活动目录提供的任何服务 </p>
+<p>域控制器用于冇放活动目录数据库,是域屮必须要有的,而其他三种计算机则不是必须要有的，也就是说,最简单的域可以只</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="../../../../../../../../about" rel="external nofollow noreferrer">fantasycat6</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://fantasycat6.github.io">https://fantasycat6.github.io</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="../../../../../../../../about" target="_blank">fantasycat6</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="../../../../../../../../libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="../../../../../../../../medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="../../../../../../../../medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="../../di-2-zhang-nei-wang-xin-xi-shou-ji/di-2-zhang-nei-wang-xin-xi-shou-ji/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../../../../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-16
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            fantasycat6
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="../../../28ddos/ddos/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../../../../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            fantasycat6
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Hexo<br />'
+            + '文章作者: fantasycat6<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="../../../../../../../../libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="../../../../../../../../libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="../../../../../../../../libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="../../../../../../../../libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="../../../../../../../../libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="../../../../../../../../libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="7788095093"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="../../../../../../../../libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022-2023</span>
+            
+            <span id="year">2022</span>
+            <a href="../../../../../../../../about" target="_blank">fantasycat6</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">312.9k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/fantasycat6" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1745272762@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1745272762" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1745272762" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="../../../../../../../../atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('../../../../../../../../search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="../../../../../../../../libs/materialize/materialize.min.js"></script>
+    <script src="../../../../../../../../libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="../../../../../../../../libs/aos/aos.js"></script>
+    <script src="../../../../../../../../libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="../../../../../../../../libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="../../../../../../../../js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="../../../../../../../../libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="../../../../../../../../libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="../../../../../../../../libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

@@ -542,7 +542,7 @@
 
 <p>从图中可以找到，Idx就是网卡的ID，以 Ethernet0也就是我本机的网卡，id=6</p>
 <p><img src=".%5Cassets%5C%E6%9F%A5%E8%AF%A2%E7%BD%91%E5%8D%A1id.png" alt="查询网卡id"></p>
-<p>5.临时绑定mac地址，重启失效</p>
+<p>5.<strong>临时</strong>绑定mac地址，重启失效</p>
 <pre class="line-numbers language-none"><code class="language-none">netsh -c i i add neighbors&nbsp; 6 192.168.70.1 e4-3a-6e-35-98-00 store=active
 
 -c Context 指定上下文
@@ -609,7 +609,7 @@ ip neigh
 192.168.110.1 dev ens33 lladdr e4:3a:6e:35:98:00 STALE #不新鲜的
 192.168.110.1 dev ens33 lladdr e4:3a:6e:35:98:00 REACHABLE #可到达的<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<h4 id="2-临时添加静态地址，重启后失效"><a href="#2-临时添加静态地址，重启后失效" class="headerlink" title="2.临时添加静态地址，重启后失效"></a>2.临时添加静态地址，重启后失效</h4><pre class="line-numbers language-none"><code class="language-none">arp -s 192.168.110.1 e4:3a:6e:35:98:00<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h4 id="2-临时添加静态地址，重启后失效"><a href="#2-临时添加静态地址，重启后失效" class="headerlink" title="2.临时添加静态地址，重启后失效"></a>2.临时添加静态地址，重启后失效</h4><pre class="line-numbers language-none"><code class="language-none">arp -s 192.168.70.1 00:50:56:c0:00:08<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <h4 id="3-查询arp表"><a href="#3-查询arp表" class="headerlink" title="3.查询arp表"></a>3.查询arp表</h4><pre class="line-numbers language-none"><code class="language-none">ip n
 192.168.110.1 dev ens33 lladdr e4:3a:6e:35:98:00 PERMANENT #永久的<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
@@ -1173,7 +1173,7 @@ wq保存<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2022</span>
+                <span id="year">2022-2023</span>
             
             <span id="year">2022</span>
             <a href="../../../../../../../about" target="_blank">fantasycat6</a>
@@ -1182,7 +1182,7 @@ wq保存<span aria-hidden="true" class="line-numbers-rows"><span></span><span></
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">96.5k</span>&nbsp;字
+                class="white-color">312.9k</span>&nbsp;字
             
             
             

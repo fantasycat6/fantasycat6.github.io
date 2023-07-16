@@ -1,0 +1,1651 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Hexo">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Hexo</title>
+    <link rel="icon" type="image/png" href="../../../../../../../../favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../css/matery.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../css/my.css">
+
+    <script src="../../../../../../../../libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="../../../../../../../../index.html" class="waves-effect waves-light">
+                    
+                    <img src="../../../../../../../../medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Hexo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../index.html" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="../../../../../../../../medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Hexo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../index.html" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('../../../../../../../../medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="../../../../../../../../libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-07-16
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    3.9k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    16 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="../../../../../../../../libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="容器技术所涉及Linux内核关键技术"><a href="#容器技术所涉及Linux内核关键技术" class="headerlink" title="容器技术所涉及Linux内核关键技术"></a>容器技术所涉及Linux内核关键技术</h1><h1 id="一、容器技术前世今生"><a href="#一、容器技术前世今生" class="headerlink" title="一、容器技术前世今生"></a>一、容器技术前世今生</h1><h2 id="1-1-1979年-—-chroot"><a href="#1-1-1979年-—-chroot" class="headerlink" title="1.1 1979年 — chroot"></a>1.1 1979年 — chroot</h2><ul>
+<li>容器技术的概念可以追溯到1979年的UNIX chroot。</li>
+<li>它是一套“UNIX操作系统”系统，旨在将其root目录及其它子目录变更至文件系统内的新位置，且只接受特定进程的访问。</li>
+<li>这项功能的设计目的在于为每个进程提供一套隔离化磁盘空间。</li>
+<li>1982年其被添加至BSD当中。</li>
+</ul>
+<h2 id="1-2-2000年-—-FreeBSD-Jails"><a href="#1-2-2000年-—-FreeBSD-Jails" class="headerlink" title="1.2 2000年 — FreeBSD Jails"></a>1.2 2000年 — FreeBSD Jails</h2><ul>
+<li>FreeBSD Jails是由Derrick T. Woolworth于2000年在FreeBSD研发协会中构建而成的早期容器技术之一。</li>
+<li>这是一套“操作系统”系统，与chroot的定位类似，不过其中包含有其它进程沙箱机制以对文件系统、用户及网络等资源进行隔离。</li>
+<li>通过这种方式，它能够为每个Jail、定制化软件安装包乃至配置方案等提供一个对应的IP地址。</li>
+</ul>
+<h2 id="1-3-2001年-—-Linux-VServer"><a href="#1-3-2001年-—-Linux-VServer" class="headerlink" title="1.3 2001年 — Linux VServer"></a>1.3 2001年 — Linux VServer</h2><ul>
+<li>Linux VServer属于另一种jail机制，其能够被用于保护计算机系统之上各分区资源的安全(包括文件系统、CPU时间、网络地址以及内存等)。</li>
+<li>每个分区被称为一套安全背景(security context)，而其中的虚拟化系统则被称为一套虚拟私有服务器。</li>
+</ul>
+<h2 id="1-4-2004年-—-Solaris容器"><a href="#1-4-2004年-—-Solaris容器" class="headerlink" title="1.4 2004年 — Solaris容器"></a>1.4 2004年 — Solaris容器</h2><ul>
+<li>Solaris容器诞生之时面向x86与SPARC系统架构，其最初亮相于2004年2月的Solaris 10 Build 51 beta当中，随后于2005年正式登陆Solaris 10的完整版本。</li>
+<li>Solaris容器相当于将系统资源控制与由分区提供的边界加以结合。各分区立足于单一操作系统实例之内以完全隔离的虚拟服务器形式运行。</li>
+</ul>
+<h2 id="1-5-2005年-—-OpenVZ"><a href="#1-5-2005年-—-OpenVZ" class="headerlink" title="1.5 2005年 — OpenVZ"></a>1.5 2005年 — OpenVZ</h2><ul>
+<li>OpenVZ与Solaris容器非常相似，且使用安装有补丁的Linux内核以实现虚拟化、隔离能力、资源管理以及检查点交付。</li>
+<li>每套OpenVZ容器拥有一套隔离化文件系统、用户与用户群组、一套进程树、网络、设备以及IPC对象。</li>
+</ul>
+<h2 id="1-6-2006年-—-Process容器"><a href="#1-6-2006年-—-Process容器" class="headerlink" title="1.6 2006年 — Process容器"></a>1.6 2006年 — Process容器</h2><ul>
+<li>Process容器于2006年由谷歌公司推出，旨在对一整套进程集合中的资源使用量(包括CPU、内存、磁盘I/O以及网络等等)加以限制、分配与隔离。</li>
+<li>此后其被更名为Control Groups(即控制组)，从而避免其中的“容器”字眼与Linux内核2.6.24中的另一术语出现冲突。这表明了谷歌公司率先重视容器技术的敏锐眼光以及为其做出的突出贡献。</li>
+</ul>
+<h2 id="1-7-2007年-—-Control-Groups"><a href="#1-7-2007年-—-Control-Groups" class="headerlink" title="1.7 2007年 — Control Groups"></a>1.7 2007年 — Control Groups</h2><p>Control Groups也就是谷歌实现的cgroups，其于2007年被添加至Linux内核当中。</p>
+<h2 id="1-8-2008年-—-LXC"><a href="#1-8-2008年-—-LXC" class="headerlink" title="1.8 2008年 — LXC"></a>1.8 2008年 — LXC</h2><ul>
+<li>LXC指代的是Linux Containers</li>
+<li>是第一套完整的Linux容器管理实现方案。</li>
+<li>其功能通过cgroups以及Linux namespaces实现。</li>
+<li>LXC通过liblxc库进行交付，并提供可与Python3、Python2、Lua、Go、Ruby以及Haskell等语言相对接的API。</li>
+<li>相较于其它容器技术，LXC能够在无需任何额外补丁的前提下运行在原版Linux内核之上。</li>
+</ul>
+<h2 id="1-9-2011年-—-Warden"><a href="#1-9-2011年-—-Warden" class="headerlink" title="1.9 2011年 — Warden"></a>1.9 2011年 — Warden</h2><ul>
+<li>Warden由CloudFoundry公司于2011年所建立，其利用LXC作为初始阶段，随后又将其替换为自家实现方案。</li>
+<li>与LXC不同，Warden并不会与Linux紧密耦合。相反，其能够运行在任意能够提供多种隔离环境方式的操作系统之上。Warden以后台进程方式运行并提供API以实现容器管理。</li>
+</ul>
+<h2 id="1-10-2013年-—-LMCTFY"><a href="#1-10-2013年-—-LMCTFY" class="headerlink" title="1.10 2013年 — LMCTFY"></a>1.10 2013年 — LMCTFY</h2><ul>
+<li>Lmctfy代表的是“Let Me Contain That For You(帮你实现容器化)”。它其实属于谷歌容器技术堆栈的开源版本，负责提供Linux应用程序容器。谷歌公司在该项目的起步阶段宣称其能够提供值得信赖的性能表现、高资源利用率、共享资源机制、充裕的发展空间以及趋近于零的额外资源消耗。</li>
+<li>2013年10月lmctfy的首个版本正式推出，谷歌公司在2015年决定将lmctfy的核心概念与抽象机制转化为libcontainer。在失去了主干之后，如今lmctfy已经失去一切积极的发展势头。</li>
+</ul>
+<p>　　Libcontainer项目最初由Docker公司建立，如今已经被归入开放容器基金会的管辖范畴。</p>
+<h2 id="1-11-2013年-Docker"><a href="#1-11-2013年-Docker" class="headerlink" title="1.11 2013年-Docker"></a>1.11 2013年-Docker</h2><ul>
+<li>在2013年Docker刚发布的时候，它是一款基于LXC的开源容器管理引擎。</li>
+<li>把LXC复杂的容器创建与使用方式简化为Docker自己的一套命令体系。</li>
+<li>随着Docker的不断发展，它开始有了更为远大的目标，那就是反向定义容器的实现标准，将底层实现都抽象化到Libcontainer的接口。这就意味着，底层容器的实现方式变成了一种可变的方案，无论是使用namespace、cgroups技术抑或是使用systemd等其他方案，只要实现了Libcontainer定义的一组接口，Docker都可以运行。这也为Docker实现全面的跨平台带来了可能。</li>
+</ul>
+<h1 id="二、NameSpace"><a href="#二、NameSpace" class="headerlink" title="二、NameSpace"></a>二、NameSpace</h1><h2 id="2-1-NameSpace介绍"><a href="#2-1-NameSpace介绍" class="headerlink" title="2.1 NameSpace介绍"></a>2.1 NameSpace介绍</h2><ul>
+<li><p>很多编程语言都包含了命名空间的概念，我们可以认为命名空间是一种封装，封装本身实际上实现了代码的隔离</p>
+</li>
+<li><p>在操作系统中命名空间命名空间提供的是系统资源的隔离，其中系统资源包括了：进程、网络、文件系统……</p>
+</li>
+<li><p>实际上linux系统实现命名空间主要目的之一就是为了实现轻量级虚拟化服务，也就是我们说的容器，在同一个命名空间下的进程可以感知彼此的变化，而对其他命名空间的进程一无所知，这样就可以让容器中的进程产生一个错觉，仿佛它自己置身于一个独立的系统环境当中，以此达到独立和隔离的目的。</p>
+</li>
+</ul>
+<h2 id="2-2-Linux系统中NameSpace分类"><a href="#2-2-Linux系统中NameSpace分类" class="headerlink" title="2.2 Linux系统中NameSpace分类"></a>2.2 Linux系统中NameSpace分类</h2><table>
+<thead>
+<tr>
+<th align="center">命名空间</th>
+<th align="center">描述</th>
+<th align="center">作用</th>
+<th align="center">备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">进程命名空间</td>
+<td align="center">隔离进程ID</td>
+<td align="center">Linux通过命名空间管理进程号，同一个进程，在不同的命名空间进程号不同</td>
+<td align="center">进程命名空间是一个父子结构，子空间对于父空间可见</td>
+</tr>
+<tr>
+<td align="center">网络命名空间</td>
+<td align="center">隔离网络设备、协议栈、端口等</td>
+<td align="center">通过网络命名空间，实现网络隔离</td>
+<td align="center">docker采用虚拟网络设备，将不同命名空间的网络设备连接到一起</td>
+</tr>
+<tr>
+<td align="center">IPC命名空间</td>
+<td align="center">隔离进程间通信</td>
+<td align="center">进程间交互方法</td>
+<td align="center">PID命名空间和IPC命名空间可以组合起来用，同一个IPC名字空间内的进程可以彼此看见，允许进行交互，不同空间进程无法交互</td>
+</tr>
+<tr>
+<td align="center">挂载命名空间</td>
+<td align="center">隔离挂载点</td>
+<td align="center">隔离文件目录</td>
+<td align="center">进程运行时可以将挂载点与系统分离，使用这个功能时，我们可以达到 chroot 的功能，而在安全性方面比 chroot 更高</td>
+</tr>
+<tr>
+<td align="center">UTS命名空间</td>
+<td align="center">隔离Hostname和NIS域名</td>
+<td align="center">让容器拥有独立的主机名和域名，从而让容器看起来像个独立的主机</td>
+<td align="center">目的是独立出主机名和网络信息服务（NIS）</td>
+</tr>
+<tr>
+<td align="center">用户命名空间</td>
+<td align="center">隔离用户和group ID</td>
+<td align="center">每个容器内上的用户跟宿主主机上不在一个命名空间</td>
+<td align="center">同进程 ID 一样，用户 ID 和组 ID 在命名空间内外是不一样的，并且在不同命名空间内可以存在相同的 ID</td>
+</tr>
+</tbody></table>
+<h2 id="2-3-NameSpace应用案例"><a href="#2-3-NameSpace应用案例" class="headerlink" title="2.3 NameSpace应用案例"></a>2.3 NameSpace应用案例</h2><blockquote>
+<p>以net namespace为例</p>
+</blockquote>
+<ul>
+<li>在 Linux 中，网络命名空间可以被认为是隔离的拥有单独网络栈（网卡、路由转发表、iptables）的环境。网络命名空间经常用来隔离网络设备和服务，只有拥有同样网络命名空间的设备，才能看到彼此。</li>
+<li>从逻辑上说，网络命名空间是网络栈的副本，拥有自己的网络设备、路由选择表、邻接表、Netfilter表、网络套接字、网络procfs条目、网络sysfs条目和其他网络资源。</li>
+<li>从系统的角度来看，当通过clone()系统调用创建新进程时，传递标志CLONE_NEWNET将在新进程中创建一个全新的网络命名空间。</li>
+<li>从用户的角度来看，我们只需使用工具ip（package is iproute2）来创建一个新的持久网络命名空间。</li>
+</ul>
+<p><img src="%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF%E6%89%80%E6%B6%89%E5%8F%8ALinux%E5%86%85%E6%A0%B8%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF.assets/image-20220111132707215.png" alt="image-20220111132707215"></p>
+<h3 id="2-3-1-创建net命名空间"><a href="#2-3-1-创建net命名空间" class="headerlink" title="2.3.1 创建net命名空间"></a>2.3.1 创建net命名空间</h3><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">创建名称为msb的网络命名空间
+<span class="token comment"># ip netns add msb</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">查看已创建的网络命名空间
+<span class="token comment"># ip netns ls</span>
+msb<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h3 id="2-3-2-删除net命名空间"><a href="#2-3-2-删除net命名空间" class="headerlink" title="2.3.2 删除net命名空间"></a>2.3.2 删除net命名空间</h3><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">删除已创建的网络命名空间
+<span class="token comment"># ip netns delete msb</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="2-3-3-在net命名空间中执行命令"><a href="#2-3-3-在net命名空间中执行命令" class="headerlink" title="2.3.3 在net命名空间中执行命令"></a>2.3.3 在net命名空间中执行命令</h3><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">在网络命名空间中执行bash命令，如果想退出，需要使用<span class="token keyword">exit</span>
+<span class="token comment"># ip netns exec msb bash</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="2-3-4-在net命令空间中执行查看网络连接-网卡-命令"><a href="#2-3-4-在net命令空间中执行查看网络连接-网卡-命令" class="headerlink" title="2.3.4 在net命令空间中执行查看网络连接(网卡)命令"></a>2.3.4 在net命令空间中执行查看网络连接(网卡)命令</h3><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">在网络命名空间中查看网络命名空间中的网卡信息
+<span class="token comment"># ip link</span>
+1: lo: &lt;LOOPBACK&gt; mtu 65536 qdisc noop state DOWN mode DEFAULT <span class="token function">group</span> default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">在Linux主机系统中查看
+<span class="token comment"># ip netns exec msb ip link list</span>
+1: lo: &lt;LOOPBACK&gt; mtu 65536 qdisc noop state DOWN mode DEFAULT <span class="token function">group</span> default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h3 id="2-3-5-退出当前的net命名空间"><a href="#2-3-5-退出当前的net命名空间" class="headerlink" title="2.3.5 退出当前的net命名空间"></a>2.3.5 退出当前的net命名空间</h3><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">退出已进入的网络命名空间
+<span class="token comment"># exit</span>
+<span class="token keyword">exit</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="2-3-6-在net命名空间中执行多条命令"><a href="#2-3-6-在net命名空间中执行多条命令" class="headerlink" title="2.3.6 在net命名空间中执行多条命令"></a>2.3.6 在net命名空间中执行多条命令</h3><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">在网络命名空间中查看路由表
+<span class="token comment"># route -n</span>
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">在网络命名空间中查看防火墙规则
+<span class="token comment"># iptables -t nat -nL</span>
+Chain PREROUTING <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt source               destination         
+
+Chain INPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt source               destination         
+
+Chain OUTPUT <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt source               destination         
+
+Chain POSTROUTING <span class="token punctuation">(</span>policy ACCEPT<span class="token punctuation">)</span>
+target     prot opt source               destination<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="2-3-7-创建虚拟网卡"><a href="#2-3-7-创建虚拟网卡" class="headerlink" title="2.3.7 创建虚拟网卡"></a>2.3.7 创建虚拟网卡</h3><blockquote>
+<p>同时创建一对虚拟网卡</p>
+</blockquote>
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">创建虚拟网卡对
+<span class="token comment"># ip link add veth0 type veth peer name veth1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">在物理机上查看
+<span class="token comment"># ip a s</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+10: veth1@veth0: &lt;BROADCAST<span class="token punctuation">,</span>MULTICAST<span class="token punctuation">,</span>M-DOWN&gt; mtu 1500 qdisc noop state DOWN <span class="token function">group</span> default qlen 1000
+    link/ether de:44:f8:b7:12:65 brd ff:ff:ff:ff:ff:ff
+11: veth0@veth1: &lt;BROADCAST<span class="token punctuation">,</span>MULTICAST<span class="token punctuation">,</span>M-DOWN&gt; mtu 1500 qdisc noop state DOWN <span class="token function">group</span> default qlen 1000
+    link/ether 46:5e:89:8c:cb:b3 brd ff:ff:ff:ff:ff:ff<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="2-3-8-迁移虚拟网卡到命名空间中"><a href="#2-3-8-迁移虚拟网卡到命名空间中" class="headerlink" title="2.3.8 迁移虚拟网卡到命名空间中"></a>2.3.8 迁移虚拟网卡到命名空间中</h3><blockquote>
+<p>这两个网卡还都属于“default”或“global”命名空间，和物理网卡一样。把其中一个网卡转移到命名空间msb中。</p>
+</blockquote>
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">把创建的veth1网卡添加到msb网络命名空间中
+<span class="token comment"># ip link set veth1 netns msb</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">在Linux系统命令行查看网络命名空间中的网络
+<span class="token comment"># ip netns exec msb ip link</span>
+1: lo: &lt;LOOPBACK&gt; mtu 65536 qdisc noop state DOWN mode DEFAULT <span class="token function">group</span> default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+10: veth1@if11: &lt;BROADCAST<span class="token punctuation">,</span>MULTICAST&gt; mtu 1500 qdisc noop state DOWN mode DEFAULT <span class="token function">group</span> default qlen 1000
+    link/ether de:44:f8:b7:12:65 brd ff:ff:ff:ff:ff:ff link-netnsid 0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="2-3-9-命名空间中迁出虚拟网卡"><a href="#2-3-9-命名空间中迁出虚拟网卡" class="headerlink" title="2.3.9 命名空间中迁出虚拟网卡"></a>2.3.9 命名空间中迁出虚拟网卡</h3><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">在Linux系统命令行把虚拟网卡veth1从网络命名空间删除
+<span class="token comment"># ip netns exec msb ip link delete veth1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">在Linux系统命令行查看结果
+<span class="token comment"># ip netns exec msb ip link</span>
+1: lo: &lt;LOOPBACK&gt; mtu 65536 qdisc noop state DOWN mode DEFAULT <span class="token function">group</span> default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="2-3-10-配置虚拟网卡IP地址"><a href="#2-3-10-配置虚拟网卡IP地址" class="headerlink" title="2.3.10 配置虚拟网卡IP地址"></a>2.3.10 配置虚拟网卡IP地址</h3><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">再次创建虚拟网卡，添加到msb网络命名空间，并设置IP地址
+<span class="token comment"># ip link add veth0 type veth peer name veth1</span>
+<span class="token comment"># ip link set veth1 netns msb</span>
+<span class="token comment"># ip netns exec msb ip addr add 192.168.50.2/24 dev veth1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">在Linux系统命令行查看网络状态
+<span class="token comment"># ip netns exec msb ip addr</span>
+1: lo: &lt;LOOPBACK&gt; mtu 65536 qdisc noop state DOWN <span class="token function">group</span> default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+12: veth1@if13: &lt;BROADCAST<span class="token punctuation">,</span>MULTICAST&gt; mtu 1500 qdisc noop state DOWN <span class="token function">group</span> default qlen 1000
+    link/ether fe:20:<span class="token function">ac</span>:a8:13:4c brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>50<span class="token punctuation">.</span>2/24 scope global veth1
+       valid_lft forever preferred_lft forever<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">启动虚拟网卡<span class="token punctuation">,</span>veth1与lo全部要启动
+<span class="token comment"># ip netns exec msb ip link set veth1 up</span>
+
+<span class="token comment"># ip netns exec msb ip link set lo up</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">为物理机veth0添加IP地址
+
+<span class="token comment"># ip a s</span>
+<span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+15: veth0@if14: &lt;BROADCAST<span class="token punctuation">,</span>MULTICAST&gt; mtu 1500 qdisc noop state DOWN <span class="token function">group</span> defau
+lt qlen 1000
+    link/ether 2e:b4:40:c8:73:dc brd ff:ff:ff:ff:ff:ff link-netnsid 0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell"><span class="token comment"># ip addr add 192.168.50.3/24 dev veth0</span>
+
+<span class="token comment"># ip a s veth0</span>
+15: veth0@if14: &lt;BROADCAST<span class="token punctuation">,</span>MULTICAST&gt; mtu 1500 qdisc noop state DOWN <span class="token function">group</span> default qlen 1000
+    link/ether 2e:b4:40:c8:73:dc brd ff:ff:ff:ff:ff:ff link-netnsid 0
+    inet 192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>50<span class="token punctuation">.</span>3/24 scope global veth0
+       valid_lft forever preferred_lft forever<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell"><span class="token comment"># ip link set veth0 up</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">在宿主机上ping msb中的veth1
+<span class="token comment"># ping 192.168.50.2</span>
+PING 192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>50<span class="token punctuation">.</span>2 <span class="token punctuation">(</span>192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>50<span class="token punctuation">.</span>2<span class="token punctuation">)</span> 56<span class="token punctuation">(</span>84<span class="token punctuation">)</span> bytes of <span class="token keyword">data</span><span class="token punctuation">.</span>
+64 bytes <span class="token keyword">from</span> 192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>50<span class="token punctuation">.</span>2: icmp_seq=1 ttl=64 time=0<span class="token punctuation">.</span>102 ms
+64 bytes <span class="token keyword">from</span> 192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>50<span class="token punctuation">.</span>2: icmp_seq=2 ttl=64 time=0<span class="token punctuation">.</span>068 ms
+64 bytes <span class="token keyword">from</span> 192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>50<span class="token punctuation">.</span>2: icmp_seq=3 ttl=64 time=0<span class="token punctuation">.</span>068 ms<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">在msb中的veth1 ping 宿主机上veth0
+<span class="token comment"># ip netns exec msb ping 192.168.50.3</span>
+PING 192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>50<span class="token punctuation">.</span>3 <span class="token punctuation">(</span>192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>50<span class="token punctuation">.</span>3<span class="token punctuation">)</span> 56<span class="token punctuation">(</span>84<span class="token punctuation">)</span> bytes of <span class="token keyword">data</span><span class="token punctuation">.</span>
+64 bytes <span class="token keyword">from</span> 192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>50<span class="token punctuation">.</span>3: icmp_seq=1 ttl=64 time=0<span class="token punctuation">.</span>053 ms
+64 bytes <span class="token keyword">from</span> 192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>50<span class="token punctuation">.</span>3: icmp_seq=2 ttl=64 time=0<span class="token punctuation">.</span>031 ms
+64 bytes <span class="token keyword">from</span> 192<span class="token punctuation">.</span>168<span class="token punctuation">.</span>50<span class="token punctuation">.</span>3: icmp_seq=3 ttl=64 time=0<span class="token punctuation">.</span>029 ms<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">如果需要访问本机的其它网段，可手动添加如下默认路由条目。
+<span class="token comment"># ip netns exec msb ip route add default via 192.168.50.3</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+
+
+
+
+<blockquote>
+<p>关于如何ping通外网主机，可设置路由转发完成。</p>
+</blockquote>
+<h1 id="三、CGroups"><a href="#三、CGroups" class="headerlink" title="三、CGroups"></a>三、CGroups</h1><h2 id="3-1-CGroups介绍"><a href="#3-1-CGroups介绍" class="headerlink" title="3.1 CGroups介绍"></a>3.1 CGroups介绍</h2><ul>
+<li><p>Control groups(cgroups) 控制组</p>
+</li>
+<li><p>linux内核提供的可以限制、记录、隔离进程组所使用的物理资源的机制。为容器而生，没有cgroups就没有今天的容器技术。</p>
+</li>
+</ul>
+<p><img src="%E5%AE%B9%E5%99%A8%E6%8A%80%E6%9C%AF%E6%89%80%E6%B6%89%E5%8F%8ALinux%E5%86%85%E6%A0%B8%E5%85%B3%E9%94%AE%E6%8A%80%E6%9C%AF.assets/image-20220112182824405.png" alt="image-20220112182824405"></p>
+<h2 id="3-2-CGroups功能"><a href="#3-2-CGroups功能" class="headerlink" title="3.2 CGroups功能"></a>3.2 CGroups功能</h2><ul>
+<li>资源限制（Resource Limitation）：cgroups 可以对进程组使用的资源总额进行限制。如设定应用运行时使用内存的上限，一旦超过这个配额就发出 OOM（Out of Memory）。</li>
+<li>优先级分配（Prioritization）：通过分配的 CPU 时间片数量及硬盘 IO 带宽大小，实际上就相当于控制了进程运行的优先级。</li>
+<li>资源统计（Accounting）： cgroups 可以统计系统的资源使用量，如 CPU 使用时长、内存用量等等，这个功能非常适用于计费。</li>
+<li>进程控制（Control）：cgroups 可以对进程组执行挂起、恢复等操作。</li>
+</ul>
+<h2 id="3-3-CGroups应用案例"><a href="#3-3-CGroups应用案例" class="headerlink" title="3.3 CGroups应用案例"></a>3.3 CGroups应用案例</h2><h3 id="3-3-1-安装及开启服务"><a href="#3-3-1-安装及开启服务" class="headerlink" title="3.3.1 安装及开启服务"></a>3.3.1 安装及开启服务</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># yum -y install libcgroup</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># systemctl start cgconfig.service 	</span>
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># systemctl enable cgconfig.service</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="3-3-2-限制进程使用CPU"><a href="#3-3-2-限制进程使用CPU" class="headerlink" title="3.3.2 限制进程使用CPU"></a>3.3.2 限制进程使用CPU</h3><h4 id="3-3-2-1-查看cpu-shares"><a href="#3-3-2-1-查看cpu-shares" class="headerlink" title="3.3.2.1 查看cpu shares"></a>3.3.2.1 查看cpu shares</h4><pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell">查看资源限制子系统
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># lssubsys</span>
+cpuset
+cpu<span class="token punctuation">,</span>cpuacct
+memory
+devices
+freezer
+net_cls<span class="token punctuation">,</span>net_prio
+blkio
+perf_event
+hugetlb
+pids
+
+查看子系统配置文件所在位置
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># ls /sys/fs/cgroup/</span>
+blkio  cpuacct      cpuset   freezer  memory   net_cls<span class="token punctuation">,</span>net_prio  perf_event  systemd
+cpu    cpu<span class="token punctuation">,</span>cpuacct  devices  hugetlb  net_cls  net_prio          pids
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># ls /sys/fs/cgroup/cpu</span>
+cgroup<span class="token punctuation">.</span>clone_children  cpuacct<span class="token punctuation">.</span>stat          cpu<span class="token punctuation">.</span>cfs_quota_us   cpu<span class="token punctuation">.</span>stat
+cgroup<span class="token punctuation">.</span>event_control   cpuacct<span class="token punctuation">.</span>usage         cpu<span class="token punctuation">.</span>rt_period_us   notify_on_release
+cgroup<span class="token punctuation">.</span>procs           cpuacct<span class="token punctuation">.</span>usage_percpu  cpu<span class="token punctuation">.</span>rt_runtime_us  release_agent
+cgroup<span class="token punctuation">.</span>sane_behavior   cpu<span class="token punctuation">.</span>cfs_period_us     cpu<span class="token punctuation">.</span>shares         tasks
+
+查看CPU时间分片，用于保证分组所得到的CPU分片总量。
+<span class="token namespace">[root@localhost ~]</span><span class="token comment"># cat /sys/fs/cgroup/cpu/cpu.shares</span>
+1024<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+<h4 id="3-3-2-2-使用CPU子系统创建2个group分组"><a href="#3-3-2-2-使用CPU子系统创建2个group分组" class="headerlink" title="3.3.2.2 使用CPU子系统创建2个group分组"></a>3.3.2.2 使用CPU子系统创建2个group分组</h4><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># vim /etc/cgconfig.conf</span>
+group lesscpu <span class="token punctuation">{</span>
+	cpu<span class="token punctuation">{</span>
+		<span class="token assign-left variable">cpu.shares</span><span class="token operator">=</span><span class="token number">200</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>	
+<span class="token punctuation">}</span>
+group morecpu <span class="token punctuation">{</span>
+	cpu<span class="token punctuation">{</span>
+		<span class="token assign-left variable">cpu.shares</span><span class="token operator">=</span><span class="token number">800</span><span class="token punctuation">;</span>
+	<span class="token punctuation">}</span>	
+<span class="token punctuation">}</span>
+
+<span class="token punctuation">[</span>root@localhost ~<span class="token punctuation">]</span><span class="token comment"># systemctl restart cgconfig</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>准备一个脚本</p>
+<pre class="line-numbers language-powershell" data-language="powershell"><code class="language-powershell"><span class="token comment">#!/bin/bash</span>
+
+a=1
+<span class="token keyword">while</span> true
+<span class="token keyword">do</span>
+
+        a=$<span class="token punctuation">[</span><span class="token variable">$a</span><span class="token operator">+</span>1<span class="token punctuation">]</span>
+done
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p>将将要运行的应用程序分配到指定分组(<strong>请使用单CPU机器,三个终端验证</strong>)</p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">终端1<span class="token comment"># cgexec -g cpu:lesscpu sh /tmp/1.sh</span>
+
+终端2<span class="token comment"># cgexec -g cpu:morecpu sh /tmp/1.sh</span>
+
+终端3<span class="token comment"># top</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<p><strong>PS: 如果主机有多CPU，为了验证效果，可以进行如下操作</strong></p>
+<pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># lscpu</span>
+<span class="token comment"># echo 0 &gt; /sys/devices/system/cpu/cpu0/online</span>
+<span class="token comment"># echo 1 &gt; /sys/devices/system/cpu/cpu1/online</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+
+
+
+
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="../../../../../../../../about" rel="external nofollow noreferrer">fantasycat6</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://fantasycat6.github.io">https://fantasycat6.github.io</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="../../../../../../../../about" target="_blank">fantasycat6</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="../../../../../../../../libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="../../../../../../../../medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="../../../../../../../../medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="../../03-rong-qi-guan-li-gong-ju-docker-sheng-tai-jia-gou-ji-bu-shu/rong-qi-guan-li-gong-ju-docker-sheng-tai-jia-gou-ji-bu-shu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../../../../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-16
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            fantasycat6
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="../../01-ying-yong-bu-shu-rong-qi-hua-yan-jin-zhi-lu/ying-yong-app-bu-shu-rong-qi-hua-yan-jin-zhi-lu/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../../../../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            fantasycat6
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Hexo<br />'
+            + '文章作者: fantasycat6<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="../../../../../../../../libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="../../../../../../../../libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="../../../../../../../../libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="../../../../../../../../libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="../../../../../../../../libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="../../../../../../../../libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="7788095093"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="../../../../../../../../libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022-2023</span>
+            
+            <span id="year">2022</span>
+            <a href="../../../../../../../../about" target="_blank">fantasycat6</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">312.9k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/fantasycat6" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1745272762@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1745272762" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1745272762" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="../../../../../../../../atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('../../../../../../../../search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="../../../../../../../../libs/materialize/materialize.min.js"></script>
+    <script src="../../../../../../../../libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="../../../../../../../../libs/aos/aos.js"></script>
+    <script src="../../../../../../../../libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="../../../../../../../../libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="../../../../../../../../js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="../../../../../../../../libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="../../../../../../../../libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="../../../../../../../../libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

